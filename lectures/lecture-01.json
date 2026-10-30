@@ -1,0 +1,3258 @@
+{
+ "lecture": 1,
+ "title": "分子生物学绪论：从遗传信息流到现代分子生物学技术",
+ "source_file": "2026_autumn-molecular_biology-01.pdf",
+ "pages": 106,
+ "overview": "本章是分子生物学课程的总纲与导论，核心问题是：遗传信息以何种物质形式存在、如何传递与表达、人类如何认识并改造它。逻辑主线沿'概念界定→历史演进→研究内容→技术展望'展开：先给出分子生物学的学科定义（研究核酸与蛋白质等生物大分子的结构、功能及相互关系），再以中心法则为骨架梳理遗传信息流（DNA→RNA→蛋白质）及其多级调控；随后按三阶段（准备酝酿、建立发展、深入发展）串联经典实验与诺奖成果，从孟德尔遗传因子、Morgan染色体—基因理论，到Griffith/Avery/Hershey–Chase证明DNA是遗传物质，再到Watson–Crick双螺旋、Meselson–Stahl半保留复制、遗传密码破译、逆转录酶、PCR、RNAi、基因编辑等；最后落到分子生物学的四大研究范畴（DNA重组技术、基因表达调控、结构分子生物学、基因组与生物信息学）与AlphaFold等前沿。本章为后续DNA复制、转录、翻译、技术各章提供概念框架与历史坐标，是理解'基因→功能'完整信息流的总入口。",
+ "outline": [
+  {
+   "section": "1",
+   "title": "学科定义与中心法则",
+   "points": [
+    "分子生物学研究核酸与蛋白质等生物大分子的形态、结构特征及其重要性、规律性和相互关系",
+    "中心法则：DNA→初级转录本→mRNA→蛋白质，各步骤分区室完成",
+    "基因表达可在转录、RNA加工、翻译、翻译后、蛋白质活性等多层次调控"
+   ]
+  },
+  {
+   "section": "2",
+   "title": "分子生物学发展三阶段",
+   "points": [
+    "准备和酝酿阶段（19世纪后期—20世纪50年代初）：确定蛋白质是生命主要物质基础、DNA是遗传物质基础",
+    "建立和发展阶段（20世纪50年代初—70年代初）：DNA双螺旋（1953）、中心法则、蛋白质结构与功能认识",
+    "深入发展阶段：重组DNA技术、基因组研究、单克隆抗体、基因表达调控、信号转导、全基因组测序、ncRNA、基因编辑"
+   ]
+  },
+  {
+   "section": "3",
+   "title": "证明DNA是遗传物质的经典实验",
+   "points": [
+    "Griffith（1928）肺炎链球菌转化实验发现转化因子",
+    "Avery（1944）分级分离证明转化因子是DNA",
+    "Hershey–Chase（1952）32P/35S标记证明DNA进入细菌",
+    "转染实验（TK基因）证明DNA是动物细胞遗传物质"
+   ]
+  },
+  {
+   "section": "4",
+   "title": "DNA结构、复制与信息流机制",
+   "points": [
+    "1953年Watson–Crick双螺旋模型，分子生物学诞生的里程碑",
+    "1958年Meselson–Stahl证明半保留复制",
+    "半不连续复制解释双链等速复制（前导链连续、后随链形成冈崎片段）",
+    "中心法则从1954年版到21世纪修正版的演变（逆转录、非编码RNA）"
+   ]
+  },
+  {
+   "section": "5",
+   "title": "分子生物学主要研究内容与范畴",
+   "points": [
+    "遗传信息的传递（复制）、保持（损伤修复）、表达（转录翻译）与调控",
+    "三条基本定理：单体相同、大分子构成规则相同、核酸与蛋白质决定生物属性",
+    "四大范畴：DNA重组技术、基因表达调控、生物大分子结构与功能、基因组与生物信息学"
+   ]
+  },
+  {
+   "section": "6",
+   "title": "结构分子生物学与前沿技术",
+   "points": [
+    "研究三维结构的方法：X射线晶体学、NMR、电镜三维重组等",
+    "AlphaFold从2020年解决50年难题到2024年AlphaFold3预测生物分子相互作用",
+    "基因编辑三代技术：ZFN（1996）、TALEN（2010）、CRISPR/Cas（2013）",
+    "AI从辅助工具走向核心驱动引擎，但湿实验验证仍是金标准"
+   ]
+  },
+  {
+   "section": "7",
+   "title": "中国科学家的贡献",
+   "points": [
+    "吴宪提出蛋白质变性理论",
+    "人工全合成结晶牛胰岛素、三方二锌猪胰岛素晶体结构、酵母丙氨酸tRNA人工全合成",
+    "1999年承担人类基因组1%测序任务（第3号染色体3千万核苷酸）",
+    "2017年孙强团队首次实现非人灵长类体细胞克隆；屠呦呦发现青蒿素获2015年诺奖"
+   ]
+  }
+ ],
+ "concepts": [
+  {
+   "id": "L1-C01",
+   "cn": "分子生物学",
+   "en": "Molecular Biology",
+   "abbr": "",
+   "definition": "研究核酸（DNA、RNA）、蛋白质等生物大分子的形态、结构特征及其重要性、规律性和相互关系的科学。",
+   "detail": "定义强调'大分子的结构—功能—相互关系'，而非仅研究基因；是人类从分子水平揭示生物世界奥秘、由被动适应自然界转向主动改造和重组自然界的基础学科。研究对象为核酸与蛋白质两类大分子，由基础理论与技术两条路径支撑，二者相互促进。",
+   "note": "易误解为'只研究基因'；实际涵盖核酸、蛋白质及二者相互作用，并同时包含基础理论与技术两个面。",
+   "pages": [
+    8,
+    88
+   ]
+  },
+  {
+   "id": "L1-C02",
+   "cn": "中心法则",
+   "en": "Central Dogma",
+   "abbr": "",
+   "definition": "Crick于1954年提出的遗传信息传递规律，描述DNA、RNA、蛋白质之间信息流动的方向。",
+   "detail": "1954年版：DNA复制→DNA转录为RNA→RNA翻译为蛋白质→蛋白质执行生理功能。1970—1980年版增加RNA→DNA的逆转录。21世纪修正版增加tRNA和rRNA、小RNA（microRNAs）、非编码RNA（Non-coding RNAs）等分支。",
+   "note": "中心法则并非一成不变，随逆转录酶、RNA复制、非编码RNA的发现而扩展；'dogma'在此指信息流方向规律，非教条。",
+   "pages": [
+    9,
+    26,
+    34
+   ]
+  },
+  {
+   "id": "L1-C03",
+   "cn": "转录水平控制",
+   "en": "Transcriptional control",
+   "abbr": "",
+   "definition": "在DNA→初级转录本步骤上对基因表达进行的调控。",
+   "detail": "位于中心法则信息流的最上游，通常是主要调控点；与RNA加工控制区分，作用对象是DNA而非RNA。",
+   "note": "常与RNA加工控制混淆；转录控制作用于DNA模板，加工控制作用于RNA转录本。",
+   "pages": [
+    9
+   ]
+  },
+  {
+   "id": "L1-C04",
+   "cn": "RNA加工控制",
+   "en": "RNA processing control",
+   "abbr": "",
+   "definition": "在初级转录本→成熟mRNA步骤（如剪接、加帽加尾）上进行的调控。",
+   "detail": "作用对象是RNA而非DNA，与转录控制区分；对应基因表达多级调控中的第2步。",
+   "note": "不要与转录水平控制混为一谈。",
+   "pages": [
+    9,
+    95
+   ]
+  },
+  {
+   "id": "L1-C05",
+   "cn": "翻译后控制",
+   "en": "Post-translation control",
+   "abbr": "",
+   "definition": "蛋白质合成之后对其修饰、折叠、定位等环节的调控。",
+   "detail": "与蛋白质活性控制（Protein activity control）并列列出，二者均作用于蛋白质水平。",
+   "note": "翻译后控制与蛋白质活性控制同属蛋白质水平，但前者侧重修饰折叠定位，后者侧重活性状态。",
+   "pages": [
+    9
+   ]
+  },
+  {
+   "id": "L1-C06",
+   "cn": "基因",
+   "en": "gene",
+   "abbr": "",
+   "definition": "被看作是生物性状的决定者，生物遗传变异的结构和功能的基本单位。",
+   "detail": "1909年由丹麦生物学家约翰逊（Wilhelm Ludwig Johannsen，1857～1927）根据希腊文'给予生命'之意创造；其前身为孟德尔提出的'遗传因子（hereditary factor）'。约翰逊1896年发表《论遗传和变异》，1905年以《遗传学原理》为书名重新出版。",
+   "note": "孟德尔称'遗传因子'，1909年后改称'基因'；不可把命名者误作孟德尔。",
+   "pages": [
+    13,
+    14
+   ]
+  },
+  {
+   "id": "L1-C07",
+   "cn": "分离规律",
+   "en": "The Law of Segregation",
+   "abbr": "",
+   "definition": "一对遗传因子在杂合状态下互不融合，形成配子时彼此分离。",
+   "detail": "针对一对相对性状；孟德尔1856-1864年经8年杂交试验，1865年发表《植物杂交试验》论文提出。",
+   "note": "与自由组合规律区分：前者描述一对因子在配子形成时的分离，后者描述不同对因子之间的自由组合。",
+   "pages": [
+    12,
+    13
+   ]
+  },
+  {
+   "id": "L1-C08",
+   "cn": "自由组合规律",
+   "en": "The Law of Independent Assortment",
+   "abbr": "",
+   "definition": "两对及以上遗传因子在形成配子时自由组合。",
+   "detail": "针对两对及以上相对性状；与分离规律同为孟德尔豌豆杂交试验得出的两条规律。孟德尔所选豌豆有7对相对性状（种子形状圆/皱、种子颜色黄/绿、豆荚形状饱满/缢缩、豆荚颜色绿/黄、花色紫/白、花位置腋生/顶生、茎高/矮）。",
+   "note": "学生常把'分离'与'自由组合'的对象搞反。",
+   "pages": [
+    13
+   ]
+  },
+  {
+   "id": "L1-C09",
+   "cn": "染色体—基因遗传理论",
+   "en": "chromosome–gene theory of inheritance",
+   "abbr": "",
+   "definition": "将基因定位于染色体上、把性状与基因相耦联的遗传理论。",
+   "detail": "1910年由Morgan提出，是现代遗传学的奠基石；Morgan（Thoman Hunt Morgan，1866～1945）及其学生用果蝇研究提出连锁遗传规律，1926年出版《基因论》，获1933年度诺贝尔生理学及医学奖金。",
+   "note": "注意Morgan名字拼写为Thoman Hunt Morgan（幻灯片原文），常写作Thomas Hunt Morgan。",
+   "pages": [
+    15
+   ]
+  },
+  {
+   "id": "L1-C10",
+   "cn": "连锁遗传规律",
+   "en": "law of linkage inheritance",
+   "abbr": "",
+   "definition": "位于同一染色体上的基因倾向于共同遗传的规律。",
+   "detail": "由Morgan及其学生利用果蝇研究得出，是染色体—基因遗传理论的核心内容之一。",
+   "note": "连锁与自由组合并不矛盾：自由组合适用于非同源染色体上的基因。",
+   "pages": [
+    15
+   ]
+  },
+  {
+   "id": "L1-C11",
+   "cn": "转化",
+   "en": "transformation",
+   "abbr": "",
+   "definition": "一种细菌的遗传性状被另一种细菌的遗传物质改变的现象。",
+   "detail": "Griffith实验中指R型肺炎链球菌被加热杀死的S型菌的某种物质转变为有致病性的S型；Griffith当时不知转化源是DNA，只称之为'转化因子（transforming principle）'。在重组DNA技术中，转化又指将外源DNA（如重组质粒）导入受体细胞。",
+   "note": "同一术语在经典遗传学与基因工程中含义不同，需按语境区分。",
+   "pages": [
+    17,
+    93
+   ]
+  },
+  {
+   "id": "L1-C12",
+   "cn": "S型肺炎链球菌",
+   "en": "S strain of Streptococcus pneumoniae",
+   "abbr": "",
+   "definition": "具有光滑（smooth）荚膜外表的肺炎链球菌，能使小鼠发病致死。",
+   "detail": "S型有荚膜，荚膜为多糖，是致病力（virulence）的关键。",
+   "note": "S型=光滑Smooth=有荚膜=致病；R型=粗糙Rough=无荚膜=不致病。",
+   "pages": [
+    17
+   ]
+  },
+  {
+   "id": "L1-C13",
+   "cn": "R型肺炎链球菌",
+   "en": "R strain of Streptococcus pneumoniae",
+   "abbr": "",
+   "definition": "具有粗糙（rough）外表的肺炎链球菌，无荚膜，没有致病力。",
+   "detail": "R型不致病，但可被S型菌的DNA转化而获得致病性。",
+   "note": "R型并非'死菌'，是活的但无致病力。",
+   "pages": [
+    17
+   ]
+  },
+  {
+   "id": "L1-C14",
+   "cn": "胸腺嘧啶核苷激酶",
+   "en": "thymidine kinase",
+   "abbr": "TK",
+   "definition": "由TK基因编码的酶，缺乏该酶的细胞在缺乏胸腺嘧啶的条件下不能存活。",
+   "detail": "转染实验中以TK作为选择标记基因：取缺乏TK基因的细胞，加入TK+ DNA，部分细胞摄取TK基因，在缺乏胸腺嘧啶的条件下只有获得TK基因的细胞存活并增殖成集落（colony）。",
+   "note": "该实验证明DNA是动物细胞的遗传物质，选择条件是'缺乏胸腺嘧啶'。",
+   "pages": [
+    24
+   ]
+  },
+  {
+   "id": "L1-C15",
+   "cn": "双螺旋",
+   "en": "double helix",
+   "abbr": "",
+   "definition": "DNA的结构模型，两条链相互缠绕形成螺旋，可以'unzip'（解开拉链）进行自我复制。",
+   "detail": "1953年Watson和Crick提出，为充分揭示遗传信息的传递规律铺平了道路；1953年4月2日向《自然》投去900多单词论文《核酸的分子结构》，4月25日发表；该结构证实了DNA携带生命遗传信息的猜想，标志着分子生物学从此诞生。",
+   "note": "双螺旋模型的核心意义在于解释自我复制与信息携带，而非仅描述外形。",
+   "pages": [
+    27,
+    28
+   ]
+  },
+  {
+   "id": "L1-C16",
+   "cn": "X射线衍射法",
+   "en": "X-ray diffraction",
+   "abbr": "",
+   "definition": "利用X射线照射晶体样品，通过衍射图谱解析分子三维结构的方法。",
+   "detail": "伦敦大学国王学院John Randall实验室的Maurice Wilkins、Rosalind E Franklin用此方法研究DNA晶体结构，获得DNA螺旋的晶体衍射照片（著名的'Photo 51'）；Franklin（1920-1958）的工作为Wilkins的获奖奠定基础。",
+   "note": "Franklin已于1962年诺奖前四年因癌症去世，年仅37岁，未在获奖中被提及。",
+   "pages": [
+    29,
+    30,
+    32
+   ]
+  },
+  {
+   "id": "L1-C17",
+   "cn": "Chargaff碱基配对原则",
+   "en": "Chargaff's base-pairing rules",
+   "abbr": "",
+   "definition": "DNA中腺嘌呤（A）与胸腺嘧啶（T）配对、鸟嘌呤（G）与胞嘧啶（C）配对的规律。",
+   "detail": "加州理工学院Linus Pauling因不了解该原则，提出了错误的DNA三螺旋结构；Watson和Crick则正确利用碱基配对提出双螺旋。",
+   "note": "Pauling是结构化学权威，但其错误说明'权威+不了解碱基配对原则'也会出错。",
+   "pages": [
+    29,
+    31
+   ]
+  },
+  {
+   "id": "L1-C18",
+   "cn": "氢键",
+   "en": "hydrogen bond",
+   "abbr": "",
+   "definition": "DNA分子中碱基配对之间的非共价相互作用，被比喻为DNA的'分子胶'（molecular glue）。",
+   "detail": "1947年秋，诺丁汉大学（University of Nottingham）的James Michael Creeth与其博士生导师在《Journal of the Chemical Society》发表论文，完整证明DNA分子里含有氢键；正因证明氢键是DNA的分子胶，Watson和Crick才得以得出DNA必须是两条呈双螺旋结构的结论。",
+   "note": "该工作也是使现代遗传学（modern genetics）变得可能的前提。",
+   "pages": [
+    33
+   ]
+  },
+  {
+   "id": "L1-C19",
+   "cn": "半保留复制",
+   "en": "semi-conservative replication",
+   "abbr": "",
+   "definition": "DNA复制时，双链解开，每条亲代链作为模板合成一条新链，形成的两个子代DNA分子各含一条亲代链和一条新链。",
+   "detail": "1958年由Meselson和Stahl证明；第一代所有子代DNA均为杂合双链，第二代中一半为杂合双链、一半为全新链组成的双链。",
+   "note": "半保留复制解决基因的自我复制和世代交替问题，与'半不连续复制'是两个不同概念。",
+   "pages": [
+    30,
+    35,
+    36
+   ]
+  },
+  {
+   "id": "L1-C20",
+   "cn": "半不连续复制",
+   "en": "semi-discontinuous replication",
+   "abbr": "",
+   "definition": "DNA复制时，前导链连续合成，后随链不连续合成（形成冈崎片段），整体表现为半不连续。",
+   "detail": "前导链（Leading strand）沿5'→3'方向连续合成，核苷酸连续加到3'端；后随链（Lagging strand）以冈崎片段形式不连续合成；该机制解释了DNA双链的等速复制。",
+   "note": "半不连续复制≠半保留复制：前者描述链合成的连续性，后者描述亲代链的分配。",
+   "pages": [
+    36
+   ]
+  },
+  {
+   "id": "L1-C21",
+   "cn": "操纵子",
+   "en": "operon",
+   "abbr": "",
+   "definition": "原核生物中基因表达调控的功能单位，由启动子、操纵基因及结构基因等组成。",
+   "detail": "1961年法国科学家Jacob和Monod提出操纵子学说，提出并证实操纵子作为调节细菌细胞代谢的分子机制，推测mRNA的存在；Jacob、Lwoff和Monod因发现酶和病毒合成的遗传调节获1965年诺贝尔生理学或医学奖。",
+   "note": "操纵子是原核生物的概念，不要套用于真核生物的调控单位。",
+   "pages": [
+    38
+   ]
+  },
+  {
+   "id": "L1-C22",
+   "cn": "逆转录酶",
+   "en": "reverse transcriptase",
+   "abbr": "",
+   "definition": "以RNA为模板合成DNA的酶，存在于RNA肿瘤病毒中。",
+   "detail": "在RNA肿瘤病毒（RNA tumor virus）中发现；1975年获诺贝尔生理医学奖，获奖者为David Baltimore、Renato Dulbecco、Howard Martin Temin；该发现补充了中心法则（RNA→DNA）。",
+   "note": "端粒酶也是一种逆转录酶（补充背景），但幻灯片在端粒酶页仅称'形成端粒的端粒酶'。",
+   "pages": [
+    40,
+    65
+   ]
+  },
+  {
+   "id": "L1-C23",
+   "cn": "双脱氧链终止法",
+   "en": "dideoxy chain termination method",
+   "abbr": "",
+   "definition": "利用2',3'-双脱氧核苷酸（ddNTP）掺入后无法继续延伸链的特性，终止DNA合成并读出序列的测序方法。",
+   "detail": "1977年Sanger和Gilbert发明，第一次进行DNA序列分析；1980年Sanger、Gilbert与Berg共享诺贝尔化学奖（Berg于1972年第一次进行DNA重组）。",
+   "note": "幻灯片将测序方法归于Sanger和Gilbert共同发明；吴瑞1971年已建立测序基本策略（引物延伸+标记），Sanger快速测序法是在此基础上改进。",
+   "pages": [
+    42,
+    43
+   ]
+  },
+  {
+   "id": "L1-C24",
+   "cn": "引物延伸",
+   "en": "primer extension",
+   "abbr": "",
+   "definition": "在已定位的引物3'-OH端，由DNA聚合酶延伸合成新的带标记DNA链的过程。",
+   "detail": "吴瑞教授1971年建立DNA核苷酸顺序测定方法的核心策略，利用能定位的引物加以延伸合成新的有标记的DNA；该基本策略改进后成为Sanger的DNA快速测序法和Mullis的PCR技术的基础。文献：Wu, R & Taylor, E. 1971, J Mol Biol. 57(3):491-511。",
+   "note": "吴瑞最早建立测序方法，不可把测序发明权只归于Sanger。",
+   "pages": [
+    43
+   ]
+  },
+  {
+   "id": "L1-C25",
+   "cn": "可移动遗传因子",
+   "en": "jumping gene / mobile element (transposable element)",
+   "abbr": "",
+   "definition": "可在基因组内改变位置的DNA序列。",
+   "detail": "McClintock（Barbra McClintock，1902-1992）于50年代在玉米中发现，1983年获Nobel奖（81岁获奖，距发现约35年，'迟到了35年的诺奖'）；玉米籽粒色斑是转座子跳跃导致色素基因表达被激活或失活的表型证据。",
+   "note": "转座子（transposable element）与'跳跃基因'为同一概念的不同名称。",
+   "pages": [
+    44,
+    45
+   ]
+  },
+  {
+   "id": "L1-C26",
+   "cn": "核酶",
+   "en": "ribozyme (catalytic RNA)",
+   "abbr": "",
+   "definition": "具有催化活性的RNA分子。",
+   "detail": "Altman和Cech发现RNA的催化功能，共享1989年Nobel化学奖。Cech发现四膜虫（Tetrahymena）rRNA前体在完全无蛋白质条件下，以鸟苷（G）为辅助因子自我切割并重新连接，切除一段RNA后形成具有催化活性的RNA；Altman发现RNase P中RNA组分（而非蛋白组分）才是催化tRNA成熟的活性中心。",
+   "note": "核酶证明RNA既是信息分子也可有催化功能，挑战'酶一定是蛋白质'的传统观念。",
+   "pages": [
+    46
+   ]
+  },
+  {
+   "id": "L1-C27",
+   "cn": "断裂基因",
+   "en": "split gene",
+   "abbr": "",
+   "definition": "由外显子与内含子交替组成、转录后需剪接去除内含子的基因。",
+   "detail": "1993年美国科学家Roberts和Sharp因发现断裂基因获Nobel奖；基因结构为Exon 1—Intron 1—Exon 2—Intron 2—Exon 3，转录产生初级转录本后经剪接形成成熟转录本。",
+   "note": "幻灯片标题写作'Splitting gene'，标准英文为split gene。",
+   "pages": [
+    47
+   ]
+  },
+  {
+   "id": "L1-C28",
+   "cn": "外显子",
+   "en": "exon",
+   "abbr": "",
+   "definition": "基因中保留在成熟转录本中的序列片段。",
+   "detail": "断裂基因中与内含子相间排列，剪接后外显子相连形成成熟转录本（Exon 1—Exon 2—Exon 3）。",
+   "note": "外显子被保留、内含子被去除，是剪接的基本结果。",
+   "pages": [
+    47
+   ]
+  },
+  {
+   "id": "L1-C29",
+   "cn": "内含子",
+   "en": "intron",
+   "abbr": "",
+   "definition": "基因中被转录但在剪接过程中被去除的序列片段。",
+   "detail": "初级转录本中仍含Intron 1与Intron 2，经剪接切除后形成成熟转录本。",
+   "note": "内含子被转录但不被保留在成熟mRNA中。",
+   "pages": [
+    47
+   ]
+  },
+  {
+   "id": "L1-C30",
+   "cn": "聚合酶链式反应",
+   "en": "polymerase chain reaction",
+   "abbr": "PCR",
+   "definition": "利用引物、DNA聚合酶与热循环在体外指数扩增特定DNA片段的技术。",
+   "detail": "1983年8月Mullis第一次在公司正式作PCR原理学术报告，反应冷漠；1993年Mullis因发明PCR仪与加拿大学者Smith（第一个设计基因定点突变）共享Nobel化学奖；生物学被划为两个时代——一个没有PCR，一个有PCR。",
+   "note": "PCR原理报告最初遭冷遇，说明科学接受的社会性；Smith的贡献是基因定点突变，不是PCR。",
+   "pages": [
+    48,
+    49
+   ]
+  },
+  {
+   "id": "L1-C31",
+   "cn": "基因定点突变",
+   "en": "site-directed mutagenesis",
+   "abbr": "",
+   "definition": "在DNA特定位点引入预定碱基改变的技术。",
+   "detail": "加拿大学者Smith第一个设计基因定点突变，与Mullis共享1993年诺贝尔化学奖。",
+   "note": "与PCR发明者Mullis区分：Mullis发明PCR，Smith设计定点突变。",
+   "pages": [
+    48
+   ]
+  },
+  {
+   "id": "L1-C32",
+   "cn": "单克隆抗体",
+   "en": "monoclonal antibody",
+   "abbr": "",
+   "definition": "由单一B细胞克隆产生的、针对单一抗原表位的均一抗体。",
+   "detail": "单克隆抗体技术获1984年诺贝尔生理学-医学奖，获奖者为Niels Kaj Jerne（丹麦免疫学家）、Georg Kohler（德国免疫学家）、César Milstein（英国生物化学家），理由为关于免疫系统发育和控制特异性的理论及发现单克隆抗体产生的原理。",
+   "note": "单克隆抗体是均一抗体，区别于多克隆抗体的混合性。",
+   "pages": [
+    41,
+    50
+   ]
+  },
+  {
+   "id": "L1-C33",
+   "cn": "朊病毒",
+   "en": "prion",
+   "abbr": "",
+   "definition": "幻灯片表述为'PrPc蛋白质病毒，受DNA序列控制，是细胞内蛋白质在分子水平的病变'。",
+   "detail": "1997年普鲁西纳（Stanley Prusiner）因发现朊病毒获诺贝尔生理医学奖；最常见的是引起传染性海绵样脑病（疯牛病）的蛋白质；20世纪70—80年代普鲁西纳发现一种比病毒还小、不存在核酸的微生物致病因子，对'一切生物都存在核酸、遗传信息必须经过核酸'的论点提出挑战。",
+   "note": "幻灯片原文写作PrPc；通常细胞型朊蛋白记作PrP^C，致病型为PrP^Sc（补充背景）。",
+   "pages": [
+    51
+   ]
+  },
+  {
+   "id": "L1-C34",
+   "cn": "体细胞克隆",
+   "en": "somatic cell cloning / somatic cell nuclear transfer",
+   "abbr": "SCNT",
+   "definition": "将体细胞核移植入去核卵母细胞，使其重编程并发育为个体的技术。",
+   "detail": "1997年成功获得克隆羊Dolly，是世界上第一只用成年体细胞克隆产生的哺乳动物（Ian Wilmut）；2017年中国科学院神经科学研究所孙强团队经五年努力，在国际上首次实现非人灵长类动物的体细胞克隆（猕猴）。",
+   "note": "Dolly证明成年体细胞核具有全能性；克隆猴证明该技术可用于非人灵长类。",
+   "pages": [
+    52,
+    87
+   ]
+  },
+  {
+   "id": "L1-C35",
+   "cn": "人类基因组计划",
+   "en": "Human Genome Project",
+   "abbr": "HGP",
+   "definition": "90年代提出并于2000年基本完成的人类全基因组测序工作，被称为二十世纪科技发展史上的三大创举之一。",
+   "detail": "1985年美国能源部（DOE）率先提出，旨在阐明人类基因组DNA长达3×10⁹碱基对的序列；1986年美国宣布启动；1989年NIH建立国家人类基因组研究中心（NCHGR）；1990年NIH和DOE联合提出并正式启动，计划15年内提供30亿美元、2005年完成全部序列测定。两大参与方：国际联合体（Francis Collins领导）与Celera Genomics公司（Craig Venter领导）。2000年草图完成，2003年4月14日完成图（99.99%）提前绘制成功。",
+   "note": "中国1999年承担1%序列测序任务，负责第3号染色体3千万核苷酸。",
+   "pages": [
+    53,
+    54,
+    55,
+    56
+   ]
+  },
+  {
+   "id": "L1-C36",
+   "cn": "遗传图（连锁图）",
+   "en": "genetic map (linkage map)",
+   "abbr": "",
+   "definition": "以遗传标记间的重组率（连锁关系）为标尺，表示基因或标记在染色体上相对位置的图谱。",
+   "detail": "人类基因组计划'第二张解剖图'的组成部分之一，与物理图、序列图、转录图并列。",
+   "note": "遗传图的距离单位是重组率，不是碱基对。",
+   "pages": [
+    57
+   ]
+  },
+  {
+   "id": "L1-C37",
+   "cn": "物理图",
+   "en": "physical map",
+   "abbr": "",
+   "definition": "以实际物理距离（如碱基对bp）为标尺，表示DNA片段或标记在染色体上实际位置的图谱。",
+   "detail": "与遗传图不同，物理图的距离单位是碱基对而非重组率；是HGP'第二张解剖图'的组成部分。",
+   "note": "遗传图vs物理图的核心差异在标尺单位。",
+   "pages": [
+    57
+   ]
+  },
+  {
+   "id": "L1-C38",
+   "cn": "序列图",
+   "en": "sequence map",
+   "abbr": "",
+   "definition": "基因组全部DNA的核苷酸排列顺序图谱。",
+   "detail": "是基因组计划最精细层次的图谱，与转录图互补。",
+   "note": "序列图是'最精细'层次，但不等于功能信息。",
+   "pages": [
+    57
+   ]
+  },
+  {
+   "id": "L1-C39",
+   "cn": "转录图",
+   "en": "transcription map",
+   "abbr": "",
+   "definition": "标示基因组中可转录区域（表达序列）及其表达情况的图谱。",
+   "detail": "反映基因表达信息，与序列图互补，是HGP'第二张解剖图'的组成部分。",
+   "note": "转录图反映'哪些区域被转录'，不是序列本身。",
+   "pages": [
+    57
+   ]
+  },
+  {
+   "id": "L1-C40",
+   "cn": "细胞程序化凋亡",
+   "en": "programmed cell death / apoptosis",
+   "abbr": "",
+   "definition": "由遗传调控的、细胞主动有序走向死亡的生理过程，在器官发育等过程中起重要作用。",
+   "detail": "2002年诺贝尔生理学或医学奖授予John E. Sulston、Sydney Brenner与H. Robert Horvitz，表彰他们发现器官发育和细胞程序性细胞死亡的遗传调控机理。",
+   "note": "凋亡是主动、程序性的，区别于被动坏死。",
+   "pages": [
+    58
+   ]
+  },
+  {
+   "id": "L1-C41",
+   "cn": "II型RNA聚合酶",
+   "en": "RNA polymerase II",
+   "abbr": "Pol II",
+   "definition": "真核生物中负责转录蛋白质编码基因（mRNA前体）的RNA聚合酶，由12个亚基组成。",
+   "detail": "2006年Roger D. Kornberg因揭示真核细胞转录机制获诺贝尔化学奖；其研究组鉴定了Pol II 2.8Å的晶体结构，揭示全部12个亚基之间的相互关系（SCIENCE, 2001），并根据结构提出转录起始的分子路径。结构域包括Jaw、Clamp head、Clamp core、Cleft、Funnel、Active site、Pore 1、Dock、Foot、Linker、CTD、Rpb1。",
+   "note": "Arthur Kornberg（父）研究DNA复制获1959年诺贝尔生理学或医学奖；Roger D. Kornberg（子）研究转录获2006年诺贝尔化学奖，父子不可混淆。",
+   "pages": [
+    59,
+    60,
+    61
+   ]
+  },
+  {
+   "id": "L1-C42",
+   "cn": "RNA干扰",
+   "en": "RNA interference",
+   "abbr": "RNAi",
+   "definition": "由双链RNA引发的、序列特异性的基因表达沉默现象，是控制遗传信息流动的基本机制之一。",
+   "detail": "2006年度诺贝尔生理学或医学奖授予Andrew Z. Fire（斯坦福医学院病理学和遗传学教授）与Craig C. Mello（马萨诸塞州医学院分子医学教授），表彰他们发现RNA干扰现象、揭示控制遗传信息流动的基本机制。",
+   "note": "RNAi是转录后水平的序列特异性沉默，不是转录水平调控。",
+   "pages": [
+    62
+   ]
+  },
+  {
+   "id": "L1-C43",
+   "cn": "基因打靶",
+   "en": "gene targeting",
+   "abbr": "",
+   "definition": "通过同源重组等方法对小鼠基因组特定位点进行定向修饰，使特定基因失活或改变的技术。",
+   "detail": "2007年诺贝尔生理学或医学奖授予Mario Capecchi、Oliver Smithies和Martin Evans，他们利用基因靶向技术让小鼠特定基因失活，培养出基因敲除小鼠；该技术使任意改变小鼠基因变为现实，为人类遗传病研究提供药物试验动物模型。",
+   "note": "基因打靶依赖同源重组，与CRISPR/Cas9的核酸酶切割机制不同。",
+   "pages": [
+    63
+   ]
+  },
+  {
+   "id": "L1-C44",
+   "cn": "基因敲除小鼠",
+   "en": "gene knockout mouse",
+   "abbr": "",
+   "definition": "通过基因打靶技术使体内特定基因失去活性（敲除）而培育出的小鼠。",
+   "detail": "是研究基因功能与人类遗传病的重要动物模型。",
+   "note": "基因敲除≠基因敲低（knockdown），前者使基因完全失活。",
+   "pages": [
+    63
+   ]
+  },
+  {
+   "id": "L1-C45",
+   "cn": "端粒",
+   "en": "telomere",
+   "abbr": "",
+   "definition": "染色体末端的特殊结构，保护染色体不被降解、融合，并解决染色体末端复制问题。",
+   "detail": "2009年诺贝尔生理学或医学奖（第100届）授予Elizabeth H. Blackburn、Carol W. Greider、Jack W. Szostak，解决细胞分裂期间染色体如何被完整复制及如何得到保护不至退化的问题。",
+   "note": "端粒解决'末端复制问题'，与一般DNA复制机制互补。",
+   "pages": [
+    65
+   ]
+  },
+  {
+   "id": "L1-C46",
+   "cn": "端粒酶",
+   "en": "telomerase",
+   "abbr": "",
+   "definition": "形成（延伸）端粒的酶，是一种逆转录酶。",
+   "detail": "幻灯片仅称其为'形成端粒的端粒酶'，未展开机制；（补充背景：以自身RNA为模板合成端粒DNA重复序列）。",
+   "note": "端粒酶属逆转录酶，与逆转录病毒逆转录酶同属一类酶活性。",
+   "pages": [
+    65
+   ]
+  },
+  {
+   "id": "L1-C47",
+   "cn": "光学衍射极限",
+   "en": "optical diffraction limit",
+   "abbr": "",
+   "definition": "传统光学显微镜因光的衍射而无法分辨小于约0.2微米（200 nm）结构的极限。",
+   "detail": "2014年诺贝尔化学奖授予Eric Betzig、Stefan W. Hell、William E. Moerner，理由为研制出超分辨率荧光显微镜（super-resolved fluorescence microscopy），突破该极限，推动生命科学研究。",
+   "note": "数值0.2微米须原样记住。",
+   "pages": [
+    69
+   ]
+  },
+  {
+   "id": "L1-C48",
+   "cn": "DNA修复",
+   "en": "DNA repair",
+   "abbr": "",
+   "definition": "细胞识别并修复DNA损伤、保护遗传信息完整性的机制。",
+   "detail": "2015年诺贝尔化学奖授予Tomas Lindahl、Paul Modrich、Aziz Sancar，理由为DNA修复的机制研究；其工作为活细胞功能认知提供基础知识，并为癌症治疗发展提供帮助。",
+   "note": "幻灯片未列出具体修复途径（如碱基切除修复、核苷酸切除修复、错配修复）。",
+   "pages": [
+    70
+   ]
+  },
+  {
+   "id": "L1-C49",
+   "cn": "昼夜节律",
+   "en": "circadian rhythm",
+   "abbr": "",
+   "definition": "生物体内约24小时周期的内源性节律，由分子机制控制。",
+   "detail": "2017年诺贝尔生理学或医学奖授予Jeffrey C. Hall、Michael Rosbash、Michael W. Young，三人各获1/3奖金，理由为发现控制昼夜节律的分子机制。",
+   "note": "幻灯片未列出具体基因（如period）。",
+   "pages": [
+    71
+   ]
+  },
+  {
+   "id": "L1-C50",
+   "cn": "PD-1",
+   "en": "programmed cell death protein 1",
+   "abbr": "PD-1",
+   "definition": "活化T淋巴细胞上的诱导型基因/受体，属免疫检查点分子，阻断后可增强抗肿瘤免疫。",
+   "detail": "1992年本庶佑首先鉴定PD-1为活化T淋巴细胞上的诱导型基因，为PD-1阻断建立癌症免疫治疗原理做出重大贡献，2013年被《Science》评为年度十大科学突破之首；2018年诺贝尔生理学或医学奖授予James P. Alison与Tasuku Honjo，主题为肿瘤免疫治疗。",
+   "note": "艾利森以CTLA-4研究著称（补充背景），幻灯片未提CTLA-4。",
+   "pages": [
+    72
+   ]
+  },
+  {
+   "id": "L1-C51",
+   "cn": "免疫检查点",
+   "en": "immune checkpoint",
+   "abbr": "",
+   "definition": "抑制T细胞过度活化的负调控机制，肿瘤可利用其逃避免疫攻击。",
+   "detail": "幻灯片用免疫系统'刹车'比喻；艾利森对T细胞发育和激活以及免疫系统'刹车'的研究，为癌症治疗开创释放免疫系统自身能力攻击肿瘤的免疫治疗思路。",
+   "note": "幻灯片未使用checkpoint一词，以'刹车'表述。",
+   "pages": [
+    72
+   ]
+  },
+  {
+   "id": "L1-C52",
+   "cn": "酶的定向演化",
+   "en": "directed evolution of enzymes",
+   "abbr": "",
+   "definition": "通过反复的随机突变与定向筛选，在实验室中人为改造酶的性质（活性、稳定性、底物特异性等）的技术。",
+   "detail": "2018年诺贝尔化学奖授予Frances H. Arnold（酶的定向演化）、George P. Smith与Sir Gregory P. Winter（多肽和抗体的噬菌体呈现技术）。",
+   "note": "定向演化是'突变+筛选'的循环，不是理性设计。",
+   "pages": [
+    73
+   ]
+  },
+  {
+   "id": "L1-C53",
+   "cn": "噬菌体呈现技术",
+   "en": "phage display",
+   "abbr": "",
+   "definition": "将外源多肽或抗体片段与噬菌体外壳蛋白融合表达并展示于噬菌体表面，从而通过亲和筛选获得特异性结合分子的技术。",
+   "detail": "2018年诺贝尔化学奖授予George P. Smith与Sir Gregory P. Winter；Winter是治疗性单克隆抗体的先驱，发明了'拟人化'（1986年）和全拟人化的噬菌体展示技术。",
+   "note": "幻灯片写作'噬菌体呈现技术'，英文为phage display。",
+   "pages": [
+    73
+   ]
+  },
+  {
+   "id": "L1-C54",
+   "cn": "低氧诱导因子1α",
+   "en": "hypoxia-inducible factor 1α",
+   "abbr": "HIF-1α",
+   "definition": "介导细胞低氧应答的转录因子亚基，其蛋白稳定性受氧浓度调控。",
+   "detail": "2019年诺贝尔生理学或医学奖授予William G. Kaelin Jr、Sir Peter J. Ratcliffe、Gregg L. Semenza，理由为发现细胞如何感知和适应氧气的可用性；常氧下HIF-1α被脯氨酰羟化，被VHL识别后经蛋白酶体降解；低氧下不被羟化降解，进入细胞核与ARNT结合，结合HRE激活靶基因转录。",
+   "note": "HIF-1α的调控在蛋白质降解水平，不是转录水平。",
+   "pages": [
+    74
+   ]
+  },
+  {
+   "id": "L1-C55",
+   "cn": "低氧应答元件",
+   "en": "hypoxia response element",
+   "abbr": "HRE",
+   "definition": "低氧诱导因子复合物结合的DNA顺式作用元件，位于低氧应答基因的调控区。",
+   "detail": "低氧下HIF-1α与ARNT结合形成复合物，结合到HRE上激活下游基因转录。",
+   "note": "HRE是DNA元件，HIF-1α是蛋白因子，二者不可混。",
+   "pages": [
+    74
+   ]
+  },
+  {
+   "id": "L1-C56",
+   "cn": "脯氨酰羟化",
+   "en": "prolyl hydroxylation",
+   "abbr": "",
+   "definition": "在HIF-1α特定脯氨酸残基上加羟基的翻译后修饰，依赖氧，是氧感知的关键步骤。",
+   "detail": "常氧下HIF-1α发生脯氨酰羟化（加OH），被VHL识别并结合，介导其进入蛋白酶体降解。",
+   "note": "羟化是'氧感知'的化学基础，低氧时该修饰不能进行。",
+   "pages": [
+    74
+   ]
+  },
+  {
+   "id": "L1-C57",
+   "cn": "CRISPR-Cas9基因剪刀",
+   "en": "CRISPR-Cas9 genetic scissors",
+   "abbr": "",
+   "definition": "由向导RNA引导Cas9核酸酶在特定位点切割DNA的基因编辑系统。",
+   "detail": "2020年诺贝尔化学奖授予Emmanuelle Charpentier与Jennifer A. Doudna，理由为证明CRISPR-Cas9基因剪刀的准确和有效性；CRISPR来自微生物的免疫系统，效率比TALEN等其他基因编辑技术更高，但可能产生脱靶效应。",
+   "note": "CRISPR/Cas9靠gRNA与靶DNA碱基互补配对识别靶序列，不同于TALEN的蛋白-DNA识别。",
+   "pages": [
+    75,
+    76,
+    78
+   ]
+  },
+  {
+   "id": "L1-C58",
+   "cn": "基因编辑",
+   "en": "genome editing",
+   "abbr": "",
+   "definition": "利用人工核酸酶在基因组特定位点造成双链断裂，进而通过修复途径实现基因敲除、替换或插入的技术。",
+   "detail": "三代代表性技术及年份：Zinc finger nuclease (ZFN, 1996)；TALE & TALENs (2010)；CRISPR/Cas system (2013)。",
+   "note": "年份须记准：ZFN 1996、TALEN 2010、CRISPR/Cas 2013。",
+   "pages": [
+    76
+   ]
+  },
+  {
+   "id": "L1-C59",
+   "cn": "锌指核酸酶",
+   "en": "zinc finger nuclease",
+   "abbr": "ZFN",
+   "definition": "由锌指DNA结合结构域与FokI核酸酶结构域融合而成的人工核酸酶。",
+   "detail": "幻灯片标注年份为1996，是基因编辑三代技术中最早的一代。",
+   "note": "ZFN与TALEN均使用FokI核酸酶结构域，需二聚化切割。",
+   "pages": [
+    76
+   ]
+  },
+  {
+   "id": "L1-C60",
+   "cn": "转录激活因子样效应物核酸酶",
+   "en": "transcription activator-like effector nuclease",
+   "abbr": "TALEN",
+   "definition": "由TALE的DNA结合结构域与FokI核酸酶结构域融合而成的人工核酸酶，需左右两个单体二聚化才能切割。",
+   "detail": "幻灯片标注TALE & TALENs为2010年；TALEN通过左右两个单体的DNA结合结构域分别识别靶序列两侧，FokI结构域二聚化后在间隔区切割DNA。",
+   "note": "TALEN需两个单体二聚化，单个单体不能切割。",
+   "pages": [
+    76
+   ]
+  },
+  {
+   "id": "L1-C61",
+   "cn": "脱靶效应",
+   "en": "off-target effect",
+   "abbr": "",
+   "definition": "基因编辑工具在非目标位点造成切割或修饰的现象。",
+   "detail": "幻灯片原文写作'误伤目标'；CRISPR虽有许多优点，在人类癌细胞系列中也可能产生大量脱靶，尤其是对不希望改变的基因做修改。",
+   "note": "脱靶是基因编辑临床应用的主要风险之一。",
+   "pages": [
+    78
+   ]
+  },
+  {
+   "id": "L1-C62",
+   "cn": "辣椒素",
+   "en": "capsaicin",
+   "abbr": "",
+   "definition": "辣椒中的活性成分，可特异性激活对热敏感的伤害感受器。",
+   "detail": "2021年诺贝尔生理学或医学奖授予David Julius与Ardem Patapoutian，理由为发现温度和触觉受体；Julius利用辣椒素识别皮肤神经末梢上对热做出反应的感应器，Patapoutian利用压力敏感细胞发现对机械刺激作出反应的新型感应器。",
+   "note": "辣椒素是工具分子，用于识别热感应器。",
+   "pages": [
+    79
+   ]
+  },
+  {
+   "id": "L1-C63",
+   "cn": "古基因组学",
+   "en": "paleogenomics",
+   "abbr": "",
+   "definition": "研究已灭绝生物（如古人类）基因组序列的学科，通过从古代样本中提取并测序DNA来重建进化历史。",
+   "detail": "2022年诺贝尔生理学或医学奖授予斯万特·帕博（Svante Pääbo），理由为关于已灭绝人类基因组和人类进化的发现；帕博建立该全新学科，揭示现存人类与灭绝古人类之间的基因差异。",
+   "note": "帕博是瑞典生物学家、进化遗传学专家。",
+   "pages": [
+    80
+   ]
+  },
+  {
+   "id": "L1-C64",
+   "cn": "核苷碱基修饰",
+   "en": "nucleoside base modification",
+   "abbr": "",
+   "definition": "在核苷酸的碱基上引入化学修饰（如甲基化），改变其结构。",
+   "detail": "2023年诺贝尔生理学或医学奖授予Katalin Karikó与Drew Weissman，理由为关于核苷碱基修饰的发现使开发有效的抗COVID-19 mRNA疫苗成为可能；修饰后的mRNA可逃避先天免疫识别受体，降低副作用，提高翻译效率。",
+   "note": "幻灯片文字写作'核酸的甲基化'，诺奖官方表述为nucleoside base modifications。",
+   "pages": [
+    81
+   ]
+  },
+  {
+   "id": "L1-C65",
+   "cn": "微小RNA",
+   "en": "microRNA",
+   "abbr": "miRNA",
+   "definition": "一类长度约21–23 nt的内源非编码小RNA，通过与靶mRNA互补配对在转录后水平抑制基因表达。",
+   "detail": "2024年诺贝尔生理学或医学奖授予Victor Ambros（马萨诸塞大学医学院，美国发育生物学家）与Gary Ruvkun（哈佛大学，美国分子生物学家），表彰他们发现微小RNA（lin-4、let-7）及其在转录后基因调控中的作用；lin-4与let-7最初均在线虫中发现。",
+   "note": "miRNA作用层次为转录后，而非转录水平。",
+   "pages": [
+    82
+   ]
+  },
+  {
+   "id": "L1-C66",
+   "cn": "转录后基因调控",
+   "en": "post-transcriptional gene regulation",
+   "abbr": "",
+   "definition": "在转录完成后对mRNA稳定性、翻译效率等环节进行的调控。",
+   "detail": "miRNA通过与靶mRNA互补配对在转录后水平抑制基因表达，是该调控层次的代表机制。",
+   "note": "转录后调控≠转录调控，前者发生在RNA生成之后。",
+   "pages": [
+    82
+   ]
+  },
+  {
+   "id": "L1-C67",
+   "cn": "蛋白质变性理论",
+   "en": "protein denaturation theory",
+   "abbr": "",
+   "definition": "解释蛋白质在理化因素作用下空间构象破坏、生物活性丧失的理论。",
+   "detail": "吴宪在20世纪20年代与汪猷、张昌颖等人一道完成蛋白质变性理论、血液生化检测和免疫化学等一系列有重大影响的研究。",
+   "note": "变性涉及空间构象破坏，一级结构通常不变。",
+   "pages": [
+    83
+   ]
+  },
+  {
+   "id": "L1-C68",
+   "cn": "三方二锌猪胰岛素",
+   "en": "2Zn porcine insulin",
+   "abbr": "",
+   "definition": "含两个锌离子的猪胰岛素三方晶型，是胰岛素晶体学研究的经典材料。",
+   "detail": "中国于70年代初测定三方二锌猪胰岛素的三维结构，是亚洲第一个蛋白质晶体结构；1986年完成1.2埃（Å）高分辨率修正工作；图示4 Å分辨率结构模型（1970年）与1.8 Å分辨率原子结构模型（1973年）。",
+   "note": "'三方'指三方晶系（trigonal）。",
+   "pages": [
+    83,
+    84
+   ]
+  },
+  {
+   "id": "L1-C69",
+   "cn": "酵母丙氨酸转移核糖核酸",
+   "en": "yeast alanine transfer RNA",
+   "abbr": "tRNA^Ala",
+   "definition": "酵母中携带丙氨酸的转移RNA，是首个被人工全合成的具有生物活性的RNA分子。",
+   "detail": "中国科学家采用有机合成与酶促相结合的方法完成其人工全合成；同期还实现了人工全合成有生物学活性的结晶牛胰岛素、解出三方二锌猪胰岛素晶体结构。",
+   "note": "该成就是中国在核酸化学领域的重要贡献。",
+   "pages": [
+    83
+   ]
+  },
+  {
+   "id": "L1-C70",
+   "cn": "青蒿素",
+   "en": "Artemisinin",
+   "abbr": "",
+   "definition": "从黄花蒿（Artemisia annua）中提取的含过氧桥的倍半萜内酯类抗疟药物。",
+   "detail": "2015年诺贝尔生理学或医学奖授予William C. Campbell、Satoshi Omura（大村智）与Youyou Tu（屠呦呦）；屠呦呦是第一位获得诺贝尔科学奖项的中国本土科学家、第一位获得诺贝尔生理医学奖的华人科学家；'青蒿素是传统中医药送给世界人民的礼物'。",
+   "note": "植物来源为黄花蒿（Artemisia annua），不是'青蒿'。",
+   "pages": [
+    86
+   ]
+  },
+  {
+   "id": "L1-C71",
+   "cn": "基因组",
+   "en": "genome",
+   "abbr": "GENOME",
+   "definition": "生物体内遗传信息的集合，是某个特定物种细胞内全部DNA分子的总和；用于描述生物的全部基因和染色体组成。",
+   "detail": "1920年由Winkles从GENes和chromosOEs铸成（拼合词）；人类基因组包括23对染色体，单倍体细胞中约有30亿对核苷酸，编码了2.7-3万个基因。",
+   "note": "基因组指全部DNA，不等于全部基因。",
+   "pages": [
+    100
+   ]
+  },
+  {
+   "id": "L1-C72",
+   "cn": "基因组学",
+   "en": "Genomics",
+   "abbr": "",
+   "definition": "对所有基因进行基因组作图（包括遗传图谱、物理图谱、转录本图谱）、核苷酸序列分析、基因定位和基因功能分析的一门科学。",
+   "detail": "1986年由美国科学家Thomas Roderick提出；基因组作图包括遗传图谱、物理图谱、转录本图谱三类。",
+   "note": "基因组学包含作图、测序、定位与功能分析，范围大于单纯测序。",
+   "pages": [
+    101
+   ]
+  },
+  {
+   "id": "L1-C73",
+   "cn": "结构基因组学",
+   "en": "structural genomics",
+   "abbr": "",
+   "definition": "以全基因组测序为目标的基因组学研究方向。",
+   "detail": "与功能基因组学相对；功能基因组学以基因功能鉴定为目标，又称后基因组（postgenome）。",
+   "note": "结构基因组学≠结构分子生物学：前者目标是测序，后者研究大分子三维结构与功能。",
+   "pages": [
+    101
+   ]
+  },
+  {
+   "id": "L1-C74",
+   "cn": "功能基因组学",
+   "en": "functional genomics",
+   "abbr": "",
+   "definition": "以基因功能鉴定为目标的基因组学研究方向，又被称为后基因组（postgenome）。",
+   "detail": "蛋白组计划（功能基因组计划）的提出和实施，将快速、高效、大规模鉴定基因的产物和功能。",
+   "note": "功能基因组学=后基因组研究，目标在功能而非序列。",
+   "pages": [
+    99,
+    101
+   ]
+  },
+  {
+   "id": "L1-C75",
+   "cn": "生物信息学",
+   "en": "bioinformatics",
+   "abbr": "",
+   "definition": "依靠计算机快速高效运算，对基因组学产生的庞大数据进行统计分类和结构功能预测的学科。",
+   "detail": "将最大限度地开发和运用基因组学所产生的庞大数据。",
+   "note": "生物信息学是数据处理手段，不直接做湿实验。",
+   "pages": [
+    99
+   ]
+  },
+  {
+   "id": "L1-C76",
+   "cn": "结构分子生物学",
+   "en": "structural molecular biology",
+   "abbr": "",
+   "definition": "研究生物大分子特定的空间结构及结构的运动变化与其生物学功能关系的科学。",
+   "detail": "主要研究方向：(1)结构的测定；(2)结构运动变化规律的探索；(3)结构与功能相互关系的建立。",
+   "note": "与结构基因组学区分：前者研究结构与功能关系，后者以测序为目标。",
+   "pages": [
+    96
+   ]
+  },
+  {
+   "id": "L1-C77",
+   "cn": "X射线衍射晶体学",
+   "en": "X-ray crystallography / protein crystallography",
+   "abbr": "",
+   "definition": "利用X射线在蛋白质晶体中的衍射图样解析生物大分子三维原子结构的方法。",
+   "detail": "又称蛋白质晶体学，需先获得高质量晶体；流程为获得高质量晶体→收集衍射数据→相位解析→电子密度图构建模型→结构精修；分辨率数值越小（如1.2 Å）结构越精细。",
+   "note": "与NMR互补：晶体学需晶体，NMR测溶液中结构。",
+   "pages": [
+    84,
+    97
+   ]
+  },
+  {
+   "id": "L1-C78",
+   "cn": "核磁共振法",
+   "en": "Nuclear Magnetic Resonance spectroscopy",
+   "abbr": "NMR",
+   "definition": "二维和多维核磁共振用于测定溶液中生物大分子的液相结构。",
+   "detail": "与晶体学互补，适用于溶液状态、较小分子；与X射线衍射晶体学、电镜三维重组、电子衍射、中子衍射和各种频谱学方法并列。",
+   "note": "NMR测的是溶液状态结构，不需要晶体。",
+   "pages": [
+    97
+   ]
+  },
+  {
+   "id": "L1-C79",
+   "cn": "电镜三维重组",
+   "en": "electron microscopy 3D reconstruction",
+   "abbr": "",
+   "definition": "通过电子显微镜成像并进行三维重建获得生物大分子空间结构的方法。",
+   "detail": "与X射线衍射晶体学、二维和多维核磁共振法、电子衍射、中子衍射和各种频谱学方法并列，是研究生物高分子空间结构的方法之一。",
+   "note": "冷冻电镜（Cryo-EM）是电镜三维重组的重要实现方式（补充背景）。",
+   "pages": [
+    97,
+    103
+   ]
+  },
+  {
+   "id": "L1-C80",
+   "cn": "AlphaFold",
+   "en": "AlphaFold",
+   "abbr": "",
+   "definition": "DeepMind开发的蛋白质结构预测人工智能模型，后续版本AlphaFold3可预测蛋白质、DNA、RNA及配体的结构及相互作用。",
+   "detail": "2020年AlphaFold能对人类蛋白质组58%的氨基酸的结构位置给出可信预测；2021年98.5%（35万个）人类蛋白结构预测（Nature论文'Highly accurate protein structure prediction for the human proteome'）；2022年预测超过100万个物种的2.14亿个蛋白质结构，约35%具高精度、80%可靠性可用于后续分析；2024年5月8日DeepMind与Isomorphic Labs在Nature发布AlphaFold3。数据库网址 https://alphafold.ebi.ac.uk/。",
+   "note": "AI预测结构精度提高，但湿实验验证仍是金标准。",
+   "pages": [
+    98,
+    103
+   ]
+  },
+  {
+   "id": "L1-C81",
+   "cn": "冷冻电镜",
+   "en": "Cryo-Electron Microscopy",
+   "abbr": "Cryo-EM",
+   "definition": "低温冷冻制样后用电子显微镜成像并重建生物大分子结构的技术。",
+   "detail": "幻灯片将其列为AI使能的生物图像分析方向之一（细胞表型分析、冷冻电镜重建、数字病理学）。",
+   "note": "Cryo-EM属电镜三维重组的现代实现。",
+   "pages": [
+    103
+   ]
+  },
+  {
+   "id": "L1-C82",
+   "cn": "DNA重组技术",
+   "en": "DNA recombinant technology / genetic engineering",
+   "abbr": "",
+   "definition": "20世纪70年代初兴起的技术，能将不同DNA片段按照设计定向连接，在特定受体细胞中复制并表达，产生影响受体细胞的新的遗传性状。",
+   "detail": "又称基因工程；是核酸化学、蛋白质化学、酶工程及微生物学、遗传学、细胞学长期深入研究的结晶；限制性内切酶、DNA连接酶及其他工具酶的发现与应用是其关键；1972年Boyer获得第一个重组DNA分子。应用：大量生产正常细胞代谢中产量很低的多肽、定向改造生物基因组结构、基础研究。",
+   "note": "1972年Boyer获得第一个重组DNA分子，与1980年Berg获诺奖的'第一次DNA重组'表述需按幻灯片原文区分。",
+   "pages": [
+    41,
+    91,
+    92
+   ]
+  },
+  {
+   "id": "L1-C83",
+   "cn": "限制性内切酶",
+   "en": "restriction endonuclease",
+   "abbr": "",
+   "definition": "识别特定DNA序列并切割双链的酶，是基因克隆的关键工具酶。",
+   "detail": "与DNA连接酶配对使用：切与接；其发现与应用是DNA重组技术的关键。",
+   "note": "限制酶负责'切'，连接酶负责'接'。",
+   "pages": [
+    92
+   ]
+  },
+  {
+   "id": "L1-C84",
+   "cn": "DNA连接酶",
+   "en": "DNA ligase",
+   "abbr": "",
+   "definition": "催化DNA片段间磷酸二酯键形成、将片段共价连接的酶。",
+   "detail": "是重组技术的关键工具酶之一，与限制性内切酶配对使用。",
+   "note": "连接酶形成磷酸二酯键，不是氢键。",
+   "pages": [
+    92
+   ]
+  },
+  {
+   "id": "L1-C85",
+   "cn": "pBR322质粒",
+   "en": "pBR322 plasmid",
+   "abbr": "",
+   "definition": "含ampR、tetR抗性基因和ori复制起点的经典克隆载体。",
+   "detail": "重组DNA操作中，外源DNA插入tetR基因内导致其失活，是插入失活筛选的原理；先在含Tet培养基上使所有带质粒菌落生长，再影印到含Amp+Tet培养基，在Amp+Tet上不能生长、在Tet上能生长的菌落即含重组质粒。",
+   "note": "插入失活筛选的原理须掌握：外源片段插入tetR使其失活。",
+   "pages": [
+    93
+   ]
+  },
+  {
+   "id": "L1-C86",
+   "cn": "基因表达",
+   "en": "gene expression",
+   "abbr": "",
+   "definition": "遗传信息经转录和翻译转变为蛋白质等功能产物的过程。",
+   "detail": "蛋白质分子控制了细胞的一切代谢活动，而决定蛋白质结构和合成时序的信息都由核酸分子编码；基因表达实质上就是遗传信息的转录和翻译过程。",
+   "note": "基因表达调控可在转录、加工、转运、降解、翻译、蛋白质活性六个层次进行。",
+   "pages": [
+    94,
+    95
+   ]
+  },
+  {
+   "id": "L1-C87",
+   "cn": "RNA剪接",
+   "en": "RNA splicing",
+   "abbr": "",
+   "definition": "去除内含子、连接外显子生成成熟mRNA的过程。",
+   "detail": "对应基因表达多级调控中的第2步RNA加工调控；断裂基因转录产生初级转录本后经剪接形成成熟转录本。",
+   "note": "剪接是RNA加工的核心事件之一。",
+   "pages": [
+    47,
+    95
+   ]
+  },
+  {
+   "id": "L1-C88",
+   "cn": "转录因子",
+   "en": "transcription factor",
+   "abbr": "",
+   "definition": "与DNA特定序列结合以激活或抑制转录的蛋白质。",
+   "detail": "对应基因表达多级调控中的第1步转录调控；基因表达调控研究方向包括信号转导研究、转录因子研究、RNA剪接研究。",
+   "note": "转录因子作用于DNA，不是RNA。",
+   "pages": [
+    95
+   ]
+  },
+  {
+   "id": "L1-C89",
+   "cn": "钙调蛋白",
+   "en": "calmodulin",
+   "abbr": "",
+   "definition": "一种钙离子结合蛋白，介导钙信号传递。",
+   "detail": "图中(a)所示，以α螺旋为主，含EF手型结构。",
+   "note": "钙调蛋白是钙信号介导者，不是酶本身。",
+   "pages": [
+    96
+   ]
+  },
+  {
+   "id": "L1-C90",
+   "cn": "Dicer",
+   "en": "Dicer",
+   "abbr": "",
+   "definition": "将双链RNA切割为小干扰RNA（siRNA）的核酸内切酶。",
+   "detail": "图中(b)所示，为多结构域RNA酶III类酶，参与RNA干扰（RNAi）。",
+   "note": "Dicer作用于双链RNA，是RNAi通路的关键酶。",
+   "pages": [
+    96
+   ]
+  },
+  {
+   "id": "L1-C91",
+   "cn": "血红蛋白",
+   "en": "hemoglobin",
+   "abbr": "",
+   "definition": "红细胞中运输氧的四聚体蛋白，含血红素辅基。",
+   "detail": "图中(c)所示，是研究别构效应（allostery）的经典模型。",
+   "note": "血红蛋白是四聚体，与肌红蛋白（单体）区分。",
+   "pages": [
+    96
+   ]
+  },
+  {
+   "id": "L1-C92",
+   "cn": "单体",
+   "en": "monomer",
+   "abbr": "",
+   "definition": "构成生物大分子的基本重复单元，如氨基酸、核苷酸、单糖。",
+   "detail": "基本定理1：构成生物体有机大分子的单体在不同生物中都是相同的（补充背景：如20种标准氨基酸、4种脱氧核糖核苷酸）。",
+   "note": "单体种类跨物种保守，是基本定理1的核心。",
+   "pages": [
+    89
+   ]
+  },
+  {
+   "id": "L1-C93",
+   "cn": "生物大分子",
+   "en": "biological macromolecule",
+   "abbr": "",
+   "definition": "细胞内相对分子质量很大的有机分子，主要包括核酸、蛋白质、多糖。",
+   "detail": "本课程核心对象为核酸与蛋白质；基本定理2：生物体内一切有机大分子的构成都遵循共同的规则；基本定理3：某一特定生物体所拥有的核酸及蛋白质分子决定了它的属性。",
+   "note": "三条基本定理须能复述。",
+   "pages": [
+    89
+   ]
+  },
+  {
+   "id": "L1-C94",
+   "cn": "核糖体",
+   "en": "ribosome",
+   "abbr": "",
+   "definition": "蛋白质合成的场所，由rRNA与核糖体蛋白组成。",
+   "detail": "相对分子质量2.5×10^6，体积20 nm×20 nm×23 nm；2009年诺贝尔化学奖授予Venkatraman Ramakrishnan、Thomas A. Steitz、Ada E. Yonath，理由为对核糖体结构与功能的研究。",
+   "note": "核糖体尺寸数据须记：2.5×10^6，20×20×23 nm。",
+   "pages": [
+    66,
+    90
+   ]
+  },
+  {
+   "id": "L1-C95",
+   "cn": "核小体",
+   "en": "nucleosome",
+   "abbr": "",
+   "definition": "染色质的基本结构单位，由DNA缠绕组蛋白八聚体形成。",
+   "detail": "相对分子质量3.0×10^5，体积6 nm×11 nm×11 nm；人中等大小染色体长约5 μm、宽约1 μm，远大于单个核小体，体现DNA的多级压缩。",
+   "note": "核小体尺寸数据须记：3.0×10^5，6×11×11 nm。",
+   "pages": [
+    90
+   ]
+  },
+  {
+   "id": "L1-C96",
+   "cn": "DNA双螺旋尺寸",
+   "en": "DNA double helix dimensions",
+   "abbr": "",
+   "definition": "DNA双螺旋直径2.0 nm，每个碱基对（base pair, bp）沿轴上升0.34 nm。",
+   "detail": "该定量数据是理解DNA包装与电镜观察尺度的基础。",
+   "note": "直径2.0 nm、每bp 0.34 nm须原样记住。",
+   "pages": [
+    90
+   ]
+  },
+  {
+   "id": "L1-C97",
+   "cn": "人乳头状瘤病毒",
+   "en": "human papillomavirus",
+   "abbr": "HPV",
+   "definition": "导致子宫颈癌的致病病毒。",
+   "detail": "2008年诺贝尔生理学或医学奖授予哈拉尔德·楚尔·豪森（德国癌症研究中心），因其发现导致子宫颈癌的HPV；同届Françoise Barré-Sinoussi与Luc Montagnier发现HIV。",
+   "note": "幻灯片仅给出与子宫颈癌的因果关系，未涉及分型。",
+   "pages": [
+    64
+   ]
+  },
+  {
+   "id": "L1-C98",
+   "cn": "人类免疫缺陷病毒",
+   "en": "human immunodeficiency virus",
+   "abbr": "HIV",
+   "definition": "即艾滋病病毒，是引起艾滋病的病原体。",
+   "detail": "2008年诺贝尔生理学或医学奖授予弗朗索瓦丝·巴尔-西诺西（法国巴斯德研究中心）与吕克·蒙塔尼（巴黎大学），因其发现HIV。",
+   "note": "HIV与HPV是不同病毒，不可混淆。",
+   "pages": [
+    64
+   ]
+  },
+  {
+   "id": "L1-C99",
+   "cn": "体外受精",
+   "en": "in vitro fertilization",
+   "abbr": "IVF",
+   "definition": "在体外使卵子与精子结合形成受精卵，再将胚胎移植回母体发育的技术。",
+   "detail": "2010年诺贝尔生理学或医学奖授予英国生理学家罗伯特·爱德华兹（Robert Edwards），表彰其在IVF技术领域的开创性贡献。",
+   "note": "幻灯片只给出'体外受精技术领域'表述，未讲操作流程。",
+   "pages": [
+    67
+   ]
+  },
+  {
+   "id": "L1-C100",
+   "cn": "细胞核重编程",
+   "en": "nuclear reprogramming",
+   "abbr": "",
+   "definition": "将成年体细胞重新诱导回早期干细胞状态，以用于形成各种类型的细胞，应用于临床医学。",
+   "detail": "2012年诺贝尔生理学或医学奖授予山中伸弥（Shinya Yamanaka）与约翰·戈登（John Gurdon），表彰其在细胞核重新编程研究领域的杰出贡献。",
+   "note": "幻灯片未提及具体因子（如iPS相关基因）。",
+   "pages": [
+    68
+   ]
+  }
+ ],
+ "processes": [
+  {
+   "id": "L1-P01",
+   "name": "中心法则信息流",
+   "en": "Central Dogma information flow",
+   "overview": "遗传信息由DNA经转录、RNA加工、转运，在核糖体上翻译为蛋白质。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "转录",
+     "detail": "DNA在细胞核内转录（Transcription）生成初级转录本（Primary Transcript）。"
+    },
+    {
+     "n": 2,
+     "name": "RNA加工",
+     "detail": "初级转录本经RNA加工（RNA Processing）生成成熟mRNA。"
+    },
+    {
+     "n": 3,
+     "name": "转运",
+     "detail": "mRNA转运（Transport）出核。"
+    },
+    {
+     "n": 4,
+     "name": "翻译",
+     "detail": "在核糖体（Ribosome）上翻译、合成（Translation, Synthesis）蛋白质。"
+    }
+   ],
+   "key_points": [
+    "信息流方向单向：DNA→RNA→蛋白质",
+    "各步骤在细胞核内或核外特定区室完成",
+    "基因表达可在转录、RNA加工、翻译、翻译后、蛋白质活性等多层次被调控"
+   ],
+   "regulation": [
+    "转录水平控制",
+    "RNA加工控制",
+    "翻译控制",
+    "翻译后控制",
+    "蛋白质活性控制"
+   ],
+   "figures": [
+    "中心法则信息流示意图（Nucleus、DNA、Transcription、Primary Transcript、RNA Processing、mRNA、Transport、Ribosome、Translation, Synthesis、PROTEIN）",
+    "DNA、RNA、PROTEIN三者实线与虚线箭头关系图（虚线示反转录、RNA复制等扩展形式）"
+   ],
+   "pages": [
+    9,
+    34
+   ]
+  },
+  {
+   "id": "L1-P02",
+   "name": "Griffith肺炎链球菌转化实验",
+   "en": "Griffith's pneumococcal transformation experiment",
+   "overview": "用四组小鼠注射实验证明加热杀死的S型菌可将活R型菌转化为致病S型菌。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "注射活的S型菌",
+     "detail": "小鼠死亡（mouse dies），说明S型菌有致病力。"
+    },
+    {
+     "n": 2,
+     "name": "注射活的R型菌",
+     "detail": "小鼠存活（mouse lives），说明R型菌无致病力。"
+    },
+    {
+     "n": 3,
+     "name": "注射加热杀死的S型菌",
+     "detail": "小鼠存活，说明加热杀死的S型菌丧失致病能力。"
+    },
+    {
+     "n": 4,
+     "name": "混合注射加热杀死的S型菌与活的R型菌",
+     "detail": "小鼠死亡，并从死亡小鼠中回收得到活的致病性S型菌（living, pathogenic S strain recovered）。"
+    }
+   ],
+   "key_points": [
+    "Griffith当时不知转化源是DNA，只称之为'转化因子（transforming principle）'",
+    "转化产生的S型菌性状可遗传",
+    "该实验为证明基因由DNA组成的实验建立平台"
+   ],
+   "regulation": [],
+   "figures": [
+    "Griffith四组小鼠注射实验示意图（Figure 5-3 Essential Cell Biology 3/e, © Garland Science 2010）"
+   ],
+   "pages": [
+    17
+   ]
+  },
+  {
+   "id": "L1-P03",
+   "name": "Avery肺炎双球菌体外转化实验",
+   "en": "Avery's in vitro transformation experiment",
+   "overview": "将S型菌无细胞提取物分级分离为不同类分子，分别测试其转化R型菌的能力，证明转化因子是DNA。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "制备无细胞提取物",
+     "detail": "从S型菌（S-strain cells）制备无细胞提取物（cell-free extract）。"
+    },
+    {
+     "n": 2,
+     "name": "分级分离",
+     "detail": "将提取物分级分离为RNA、蛋白质（protein）、DNA、脂质（lipid）、碳水化合物（carbohydrate）五类分子。"
+    },
+    {
+     "n": 3,
+     "name": "分别测试转化能力",
+     "detail": "分别用各类分子测试对R型菌的转化（molecules tested for transformation of R-strain cells）。"
+    },
+    {
+     "n": 4,
+     "name": "结果判定",
+     "detail": "只有DNA组分使R型菌转化为S型菌，其余组分均仍为R型菌；结论：携带可遗传信息的分子是DNA。"
+    }
+   ],
+   "key_points": [
+    "1944年完成，证明基因就是DNA分子，提出DNA是遗传信息的载体",
+    "与Griffith的区别：Avery通过分级分离纯化各组分，证明转化因子是DNA"
+   ],
+   "regulation": [],
+   "figures": [
+    "Avery转化实验流程图（Figure 5-4 Essential Cell Biology 3/e, © Garland Science 2010）",
+    "简化示意图（The transforming principle is DNA，©virtualtext www.ergito.com）"
+   ],
+   "pages": [
+    18,
+    19,
+    20
+   ]
+  },
+  {
+   "id": "L1-P04",
+   "name": "Hershey–Chase噬菌体侵染实验",
+   "en": "Hershey–Chase experiment",
+   "overview": "用32P标记DNA、35S标记蛋白质，追踪侵染后两种标记的去向，证明DNA是噬菌体的遗传物质。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "同位素标记",
+     "detail": "分别用32P标记DNA的噬菌体和35S标记蛋白质的噬菌体。"
+    },
+    {
+     "n": 2,
+     "name": "侵染",
+     "detail": "让标记噬菌体侵染E. coli。"
+    },
+    {
+     "n": 3,
+     "name": "搅拌",
+     "detail": "用搅拌器（blender）使空病毒外壳从细菌上脱落。"
+    },
+    {
+     "n": 4,
+     "name": "离心",
+     "detail": "离心（centrifuge）分离，检测沉淀中细菌所含的放射性标记。"
+    },
+    {
+     "n": 5,
+     "name": "结果判定",
+     "detail": "被感染的细菌含32P而不含35S，说明DNA进入细菌细胞、蛋白质外壳未进入。"
+    }
+   ],
+   "key_points": [
+    "32P标记DNA（DNA含磷），35S标记蛋白质（蛋白质含硫）",
+    "1952年完成，原始文献：Hershey, A. D. and Martha Chase. J. Gen. Physiol., 36(1):39-56, September 20, 1952",
+    "证明DNA是可以进入寄主细胞的转染因子"
+   ],
+   "regulation": [],
+   "figures": [
+    "Hershey–Chase实验流程图（Figure 5-5b Essential Cell Biology 3/e, © Garland Science 2010）",
+    "噬菌体侵染大肠杆菌示意图（Figure 5-5a）"
+   ],
+   "pages": [
+    21,
+    22,
+    23
+   ]
+  },
+  {
+   "id": "L1-P05",
+   "name": "转染实验（TK基因）",
+   "en": "transfection experiment",
+   "overview": "将外源TK+ DNA导入缺乏TK基因的细胞，通过选择培养基筛选获得新基因的细胞克隆，证明DNA是动物细胞的遗传物质。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "准备受体细胞",
+     "detail": "取缺乏TK基因、不能合成胸腺嘧啶核苷激酶（thymidine kinase）的细胞。"
+    },
+    {
+     "n": 2,
+     "name": "导入DNA",
+     "detail": "加入TK+ DNA，部分细胞摄取TK基因。"
+    },
+    {
+     "n": 3,
+     "name": "选择",
+     "detail": "在缺乏胸腺嘧啶的条件下，只有获得TK基因的细胞存活并增殖成集落（colony）。"
+    }
+   ],
+   "key_points": [
+    "需可选择的标记基因与选择条件",
+    "只有摄取了TK+ DNA的细胞才能在缺乏胸腺嘧啶的条件下存活并形成集落",
+    "说明DNA（TK基因）携带可遗传信息并可在动物细胞中表达"
+   ],
+   "regulation": [],
+   "figures": [
+    "转染实验示意图（Transfection introduces new DNA into cells，©virtualtext www.ergito.com）"
+   ],
+   "pages": [
+    24
+   ]
+  },
+  {
+   "id": "L1-P06",
+   "name": "DNA半保留复制",
+   "en": "semi-conservative replication",
+   "overview": "DNA复制时双链解开，每条亲代链作为模板合成新链，子代DNA各含一条亲代链和一条新链。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "双链解开",
+     "detail": "亲代DNA双链解开。"
+    },
+    {
+     "n": 2,
+     "name": "以亲代链为模板合成",
+     "detail": "每条亲代链作为模板合成一条新链。"
+    },
+    {
+     "n": 3,
+     "name": "形成子代DNA",
+     "detail": "形成的两个子代DNA分子各含一条亲代链和一条新链；第一代全为杂合双链，第二代一半杂合、一半全新链。"
+    }
+   ],
+   "key_points": [
+    "1958年Meselson和Stahl证明",
+    "解决基因的自我复制和世代交替问题",
+    "与半不连续复制共同解释双链等速复制"
+   ],
+   "regulation": [],
+   "figures": [
+    "半保留复制示意图（深蓝色亲代链、浅蓝色新合成链）",
+    "Stahl与Meselson实验工作照片"
+   ],
+   "pages": [
+    35,
+    36
+   ]
+  },
+  {
+   "id": "L1-P07",
+   "name": "DNA半不连续复制",
+   "en": "semi-discontinuous replication",
+   "overview": "前导链连续合成、后随链不连续合成（形成冈崎片段），整体表现为半不连续，解释双链等速复制。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "前导链合成",
+     "detail": "前导链（Leading strand）沿5'→3'方向连续合成，核苷酸连续加到3'端。"
+    },
+    {
+     "n": 2,
+     "name": "后随链合成",
+     "detail": "后随链（Lagging strand）以冈崎片段形式不连续合成，涉及Previous fragment、Last fragment与Exposed single strand。"
+    }
+   ],
+   "key_points": [
+    "前导链连续、后随链不连续",
+    "解释DNA双链的等速复制",
+    "与半保留复制是两个不同概念"
+   ],
+   "regulation": [],
+   "figures": [
+    "DNA复制叉示意图（Lagging strand synthesis、Leading strand synthesis、Parental DNA、5'、3'）"
+   ],
+   "pages": [
+    36
+   ]
+  },
+  {
+   "id": "L1-P08",
+   "name": "断裂基因的转录与剪接",
+   "en": "transcription and splicing of split gene",
+   "overview": "基因中外显子与内含子相间排列，转录产生初级转录本，再经剪接去除内含子形成成熟转录本。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "基因结构",
+     "detail": "Exon 1—Intron 1—Exon 2—Intron 2—Exon 3，转录起点（Start of transcription）位于Exon 1上游。"
+    },
+    {
+     "n": 2,
+     "name": "转录",
+     "detail": "转录（Transcription）产生初级转录本（Primary transcript），仍含Intron 1与Intron 2。"
+    },
+    {
+     "n": 3,
+     "name": "剪接",
+     "detail": "剪接（Splicing）切除两个内含子，形成成熟转录本（Mature transcript）：Exon 1—Exon 2—Exon 3相连。"
+    }
+   ],
+   "key_points": [
+    "真核基因编码序列被内含子隔断",
+    "必须经剪接才能把外显子拼接为成熟mRNA",
+    "1993年Roberts和Sharp因发现断裂基因获Nobel奖"
+   ],
+   "regulation": [],
+   "figures": [
+    "断裂基因转录与剪接示意图（Gene、Start of transcription、Exon、Intron、Primary transcript、Splicing、Mature transcript）"
+   ],
+   "pages": [
+    47
+   ]
+  },
+  {
+   "id": "L1-P09",
+   "name": "四膜虫rRNA前体自我剪接",
+   "en": "self-splicing of Tetrahymena rRNA precursor",
+   "overview": "Cech发现四膜虫rRNA前体在完全无蛋白质条件下以鸟苷（G）为辅助因子自我切割并重新连接，切除一段RNA后形成具有催化活性的RNA。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "切割",
+     "detail": "RNA分子被切割（The RNA molecule is cut up）。"
+    },
+    {
+     "n": 2,
+     "name": "连接",
+     "detail": "RNA片段的末端被连接（the ends of the RNA pieces are joined）。"
+    },
+    {
+     "n": 3,
+     "name": "修饰",
+     "detail": "被切除的RNA片段经修饰成为催化性RNA（the piece of RNA removed is modified to give catalytic RNA）。"
+    }
+   ],
+   "key_points": [
+    "反应体系完全不含蛋白质",
+    "实验材料为Tetrahymena（四膜虫），一种单细胞池塘生物",
+    "以鸟苷（G）为辅助因子",
+    "与Altman发现RNase P共享1989年Nobel化学奖"
+   ],
+   "regulation": [],
+   "figures": [
+    "Cech's discovery：四膜虫rRNA前体自我剪接示意图（G = Guanosine）"
+   ],
+   "pages": [
+    46
+   ]
+  },
+  {
+   "id": "L1-P10",
+   "name": "RNase P催化tRNA成熟",
+   "en": "tRNA maturation catalyzed by RNase P",
+   "overview": "Altman发现RNase P酶激活tRNA分子，其活性依赖其中的RNA组分。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "组成",
+     "detail": "RNase P由protein与RNA两部分组成。"
+    },
+    {
+     "n": 2,
+     "name": "作用",
+     "detail": "RNase P作用于tRNA前体。"
+    },
+    {
+     "n": 3,
+     "name": "成熟",
+     "detail": "tRNA被激活/成熟（The enzyme RNase P activates a tRNA molecule）。"
+    }
+   ],
+   "key_points": [
+    "RNase P中的RNA组分（而非蛋白组分）才是催化tRNA成熟的活性中心",
+    "说明RNA具有催化功能"
+   ],
+   "regulation": [],
+   "figures": [
+    "Altman's discovery：RNase P由RNA与蛋白组成并催化tRNA成熟"
+   ],
+   "pages": [
+    46
+   ]
+  },
+  {
+   "id": "L1-P11",
+   "name": "重组DNA操作过程",
+   "en": "recombinant DNA procedure",
+   "overview": "以pBR322质粒为载体，将外源DNA插入后导入大肠杆菌并筛选。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "载体准备",
+     "detail": "pBR322质粒含ampR、tetR抗性基因及ori复制起点。"
+    },
+    {
+     "n": 2,
+     "name": "酶切",
+     "detail": "用限制酶切割质粒与外源DNA。"
+    },
+    {
+     "n": 3,
+     "name": "连接",
+     "detail": "DNA连接酶将外源DNA连接到质粒，形成重组质粒。"
+    },
+    {
+     "n": 4,
+     "name": "转化",
+     "detail": "转化大肠杆菌（宿主细胞）。"
+    },
+    {
+     "n": 5,
+     "name": "初筛",
+     "detail": "涂布于含Tet培养基，所有带质粒的菌落均可生长。"
+    },
+    {
+     "n": 6,
+     "name": "影印筛选",
+     "detail": "菌落转移（影印）到含Amp+Tet培养基；在Amp+Tet上不能生长、在Tet上能生长的菌落即含重组质粒（外源片段插入使tetR失活）。"
+    }
+   ],
+   "key_points": [
+    "插入失活筛选原理：外源DNA插入tetR基因内导致其失活",
+    "限制酶切、连接酶接",
+    "转化与选择转化子是关键步骤"
+   ],
+   "regulation": [],
+   "figures": [
+    "重组DNA操作流程图（pBR322、ampR、tetR、ori、foreign DNA、DNA ligase、transformation into E. coli、selection of transformants）"
+   ],
+   "pages": [
+    93
+   ]
+  },
+  {
+   "id": "L1-P12",
+   "name": "基因表达的多级调控",
+   "en": "multi-level control of gene expression",
+   "overview": "从DNA到活性蛋白的每一步都可被调控，共六个层次。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "转录调控",
+     "detail": "transcriptional control，在细胞核内。"
+    },
+    {
+     "n": 2,
+     "name": "RNA加工调控",
+     "detail": "RNA processing control，在细胞核内。"
+    },
+    {
+     "n": 3,
+     "name": "RNA转运与定位调控",
+     "detail": "RNA transport and localization control，在细胞质。"
+    },
+    {
+     "n": 4,
+     "name": "mRNA降解调控",
+     "detail": "mRNA degradation control，在细胞质。"
+    },
+    {
+     "n": 5,
+     "name": "翻译调控",
+     "detail": "translation control，在细胞质。"
+    },
+    {
+     "n": 6,
+     "name": "蛋白质活性调控",
+     "detail": "protein activity control，在细胞质。"
+    }
+   ],
+   "key_points": [
+    "转录与加工在核内，其余在胞质",
+    "基因表达调控按性质分为时序调控、区域调控、环境调控",
+    "研究方向包括信号转导研究、转录因子研究、RNA剪接研究"
+   ],
+   "regulation": [
+    "时序调控（遗传特性）",
+    "区域调控（遗传特性）",
+    "环境调控（内外环境变化）"
+   ],
+   "figures": [
+    "真核细胞基因表达的多层次调控示意图（Figure 8-3 Essential Cell Biology 3/e, © Garland Science 2010）"
+   ],
+   "pages": [
+    95
+   ]
+  },
+  {
+   "id": "L1-P13",
+   "name": "HIF-1α的氧依赖性降解与低氧应答",
+   "en": "oxygen-dependent degradation of HIF-1α",
+   "overview": "常氧下HIF-1α被脯氨酰羟化、经VHL介导蛋白酶体降解；低氧下HIF-1α稳定入核，与ARNT结合激活HRE靶基因。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "常氧：脯氨酰羟化",
+     "detail": "HIF-1α发生脯氨酰羟化（Prolyl hydroxylation），被加上OH修饰。"
+    },
+    {
+     "n": 2,
+     "name": "常氧：VHL识别",
+     "detail": "羟化后的HIF-1α被VHL识别并结合。"
+    },
+    {
+     "n": 3,
+     "name": "常氧：蛋白酶体降解",
+     "detail": "VHL介导HIF-1α进入蛋白酶体降解（Proteasomal degradation）。"
+    },
+    {
+     "n": 4,
+     "name": "低氧：稳定入核",
+     "detail": "低氧（Hypoxia）下HIF-1α不被羟化降解，进入细胞核。"
+    },
+    {
+     "n": 5,
+     "name": "低氧：激活转录",
+     "detail": "HIF-1α与ARNT结合形成复合物，结合到HRE（低氧应答元件）上，激活下游基因转录。"
+    }
+   ],
+   "key_points": [
+    "脯氨酰羟化依赖氧，是氧感知的关键步骤",
+    "HIF-1α调控在蛋白质降解水平",
+    "2019年诺贝尔生理学或医学奖成果"
+   ],
+   "regulation": [
+    "氧浓度通过脯氨酰羟化调控HIF-1α稳定性"
+   ],
+   "figures": [
+    "HIF-1α氧感知通路示意图（Normoxia、Hypoxia、HIF-1α、Prolyl hydroxylation、OH、VHL、Proteasomal degradation、HRE、ARNT）"
+   ],
+   "pages": [
+    74
+   ]
+  },
+  {
+   "id": "L1-P14",
+   "name": "mRNA疫苗的免疫逃逸策略",
+   "en": "immune evasion by modified mRNA",
+   "overview": "通过核苷碱基甲基化修饰，避免免疫识别受体对mRNA的响应，降低副作用，开发有效mRNA疫苗。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "体外转录",
+     "detail": "体外转录合成mRNA。"
+    },
+    {
+     "n": 2,
+     "name": "碱基修饰",
+     "detail": "引入核苷碱基甲基化修饰。"
+    },
+    {
+     "n": 3,
+     "name": "逃避识别",
+     "detail": "修饰后的mRNA逃避先天免疫识别受体（如TLR等）的识别。"
+    },
+    {
+     "n": 4,
+     "name": "降低副作用",
+     "detail": "降低炎症副作用，提高翻译效率。"
+    },
+    {
+     "n": 5,
+     "name": "疫苗开发",
+     "detail": "用于有效mRNA疫苗的开发。"
+    }
+   ],
+   "key_points": [
+    "2023年诺贝尔生理学或医学奖授予Katalin Karikó与Drew Weissman",
+    "核苷碱基修饰使抗COVID-19 mRNA疫苗成为可能"
+   ],
+   "regulation": [],
+   "figures": [
+    "2023年诺贝尔生理学或医学奖官方海报"
+   ],
+   "pages": [
+    81
+   ]
+  },
+  {
+   "id": "L1-P15",
+   "name": "科研逻辑链条",
+   "en": "logic and critical thinking",
+   "overview": "课程要求按科研逻辑链条思考问题。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "观察现象",
+     "detail": "observation。"
+    },
+    {
+     "n": 2,
+     "name": "提出假说",
+     "detail": "hypothesis。"
+    },
+    {
+     "n": 3,
+     "name": "设计实验",
+     "detail": "experimental design。"
+    },
+    {
+     "n": 4,
+     "name": "验证假说",
+     "detail": "hypothesis testing。"
+    }
+   ],
+   "key_points": [
+    "能力培养目标：分析问题和解决问题、逻辑与批判性思维、跨学科联系能力",
+    "构建融会贯通的'生命全景'视角"
+   ],
+   "regulation": [],
+   "figures": [],
+   "pages": [
+    5
+   ]
+  }
+ ],
+ "distinctions": [
+  {
+   "id": "L1-D01",
+   "title": "分离规律 vs 自由组合规律",
+   "a": "分离规律（The Law of Segregation）",
+   "b": "自由组合规律（The Law of Independent Assortment）",
+   "difference": [
+    "前者描述一对遗传因子在配子形成时的分离",
+    "后者描述两对及以上不同对遗传因子之间的自由组合",
+    "前者针对一对相对性状，后者针对两对及以上相对性状"
+   ],
+   "easy_mistake": "把'分离'说成不同对因子间的关系，或把'自由组合'说成一对因子的行为。",
+   "pages": [
+    13
+   ]
+  },
+  {
+   "id": "L1-D02",
+   "title": "蛋白质是生命主要物质基础 vs DNA是遗传物质基础",
+   "a": "蛋白质是生命的主要物质基础",
+   "b": "DNA是生物遗传物质基础",
+   "difference": [
+    "前者强调生命活动的物质承担者（酶等）",
+    "后者强调遗传信息的载体",
+    "二者是准备和酝酿阶段并列的两大确定结论"
+   ],
+   "easy_mistake": "把'生命主要物质基础'与'遗传物质基础'混为一谈。",
+   "pages": [
+    11
+   ]
+  },
+  {
+   "id": "L1-D03",
+   "title": "Griffith实验 vs Avery实验",
+   "a": "Griffith（1928）",
+   "b": "Avery（1944）",
+   "difference": [
+    "Griffith只证明存在'转化因子'但不知其化学本质",
+    "Avery通过分级分离纯化各组分，证明转化因子是DNA",
+    "Avery进一步提出DNA是遗传信息的载体"
+   ],
+   "easy_mistake": "误以为Griffith已证明转化因子是DNA。",
+   "pages": [
+    17,
+    19
+   ]
+  },
+  {
+   "id": "L1-D04",
+   "title": "32P标记 vs 35S标记",
+   "a": "32P标记",
+   "b": "35S标记",
+   "difference": [
+    "32P标记DNA（DNA含磷）",
+    "35S标记蛋白质（蛋白质含硫）",
+    "侵染后32P进入细菌，35S留在空外壳（上清）"
+   ],
+   "easy_mistake": "把两种同位素对应的分子记反。",
+   "pages": [
+    23
+   ]
+  },
+  {
+   "id": "L1-D05",
+   "title": "半保留复制 vs 半不连续复制",
+   "a": "半保留复制（semi-conservative replication）",
+   "b": "半不连续复制（semi-discontinuous replication）",
+   "difference": [
+    "前者描述亲代链在子代DNA中的分配：每个子代DNA含一条亲代链和一条新链",
+    "后者描述链合成的连续性：前导链连续、后随链不连续（冈崎片段）",
+    "前者由Meselson和Stahl（1958）证明，后者解释双链等速复制"
+   ],
+   "easy_mistake": "把'半保留'与'半不连续'当作同一概念。",
+   "pages": [
+    35,
+    36
+   ]
+  },
+  {
+   "id": "L1-D06",
+   "title": "遗传图 vs 物理图",
+   "a": "遗传图（连锁图）",
+   "b": "物理图",
+   "difference": [
+    "遗传图以遗传标记间的重组率（连锁关系）为标尺",
+    "物理图以实际物理距离（如碱基对bp）为标尺",
+    "二者均为HGP'第二张解剖图'的组成部分"
+   ],
+   "easy_mistake": "把物理图的距离单位说成重组率。",
+   "pages": [
+    57
+   ]
+  },
+  {
+   "id": "L1-D07",
+   "title": "第一张人体解剖图 vs 第二张人体解剖图",
+   "a": "第一张人体解剖图（H. Gray）",
+   "b": "第二张人体解剖图（人类基因组计划）",
+   "difference": [
+    "前者在器官/组织形态水平揭示人体结构",
+    "后者在基因水平（遗传图、物理图、序列图、转录图）揭示人体奥秘",
+    "后者奠定21世纪医学和生物学飞跃发展的基础"
+   ],
+   "easy_mistake": "把'第二张解剖图'理解为又一张形态解剖图。",
+   "pages": [
+    57
+   ]
+  },
+  {
+   "id": "L1-D08",
+   "title": "Arthur Kornberg vs Roger D. Kornberg",
+   "a": "Arthur Kornberg（老科恩伯格，1918—2007）",
+   "b": "Roger D. Kornberg（小科恩伯格，1947— ）",
+   "difference": [
+    "父亲研究DNA复制，1959年获诺贝尔生理学或医学奖",
+    "儿子研究真核细胞转录机制，2006年获诺贝尔化学奖",
+    "父亲1958年发表'脱氧核糖核酸的酶促合成'，儿子2001年在Science发表Pol II 2.8Å晶体结构"
+   ],
+   "easy_mistake": "把父子两人的研究领域与奖项年份搞混。",
+   "pages": [
+    59,
+    60,
+    61
+   ]
+  },
+  {
+   "id": "L1-D09",
+   "title": "TALEN vs CRISPR/Cas9",
+   "a": "TALEN",
+   "b": "CRISPR/Cas9",
+   "difference": [
+    "TALEN依靠蛋白质的DNA结合结构域识别靶序列",
+    "TALEN需左右两个单体FokI二聚化切割",
+    "CRISPR/Cas9依靠gRNA与靶DNA的碱基互补配对识别靶序列，由Cas9蛋白切割"
+   ],
+   "easy_mistake": "误以为CRISPR也靠蛋白质结构域识别DNA。",
+   "pages": [
+    76
+   ]
+  },
+  {
+   "id": "L1-D10",
+   "title": "Mullis vs Smith",
+   "a": "Mullis",
+   "b": "Smith",
+   "difference": [
+    "Mullis发明PCR仪（PCR技术）",
+    "Smith第一个设计基因定点突变",
+    "两人共享1993年诺贝尔化学奖"
+   ],
+   "easy_mistake": "把PCR发明权与定点突变设计者搞反。",
+   "pages": [
+    48
+   ]
+  },
+  {
+   "id": "L1-D11",
+   "title": "吴瑞（1971） vs Sanger与Gilbert（1977）",
+   "a": "吴瑞（1971）",
+   "b": "Sanger与Gilbert（1977）",
+   "difference": [
+    "吴瑞最早建立DNA核苷酸顺序测定方法（引物延伸+标记）",
+    "Sanger的快速测序法是在吴瑞基本策略上改进而来",
+    "幻灯片未把测序发明权归于Sanger一人"
+   ],
+   "easy_mistake": "误以为DNA测序完全由Sanger首创。",
+   "pages": [
+    42,
+    43
+   ]
+  },
+  {
+   "id": "L1-D12",
+   "title": "Berg（1972） vs Sanger与Gilbert（1977）",
+   "a": "Berg（1972）",
+   "b": "Sanger与Gilbert（1977）",
+   "difference": [
+    "Berg第一次进行DNA重组（重组DNA技术）",
+    "Sanger与Gilbert发明DNA测序方法（双脱氧链终止法）并首次进行DNA序列分析",
+    "三人共享1980年诺贝尔化学奖"
+   ],
+   "easy_mistake": "把DNA重组与DNA测序的贡献者混淆。",
+   "pages": [
+    42
+   ]
+  },
+  {
+   "id": "L1-D13",
+   "title": "结构基因组学 vs 功能基因组学",
+   "a": "结构基因组学（structural genomics）",
+   "b": "功能基因组学（functional genomics）",
+   "difference": [
+    "前者以全基因组测序为目标",
+    "后者以基因功能鉴定为目标，又称后基因组（postgenome）",
+    "二者是基因组学的两个方向"
+   ],
+   "easy_mistake": "把结构基因组学与结构分子生物学混为一谈。",
+   "pages": [
+    101
+   ]
+  },
+  {
+   "id": "L1-D14",
+   "title": "'钓鱼'（传统遗传学与生物化学系） vs '捞鱼'（基因组学与蛋白组学系）",
+   "a": "钓鱼",
+   "b": "捞鱼",
+   "difference": [
+    "前者逐个基因研究、通量低",
+    "后者大规模高通量筛选鉴定",
+    "后者是后基因组学研究方式的象征"
+   ],
+   "easy_mistake": "把漫画理解为单纯的技术差异而非研究范式差异。",
+   "pages": [
+    102
+   ]
+  },
+  {
+   "id": "L1-D15",
+   "title": "转录水平控制 vs RNA加工控制",
+   "a": "转录水平控制（Transcriptional control）",
+   "b": "RNA加工控制（RNA processing control）",
+   "difference": [
+    "前者作用于DNA→初级转录本步骤，作用对象是DNA",
+    "后者作用于初级转录本→成熟mRNA步骤（剪接、加帽加尾），作用对象是RNA",
+    "前者位于信息流最上游，通常是主要调控点"
+   ],
+   "easy_mistake": "把RNA加工调控说成转录调控。",
+   "pages": [
+    9
+   ]
+  },
+  {
+   "id": "L1-D16",
+   "title": "电子显微镜 vs 光学显微镜 vs 肉眼",
+   "a": "电子显微镜（electron microscope）",
+   "b": "光学显微镜（light microscope）/ 肉眼（human naked eye）",
+   "difference": [
+    "电镜分辨极限约在0.1 nm—100 nm量级，可观察蛋白质、核糖体、噬菌体",
+    "光镜约在100 nm—100 μm量级，可观察细菌、线粒体、细胞",
+    "肉眼分辨极限约在1 mm以上"
+   ],
+   "easy_mistake": "把光学衍射极限0.2微米与电镜分辨极限混淆。",
+   "pages": [
+    90
+   ]
+  }
+ ],
+ "facts": [
+  {
+   "id": "L1-F01",
+   "text": "分子生物学（Molecular Biology）定义为研究核酸（nucleic acid，包括DNA、RNA）、蛋白质（protein）等生物大分子的形态、结构特征及其重要性、规律性和相互关系的科学。",
+   "note": "名词解释高频考点；注意定义强调“结构—功能—相互关系”，不能只答“研究基因”。",
+   "pages": [
+    8
+   ]
+  },
+  {
+   "id": "L1-F02",
+   "text": "中心法则（Central Dogma）信息流：DNA→初级转录本（Primary Transcript）→（RNA加工 RNA Processing）→成熟mRNA→（转运 Transport）→核糖体（Ribosome）上翻译（Translation）→蛋白质。",
+   "note": "答简答题/填图题的基础框架；须写出“初级转录本→加工→成熟mRNA→出核→翻译”的区室化步骤。",
+   "pages": [
+    9
+   ]
+  },
+  {
+   "id": "L1-F03",
+   "text": "基因表达可在多个层次被调控：转录水平控制（Transcriptional control）、RNA加工控制（RNA processing control）、翻译控制（Translation control）、翻译后控制（Post-translation control）、蛋白质活性控制（Protein activity control）。",
+   "note": "与第95页六层次调控图对照记忆；常考“哪一个层次最上游/最主要”。",
+   "pages": [
+    9,
+    95
+   ]
+  },
+  {
+   "id": "L1-F04",
+   "text": "分子生物学发展分三阶段：（一）准备和酝酿阶段（19世纪后期到20世纪50年代初）；（二）现代分子生物学的建立和发展阶段（20世纪50年代初到70年代初）；（三）初步认识生命本质并改造生命的深入发展阶段。",
+   "note": "简答题常考“三阶段名称+时间范围+标志性成果”。",
+   "pages": [
+    10,
+    11,
+    26,
+    41
+   ]
+  },
+  {
+   "id": "L1-F05",
+   "text": "准备和酝酿阶段的两大确定结论：确定蛋白质是生命的主要物质基础（提出酶的名称、证明酶的本质是蛋白质）；确定生物遗传物质基础是DNA（依据肺炎双球菌转化实验与噬菌体侵染细菌实验）。",
+   "note": "易混淆点：蛋白质是“生命活动的主要物质承担者”，DNA是“遗传信息载体”，不可互换。",
+   "pages": [
+    11
+   ]
+  },
+  {
+   "id": "L1-F06",
+   "text": "孟德尔（Gregor Mendel，1822-1884）奥地利科学家，1856-1864经8年杂交试验，1865年发表《植物杂交试验》论文，提出“遗传因子”概念及分离规律（The Law of Segregation）与自由组合规律（The Law of Independent Assortment）。",
+   "note": "人物—年份—论文—两条规律常作填空；注意“遗传因子”后被约翰逊改称基因。",
+   "pages": [
+    12,
+    13
+   ]
+  },
+  {
+   "id": "L1-F07",
+   "text": "1909年，丹麦生物学家约翰逊（Wilhelm Ludwig Johannsen，1857～1927）根据希腊文“给予生命”之意创造“基因（gene）”一词；他1896年发表《论遗传和变异》，1905年以《遗传学原理》为书名重新出版。",
+   "note": "年份1909与词源“给予生命”是填空高频点。",
+   "pages": [
+    14
+   ]
+  },
+  {
+   "id": "L1-F08",
+   "text": "1910年Morgan（Thoman Hunt Morgan，1866～1945）提出染色体—基因遗传理论，第一次将基因定位于染色体上，把“性状”与“基因”相耦联；与其学生用果蝇研究提出连锁遗传规律，1926年出版《基因论》，获1933年度诺贝尔生理学及医学奖金。",
+   "note": "常考“谁把基因定位到染色体上”“用什么模式生物”。",
+   "pages": [
+    15
+   ]
+  },
+  {
+   "id": "L1-F09",
+   "text": "Griffith（1928）肺炎链球菌转化实验四组结果：活S型→小鼠死亡；活R型→小鼠存活；加热杀死S型→小鼠存活；加热杀死S型+活R型→小鼠死亡并可回收活的致病性S型菌。",
+   "note": "四组实验的“分组—结果—结论”是经典简答/实验分析题；Griffith只知有“转化因子（transforming principle）”，不知其化学本质。",
+   "pages": [
+    17
+   ]
+  },
+  {
+   "id": "L1-F10",
+   "text": "Avery（1944）将S型菌无细胞提取物分级分离为RNA、蛋白质、DNA、脂质、碳水化合物五类，分别测试转化R型菌的能力，只有DNA组分使R型菌转化为S型菌，结论：携带可遗传信息的分子是DNA。",
+   "note": "与Griffith实验的辨析是必考点：Griffith证明“存在转化因子”，Avery证明“转化因子是DNA”。",
+   "pages": [
+    18,
+    19,
+    20
+   ]
+  },
+  {
+   "id": "L1-F11",
+   "text": "Hershey和Chase（1952）用32P标记DNA、35S标记蛋白质的T2噬菌体侵染E. coli，经搅拌（blender）使空外壳脱落、离心（centrifuge）后，被感染的细菌含32P而不含35S，证明DNA进入细菌细胞、蛋白质外壳未进入。",
+   "note": "同位素选择的化学依据（DNA含磷、蛋白质含硫）与“搅拌—离心”两步作用是常考点。原始文献：J. Gen. Physiol., 36(1):39-56, September 20, 1952。",
+   "pages": [
+    21,
+    22,
+    23
+   ]
+  },
+  {
+   "id": "L1-F12",
+   "text": "转染实验证明DNA是动物细胞的遗传物质：取缺乏TK基因、不能合成胸腺嘧啶核苷激酶（thymidine kinase, TK）的细胞，加入TK+ DNA，在缺乏胸腺嘧啶的条件下只有获得TK基因的细胞存活并增殖成集落（colony）。",
+   "note": "考“选择标记基因+选择条件”的实验设计逻辑。",
+   "pages": [
+    24
+   ]
+  },
+  {
+   "id": "L1-F13",
+   "text": "Avery 1944年报告描述DNA的酒精沉淀：当溶液中酒精体积达9/10时有纤维状物质析出，稍加搅动便像棉线绕在线轴上一样绕在硬棒上，其他成分以颗粒状沉淀留在下面；溶解并重复沉淀数次可提高纯度，该物质具很强生物学活性，即DNA。",
+   "note": "DNA酒精沉淀法的原始描述，可作方法学填空或简答。",
+   "pages": [
+    25
+   ]
+  },
+  {
+   "id": "L1-F14",
+   "text": "1953年Watson和Crick提出DNA双螺旋模型；1953年4月2日向《自然》投出900多单词的论文《核酸的分子结构》，4月25日发表；DNA双螺旋结构的发现标志着分子生物学从此诞生。",
+   "note": "日期与“诞生标志”是填空高频点。",
+   "pages": [
+    26,
+    27
+   ]
+  },
+  {
+   "id": "L1-F15",
+   "text": "1953年2月28日Francis Crick走进英国剑桥Eagle酒吧宣布“we had found the secret of life”；双螺旋（double helix）可“unzip”自我复制，证实DNA携带生命遗传信息的猜想。",
+   "note": "常作选择题背景或名词解释“双螺旋”的引子。",
+   "pages": [
+    28
+   ]
+  },
+  {
+   "id": "L1-F16",
+   "text": "三个研究团队对比：伦敦大学国王学院John Randall实验室的Maurice Wilkins与Rosalind E. Franklin用X射线衍射法研究DNA晶体结构（各自独立、不及时交流）；加州理工学院Linus Pauling实验室误认为基因本质是蛋白质、不了解Chargaff碱基配对原则，提出错误的DNA三螺旋结构；剑桥大学Cavendish实验室Watson与Crick（非专职研究DNA结构）凭学科互补、正确理解基因本质与及时交流提出DNA双螺旋。",
+   "note": "常考“为什么Pauling失败、Watson-Crick成功”，答案落在碱基配对原则与学科互补交流。",
+   "pages": [
+    29,
+    31
+   ]
+  },
+  {
+   "id": "L1-F17",
+   "text": "Rosalind Franklin（1920-1958）的DNA晶体X射线衍射研究（Photo 51，1953）为Wilkins的获奖奠定基础；1962年Watson、Crick、Wilkins获诺贝尔奖时Franklin未被提及，她已于四年前因癌症去世，年仅37岁。",
+   "note": "科学史与科学伦理类简答/分析题素材。",
+   "pages": [
+    30,
+    32
+   ]
+  },
+  {
+   "id": "L1-F18",
+   "text": "1947年秋诺丁汉大学James Michael Creeth与导师在《Journal of the Chemical Society》发表论文，证明DNA分子里含有氢键（hydrogen bond），氢键被称为DNA的“分子胶（molecular glue）”，该证据使Watson和Crick得出DNA必须是两条链双螺旋的结论。",
+   "note": "常被忽略的“第三方贡献”，易出选择题。",
+   "pages": [
+    33
+   ]
+  },
+  {
+   "id": "L1-F19",
+   "text": "中心法则三版本：1954年版为DNA复制、DNA→RNA转录、RNA→蛋白质翻译；1970—1980年版增加RNA→DNA的逆转录（reverse transcription）；21世纪修正版增加tRNA和rRNA、小RNA（microRNAs）、非编码RNA（Non-coding RNAs）等分支。",
+   "note": "答“中心法则的修正与发展”必须写出三个版本及新增内容。",
+   "pages": [
+    34,
+    40
+   ]
+  },
+  {
+   "id": "L1-F20",
+   "text": "1958年Meselson和Stahl证明DNA半保留复制（semi-conservative replication）：双链解开，每条亲代链作模板合成新链，子代DNA各含一条亲代链与一条新链；第一代全部为杂合双链，第二代一半杂合、一半全新链。",
+   "note": "常与“半不连续复制”并列考；注意二者概念不同。",
+   "pages": [
+    35
+   ]
+  },
+  {
+   "id": "L1-F21",
+   "text": "DNA半不连续复制（semi-discontinuous replication）：前导链（Leading strand）连续合成、后随链（Lagging strand）以冈崎片段不连续合成，从而解释DNA双链的等速复制。",
+   "note": "辨析题：半保留复制（链的分配）vs 半不连续复制（合成的连续性）。",
+   "pages": [
+    36
+   ]
+  },
+  {
+   "id": "L1-F22",
+   "text": "1955年Ochoa第一次合成RNA；1956年Arthur Kornberg实现试管内细菌细胞中DNA的复制；二人因发现RNA和DNA的生物合成机理共获1959年诺贝尔生理与医学奖。",
+   "note": "年份—人物—奖项对应关系常考。",
+   "pages": [
+    37
+   ]
+  },
+  {
+   "id": "L1-F23",
+   "text": "1961年法国科学家Jacob和Monod提出操纵子（operon）学说，推测mRNA的存在；Jacob、Lwoff和Monod因发现酶和病毒合成的遗传调节获1965年诺贝尔生理学或医学奖。",
+   "note": "注意获奖者为三人（含Lwoff），提出学说者为Jacob与Monod两人。",
+   "pages": [
+    38
+   ]
+  },
+  {
+   "id": "L1-F24",
+   "text": "1968年诺贝尔生理医学奖：Nirenberg破译DNA遗传密码（genetic code）；Holley阐明酵母丙氨酸tRNA（yeast alanine tRNA）的核苷酸序列并证实所有tRNA结构相似；Khorana第一个合成核酸分子并人工复制了酵母基因。",
+   "note": "三人贡献一一对应，易出匹配题。",
+   "pages": [
+    39
+   ]
+  },
+  {
+   "id": "L1-F25",
+   "text": "1975年诺贝尔生理医学奖授予David Baltimore、Renato Dulbecco、Howard Martin Temin，因在RNA肿瘤病毒（RNA tumor virus）中发现以RNA为模板逆转录生成DNA的逆转录酶（reverse transcriptase）。",
+   "note": "逆转录酶发现对中心法则的补充意义是常考点。",
+   "pages": [
+    40
+   ]
+  },
+  {
+   "id": "L1-F26",
+   "text": "1980年诺贝尔化学奖：Berg（1972年第一次进行DNA重组）、Sanger与Gilbert（1977年发明双脱氧链终止法，第一次进行DNA序列分析）。",
+   "note": "辨析：Berg贡献是重组DNA，Sanger/Gilbert贡献是测序方法。",
+   "pages": [
+    42
+   ]
+  },
+  {
+   "id": "L1-F27",
+   "text": "吴瑞教授（Prof. Ray Wu）1971年第一个建立DNA核苷酸顺序测定方法（引物延伸+标记策略，J Mol Biol. 57(3):491-511），该策略改进后成为Sanger快速测序法与Mullis PCR技术的基础；他还是DNA细胞重组先驱，并致力于稻米基因工程。",
+   "note": "中国科学家贡献类考点；注意测序发明权表述。",
+   "pages": [
+    43
+   ]
+  },
+  {
+   "id": "L1-F28",
+   "text": "1983年McClintock（Barbra McClintock，1902-1992）因50年代发现可移动遗传因子（jumping gene / mobile element，即转座子）获Nobel奖，获奖时81岁，距发现约35年；经典材料为玉米籽粒色斑。",
+   "note": "“迟到35年的诺奖”“81岁获奖”是常考细节。",
+   "pages": [
+    44,
+    45
+   ]
+  },
+  {
+   "id": "L1-F29",
+   "text": "Altman和Cech发现RNA的催化功能（核酶 ribozyme / catalytic RNA），共享1989年Nobel化学奖；Cech用四膜虫（Tetrahymena）rRNA前体在完全无蛋白质条件下以鸟苷（G）为辅因子自我剪接；Altman证明RNase P中RNA组分是催化tRNA成熟的活性中心。",
+   "note": "两个实验分别证明“RNA可自我剪接”“RNA是催化中心”，常作简答。",
+   "pages": [
+    46
+   ]
+  },
+  {
+   "id": "L1-F30",
+   "text": "1993年Roberts和Sharp因发现断裂基因（split gene）获Nobel奖；断裂基因由外显子（exon）与内含子（intron）交替组成，转录产生初级转录本后经剪接（splicing）去除内含子形成成熟转录本。",
+   "note": "外显子/内含子定义与剪接过程是必考基础。",
+   "pages": [
+    47
+   ]
+  },
+  {
+   "id": "L1-F31",
+   "text": "1993年Mullis因发明PCR（聚合酶链式反应 polymerase chain reaction）与加拿大学者Smith（第一个设计基因定点突变 site-directed mutagenesis）共享Nobel化学奖；1983年8月Mullis首次在公司正式报告PCR原理，反应冷漠。",
+   "note": "PCR与定点突变两位获奖者贡献不可混淆。",
+   "pages": [
+    48,
+    49
+   ]
+  },
+  {
+   "id": "L1-F32",
+   "text": "人类基因组计划（HGP）：1985年美国能源部（DOE）率先提出，拟阐明3×10⁹碱基对序列；1986年美国宣布启动；1989年NIH建立国家人类基因组研究中心（NCHGR）；1990年NIH与DOE联合正式启动，计划15年内投入30亿美元、2005年完成全部序列测定。",
+   "note": "数字（3×10⁹、30亿、15年、2005）与机构缩写是填空高频点。",
+   "pages": [
+    54
+   ]
+  },
+  {
+   "id": "L1-F33",
+   "text": "2000年人类基因组草图完成；2003年4月14日人类基因组序列图（“完成图”，99.99%）提前绘制成功。参与方：Francis Collins领导的国际联合体（Intl. Cons.）与Craig Venter领导的Celera Genomics公司。",
+   "note": "年份与两位领导者常考。",
+   "pages": [
+    53,
+    55
+   ]
+  },
+  {
+   "id": "L1-F34",
+   "text": "中国1994年启动“中华民族基因组若干位点基因研究”“重大疾病相关基因研究”课题；1999年承担人类基因组1%序列测序任务，负责第3号染色体3千万核苷酸的序列测定。",
+   "note": "“1%”“3号染色体”“3千万核苷酸”为常考数字。",
+   "pages": [
+    56
+   ]
+  },
+  {
+   "id": "L1-F35",
+   "text": "HGP将绘制“人体第二张解剖图”，包括遗传图（连锁图 genetic map/linkage map，以重组率为标尺）、物理图（physical map，以碱基对为标尺）、序列图（sequence map）、转录图（transcription map）。",
+   "note": "四张图的标尺差异（重组率 vs bp）是辨析题核心。",
+   "pages": [
+    57
+   ]
+  },
+  {
+   "id": "L1-F36",
+   "text": "2006年Roger D. Kornberg因揭示真核细胞转录机制获诺贝尔化学奖，其研究组鉴定了II型RNA聚合酶（RNA polymerase II）2.8Å晶体结构，揭示全部12个亚基的相互关系（Science, 2001, 292:1863-1876）；其父Arthur Kornberg（1918—2007）因DNA复制研究获1959年诺贝尔生理学或医学奖。",
+   "note": "父子对比是经典选择题：父亲—DNA复制；儿子—真核转录机制。",
+   "pages": [
+    59,
+    60,
+    61
+   ]
+  },
+  {
+   "id": "L1-F37",
+   "text": "老科恩伯格1950年代初期用实验证明DNA复制并分离复制所需的酶，1958年发表“脱氧核糖核酸的酶促合成”（JBC 233:163-170），方法为制备底物、从E. coli部分纯化酶、体外酶促合成DNA。",
+   "note": "“体外酶促合成DNA”是DNA聚合酶发现的实验基础。",
+   "pages": [
+    60
+   ]
+  },
+  {
+   "id": "L1-F38",
+   "text": "2006年诺贝尔生理学或医学奖授予Andrew Z. Fire与Craig C. Mello，表彰发现RNA干扰（RNA interference, RNAi）现象、揭示控制遗传信息流动的基本机制。",
+   "note": "与2024年miRNA发现（转录后调控）区分：RNAi由双链RNA引发、序列特异性沉默。",
+   "pages": [
+    62
+   ]
+  },
+  {
+   "id": "L1-F39",
+   "text": "2007年诺贝尔生理学或医学奖授予Mario Capecchi、Oliver Smithies与Martin Evans，表彰基因打靶（gene targeting）技术，使任意改变小鼠基因成为现实，培育出基因敲除小鼠（gene knockout mouse）。",
+   "note": "技术名—应用（基因敲除小鼠模型）—三位获奖者是常考点。",
+   "pages": [
+    63
+   ]
+  },
+  {
+   "id": "L1-F40",
+   "text": "2008年诺贝尔生理学或医学奖：Harald zur Hausen发现导致子宫颈癌的人乳头状瘤病毒（HPV）；Françoise Barré-Sinoussi与Luc Montagnier发现人类免疫缺陷病毒（HIV，艾滋病病毒）。",
+   "note": "病毒—疾病对应关系易考。",
+   "pages": [
+    64
+   ]
+  },
+  {
+   "id": "L1-F41",
+   "text": "2009年诺贝尔生理学或医学奖（第100届）授予Elizabeth H. Blackburn、Carol W. Greider、Jack W. Szostak，成果为发现端粒（telomere）和端粒酶（telomerase）如何保护染色体，解决细胞分裂期间染色体如何完整复制与免于退化的问题。",
+   "note": "“第100届”“端粒酶是逆转录酶”为常考细节。",
+   "pages": [
+    65
+   ]
+  },
+  {
+   "id": "L1-F42",
+   "text": "2009年诺贝尔化学奖授予Venkatraman Ramakrishnan、Thomas A. Steitz、Ada E. Yonath（各1/3奖金），因对核糖体（ribosome）结构与功能的研究。",
+   "note": "与2006年化学奖（真核转录）区分年份与对象。",
+   "pages": [
+    66
+   ]
+  },
+  {
+   "id": "L1-F43",
+   "text": "2014年诺贝尔化学奖授予Eric Betzig、Stefan W. Hell、William E. Moerner，因研制超分辨率荧光显微镜（super-resolved fluorescence microscopy），突破光学衍射极限（约0.2微米/200 nm）。",
+   "note": "数值0.2微米必须原样记住。",
+   "pages": [
+    69
+   ]
+  },
+  {
+   "id": "L1-F44",
+   "text": "2015年诺贝尔化学奖授予Tomas Lindahl、Paul Modrich、Aziz Sancar，因DNA修复（DNA repair）的机制研究。",
+   "note": "与2015年生理学或医学奖（青蒿素等）区分奖项类别。",
+   "pages": [
+    70
+   ]
+  },
+  {
+   "id": "L1-F45",
+   "text": "2017年诺贝尔生理学或医学奖授予Jeffrey C. Hall、Michael Rosbash、Michael W. Young（各1/3奖金），因发现控制昼夜节律（circadian rhythm）的分子机制。",
+   "note": "注意幻灯片误将2016年获奖者大隅良典列于本页，属素材错误。",
+   "pages": [
+    71
+   ]
+  },
+  {
+   "id": "L1-F46",
+   "text": "2018年诺贝尔生理学或医学奖授予James P. Alison与Tasuku Honjo（本庶佑），主题为肿瘤免疫治疗；本庶佑1992年首先鉴定PD-1（programmed cell death protein 1）为活化T淋巴细胞上的诱导型基因，PD-1阻断原理于2013年被《Science》评为年度十大科学突破之首。",
+   "note": "PD-1鉴定年份1992与“免疫刹车”比喻是常考点。",
+   "pages": [
+    72
+   ]
+  },
+  {
+   "id": "L1-F47",
+   "text": "2018年诺贝尔化学奖：Frances H. Arnold因酶的定向演化（directed evolution of enzymes）；George P. Smith与Sir Gregory P. Winter因多肽和抗体的噬菌体呈现技术（phage display）；Winter于1986年发明“拟人化”抗体技术。",
+   "note": "三位获奖者贡献分组易考。",
+   "pages": [
+    73
+   ]
+  },
+  {
+   "id": "L1-F48",
+   "text": "2019年诺贝尔生理学或医学奖授予William G. Kaelin Jr、Sir Peter J. Ratcliffe、Gregg L. Semenza，因发现细胞如何感知和适应氧气可用性（oxygen availability）；机制为常氧下HIF-1α经脯氨酰羟化（prolyl hydroxylation）被VHL识别、经蛋白酶体降解，低氧下HIF-1α与ARNT结合、结合HRE（hypoxia response element）激活靶基因转录。",
+   "note": "HIF-1α氧感知通路的“常氧降解/低氧激活”是经典分析题。",
+   "pages": [
+    74
+   ]
+  },
+  {
+   "id": "L1-F49",
+   "text": "2020年诺贝尔化学奖授予Emmanuelle Charpentier与Jennifer A. Doudna，因证明CRISPR-Cas9基因剪刀的准确性和有效性。",
+   "note": "与2024年Doudna/Charpentier/张锋获加拿大盖尔德纳奖（Gairdner Award）区分。",
+   "pages": [
+    75,
+    77
+   ]
+  },
+  {
+   "id": "L1-F50",
+   "text": "基因编辑技术时间线：锌指核酸酶（ZFN, 1996）；TALE & TALENs（2010）；CRISPR/Cas系统（2013）。",
+   "note": "三代技术年份与名称是填空高频点。",
+   "pages": [
+    76
+   ]
+  },
+  {
+   "id": "L1-F51",
+   "text": "TALEN由TALE的DNA结合结构域与FokI核酸酶结构域融合而成，需左右两个单体二聚化才能切割；CRISPR/Cas9由gRNA（guide RNA）与靶DNA碱基互补配对引导Cas9切割。",
+   "note": "辨析题：蛋白质-DNA识别（TALEN）vs RNA-DNA配对识别（CRISPR/Cas9）。",
+   "pages": [
+    76
+   ]
+  },
+  {
+   "id": "L1-F52",
+   "text": "CRISPR来自微生物的免疫系统，效率比TALEN等其他基因编辑技术更高，但在人类癌细胞系中可能产生大量“误伤目标”（脱靶效应 off-target effect）。",
+   "note": "常考“CRISPR的优点与风险”。",
+   "pages": [
+    78
+   ]
+  },
+  {
+   "id": "L1-F53",
+   "text": "2021年诺贝尔生理学或医学奖授予David Julius与Ardem Patapoutian，因发现温度和触觉受体；Julius利用辣椒素（capsaicin）识别皮肤神经末梢对热反应的感应器，Patapoutian利用压力敏感细胞发现机械刺激感应器。",
+   "note": "工具分子（辣椒素）与对应发现者易考。",
+   "pages": [
+    79
+   ]
+  },
+  {
+   "id": "L1-F54",
+   "text": "2022年诺贝尔生理学或医学奖授予Svante Pääbo，因关于已灭绝人类基因组和人类进化的发现，建立古基因组学（paleogenomics）。",
+   "note": "学科名“古基因组学”是名词解释考点。",
+   "pages": [
+    80
+   ]
+  },
+  {
+   "id": "L1-F55",
+   "text": "2023年诺贝尔生理学或医学奖授予Katalin Karikó与Drew Weissman，因核苷碱基修饰（nucleoside base modification）的发现使有效抗COVID-19 mRNA疫苗成为可能；碱基甲基化修饰可避免免疫识别受体对mRNA的响应、降低副作用。",
+   "note": "“修饰—逃避免疫识别—提高翻译效率”的逻辑链是简答要点。",
+   "pages": [
+    81
+   ]
+  },
+  {
+   "id": "L1-F56",
+   "text": "2024年诺贝尔生理学或医学奖授予Victor Ambros与Gary Ruvkun，表彰发现微小RNA（microRNA, miRNA，约21–23 nt）lin-4与let-7及其在转录后基因调控（post-transcriptional gene regulation）中的作用。",
+   "note": "miRNA长度21–23 nt、代表成员lin-4/let-7、作用层次为转录后，均为填空点。",
+   "pages": [
+    82
+   ]
+  },
+  {
+   "id": "L1-F57",
+   "text": "中国科学家贡献：吴宪20世纪20年代与汪猷、张昌颖等完成蛋白质变性理论、血液生化检测和免疫化学研究；20世纪中下叶实现人工全合成结晶牛胰岛素、解出三方二锌猪胰岛素晶体结构、以有机合成与酶促相结合完成酵母丙氨酸转移核糖核酸（tRNA^Ala）的人工全合成。",
+   "note": "中国科学史类简答/填空；注意“三方二锌”指三方晶系含两个锌离子。",
+   "pages": [
+    83
+   ]
+  },
+  {
+   "id": "L1-F58",
+   "text": "中国继60年代首次人工合成牛胰岛素后，70年代初测定三方二锌猪胰岛素三维结构，是亚洲第一个蛋白质晶体结构；1986年完成1.2 Å高分辨率修正；1970年4 Å分辨率结构模型，1973年1.8 Å分辨率原子结构模型。",
+   "note": "分辨率数值越小结构越精细，是常考判断点。",
+   "pages": [
+    84,
+    85
+   ]
+  },
+  {
+   "id": "L1-F59",
+   "text": "2015年诺贝尔生理学或医学奖授予William C. Campbell、Satoshi Omura（大村智）与Youyou Tu（屠呦呦）；屠呦呦是第一位获得诺贝尔科学奖项的中国本土科学家、第一位获诺贝尔生理医学奖的华人科学家；青蒿素（Artemisinin）来自黄花蒿（Artemisia annua）。",
+   "note": "植物来源与“第一位”表述是常考点。",
+   "pages": [
+    86
+   ]
+  },
+  {
+   "id": "L1-F60",
+   "text": "2017年中国科学院神经科学研究所孙强团队经五年努力，在国际上首次实现非人灵长类动物（猕猴）的体细胞克隆（SCNT），建立模拟人类疾病的猕猴动物模型。",
+   "note": "与1997年Dolly（成年体细胞克隆哺乳动物）区分物种与首次性。",
+   "pages": [
+    52,
+    87
+   ]
+  },
+  {
+   "id": "L1-F61",
+   "text": "分子生物学基本定理三条：构成生物体有机大分子的单体在不同生物中都是相同的；生物体内一切有机大分子的构成都遵循共同的规则；某一特定生物体所拥有的核酸及蛋白质分子决定了它的属性。",
+   "note": "简答题“分子生物学基本定理”标准答案。",
+   "pages": [
+    89
+   ]
+  },
+  {
+   "id": "L1-F62",
+   "text": "定量尺寸：DNA双螺旋直径2.0 nm、每个碱基对沿轴上升0.34 nm；球状蛋白相对分子质量5.0×10^4、直径5 nm；细菌RNA聚合酶相对分子质量5.0×10^5、体积9 nm×9 nm×16 nm；核小体相对分子质量3.0×10^5、体积6 nm×11 nm×11 nm；核糖体相对分子质量2.5×10^6、体积20 nm×20 nm×23 nm；人中等染色体长5 μm、宽1 μm。",
+   "note": "计算题与选择题的定量依据（如染色体压缩比）。",
+   "pages": [
+    90
+   ]
+  },
+  {
+   "id": "L1-F63",
+   "text": "分子生物学主要范畴四项：DNA重组技术（基因工程）、基因表达调控、生物大分子结构和功能、基因组、功能基因组与生物信息学。",
+   "note": "简答“研究内容/范畴”标准框架。",
+   "pages": [
+    91
+   ]
+  },
+  {
+   "id": "L1-F64",
+   "text": "DNA重组技术（DNA recombinant technology，又称基因工程 genetic engineering）20世纪70年代初兴起，能将不同DNA片段按设计定向连接、在特定受体细胞中复制表达；限制性内切酶（restriction endonuclease）与DNA连接酶（DNA ligase）的发现是关键；1972年Boyer获得第一个重组DNA分子。",
+   "note": "“切与接”两种工具酶与1972年Boyer是常考点。",
+   "pages": [
+    92
+   ]
+  },
+  {
+   "id": "L1-F65",
+   "text": "pBR322质粒含ampR（氨苄青霉素抗性）、tetR（四环素抗性）与ori（复制起点）；外源DNA插入tetR基因使其失活，故在Tet平板生长的菌落影印到Amp+Tet平板后不能生长者即为含重组质粒的转化子。",
+   "note": "插入失活筛选原理是实验设计题核心。",
+   "pages": [
+    93
+   ]
+  },
+  {
+   "id": "L1-F66",
+   "text": "基因表达调控按性质分为：时序调控（遗传特性）、区域调控（遗传特性）、环境调控（内外环境变化）；研究方向包括信号转导研究、转录因子研究、RNA剪接研究。",
+   "note": "分类题常考“三种调控性质”。",
+   "pages": [
+    95
+   ]
+  },
+  {
+   "id": "L1-F67",
+   "text": "结构分子生物学（structural molecular biology）研究生物大分子空间结构及运动变化与功能的关系，三大方向：结构的测定、结构运动变化规律的探索、结构与功能相互关系的建立。",
+   "note": "名词解释与简答均可出。",
+   "pages": [
+    96
+   ]
+  },
+  {
+   "id": "L1-F68",
+   "text": "研究生物高分子空间结构的方法：X射线衍射晶体学（X-ray crystallography）、二维和多维核磁共振法（NMR，测液相结构）、电镜三维重组（electron microscopy 3D reconstruction）、电子衍射、中子衍射和各种频谱学方法。",
+   "note": "方法—适用状态（晶体 vs 溶液）是辨析点。",
+   "pages": [
+    97
+   ]
+  },
+  {
+   "id": "L1-F69",
+   "text": "AlphaFold进展：2020年对人类蛋白质组58%的氨基酸结构位置给出可信预测；2021年98.5%（35万个）人类蛋白结构预测（Nature, 2021）；2022年预测超过100万个物种的2.14亿个蛋白质结构，约35%达实验精度、80%可用于后续分析；2024年5月8日AlphaFold3可预测蛋白质、DNA、RNA及配体的结构及相互作用。",
+   "note": "数字（58%、98.5%、35万、2.14亿、35%、80%）是填空/选择高频点。",
+   "pages": [
+    98
+   ]
+  },
+  {
+   "id": "L1-F70",
+   "text": "基因组（genome）一词1920年由Winkles从GENes和chromosOEs铸成；人类基因组包括23对染色体，单倍体细胞约30亿对核苷酸，编码2.7–3万个基因。",
+   "note": "“1920年Winkles”“23对”“30亿”“2.7–3万”均为常考数字。",
+   "pages": [
+    100
+   ]
+  },
+  {
+   "id": "L1-F71",
+   "text": "基因组学（Genomics）1986年由美国科学家Thomas Roderick提出，包括基因组作图（遗传图谱、物理图谱、转录本图谱）、核苷酸序列分析、基因定位和基因功能分析；结构基因组学以全基因组测序为目标，功能基因组学以基因功能鉴定为目标，又称后基因组（postgenome）。",
+   "note": "年份1986与“结构 vs 功能”辨析是常考点。",
+   "pages": [
+    101
+   ]
+  },
+  {
+   "id": "L1-F72",
+   "text": "AI在分子生物学中的五类突破：蛋白质结构预测（AlphaFold3原子级精度）、基因组学与多组学数据分析、药物发现与设计加速、合成生物学与代谢工程（基因回路设计、代谢途径优化、CRISPR系统优化）、生物图像分析自动化（细胞表型分析、冷冻电镜Cryo-EM重建、数字病理学）；但湿实验验证仍是金标准。",
+   "note": "“湿实验验证仍是金标准”是分析题得分点。",
+   "pages": [
+    103
+   ]
+  }
+ ],
+ "methods": [
+  {
+   "id": "L1-M01",
+   "cn": "肺炎双球菌转化实验",
+   "en": "pneumococcal transformation experiment",
+   "principle": "通过细菌间可遗传性状的转移判断转化因子的化学本质；S型菌有荚膜、致病，R型菌无荚膜、不致病。",
+   "steps": "Griffith（1928）：分别注射活S型、活R型、加热杀死S型、加热杀死S型+活R型于小鼠，观察死亡与菌回收；Avery（1944）：从S型菌制备无细胞提取物，分级分离为RNA、蛋白质、DNA、脂质、碳水化合物，分别测试对R型菌的转化能力。",
+   "applications": "证明DNA是遗传信息的载体、基因就是DNA分子。",
+   "limitations": "Griffith只证明存在“转化因子”而不知其化学本质；Avery实验需充分纯化各组分，否则残留核酸酶/杂质会影响结论。",
+   "pages": [
+    16,
+    17,
+    18,
+    19,
+    20
+   ]
+  },
+  {
+   "id": "L1-M02",
+   "cn": "噬菌体侵染细菌实验",
+   "en": "Hershey–Chase bacteriophage infection experiment",
+   "principle": "用32P标记DNA（DNA含磷）、35S标记蛋白质（蛋白质含硫），追踪侵染后两种标记的去向。",
+   "steps": "分别用32P标记DNA与35S标记蛋白质的T2噬菌体侵染E. coli → 搅拌（blender）使空病毒外壳从细菌上脱落 → 离心（centrifuge）分离 → 检测沉淀中细菌的放射性。",
+   "applications": "证明DNA是噬菌体的遗传物质，DNA是可进入寄主细胞的转染因子。",
+   "limitations": "搅拌与离心条件影响结果；需同位素标记与分离步骤，短时间侵染以保证未进入的噬菌体可被去除。",
+   "pages": [
+    16,
+    21,
+    22,
+    23
+   ]
+  },
+  {
+   "id": "L1-M03",
+   "cn": "转染实验（TK选择）",
+   "en": "transfection assay",
+   "principle": "将外源DNA导入真核细胞，通过选择培养基筛选获得新基因的细胞克隆。",
+   "steps": "取缺乏TK基因、不能合成胸腺嘧啶核苷激酶（TK）的细胞 → 加入TK+ DNA → 在缺乏胸腺嘧啶的条件下培养，只有获得TK基因的细胞存活并增殖成集落（colony）。",
+   "applications": "证明DNA是动物细胞的遗传物质。",
+   "limitations": "需可选择的标记基因与选择条件；只有部分细胞摄取DNA。",
+   "pages": [
+    24
+   ]
+  },
+  {
+   "id": "L1-M04",
+   "cn": "酒精沉淀法提取DNA",
+   "en": "ethanol precipitation of DNA",
+   "principle": "DNA在酒精体积达9/10的溶液中析出为纤维状物质，其他成分以颗粒状沉淀留在下面。",
+   "steps": "调节溶液中酒精体积至9/10使纤维状物质析出 → 稍加搅动使纤维状物质缠绕在硬棒上 → 溶解纤维状物质并重复沉淀数次提高纯度。",
+   "applications": "从溶液中分离和纯化具有生物学活性的DNA。",
+   "limitations": "需重复沉淀以保证纯度；操作中应避免机械剪切造成DNA断裂。",
+   "pages": [
+    25
+   ]
+  },
+  {
+   "id": "L1-M05",
+   "cn": "DNA的酶促合成（体外DNA合成）",
+   "en": "enzymatic synthesis of DNA",
+   "principle": "利用从E. coli中部分纯化的酶，在体外以脱氧核糖核苷酸为底物催化DNA合成。",
+   "steps": "制备底物（Preparation of substrates）→ 从E. coli中部分纯化酶（partial purification of an enzyme from E. coli）→ 体外酶促合成DNA。",
+   "applications": "证明DNA可在酶催化下复制，为DNA聚合酶的发现奠定基础（Lehman, Bessman, Simms & Kornberg, JBC 1958, 233:163-170）。",
+   "limitations": "需部分纯化酶与充足底物；体外体系不能完全反映体内复制复杂性。",
+   "pages": [
+    60
+   ]
+  },
+  {
+   "id": "L1-M06",
+   "cn": "蛋白质X射线晶体学",
+   "en": "protein X-ray crystallography",
+   "principle": "利用X射线在蛋白质晶体中的衍射图样，通过相位解析与电子密度图计算重建分子三维结构。",
+   "steps": "获得高质量晶体 → 收集衍射数据 → 相位解析 → 电子密度图构建模型 → 结构精修。",
+   "applications": "测定蛋白质三维结构（如三方二锌猪胰岛素：1970年4 Å模型、1973年1.8 Å原子模型、1986年1.2 Å修正；RNA聚合酶II 2.8 Å结构）。",
+   "limitations": "需先获得高质量晶体；分辨率数值越小结构越精细；膜蛋白等难结晶。",
+   "pages": [
+    61,
+    84,
+    97
+   ]
+  },
+  {
+   "id": "L1-M07",
+   "cn": "核磁共振法",
+   "en": "Nuclear Magnetic Resonance (NMR) spectroscopy",
+   "principle": "利用二维和多维核磁共振测定溶液中生物大分子的液相结构。",
+   "steps": "样品溶于溶液 → 采集多维NMR谱 → 归属信号并计算距离约束 → 结构计算。",
+   "applications": "测定溶液状态、较小生物大分子的三维结构，与晶体学互补。",
+   "limitations": "适用于较小分子；需较高浓度与纯度样品。",
+   "pages": [
+    97
+   ]
+  },
+  {
+   "id": "L1-M08",
+   "cn": "电镜三维重组",
+   "en": "electron microscopy 3D reconstruction",
+   "principle": "通过电子显微镜成像并进行三维重建获得生物大分子空间结构。",
+   "steps": "制样（可冷冻）→ 电镜成像采集大量颗粒图像 → 分类与三维重建。",
+   "applications": "解析生物大分子及复合物结构；与电子衍射、中子衍射及频谱学方法并列。",
+   "limitations": "制样与数据处理要求高；传统电镜分辨极限受辐照损伤限制（补充背景：冷冻电镜Cryo-EM已大幅改善）。",
+   "pages": [
+    97,
+    103
+   ]
+  },
+  {
+   "id": "L1-M09",
+   "cn": "重组DNA操作（pBR322载体克隆与插入失活筛选）",
+   "en": "recombinant DNA procedure",
+   "principle": "以含ampR、tetR抗性基因与ori的pBR322质粒为载体，外源DNA插入tetR基因使其失活，利用双抗性平板对比筛选重组质粒。",
+   "steps": "限制酶切割质粒与外源DNA → DNA连接酶连接形成重组质粒 → 转化大肠杆菌 → 涂布含Tet培养基（所有带质粒菌落生长）→ 影印转移至含Amp+Tet培养基 → 在Amp+Tet上不能生长、在Tet上能生长者为含重组质粒的转化子。",
+   "applications": "大量生产正常细胞代谢中产量很低的多肽；定向改造生物基因组结构；基础研究。",
+   "limitations": "需合适的限制酶位点与选择标记；可能出现空载体自连、非重组质粒背景。",
+   "pages": [
+    92,
+    93
+   ]
+  }
+ ],
+ "exam_points": [
+  {
+   "id": "L1-X01",
+   "point": "分子生物学的定义与研究对象",
+   "detail": "名词解释：须写出“核酸（DNA、RNA）、蛋白质等生物大分子的形态、结构特征及其重要性、规律性和相互关系”，并指出基础理论与技术两大支撑面。"
+  },
+  {
+   "id": "L1-X02",
+   "point": "中心法则及其修正",
+   "detail": "简答/填图：写出DNA→初级转录本→RNA加工→成熟mRNA→转运→翻译的流程；再答1954版、1970—1980版（加逆转录）、21世纪版（加tRNA/rRNA、miRNA、ncRNA）三阶段修正。"
+  },
+  {
+   "id": "L1-X03",
+   "point": "证明DNA是遗传物质的三大经典实验",
+   "detail": "简答/实验分析：Griffith（1928，四组小鼠实验，提出转化因子）、Avery（1944，分级分离五类分子，证明转化因子是DNA）、Hershey–Chase（1952，32P/35S标记+搅拌+离心，证明DNA进入细菌）。必须写清分组、结果与结论的对应。"
+  },
+  {
+   "id": "L1-X04",
+   "point": "DNA双螺旋发现的科学史与团队比较",
+   "detail": "选择/简答：1953年Watson与Crick提出双螺旋；Franklin与Wilkins的X射线衍射（Photo 51）；Pauling因误认基因为蛋白质、不了解Chargaff碱基配对原则而提出错误三螺旋；Creeth证明氢键为“分子胶”。"
+  },
+  {
+   "id": "L1-X05",
+   "point": "半保留复制与半不连续复制的辨析",
+   "detail": "名词解释/辨析：半保留复制（Meselson & Stahl, 1958）指子代DNA各含一条亲代链与一条新链；半不连续复制指前导链连续、后随链以冈崎片段不连续合成，解释双链等速复制。"
+  },
+  {
+   "id": "L1-X06",
+   "point": "基因表达的多层次调控",
+   "detail": "简答：按第95页六层次作答——转录调控、RNA加工调控、RNA转运与定位调控、mRNA降解调控、翻译调控、蛋白质活性调控；并说明核内/胞质分区。"
+  },
+  {
+   "id": "L1-X07",
+   "point": "断裂基因与RNA剪接",
+   "detail": "名词解释/简答：外显子保留于成熟转录本、内含子被剪接去除；转录产生初级转录本后经剪接形成成熟转录本（Roberts与Sharp，1993年Nobel奖）。"
+  },
+  {
+   "id": "L1-X08",
+   "point": "基因编辑三代技术及TALEN与CRISPR/Cas9的辨析",
+   "detail": "选择/简答：ZFN（1996）、TALE & TALENs（2010）、CRISPR/Cas（2013）；TALEN靠蛋白质DNA结合结构域识别、FokI二聚化切割；CRISPR/Cas9靠gRNA与靶DNA碱基互补配对引导Cas9切割；CRISPR效率高但有脱靶效应。"
+  },
+  {
+   "id": "L1-X09",
+   "point": "人类基因组计划的关键数字与图谱类型",
+   "detail": "填空/简答：3×10⁹ bp、30亿美元、15年、2005年完成、2000年草图、2003年完成图（99.99%）；中国承担1%、3号染色体3千万核苷酸；四张图（遗传图以重组率为标尺、物理图以bp为标尺、序列图、转录图）。"
+  },
+  {
+   "id": "L1-X10",
+   "point": "重组DNA技术的工具酶与筛选策略",
+   "detail": "简答/实验设计：限制性内切酶与DNA连接酶为关键工具酶；pBR322的ampR/tetR/ori；外源片段插入tetR导致插入失活，用Tet平板与Amp+Tet平板对比筛选。"
+  },
+  {
+   "id": "L1-X11",
+   "point": "诺贝尔奖成果与年份的对应",
+   "detail": "选择/匹配：1959（Ochoa & A. Kornberg，RNA/DNA生物合成）、1965（Jacob、Lwoff、Monod，操纵子）、1968（Nirenberg、Holley、Khorana，遗传密码）、1975（逆转录酶）、1980（Berg重组DNA；Sanger/Gilbert测序）、1989（Altman & Cech，核酶）、1993（Roberts & Sharp断裂基因；Mullis PCR与Smith定点突变）、2006（Fire & Mello RNAi；R. Kornberg真核转录）、2007（基因打靶）、2009（端粒/端粒酶；核糖体结构）、2014（超分辨荧光显微镜）、2015（DNA修复）、2017（昼夜节律）、2018（肿瘤免疫治疗；酶的定向演化与噬菌体呈现）、2019（氧感知）、2020（CRISPR-Cas9）、2021（温度与触觉受体）、2022（古基因组学）、2023（核苷碱基修饰与mRNA疫苗）、2024（miRNA lin-4/let-7）。"
+  },
+  {
+   "id": "L1-X12",
+   "point": "中国科学家的贡献",
+   "detail": "填空/简答：吴宪（蛋白质变性理论）；人工全合成结晶牛胰岛素、三方二锌猪胰岛素晶体结构（亚洲第一个蛋白质晶体结构，1986年1.2 Å修正）、酵母丙氨酸tRNA人工全合成；吴瑞1971年DNA测序策略；1999年承担HGP 1%测序；屠呦呦与青蒿素；孙强团队2017年克隆猴。"
+  },
+  {
+   "id": "L1-X13",
+   "point": "研究生物大分子三维结构的方法",
+   "detail": "简答：X射线衍射晶体学（晶体）、二维/多维NMR（溶液、较小分子）、电镜三维重组、电子衍射、中子衍射及频谱学方法；结构分子生物学三大方向（结构测定、运动变化规律、结构与功能关系）。"
+  },
+  {
+   "id": "L1-X14",
+   "point": "分子生物学基本定理与主要范畴",
+   "detail": "简答：三条基本定理（单体相同、构成规则共同、核酸与蛋白质决定属性）；四大范畴（DNA重组技术/基因工程、基因表达调控、生物大分子结构与功能、基因组与功能基因组及生物信息学）。"
+  }
+ ],
+ "exercises": [
+  {
+   "id": "L1-E01",
+   "type": "单选题",
+   "stem": "首次通过实验证明“转化因子是DNA”的科学家及其年份是：",
+   "options": [
+    "A. Griffith，1928年",
+    "B. Avery，1944年",
+    "C. Hershey和Chase，1952年",
+    "D. Meselson和Stahl，1958年"
+   ],
+   "answer": "B. Avery，1944年",
+   "analysis": "Griffith（1928）只证明存在“转化因子（transforming principle）”，不知其化学本质；Avery（1944）将S型菌无细胞提取物分级分离为RNA、蛋白质、DNA、脂质、碳水化合物，只有DNA组分能转化R型菌，从而证明转化因子是DNA。Hershey–Chase证明DNA进入细菌；Meselson–Stahl证明半保留复制。",
+   "pages": [
+    17,
+    19,
+    23,
+    35
+   ]
+  },
+  {
+   "id": "L1-E02",
+   "type": "单选题",
+   "stem": "Hershey–Chase实验中，用35S标记的是噬菌体的哪一成分，离心后主要出现在何处？",
+   "options": [
+    "A. DNA；细菌沉淀中",
+    "B. 蛋白质外壳；上清中",
+    "C. DNA；上清中",
+    "D. 蛋白质外壳；细菌沉淀中"
+   ],
+   "answer": "B. 蛋白质外壳；上清中",
+   "analysis": "蛋白质含硫，故用35S标记蛋白质外壳；DNA含磷，用32P标记。搅拌使空外壳从细菌上脱落，离心后细菌沉淀含32P而不含35S，说明DNA进入细菌、蛋白质外壳未进入。",
+   "pages": [
+    23
+   ]
+  },
+  {
+   "id": "L1-E03",
+   "type": "单选题",
+   "stem": "关于DNA半保留复制与半不连续复制，下列说法正确的是：",
+   "options": [
+    "A. 半保留复制指前导链连续、后随链不连续合成",
+    "B. 半不连续复制指子代DNA各含一条亲代链和一条新链",
+    "C. 半保留复制描述子代DNA链的分配，半不连续复制描述复制叉上两条链合成的连续性差异",
+    "D. 两者均由Meselson和Stahl于1958年同时提出"
+   ],
+   "answer": "C. 半保留复制描述子代DNA链的分配，半不连续复制描述复制叉上两条链合成的连续性差异",
+   "analysis": "半保留复制（Meselson & Stahl, 1958）指双链解开、各以亲代链为模板合成新链，子代DNA各含一条亲代链与一条新链；半不连续复制指前导链连续合成、后随链以冈崎片段不连续合成，用以解释双链等速复制。A、B两项把两个概念互换，D项混淆提出者。",
+   "pages": [
+    35,
+    36
+   ]
+  },
+  {
+   "id": "L1-E04",
+   "type": "单选题",
+   "stem": "TALEN与CRISPR/Cas9在靶序列识别机制上的根本区别是：",
+   "options": [
+    "A. TALEN靠gRNA与靶DNA碱基互补配对，CRISPR/Cas9靠蛋白质DNA结合结构域",
+    "B. TALEN靠蛋白质的DNA结合结构域识别靶序列且需FokI二聚化切割，CRISPR/Cas9靠gRNA与靶DNA碱基互补配对引导Cas9切割",
+    "C. 两者都靠FokI核酸酶结构域二聚化切割",
+    "D. 两者都靠向导RNA识别靶序列"
+   ],
+   "answer": "B. TALEN靠蛋白质的DNA结合结构域识别靶序列且需FokI二聚化切割，CRISPR/Cas9靠gRNA与靶DNA碱基互补配对引导Cas9切割",
+   "analysis": "TALEN由TALE的DNA结合结构域与FokI核酸酶结构域融合而成，需左右两个单体二聚化才能切割；CRISPR/Cas9由gRNA与靶DNA碱基互补配对引导Cas9切割。A项把两者机制颠倒，C、D项错误。",
+   "pages": [
+    76
+   ]
+  },
+  {
+   "id": "L1-E05",
+   "type": "单选题",
+   "stem": "2014年诺贝尔化学奖授予超分辨率荧光显微镜技术，该技术突破的光学衍射极限约为：",
+   "options": [
+    "A. 0.2 nm",
+    "B. 2 nm",
+    "C. 0.2 μm（200 nm）",
+    "D. 2 μm"
+   ],
+   "answer": "C. 0.2 μm（200 nm）",
+   "analysis": "传统光学显微镜因光的衍射无法分辨小于约0.2微米（200 nm）的结构，超分辨率荧光显微镜突破了这一极限。注意单位换算：0.2 μm = 200 nm，不是0.2 nm。",
+   "pages": [
+    69
+   ]
+  },
+  {
+   "id": "L1-E06",
+   "type": "多选题",
+   "stem": "下列属于分子生物学“准备和酝酿阶段”确定结论或事件的有：",
+   "options": [
+    "A. 提出酶的名称并证明酶的本质是蛋白质",
+    "B. 通过肺炎双球菌转化实验与噬菌体侵染细菌实验确定DNA是遗传物质基础",
+    "C. 提出DNA双螺旋结构模型",
+    "D. 提出操纵子学说"
+   ],
+   "answer": "A、B",
+   "analysis": "准备和酝酿阶段为19世纪后期到20世纪50年代初，两大结论是“蛋白质是生命的主要物质基础”与“DNA是生物遗传物质基础”。DNA双螺旋（1953）与操纵子学说（1961）属于现代分子生物学的建立和发展阶段。",
+   "pages": [
+    11,
+    26,
+    38
+   ]
+  },
+  {
+   "id": "L1-E07",
+   "type": "多选题",
+   "stem": "关于人类基因组计划（HGP），下列数字或表述正确的有：",
+   "options": [
+    "A. 拟阐明人类基因组DNA长达3×10⁹碱基对的序列",
+    "B. 1990年NIH和DOE联合正式启动，计划15年内提供30亿美元资助",
+    "C. 中国1999年承担1%序列测序任务，负责第3号染色体3千万核苷酸",
+    "D. 2003年4月14日完成图绘制成功，覆盖99.99%"
+   ],
+   "answer": "A、B、C、D",
+   "analysis": "四项均与素材一致：1985年DOE率先提出3×10⁹ bp目标；1990年NIH与DOE联合启动、15年30亿美元、2005年完成；中国1999年承担1%、3号染色体3千万核苷酸；2003年4月14日完成图（99.99%）提前绘制成功。",
+   "pages": [
+    54,
+    55,
+    56
+   ]
+  },
+  {
+   "id": "L1-E08",
+   "type": "多选题",
+   "stem": "下列诺贝尔奖成果与获奖者对应正确的有：",
+   "options": [
+    "A. 1989年化学奖——Altman和Cech，发现RNA的催化功能（核酶）",
+    "B. 1993年生理学或医学奖——Roberts和Sharp，发现断裂基因",
+    "C. 2006年化学奖——Roger D. Kornberg，揭示真核细胞转录机制",
+    "D. 2024年生理学或医学奖——Victor Ambros和Gary Ruvkun，发现miRNA（lin-4、let-7）及转录后基因调控"
+   ],
+   "answer": "A、B、C、D",
+   "analysis": "四项均正确。注意区分：2006年生理学或医学奖为Fire与Mello（RNAi），2006年化学奖为R. Kornberg（真核转录）；1993年化学奖为Mullis与Smith（PCR与定点突变），1993年生理学或医学奖为Roberts与Sharp（断裂基因）。",
+   "pages": [
+    46,
+    47,
+    59,
+    62,
+    82
+   ]
+  },
+  {
+   "id": "L1-E09",
+   "type": "填空题",
+   "stem": "1953年4月2日，沃森与克里克向《自然》投去了一篇900多单词的论文《________》，于4月25日发表；DNA双螺旋结构的发现标志着________从此诞生。",
+   "options": [],
+   "answer": "核酸的分子结构；分子生物学",
+   "analysis": "论文题目与“分子生物学诞生标志”是常考填空；注意日期为1953年4月2日投稿、4月25日发表。",
+   "pages": [
+    27
+   ]
+  },
+  {
+   "id": "L1-E10",
+   "type": "填空题",
+   "stem": "基因组（genome）一词是1920年由________从GENes和chromosOEs铸成的；人类基因组包括________对染色体，单倍体细胞中约有________亿对核苷酸，编码2.7–3万个基因。",
+   "options": [],
+   "answer": "Winkles；23；30",
+   "analysis": "三个空分别考词源、染色体数与核苷酸总量，均为高频数字。",
+   "pages": [
+    100
+   ]
+  },
+  {
+   "id": "L1-E11",
+   "type": "判断题",
+   "stem": "Pauling提出错误的DNA三螺旋结构，原因之一是他不了解Chargaff碱基配对原则，并认为基因的本质是蛋白质。",
+   "options": [
+    "A. 正确",
+    "B. 错误"
+   ],
+   "answer": "A. 正确",
+   "analysis": "素材明确指出：加州理工学院Pauling实验室虽为结构化学权威，但认为基因本质是蛋白质、DNA是有机大分子，且不了解Chargaff碱基配对原则，因而提出错误的DNA三螺旋结构。",
+   "pages": [
+    29
+   ]
+  },
+  {
+   "id": "L1-E12",
+   "type": "判断题",
+   "stem": "CRISPR/Cas9来自微生物的免疫系统，其编辑效率高于TALEN，且不存在脱靶效应。",
+   "options": [
+    "A. 正确",
+    "B. 错误"
+   ],
+   "answer": "B. 错误",
+   "analysis": "CRISPR来自微生物免疫系统、效率比TALEN更高，但在人类癌细胞系中可能产生大量“误伤目标”（脱靶效应 off-target effect），尤其对不希望改变的基因做修改时风险更大。",
+   "pages": [
+    78
+   ]
+  },
+  {
+   "id": "L1-E13",
+   "type": "名词解释",
+   "stem": "半保留复制（semi-conservative replication）",
+   "options": [],
+   "answer": "DNA复制时双链解开，每条亲代链作为模板合成一条新链，形成的两个子代DNA分子各含一条亲代链和一条新链。由Meselson和Stahl于1958年证明。第一代子代DNA全部为杂合双链，第二代中一半为杂合双链、一半为全新链组成的双链。",
+   "analysis": "答题须包含“双链解开—亲代链作模板—子代各含一亲代链一新生链”三要素，并写出证明者与年份。",
+   "pages": [
+    35
+   ]
+  },
+  {
+   "id": "L1-E14",
+   "type": "名词解释",
+   "stem": "断裂基因（split gene）",
+   "options": [],
+   "answer": "由外显子（exon）与内含子（intron）交替组成、转录后需经剪接去除内含子的基因。转录产生初级转录本（primary transcript），经剪接（splicing）切除内含子、连接外显子形成成熟转录本（mature transcript）。由Roberts和Sharp发现，获1993年诺贝尔奖。",
+   "analysis": "须写出外显子/内含子定义、初级转录本→剪接→成熟转录本的过程及发现者。",
+   "pages": [
+    47
+   ]
+  },
+  {
+   "id": "L1-E15",
+   "type": "简答题",
+   "stem": "简述Griffith（1928）与Avery（1944）肺炎双球菌转化实验的设计、结果与结论，并说明Avery实验相对于Griffith实验的推进之处。",
+   "options": [],
+   "answer": "（1）Griffith实验四组：注射活S型菌→小鼠死亡（S型有致病力）；注射活R型菌→小鼠存活（R型无致病力）；注射加热杀死的S型菌→小鼠存活（丧失致病能力）；混合注射加热杀死S型菌与活R型菌→小鼠死亡，并回收得到活的致病性S型菌。结论：加热杀死的S型菌中存在某种“转化因子（transforming principle）”，能把无致病力的R型菌转化为有致病力的S型菌，且该性状可遗传；但Griffith不知转化因子的化学本质。（2）Avery实验：从S型菌制备无细胞提取物，分级分离为RNA、蛋白质、DNA、脂质、碳水化合物五类，分别测试对R型菌的转化能力；结果只有DNA组分使R型菌转化为S型菌，其余组分仍为R型菌。结论：携带可遗传信息的分子是DNA，DNA就是转化源。（3）推进之处：Griffith只证明“存在转化因子”，Avery通过分级分离纯化各组分，证明转化因子的化学本质是DNA，从而提出DNA是遗传信息的载体。",
+   "analysis": "评分点：四组实验的分组—结果—结论；Avery五类分子与唯一阳性组分；两者结论差异的表述。",
+   "pages": [
+    17,
+    19,
+    20
+   ]
+  },
+  {
+   "id": "L1-E16",
+   "type": "简答题",
+   "stem": "简述中心法则的提出及其三次版本演变（1954年版、1970—1980年版、21世纪修正版），并说明各版本新增内容所对应的发现。",
+   "options": [],
+   "answer": "（1）1954年版（Crick提出）：DNA可自我复制；DNA转录为RNA；RNA翻译为蛋白质；蛋白质执行生理功能，即DNA→RNA→蛋白质的线性信息流。（2）1970—1980年版：在1954年版基础上增加RNA→DNA的逆转录（reverse transcription）箭头，对应1975年诺贝尔奖所表彰的在RNA肿瘤病毒中发现逆转录酶（reverse transcriptase）。（3）21世纪修正版：增加tRNA和rRNA、小RNA（microRNAs）、非编码RNA（Non-coding RNAs）等分支，并保留RNA→DNA的反馈，反映非编码RNA调控等发现（如miRNA介导的转录后基因调控）。（4）意义：中心法则由线性模型逐步扩展为包含逆转录、RNA复制与非编码RNA调控的复杂网络。",
+   "analysis": "评分点：三版本的箭头组成、逆转录酶的发现、非编码RNA分支、演变意义。",
+   "pages": [
+    34,
+    40,
+    82
+   ]
+  },
+  {
+   "id": "L1-E17",
+   "type": "简答题",
+   "stem": "简述真核细胞基因表达可在哪些层次被调控，并说明各层次的调控对象。",
+   "options": [],
+   "answer": "共六个层次：（1）转录调控（transcriptional control）：在DNA→RNA转录本步骤，主要调控点，作用对象为DNA/转录起始；（2）RNA加工调控（RNA processing control）：作用于初级转录本→成熟mRNA（如剪接、加帽加尾）；（3）RNA转运与定位调控（RNA transport and localization control）：成熟mRNA出核及在胞质中的定位；（4）mRNA降解调控（mRNA degradation control）：mRNA稳定性与寿命；（5）翻译调控（translation control）：mRNA在核糖体上的翻译效率；（6）蛋白质活性调控（protein activity control）：蛋白质修饰、折叠、定位及活性状态。其中转录与加工在核内进行，其余主要在胞质。",
+   "analysis": "评分点：六层次名称齐全、顺序正确、核内/胞质分区；常与第9页五层次表述对照。",
+   "pages": [
+    9,
+    95
+   ]
+  },
+  {
+   "id": "L1-E18",
+   "type": "计算题",
+   "stem": "已知DNA双螺旋直径2.0 nm、每个碱基对沿轴上升0.34 nm；人中等大小染色体长约5 μm、宽约1 μm。请计算：（1）一个含1000个碱基对的B型DNA双螺旋的长度；（2）若人单倍体基因组约3×10⁹ bp，其DNA拉直后的总长度（以米表示）；（3）该DNA长度与一条5 μm长染色体长度之比（即该染色体DNA的压缩程度，按数量级表示）。",
+   "options": [],
+   "answer": "（1）1000 bp × 0.34 nm/bp = 340 nm = 0.34 μm。（2）3×10⁹ bp × 0.34 nm/bp = 1.02×10⁹ nm = 1.02×10³ μm = 1.02×10⁻³ m ≈ 1 m（约1米）。（3）1.02×10⁻³ m ÷（5×10⁻⁶ m）= 约2×10²，即约200倍；若按整条染色体DNA与染色体长度比较，压缩程度约为10²数量级（约200倍）。",
+   "analysis": "考查0.34 nm/bp这一基本参数与单位换算（1 μm=10³ nm，1 m=10⁶ μm）。注意：实际中期染色体压缩比远高于此，因为此处仅以5 μm染色体长度作粗略比较；答题须写出单位换算过程。",
+   "pages": [
+    90
+   ]
+  },
+  {
+   "id": "L1-E19",
+   "type": "实验设计题",
+   "stem": "某研究者欲利用pBR322质粒（含ampR、tetR抗性基因与ori）将一段外源DNA片段克隆入大肠杆菌，并筛选出含重组质粒的转化子。请设计完整实验方案，说明各步骤原理，并解释为何要在含Tet平板与含Amp+Tet平板上进行对比筛选。",
+   "options": [],
+   "answer": "（1）酶切：用限制性内切酶切割pBR322质粒与外源DNA，选用位于tetR基因内的限制酶位点，使外源片段插入后tetR失活（插入失活）。（2）连接：用DNA连接酶将外源DNA与质粒共价连接，形成重组质粒。（3）转化：将连接产物转化大肠杆菌（宿主细胞）。（4）初筛：涂布含Tet培养基，所有带质粒（含空载体与重组质粒）的菌落均可生长，不带质粒者被淘汰。（5）对比筛选：将Tet平板上的菌落影印转移到含Amp+Tet培养基。空载体质粒ampR与tetR均完好，在Amp+Tet上能生长；重组质粒因外源片段插入tetR使其失活，在Amp+Tet上不能生长。故“在Tet上能生长、在Amp+Tet上不能生长”的菌落即为含重组质粒的转化子。（6）验证：提取质粒酶切鉴定或测序确认插入片段。",
+   "analysis": "评分点：限制酶位点选择（tetR内）、连接、转化、Tet初筛、Amp+Tet对比筛选的插入失活逻辑、验证步骤。易错：若插入位点在ampR内则筛选逻辑相反。",
+   "pages": [
+    92,
+    93
+   ]
+  },
+  {
+   "id": "L1-E20",
+   "type": "分析题",
+   "stem": "2019年诺贝尔生理学或医学奖揭示了细胞感知氧气的机制。请根据HIF-1α氧感知通路，分析常氧与低氧条件下HIF-1α的命运差异及其对下游基因转录的影响，并说明该机制为何使HIF-1α成为肿瘤治疗的潜在靶点。",
+   "options": [],
+   "answer": "（1）常氧（Normoxia）：HIF-1α发生脯氨酰羟化（prolyl hydroxylation），被加上OH修饰；羟化后的HIF-1α被VHL识别并结合，经蛋白酶体降解（proteasomal degradation），细胞内HIF-1α水平低。（2）低氧（Hypoxia）：脯氨酰羟化依赖氧，低氧时HIF-1α不被羟化、不被VHL识别降解，得以积累并进入细胞核；与ARNT结合形成复合物，结合到低氧应答元件HRE（hypoxia response element）上，激活下游靶基因转录。（3）意义：肿瘤内部常处于低氧微环境，HIF-1α积累可激活促血管生成、代谢重编程等靶基因，有利于肿瘤生长，故HIF-1α及其羟化/VHL通路是潜在治疗靶点。",
+   "analysis": "评分点：常氧“羟化—VHL识别—蛋白酶体降解”与低氧“稳定—入核—ARNT—HRE—激活转录”两条路径的完整表述；脯氨酰羟化的氧依赖性；肿瘤低氧微环境的推论。",
+   "pages": [
+    74
+   ]
+  }
+ ]
+}

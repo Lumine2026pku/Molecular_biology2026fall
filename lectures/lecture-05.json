@@ -1,0 +1,2771 @@
+{
+ "lecture": 5,
+ "title": "原核与真核mRNA的特征、真核mRNA加工及RNA剪接与编辑",
+ "source_file": "2026_autumn-molecular_biology-05.pdf",
+ "pages": 100,
+ "overview": "本章围绕真核生物mRNA的成熟与功能展开，核心问题是：真核细胞如何将初级转录产物加工为可翻译的成熟mRNA，以及RNA分子本身如何通过剪接、编辑和催化活性拓展遗传信息。逻辑主线为：先比较原核与真核mRNA在结构、半衰期、顺反子数目、起始密码子及核糖体识别方式上的差异，建立“原核转录翻译偶联、真核分室分期加工”的基本框架；再逐一展开真核mRNA的三大加工事件——5'加帽、3'多聚腺苷酸化与剪接，并说明RNA聚合酶II的CTD如何通过磷酸化循环募集加工因子；随后深入剪接机制，包括剪接体组装、GU-AG法则、I类与II类自剪接内含子的转酯反应及tRNA、rRNA的加工；最后介绍RNA编辑、核酶及RNA世界假说，说明RNA既是遗传信息载体又是催化剂。本章与转录章（RNA聚合酶与启动子识别）和翻译章（起始因子与核糖体循环）紧密衔接，是理解基因表达调控层次性的关键。",
+ "outline": [
+  {
+   "section": "1",
+   "title": "原核与真核mRNA的比较",
+   "points": [
+    "原核一种RNA聚合酶、无剪接、转录翻译偶联；真核多种聚合酶、需剪接加工、转录翻译分室分期",
+    "原核mRNA半衰期短、常为多顺反子、5'端无帽子、3'端无或短poly(A)、起始密码子可为AUG/GUG/UUG",
+    "真核mRNA为单顺反子、有5'帽子和3'poly(A)尾、几乎只用AUG起始"
+   ]
+  },
+  {
+   "section": "2",
+   "title": "真核mRNA的5'加帽与3'多聚腺苷酸化",
+   "points": [
+    "加帽经RNA三磷酸酶、鸟苷酸转移酶、甲基转移酶三步，形成5'→5'磷酸二酯键",
+    "帽子分cap0、cap1、cap2，真核以cap1为主",
+    "帽子参与剪接、出核、抗降解和翻译起始识别",
+    "AAUAAA信号与GU-rich元件界定切割位点，CPSF/CstF切割，PAP加约200个A，PABP结合",
+    "poly(A)促进出核、稳定性和核糖体循环"
+   ]
+  },
+  {
+   "section": "3",
+   "title": "RNA聚合酶II CTD与加工偶联",
+   "points": [
+    "CTD七肽重复序列Y1S2P3T4S5P6S7，细菌RNA聚合酶无此结构",
+    "Ser5磷酸化募集加帽因子，Ser2磷酸化募集剪接与3'端加工因子",
+    "转录完成后磷酸酶去磷酸化，只有完全去磷酸化的Pol II才能重新起始"
+   ]
+  },
+  {
+   "section": "4",
+   "title": "内含子与剪接体",
+   "points": [
+    "真核基因多为断裂基因，内含子占比可超过99%",
+    "GU-AG法则（Chambon法则）：5'端GU、3'端AG",
+    "剪接体约含150种蛋白和U1、U2、U4、U5、U6五种snRNA，沉降系数60S",
+    "剪接经两次转酯反应，形成套索中间体，不消耗ATP",
+    "可变剪接产生组织特异性mRNA，如果蝇DSCAM基因38000种、α-原肌球蛋白基因5种"
+   ]
+  },
+  {
+   "section": "5",
+   "title": "自剪接内含子与tRNA、rRNA加工",
+   "points": [
+    "I类内含子以游离鸟苷为亲核基团，边界5'U-G3'，需Mg2+，中间体为环状L-19 IVS",
+    "II类内含子以分支点腺苷酸2'-OH为亲核基团，边界5'GU-AG3'，需Mg2+，中间体为套索",
+    "tRNA前体经RNase P切5'端、RNase D切3'端、加CCA、剪接去除内含子",
+    "45S前体rRNA切割释放18S、5.8S、28S rRNA，5S rRNA独立转录"
+   ]
+  },
+  {
+   "section": "6",
+   "title": "RNA编辑与核酶",
+   "points": [
+    "RNA编辑包括A-to-I、C-to-U、插入/删除和碱基修饰编辑",
+    "ApoB mRNA在肝与肠中C-to-U编辑产生ApoB100与ApoB48",
+    "gRNA指导锥虫线粒体mRNA的U插入编辑",
+    "核酶为具有催化活性的RNA，分剪切型和剪接型",
+    "Cech 1982年发现四膜虫自我剪接RNA，支持RNA世界假说"
+   ]
+  }
+ ],
+ "concepts": [
+  {
+   "id": "L5-C01",
+   "cn": "单顺反子mRNA",
+   "en": "monocistronic mRNA",
+   "abbr": "",
+   "definition": "只编码一个蛋白质（多肽链）的mRNA。",
+   "detail": "真核生物mRNA通常为单顺反子；顺反子（cistron）即编码一条多肽的遗传功能单位。",
+   "note": "与多顺反子mRNA相对；不要与“一个基因”混淆，一个基因可经可变剪接产生多种单顺反子mRNA。",
+   "pages": [
+    3,
+    9
+   ]
+  },
+  {
+   "id": "L5-C02",
+   "cn": "多顺反子mRNA",
+   "en": "polycistronic mRNA",
+   "abbr": "",
+   "definition": "编码多个蛋白质的mRNA，一条转录本可翻译出多条多肽。",
+   "detail": "原核生物mRNA常为多顺反子，每个顺反子各有核糖体结合位点（RBS）和起始密码子，可分别被核糖体独立起始翻译。",
+   "note": "真核mRNA一般为单顺反子；多顺反子结构是原核mRNA的特征之一。",
+   "pages": [
+    3,
+    4,
+    6
+   ]
+  },
+  {
+   "id": "L5-C03",
+   "cn": "半衰期",
+   "en": "half-life",
+   "abbr": "",
+   "definition": "mRNA分子浓度降解至初始值一半所需的时间，反映mRNA稳定性。",
+   "detail": "原核mRNA半衰期短，大多数细菌mRNA在转录开始1分钟后就开始降解，降解速度约为转录或翻译速度的一半；典型动物mRNA半衰期为4～24小时；细菌mRNA半衰期约3分钟。",
+   "note": "mRNA寿命由3' UTR序列和细胞类型决定；长寿命mRNA对应高丰度蛋白，短寿命mRNA对应低水平或快速响应信号的蛋白。",
+   "pages": [
+    4,
+    5,
+    11,
+    85
+   ]
+  },
+  {
+   "id": "L5-C04",
+   "cn": "多聚(A)尾巴",
+   "en": "poly(A) tail",
+   "abbr": "",
+   "definition": "mRNA 3'端由腺苷酸残基构成的多聚尾。",
+   "detail": "真核生物mRNA 3'端添加约150-250个腺苷酸（另一处给出约40-200个腺苷酸）；由多聚(A)聚合酶（PAP）以ATP为底物、不依赖模板催化，在转录后加上。原核mRNA无此尾或仅有较短的多聚(A)。",
+   "note": "组蛋白基因mRNA是“绝大多数真核mRNA具有poly(A)”的例外；约1/3的Poly(A)⁻ mRNA中约1/3编码组蛋白。",
+   "pages": [
+    4,
+    9,
+    19,
+    21,
+    25
+   ]
+  },
+  {
+   "id": "L5-C05",
+   "cn": "核糖体结合位点",
+   "en": "ribosome-binding site",
+   "abbr": "RBS",
+   "definition": "原核mRNA上起始密码子上游、供核糖体识别并结合的序列。",
+   "detail": "即SD序列（Shine-Dalgarno sequence），位于起始密码子上游约5–9个碱基处，与16S rRNA 3'端反向互补配对；多顺反子mRNA中每个顺反子各有一个RBS。",
+   "note": "真核mRNA不依赖SD序列，而依赖5'帽子结合后扫描寻找AUG。",
+   "pages": [
+    6,
+    7
+   ]
+  },
+  {
+   "id": "L5-C06",
+   "cn": "SD序列",
+   "en": "Shine-Dalgarno sequence",
+   "abbr": "SD sequence",
+   "definition": "原核生物起始密码子AUG上游的一段保守区，又称核糖体结合位点（RBS），因与16S rRNA 3'端反向互补而在核糖体-mRNA结合中起作用。",
+   "detail": "位于起始密码子上游约5–9个碱基处；mRNA上的GGAGG与16S rRNA 3'端的UCCUCC反向互补配对，使核糖体小亚基正确定位到AUG上游。",
+   "note": "SD序列是原核核糖体定位机制，真核无此机制。",
+   "pages": [
+    7
+   ]
+  },
+  {
+   "id": "L5-C07",
+   "cn": "基因",
+   "en": "gene",
+   "abbr": "",
+   "definition": "产生一条功能性多肽或RNA分子所必需的全部核苷酸序列（The entire nucleic acid sequence that is necessary for the synthesis of a functional polypeptide or RNA molecule）。",
+   "detail": "强调“全部核苷酸序列”，不仅包括编码区，还包括调控转录和翻译所必需的序列。",
+   "note": "分子生物学定义比“编码蛋白质的DNA片段”更广，包含调控序列。",
+   "pages": [
+    10
+   ]
+  },
+  {
+   "id": "L5-C08",
+   "cn": "C末端结构域",
+   "en": "C-terminal domain",
+   "abbr": "CTD",
+   "definition": "真核生物RNA聚合酶II最大亚基的羧基末端结构域，由七肽重复序列（Y1S2P3T4S5P6S7）组成，其磷酸化状态调控RNA加工因子的募集。",
+   "detail": "细菌的RNA聚合酶没有此结构；Ser5磷酸化募集加帽因子，Ser2磷酸化募集剪接因子和3'端加工因子；转录完成后可溶性磷酸酶去除磷酸基团，只有完全去磷酸化的Pol II才能重新起始转录。",
+   "note": "CTD是“转录与RNA加工偶联”的分子基础，不要与一般转录因子混淆。",
+   "pages": [
+    12,
+    13,
+    14
+   ]
+  },
+  {
+   "id": "L5-C09",
+   "cn": "启动子逃离",
+   "en": "promoter escape",
+   "abbr": "",
+   "definition": "RNA聚合酶II在转录起始后脱离启动子区域、进入延伸阶段的过渡过程。",
+   "detail": "该过程受CTD磷酸化状态调节：启动子逃离时CTD的Ser5被磷酸化，募集加帽因子。",
+   "note": "启动子逃离是转录起始晚期事件，与加帽偶联。",
+   "pages": [
+    12,
+    13
+   ]
+  },
+  {
+   "id": "L5-C10",
+   "cn": "零类帽子",
+   "en": "cap0",
+   "abbr": "",
+   "definition": "第一个甲基出现在所有真核细胞mRNA中的帽子结构，甲基加在鸟嘌呤N7位，由鸟苷酸-7甲基转移酶催化。",
+   "detail": "单细胞真核生物mRNA主要是cap0结构。",
+   "note": "cap0是帽子结构的基础层次，cap1、cap2在其上继续甲基化。",
+   "pages": [
+    16
+   ]
+  },
+  {
+   "id": "L5-C11",
+   "cn": "1类帽子",
+   "en": "cap1",
+   "abbr": "",
+   "definition": "在cap0基础上，于第二个核苷酸（原mRNA 5'第一位）的2'-OH位再加一个甲基形成的帽子结构，由2'-O-甲基转移酶完成。",
+   "detail": "真核生物中以cap1为主。",
+   "note": "cap1比cap0多一个2'-O甲基；不要与cap2混淆。",
+   "pages": [
+    16
+   ]
+  },
+  {
+   "id": "L5-C12",
+   "cn": "2类帽子",
+   "en": "cap2",
+   "abbr": "",
+   "definition": "在cap1基础上，mRNA链上第三个核苷酸的2'-OH位被甲基化形成的帽子结构。",
+   "detail": "该反应只以带cap1的mRNA为底物；cap2只占有帽mRNA总量的10%-15%以下。",
+   "note": "cap2含量少，不是主要类型。",
+   "pages": [
+    16
+   ]
+  },
+  {
+   "id": "L5-C13",
+   "cn": "帽子结合复合物",
+   "en": "cap-binding complex",
+   "abbr": "CBC",
+   "definition": "结合在mRNA 5'端帽子结构上的蛋白复合物，参与剪接体形成并促进第一个内含子的剪接。",
+   "detail": "帽子结构有助于pre-mRNA剪接，CBC参与剪接体形成，促进第一个内含子剪接。",
+   "note": "注意与翻译起始中的eIF4E（帽结合蛋白）区分，CBC主要作用于核内剪接。",
+   "pages": [
+    17
+   ]
+  },
+  {
+   "id": "L5-C14",
+   "cn": "起始因子IFⅢ",
+   "en": "initiation factor Ⅲ",
+   "abbr": "IFⅢ",
+   "definition": "幻灯片指出翻译时帽子结构供IFⅢ和核糖体识别，是翻译所必需的。",
+   "detail": "帽子结构四项功能之一为翻译时供IFⅢ和核糖体识别。",
+   "note": "幻灯片原文为“IFⅢ（起始因子）”；真核翻译起始中帽结合由eIF4E等介导（补充背景）。",
+   "pages": [
+    17
+   ]
+  },
+  {
+   "id": "L5-C15",
+   "cn": "多聚(A)结合蛋白",
+   "en": "poly(A)-binding protein",
+   "abbr": "PABP",
+   "definition": "特异性结合在多聚(A)尾巴上的蛋白质。",
+   "detail": "PABP结合多聚(A)尾巴并与5'帽相互作用，使mRNA首尾环化，促进核糖体的有效循环；多个PABP结合形成稳定的多聚(A)核糖核蛋白复合物。",
+   "note": "PABP是poly(A)功能的中介蛋白，不是加尾酶。",
+   "pages": [
+    19,
+    21,
+    23
+   ]
+  },
+  {
+   "id": "L5-C16",
+   "cn": "多聚(A)聚合酶",
+   "en": "poly(A) polymerase",
+   "abbr": "PAP",
+   "definition": "催化在mRNA 3'端添加腺苷酸残基、形成多聚(A)尾巴的酶。",
+   "detail": "不依赖模板，以ATP为底物，在RNA 3'端加上约200个A。",
+   "note": "PAP不同于RNA聚合酶II，不需要DNA模板。",
+   "pages": [
+    19,
+    21
+   ]
+  },
+  {
+   "id": "L5-C17",
+   "cn": "切割和聚腺苷酸环化特异性因子",
+   "en": "cleavage and polyadenylation specificity factor",
+   "abbr": "CPSF",
+   "definition": "结合poly-A信号序列、参与RNA切割与多聚腺苷化起始的因子。",
+   "detail": "CPSF与CstF结合到RNA上的poly-A信号，导致RNA切割。",
+   "note": "幻灯片中文写作“切割和聚腺苷酸环化特异性因子”。",
+   "pages": [
+    21
+   ]
+  },
+  {
+   "id": "L5-C18",
+   "cn": "切割刺激因子",
+   "en": "cleavage stimulation factor",
+   "abbr": "CstF",
+   "definition": "与CPSF一起结合poly-A信号、促进RNA切割的因子。",
+   "detail": "图中CstF在切割后从复合物上解离。",
+   "note": "CstF与CPSF协同作用，但功能分工不同。",
+   "pages": [
+    21
+   ]
+  },
+  {
+   "id": "L5-C19",
+   "cn": "poly(A)+ RNA",
+   "en": "poly(A)+ RNA",
+   "abbr": "",
+   "definition": "带有3'多聚(A)尾巴的RNA，主要是RNA聚合酶II转录产生的mRNA。",
+   "detail": "长腺苷酸尾巴是Pol II转录产物特有的，可通过寡聚(dT)亲和层析分离mRNA；与poly(A)− RNA（如rRNA）相对。",
+   "note": "oligo(dT)柱层析仅适用于带多聚(A)尾巴的RNA。",
+   "pages": [
+    24
+   ]
+  },
+  {
+   "id": "L5-C20",
+   "cn": "无多聚腺苷酸尾巴的mRNA",
+   "en": "Poly(A)⁻ mRNA",
+   "abbr": "",
+   "definition": "细胞内不含poly(A)尾巴的一类真核mRNA，约占细胞mRNA总量的1/3。",
+   "detail": "约1/3的Poly(A)⁻ mRNA编码不同形式的组蛋白。",
+   "note": "幻灯片原文写“多大1/3”，应为“多达1/3”的笔误。",
+   "pages": [
+    25
+   ]
+  },
+  {
+   "id": "L5-C21",
+   "cn": "外显子",
+   "en": "exon",
+   "abbr": "",
+   "definition": "基因中最终保留在成熟mRNA中的编码序列（the coding sequences）。",
+   "detail": "真核基因中外显子被内含子间隔排列；剪接时外显子按顺序连接。",
+   "note": "外显子不一定全部是编码序列，5' UTR和3' UTR也来自外显子。",
+   "pages": [
+    27
+   ]
+  },
+  {
+   "id": "L5-C22",
+   "cn": "内含子",
+   "en": "intron",
+   "abbr": "",
+   "definition": "基因中位于外显子之间、在剪接中被去除的间隔序列（the intervening sequences）。",
+   "detail": "真核基因大多为断裂基因，内含子所占比例很高，甚至超过99%；真核基因平均含8-10个内含子，前体分子一般比成熟mRNA大4-10倍。",
+   "note": "原核生物初始转录产物一般不含需剪接的内含子。",
+   "pages": [
+    2,
+    27,
+    28,
+    33
+   ]
+  },
+  {
+   "id": "L5-C23",
+   "cn": "RNA剪接",
+   "en": "RNA splicing",
+   "abbr": "",
+   "definition": "去除内含子并连接外显子的过程（removal of introns and joining of exons）。",
+   "detail": "发生在细胞核内，在成熟mRNA输出到细胞质之前完成；由剪接体催化。",
+   "note": "剪接不改变外显子内部的碱基信息，与RNA编辑不同。",
+   "pages": [
+    30
+   ]
+  },
+  {
+   "id": "L5-C24",
+   "cn": "剪接体",
+   "en": "spliceosome",
+   "abbr": "",
+   "definition": "由RNA和蛋白质组成的复合物，催化RNA剪接反应。",
+   "detail": "约由150种蛋白质（70种剪接因子、41种snRNP蛋白、30种其它蛋白）和5种snRNA（U1、U2、U4、U5、U6）以及正在组装的前体mRNA组成；沉降系数60S；质量约3.3 MDa的snRNA占27%，蛋白占约73%。",
+   "note": "剪接体是核内大型核糖核蛋白颗粒，不要与核糖体混淆。",
+   "pages": [
+    30,
+    38,
+    40
+   ]
+  },
+  {
+   "id": "L5-C25",
+   "cn": "小核核糖核蛋白",
+   "en": "small nuclear ribonucleoprotein",
+   "abbr": "snRNP",
+   "definition": "由小核RNA（snRNA）与一组蛋白质组成的复合物，是剪接体的主要组成成分。",
+   "detail": "剪接体由U1、U2、U4、U5、U6等snRNP及多种非snRNP蛋白因子组成；在自然状态下以核糖核蛋白颗粒形式存在，俗称snurps。",
+   "note": "snRNP与scRNP（细胞质小RNA核糖核蛋白）按定位区分。",
+   "pages": [
+    38,
+    39,
+    40,
+    41
+   ]
+  },
+  {
+   "id": "L5-C26",
+   "cn": "细胞核小RNA",
+   "en": "small nuclear RNA",
+   "abbr": "snRNA",
+   "definition": "细胞核中的小分子RNA，参与剪接过程，与其它蛋白一起构成剪接体。",
+   "detail": "剪接体含U1、U2、U4、U5、U6五种snRNA。",
+   "note": "不要与snoRNA混淆：snoRNA位于核仁，参与rRNA加工。",
+   "pages": [
+    39,
+    40
+   ]
+  },
+  {
+   "id": "L5-C27",
+   "cn": "核仁小RNA",
+   "en": "small nucleolar RNA",
+   "abbr": "snoRNA",
+   "definition": "存在于核仁中的一类小RNA，在rRNA的加工中起作用。",
+   "detail": "许多核酸酶参与rRNA加工，同时一组snoRNA也参与该过程。",
+   "note": "snoRNA作用于rRNA加工，snRNA参与前体mRNA剪接。",
+   "pages": [
+    39,
+    69
+   ]
+  },
+  {
+   "id": "L5-C28",
+   "cn": "GU-AG法则",
+   "en": "GU-AG rule",
+   "abbr": "",
+   "definition": "内含子5'端（剪接供体位点）以GU开始、3'端（剪接受体位点）以AG结束的边界序列规律。",
+   "detail": "Chambon等分析比较大量结构基因的内含子切割位点后发现：内含子两个末端并不存在同源或互补，连接点具有很短的保守序列；100种内含子的5'端都是GU，3'端都是AG，故又称Chambon法则。",
+   "note": "不适用于线粒体、叶绿体的内含子，也不适用于酵母的tRNA基因。",
+   "pages": [
+    34,
+    36
+   ]
+  },
+  {
+   "id": "L5-C29",
+   "cn": "剪接供体位点",
+   "en": "splice donor site",
+   "abbr": "",
+   "definition": "内含子5'端与外显子交界处的剪接位点，脊椎动物中保守序列为GU。",
+   "detail": "位于内含子左侧，与受体位点序列不同；内含子5'端保守序列5'GUAAGUA3'可与U1 snRNA 5'端保守序列3'CAUUUCAU5'互补。",
+   "note": "供体位点在内含子5'端，受体位点在内含子3'端，不可混用。",
+   "pages": [
+    35,
+    37
+   ]
+  },
+  {
+   "id": "L5-C30",
+   "cn": "剪接受体位点",
+   "en": "splice acceptor site",
+   "abbr": "",
+   "definition": "内含子3'端与外显子交界处的剪接位点，脊椎动物中保守序列为AG。",
+   "detail": "位于内含子右侧，其上游为嘧啶富集区（Py rich），距分枝点20–50个碱基。",
+   "note": "3'剪接位点由U2AF识别富嘧啶区后向下游扫描选取第一个AG。",
+   "pages": [
+    35,
+    37,
+    47
+   ]
+  },
+  {
+   "id": "L5-C31",
+   "cn": "分枝点序列",
+   "en": "branch site sequence",
+   "abbr": "",
+   "definition": "位于内含子3'端上游18–50 nt处的共有序列Py80NPy87Pu75APy95，其中A百分之百保守并具有2'-OH。",
+   "detail": "该保守A的2'-OH在剪接第一步反应中作为亲核基团形成套索结构；脊椎动物中共有序列为C U Pu A Py。",
+   "note": "分枝点A是套索形成的关键，其2'-OH必须游离。",
+   "pages": [
+    37,
+    42
+   ]
+  },
+  {
+   "id": "L5-C32",
+   "cn": "套索",
+   "en": "lariat",
+   "abbr": "",
+   "definition": "RNA剪接中的中间产物，由5'-2'键形成一个带尾巴的环状结构（a circular structure with a tail is created by a 5'-2' bond）。",
+   "detail": "内含子5'端G的5'磷酸与内含子内部分枝点腺苷酸的2'-OH形成2'-5'磷酸二酯键，使内含子形成带尾的环状结构；是II类内含子与核mRNA剪接体剪接的共同特征性中间体。",
+   "note": "I类内含子剪接不形成套索，其内含子以线性形式释放。",
+   "pages": [
+    42,
+    64,
+    65
+   ]
+  },
+  {
+   "id": "L5-C33",
+   "cn": "U2辅助因子",
+   "en": "U2 auxiliary factor",
+   "abbr": "U2AF",
+   "definition": "结合在3'剪接点上游富嘧啶区的蛋白因子，识别3'剪接点并引导U2 snRNP结合分支点。",
+   "detail": "图中标注其亚基为U2AF65与U2AF35。",
+   "note": "U2AF识别的是富嘧啶区，不是GU或AG本身。",
+   "pages": [
+    44
+   ]
+  },
+  {
+   "id": "L5-C34",
+   "cn": "剪接前体",
+   "en": "pre-spliceosome",
+   "abbr": "",
+   "definition": "由U1 snRNP、U2 snRNP与pre-mRNA组装成的A复合体，是剪接体组装的前体阶段。",
+   "detail": "剪接前体再加Tri-snRNP（U4/U5/U6三聚体）即成为完整剪接体（B复合体）。",
+   "note": "A复合体即剪接前体，不要与E复合体混淆。",
+   "pages": [
+    44
+   ]
+  },
+  {
+   "id": "L5-C35",
+   "cn": "外显子剪接增强子",
+   "en": "exonic splicing enhancer",
+   "abbr": "ESE",
+   "definition": "位于外显子内的顺式作用序列，可被SR蛋白结合并增强邻近剪接位点的使用。",
+   "detail": "SR蛋白结合ESE后与剪接机器组分互作，将剪接机器引导到附近剪接位点，防止使用错误的剪接位点。",
+   "note": "ESE是增强剪接的顺式元件，与沉默子（silencer）相对。",
+   "pages": [
+    48
+   ]
+  },
+  {
+   "id": "L5-C36",
+   "cn": "SR蛋白",
+   "en": "SR protein",
+   "abbr": "",
+   "definition": "富含丝氨酸（S）和精氨酸（R）的剪接调控蛋白，结合ESE并与剪接体组分互作，引导剪接机器到附近剪接位点。",
+   "detail": "SR蛋白的RS结构域参与蛋白-蛋白相互作用。",
+   "note": "SR蛋白是反式作用因子，ESE是顺式作用元件。",
+   "pages": [
+    48
+   ]
+  },
+  {
+   "id": "L5-C37",
+   "cn": "可变剪接",
+   "en": "alternative splicing",
+   "abbr": "",
+   "definition": "在高等真核生物个体发育或细胞分化过程中，选择性地越过某些外显子或某个剪接点进行剪接，产生出组织或发育阶段特异性mRNA的过程。",
+   "detail": "脊椎动物中大约有60%的基因能以可变剪接方式进行剪接；果蝇DSCAM基因可通过38000种可变剪接方式产生不同mRNA；α-原肌球蛋白基因在不同组织中产生5种成熟mRNA。",
+   "note": "可变剪接不改变DNA序列，但极大拓展了基因编码潜能。",
+   "pages": [
+    49,
+    51,
+    52
+   ]
+  },
+  {
+   "id": "L5-C38",
+   "cn": "自我剪接",
+   "en": "self-splicing",
+   "abbr": "",
+   "definition": "内含子仅依赖其自身RNA序列的催化作用，将自身从RNA中切除的能力。",
+   "detail": "带有I类、II类内含子的RNA本身具有催化活性，能进行内含子的自我剪接；其催化本质是RNA（核酶），依赖金属离子作为辅因子。",
+   "note": "自我剪接不需要剪接体，但需要Mg2+；I类还需游离鸟苷。",
+   "pages": [
+    56,
+    57
+   ]
+  },
+  {
+   "id": "L5-C39",
+   "cn": "核酶",
+   "en": "ribozyme",
+   "abbr": "",
+   "definition": "一类具有催化功能的RNA分子，通过催化靶位点RNA链中磷酸二酯键的断裂，特异性地剪切底物RNA分子。",
+   "detail": "ribozyme是核糖核酸（ribonucleic acid）和酶（enzyme）两个词的缩合词；分剪切型核酶（只剪不接）和剪接型核酶（又剪又接）；1982年Tom Cech发现四膜虫自我剪接RNA，RNaseP中的RNA亚基催化tRNA前体加工（Altman）。",
+   "note": "核酶说明RNA既是遗传物质又是酶，是对中心法则的重要修正。",
+   "pages": [
+    61,
+    88,
+    89,
+    95
+   ]
+  },
+  {
+   "id": "L5-C40",
+   "cn": "内在指导序列",
+   "en": "internal guide sequence",
+   "abbr": "IGS",
+   "definition": "I类内含子内部的一段序列，通过碱基配对把5'剪接位点与鸟苷结合位点正确对齐，决定剪接位点的选择。",
+   "detail": "IGS与5'剪接位点序列配对，确定鸟苷亲核攻击的精确位置；属于I类内含子的“特殊顺序”。",
+   "note": "IGS是I类内含子特有，II类内含子和核mRNA前体用分支点序列。",
+   "pages": [
+    59,
+    61,
+    65
+   ]
+  },
+  {
+   "id": "L5-C41",
+   "cn": "鸟苷结合口袋",
+   "en": "guanine-binding pocket",
+   "abbr": "",
+   "definition": "I类内含子中部核心结构中容纳游离鸟苷/鸟苷酸的凹槽，为亲核攻击提供定位。",
+   "detail": "中部核心结构包含鸟苷结合口袋和内在指导序列（IGS），把鸟苷结合位点与5'剪接位点精确定位在一起。",
+   "note": "鸟苷结合口袋是I类内含子自我剪接的结构基础。",
+   "pages": [
+    59
+   ]
+  },
+  {
+   "id": "L5-C42",
+   "cn": "转酯反应",
+   "en": "transesterification",
+   "abbr": "",
+   "definition": "一种酯交换反应，RNA剪接中羟基作为亲核体攻击磷酸二酯键，断裂旧键同时形成新键，不消耗ATP。",
+   "detail": "两次转酯反应中磷酸二酯键数目不变，这是剪接“不需能量”的化学基础；第一次由游离2'-羟基发动，第二次由已释放外显子末端的游离3'-羟基发动。",
+   "note": "转酯反应不是水解反应，不消耗ATP。",
+   "pages": [
+    67
+   ]
+  },
+  {
+   "id": "L5-C43",
+   "cn": "RNA编辑",
+   "en": "RNA editing",
+   "abbr": "",
+   "definition": "某些RNA，特别是mRNA的一种加工方式，可以在RNA转录后改变其序列，导致DNA所编码的遗传信息的改变。",
+   "detail": "包括A-to-I编辑、C-to-U编辑、插入/删除编辑和碱基修饰编辑；生物学意义包括校正作用、调控翻译和扩充遗传信息。",
+   "note": "编辑改变序列中的核苷酸本身，剪接只是切除内含子并连接外显子。",
+   "pages": [
+    70,
+    71,
+    72,
+    81
+   ]
+  },
+  {
+   "id": "L5-C44",
+   "cn": "A-to-I编辑",
+   "en": "A-to-I editing",
+   "abbr": "",
+   "definition": "腺苷（adenosine）脱氨基转变为肌苷（inosine），肌苷在翻译时被读成G的RNA编辑类型，由ADAR1/2/3催化。",
+   "detail": "例：GluA2 Q/R位点编辑降低钙通透性，未编辑的GluA2会导致神经元毒性或疾病（如ALS、癫痫）；ADAR1缺失导致干扰素病。",
+   "note": "I在碱基配对时被识别为G，遗传信息上等价于A→G改变。",
+   "pages": [
+    72,
+    73,
+    75
+   ]
+  },
+  {
+   "id": "L5-C45",
+   "cn": "C-to-U编辑",
+   "en": "C-to-U editing",
+   "abbr": "",
+   "definition": "胞苷（cytidine）转变为尿苷（uridine）的RNA编辑类型，由APOBEC1催化。",
+   "detail": "例：ApoB mRNA在肝与肠中的编辑差异；肝中ApoB100含4563 aa，肠中UAA在第2153位密码子终止合成ApoB48。",
+   "note": "CAA编码谷氨酰胺，UAA为终止密码子；一个C→U编辑即把编码密码子变为终止子。",
+   "pages": [
+    72,
+    74
+   ]
+  },
+  {
+   "id": "L5-C46",
+   "cn": "引导RNA",
+   "en": "guide RNA",
+   "abbr": "gRNA",
+   "definition": "一类小分子RNA，可与mRNA被编辑部分发生非常规互补（含G-U配对），对mRNA前体分子的编辑起指导作用。",
+   "detail": "1990年L. Simpson等在研究锥虫线粒体mRNA时发现；gRNA具有三个区域：锚定区（anchor）、编辑区（editing region）、poly-U尾（poly-U stretch）。",
+   "note": "gRNA指导的是尿嘧啶的插入或删除，不是碱基转换。",
+   "pages": [
+    71,
+    78,
+    79
+   ]
+  },
+  {
+   "id": "L5-C47",
+   "cn": "锚定区",
+   "en": "anchor",
+   "abbr": "",
+   "definition": "gRNA中引导gRNA结合到待编辑mRNA区域的片段。",
+   "detail": "位于gRNA 3'端一侧；锚定区先与mRNA结合，随后编辑区配对。",
+   "note": "锚定区决定gRNA与mRNA的初始结合位置。",
+   "pages": [
+    79,
+    80
+   ]
+  },
+  {
+   "id": "L5-C48",
+   "cn": "编辑区",
+   "en": "editing region",
+   "abbr": "",
+   "definition": "gRNA中决定U插入位置的片段。",
+   "detail": "与mRNA配对后，未配对的嘌呤（A）位置即U插入位点。",
+   "note": "编辑区是gRNA的模板部分，不是mRNA的编码区。",
+   "pages": [
+    79,
+    80
+   ]
+  },
+  {
+   "id": "L5-C49",
+   "cn": "外显子连接复合体",
+   "en": "exon junction complex",
+   "abbr": "EJC",
+   "definition": "剪接完成后沉积在外显子-外显子连接处上游约20–24 nt处的蛋白复合体，作为mRNA已成熟的标志。",
+   "detail": "EJC组分包括MAGOH、Y14、eIF4AIII、MLN51；只有带帽、带多聚A尾且带有EJC的成熟mRNA才能被运出核。",
+   "note": "EJC是mRNA成熟标志，进入细胞质后发生蛋白交换。",
+   "pages": [
+    83
+   ]
+  },
+  {
+   "id": "L5-C50",
+   "cn": "核不均一RNA",
+   "en": "heterogeneous nuclear RNA",
+   "abbr": "hnRNA",
+   "definition": "mRNA的前体，即核内转录初产物及其加工中间体。",
+   "detail": "hnRNA经加帽、加尾、剪接后成为成熟mRNA。",
+   "note": "hnRNA是核内前体，不是成熟mRNA。",
+   "pages": [
+    86
+   ]
+  },
+  {
+   "id": "L5-C51",
+   "cn": "开放阅读框",
+   "en": "open reading frame",
+   "abbr": "ORF",
+   "definition": "从起始密码子到终止密码子之间连续编码氨基酸的阅读框，成熟mRNA中形成连续的可译框。",
+   "detail": "幻灯片写作“连续的可译框(ORF)”。",
+   "note": "ORF是翻译的连续编码区域，不包括内含子。",
+   "pages": [
+    86
+   ]
+  },
+  {
+   "id": "L5-C52",
+   "cn": "锤头核酶",
+   "en": "hammerhead ribozyme",
+   "abbr": "",
+   "definition": "一类具有锤头状二级结构、能进行位点特异性自我切割的小型RNA催化剂。",
+   "detail": "由三个茎环区（stem I、II、III）组成，其间有一个由11-13个保守核苷酸构成的催化中心；N代表该位置上可以为任意碱基；在类病毒中茎III的顶部并没有被环连接起来。",
+   "note": "锤头核酶切割发生在保守的GUC序列之后。",
+   "pages": [
+    91,
+    93
+   ]
+  },
+  {
+   "id": "L5-C53",
+   "cn": "发夹型核酶",
+   "en": "hairpin ribozyme",
+   "abbr": "",
+   "definition": "形成发夹状二级结构、可进行可逆自我剪接的小型核酶。",
+   "detail": "来源于烟草环斑病毒负链的卫星RNA；是核酸酶与RNA连接酶的靶标；其自我剪接是可逆的，催化连接的能力高于催化切割的能力。",
+   "note": "发夹型核酶连接活性强于切割活性，与锤头核酶不同。",
+   "pages": [
+    96
+   ]
+  },
+  {
+   "id": "L5-C54",
+   "cn": "丁型肝炎病毒核酶",
+   "en": "Hepatitis delta virus ribozyme",
+   "abbr": "HDV ribozyme",
+   "definition": "丁型肝炎病毒基因组RNA与反基因组RNA中具有自我剪接活性的核酶结构。",
+   "detail": "HDV RNA来源于基因组RNA和反基因组RNA；被称为“最快的RNA催化剂”；其自我剪接能力比锤头状核酶高100倍。",
+   "note": "HDV核酶序列同时存在于两条极性链的转录本中。",
+   "pages": [
+    97
+   ]
+  },
+  {
+   "id": "L5-C55",
+   "cn": "RNA世界",
+   "en": "RNA world",
+   "abbr": "",
+   "definition": "生命起源早期以RNA同时承担遗传信息储存与催化功能的假说阶段。",
+   "detail": "核酶的发现为生命起源研究提供了新思路：也许曾经存在以RNA为基础的原始生命；蛋白质世界也可能（仅仅是可能）起源于RNA世界。",
+   "note": "幻灯片用“也许”“仅仅是可能”等措辞，表明这是假说而非定论。",
+   "pages": [
+    98,
+    99
+   ]
+  }
+ ],
+ "processes": [
+  {
+   "id": "L5-P01",
+   "name": "原核生物mRNA的转录-翻译偶联与降解",
+   "en": "coupled transcription-translation and mRNA degradation",
+   "overview": "原核生物中mRNA的转录和翻译在同一个细胞空间里同步进行，蛋白质合成往往在mRNA刚开始转录时就被引发，mRNA在转录尚未结束时即已开始降解。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "开始转录",
+     "detail": "0分钟：开始转录，新生RNA 5'端为ppp。"
+    },
+    {
+     "n": 2,
+     "name": "核糖体开始翻译",
+     "detail": "0.5分钟：核糖体开始翻译。"
+    },
+    {
+     "n": 3,
+     "name": "5'端开始降解",
+     "detail": "1.5分钟：5'端开始降解。"
+    },
+    {
+     "n": 4,
+     "name": "RNA聚合酶在3'端开始终止",
+     "detail": "2.0分钟：RNA聚合酶在3'端开始终止。"
+    },
+    {
+     "n": 5,
+     "name": "降解继续，核糖体完成翻译",
+     "detail": "3.0分钟：降解继续，核糖体完成翻译。"
+    }
+   ],
+   "key_points": [
+    "核糖体在RNA聚合酶后方紧跟翻译，而5'端已被核酸酶降解",
+    "大多数细菌mRNA在转录开始1分钟后就开始降解",
+    "mRNA降解的速度大概只有转录或翻译速度的一半",
+    "总时长约3分钟"
+   ],
+   "regulation": [
+    "mRNA寿命极短且与转录翻译在时间上重叠，与其快速调控相适应"
+   ],
+   "figures": [
+    "按时间排列的5幅转录-翻译偶联示意图（0、0.5、1.5、2.0、3.0分钟）"
+   ],
+   "pages": [
+    5
+   ]
+  },
+  {
+   "id": "L5-P02",
+   "name": "真核mRNA表达过程",
+   "en": "mRNA expression",
+   "overview": "在动物细胞中，mRNA的表达需经过转录、修饰、加工、核质转运和翻译等步骤。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "转录起始，5'端被修饰",
+     "detail": "<1 min：转录起始，5'端被修饰。"
+    },
+    {
+     "n": 2,
+     "name": "mRNA 3'端被切割释放",
+     "detail": "6 min：mRNA 3'端通过切割释放。"
+    },
+    {
+     "n": 3,
+     "name": "3'端多聚腺苷酸化",
+     "detail": "20 min：3'端被多聚腺苷酸化。"
+    },
+    {
+     "n": 4,
+     "name": "mRNA转运至细胞质",
+     "detail": "25 min：mRNA转运至细胞质。"
+    },
+    {
+     "n": 5,
+     "name": "核糖体翻译mRNA",
+     "detail": ">4 hr：核糖体翻译mRNA。"
+    }
+   ],
+   "key_points": [
+    "典型动物mRNA的半衰期范围是4～24小时",
+    "各步骤发生在不同的时间点，并伴随5'加帽、3'端切割、加尾和核质转运"
+   ],
+   "regulation": [
+    "转录与加工在核内偶联完成，只有加工成熟的mRNA才被输出并翻译"
+   ],
+   "figures": [
+    "mRNA在细胞中从转录到翻译的时间进程示意图"
+   ],
+   "pages": [
+    11
+   ]
+  },
+  {
+   "id": "L5-P03",
+   "name": "CTD磷酸化调控RNA加工因子募集",
+   "en": "CTD phosphorylation and recruitment of RNA processing factors",
+   "overview": "RNA加工酶是由聚合酶的尾巴（CTD）募集的，CTD在不同转录阶段的磷酸化状态决定募集不同的RNA加工因子。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "起始前",
+     "detail": "preinitiation：CTD未磷酸化，未募集RNA加工因子。"
+    },
+    {
+     "n": 2,
+     "name": "启动子逃离",
+     "detail": "promoter escape：CTD的Ser5被磷酸化，募集加帽因子（capping factors）。"
+    },
+    {
+     "n": 3,
+     "name": "延伸",
+     "detail": "elongation：CTD的Ser2被磷酸化，募集剪接因子（splicing factors）。"
+    }
+   ],
+   "key_points": [
+    "CTD七肽重复序列为Y1S2P3T4S5P6S7",
+    "TFIIH磷酸化CTD后，加帽因子、剪接因子和多聚腺苷酸化因子等RNA加工蛋白结合到磷酸化的CTD尾部",
+    "细菌的RNA聚合酶没有CTD结构"
+   ],
+   "regulation": [
+    "转录完成后可溶性磷酸酶去除CTD上的磷酸基团，只有完全去磷酸化的RNA聚合酶II才能重新启动转录"
+   ],
+   "figures": [
+    "CTD磷酸化状态与RNA加工因子募集的关系图"
+   ],
+   "pages": [
+    12,
+    13,
+    14
+   ]
+  },
+  {
+   "id": "L5-P04",
+   "name": "5'加帽",
+   "en": "5' capping",
+   "overview": "通过5'→5'磷酸二酯键在原初mRNA的5'端倒扣一个“G”，包括三个连续的酶促反应。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "RNA三磷酸酶去除γ-磷酸",
+     "detail": "RNA三磷酸酶（RNA triphosphatase）去除5'端γ-磷酸。"
+    },
+    {
+     "n": 2,
+     "name": "鸟苷酸转移酶转移GMP",
+     "detail": "鸟苷酸转移酶（guanylyl transferase）将GTP的GMP部分转移到5'端，形成5'→5'磷酸二酯键。"
+    },
+    {
+     "n": 3,
+     "name": "甲基转移酶加甲基",
+     "detail": "甲基转移酶（methyl transferase）在鸟嘌呤N7位加上甲基。"
+    }
+   ],
+   "key_points": [
+    "帽子结构是GTP和原5'三磷酸腺苷(或鸟苷)缩合反应的产物",
+    "5'末端加上鸟苷是由鸟苷转移酶催化的",
+    "加帽反应发生在RNA聚合酶合成了大约25个核苷酸后",
+    "mRNA的帽子结构常常被甲基化，是蛋白质合成起始信号的一部分"
+   ],
+   "regulation": [
+    "加帽蛋白首先结合到RNA聚合酶尾部，这一结合发生在转录起始过程后期、当七肽重复序列中的Ser5被磷酸化时"
+   ],
+   "figures": [
+    "5'加帽的三个酶促反应步骤示意图"
+   ],
+   "pages": [
+    14,
+    15
+   ]
+  },
+  {
+   "id": "L5-P05",
+   "name": "多聚腺苷化与转录终止",
+   "en": "polyadenylation and termination",
+   "overview": "CPSF与CstF结合到RNA上的poly-A信号，导致RNA切割；随后PAP在3'端加上约200个A；PABP结合新合成的多聚(A)尾巴。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "转录产生含poly-A信号的RNA",
+     "detail": "RNA聚合酶Ⅱ转录产生含poly-A信号序列（poly-A signal sequence）的RNA。"
+    },
+    {
+     "n": 2,
+     "name": "CPSF与CstF结合poly-A信号",
+     "detail": "CPSF（切割和聚腺苷酸环化特异性因子）与CstF（切割刺激因子）结合到RNA上的poly-A信号。"
+    },
+    {
+     "n": 3,
+     "name": "RNA在poly-A位点被切割",
+     "detail": "RNA cleavage：RNA在poly-A位点被切割。"
+    },
+    {
+     "n": 4,
+     "name": "PAP加A尾",
+     "detail": "Poly-A polymerase（PAP）以ATP为底物，在RNA 3'端加上约200个A。"
+    },
+    {
+     "n": 5,
+     "name": "PABP结合多聚(A)尾巴",
+     "detail": "Poly-A-binding protein（PABP）结合到多聚(A)尾巴上；更多PABP结合，形成稳定的多聚(A)核糖核蛋白复合物。"
+    }
+   ],
+   "key_points": [
+    "AAUAAA位于切割位点上游10–35 nt，高度保守",
+    "GU-rich元件位于切割位点下游约50 nt",
+    "AAUAAA序列对于初级转录产物的准确切割及加多聚(A)是必需的",
+    "加多聚(A)可以发生在RNA剪接之前或之后"
+   ],
+   "regulation": [
+    "切割后CstF从复合物上解离，PAP与PABP依次作用"
+   ],
+   "figures": [
+    "多聚腺苷化与终止的分子步骤图"
+   ],
+   "pages": [
+    20,
+    21
+   ]
+  },
+  {
+   "id": "L5-P06",
+   "name": "剪接体组装（E、A、B复合体）",
+   "en": "spliceosome assembly: E, A, B complexes",
+   "overview": "U1 snRNA识别5'剪接点，U2AF识别3'剪接点并引导U2 snRNP结合分支点，形成剪接前体；再与U4/U5/U6三聚体结合形成剪接体。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "U1识别5'剪接点形成E复合体",
+     "detail": "U1 snRNA以碱基互补方式识别mRNA前体5'剪接点，形成E（早期）复合体。"
+    },
+    {
+     "n": 2,
+     "name": "U2AF识别3'剪接点并引导U2结合分支点形成A复合体",
+     "detail": "结合在3'剪接点上游富嘧啶区的U2AF（U2 auxiliary factor）识别3'剪接点，并引导U2 snRNP与分支点结合，形成A复合体（剪接前体 pre-spliceosome）。"
+    },
+    {
+     "n": 3,
+     "name": "Tri-snRNP结合形成B复合体",
+     "detail": "剪接前体进一步与U4、U5、U6 snRNP三聚体（Tri-snRNP）结合，形成B复合体，完成组装。"
+    }
+   ],
+   "key_points": [
+    "U2AF亚基为U2AF65与U2AF35",
+    "BBP（branch point binding protein）参与分支点结合",
+    "组装顺序为E→A→B"
+   ],
+   "regulation": [
+    "与转录偶联的剪接体组装极大减少了外显子遗漏的可能性"
+   ],
+   "figures": [
+    "剪接体组装路径图，从E复合体经A复合体、B复合体到完成组装"
+   ],
+   "pages": [
+    44
+   ]
+  },
+  {
+   "id": "L5-P07",
+   "name": "C复合体形成与活性位点产生",
+   "en": "formation of C complex and catalytic activation",
+   "overview": "B复合体之后U4解离，U6与U2重排，形成C复合体并产生活性位点，随后完成两步切割与连接。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "U4 snRNP解离",
+     "detail": "U4 snRNP从剪接体上解离。"
+    },
+    {
+     "n": 2,
+     "name": "U6与U2重排形成C复合体",
+     "detail": "U6与U2发生重排，形成C复合体。"
+    },
+    {
+     "n": 3,
+     "name": "产生活性位点催化剪接",
+     "detail": "C复合体产生活性位点，催化剪接反应。"
+    }
+   ],
+   "key_points": [
+    "U5 snRNP作为中心支架，U6与U2 snRNA缠绕其上，在U5 snRNA的Loop I旁形成催化中心",
+    "镁离子由U6 snRNA中的保守核苷酸配位",
+    "结构数据引自Huang, et al., 2015. Science. Vol. 349 no. 6253 pp. 1191-1198"
+   ],
+   "regulation": [
+    "U4解离是剪接体活化的关键步骤"
+   ],
+   "figures": [
+    "C复合体形成示意图及剪接体RNA组分的表面表示"
+   ],
+   "pages": [
+    45,
+    46
+   ]
+  },
+  {
+   "id": "L5-P08",
+   "name": "pre-mRNA剪接的两步转酯反应",
+   "en": "two-step transesterification of pre-mRNA splicing",
+   "overview": "剪接通过套索中间体进行，分两步完成：先切5'剪接点形成套索，再切3'剪接点并连接外显子。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "在5'剪接点切割",
+     "detail": "Step 1: a cut is made at the 5' splice site, separating the left exon and the right intron-exon molecule；分枝点腺苷酸的2'-OH攻击5'剪接点，形成5'-2'键产生套索。"
+    },
+    {
+     "n": 2,
+     "name": "在3'剪接点切割并连接外显子",
+     "detail": "Step 2: cutting at the 3' splice site releases the free intron in lariat form, while the right exon is ligated (spliced) to the left exon；上游外显子游离3'-OH攻击3'剪接点，两外显子连接，内含子以套索释放。"
+    }
+   ],
+   "key_points": [
+    "两步均为转酯反应，不消耗ATP",
+    "5'剪接点共有序列为G U Pu A G U（Pu为嘌呤），3'剪接点共有序列为N C A G G，分支点核心为C U Pu A Py",
+    "动物共有序列为Py80 N Py80 Py87 Pu75 A Py95",
+    "去分支后套索成为线性分子"
+   ],
+   "regulation": [
+    "由剪接体构象变化驱动"
+   ],
+   "figures": [
+    "剪接经套索中间体进行的示意图"
+   ],
+   "pages": [
+    43
+   ]
+  },
+  {
+   "id": "L5-P09",
+   "name": "I类内含子自我剪接",
+   "en": "self-splicing of group I intron",
+   "overview": "两步酯交换反应（transesterification），无需ATP，由鸟苷的3'-OH起始。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "游离鸟苷酸攻击5'剪接点",
+     "detail": "游离鸟苷酸（pG）的3'-OH作为亲核基团，攻击内含子5'端的磷酸二酯键（图中UpA位点），从上游切开RNA链，鸟苷共价连接到内含子5'端（生成pGpA）。"
+    },
+    {
+     "n": 2,
+     "name": "上游外显子3'-OH攻击3'剪接点",
+     "detail": "上游外显子游离出的3'-OH作为亲核基团，攻击内含子3'位核苷酸（图中GpU位点）上的磷酸二酯键，使内含子被完全切开并释放。"
+    },
+    {
+     "n": 3,
+     "name": "外显子连接",
+     "detail": "上下游两个外显子通过新的磷酸二酯键相连（图中形成UpU），完成剪接。"
+    }
+   ],
+   "key_points": [
+    "两个亲核基团依次是：外源游离鸟苷酸的3'-OH，以及上游外显子末端的3'-OH",
+    "两次转酯反应中磷酸二酯键数目守恒，因此该剪接过程不需要外加能量（如ATP）",
+    "I类内含子边界序列为5'-U-G-3'，需Mg2+，中间体为环状L-19 IVS"
+   ],
+   "regulation": [
+    "I类内含子折叠成特定构象，利用金属离子作为辅因子催化化学反应"
+   ],
+   "figures": [
+    "I类内含子自我剪接的三步示意图"
+   ],
+   "pages": [
+    60,
+    65
+   ]
+  },
+  {
+   "id": "L5-P10",
+   "name": "II类内含子自我剪接",
+   "en": "self-splicing of group II intron",
+   "overview": "与I类同为两步转酯反应，但第一步亲核基团是内含子内部的分枝点腺苷酸2'-OH，形成套索结构。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "分枝点A的2'-OH攻击5'剪接点形成套索",
+     "detail": "分枝点腺苷酸（branch-point A）的2'-OH作为亲核基团，攻击内含子5'端的磷酸二酯键；内含子5'边界序列上的G以5'磷酸与分枝点A的2'-OH形成磷酸二酯键，产生套索（lariat）结构。"
+    },
+    {
+     "n": 2,
+     "name": "上游外显子3'-OH攻击3'剪接点",
+     "detail": "上游外显子的3'-OH作为亲核基团，攻击内含子3'位核苷酸上的磷酸二酯键，使套索结构完全解离。"
+    },
+    {
+     "n": 3,
+     "name": "外显子连接",
+     "detail": "上下游两个外显子通过新的磷酸二酯键相连。"
+    }
+   ],
+   "key_points": [
+    "II类内含子的剪接无需鸟苷的辅助，但需镁离子（Mg2+）的存在",
+    "边界序列为5'↓GU-AG↓3'，特殊序列为分支点序列",
+    "中间体为套索",
+    "与核mRNA前体剪接的化学反应及产生的RNA中间体（套索）相同"
+   ],
+   "regulation": [
+    "II类内含子可自我剪接，核mRNA内含子需剪接体snRNP催化"
+   ],
+   "figures": [
+    "II类内含子自我剪接的三步示意图（引自Essential Cell Biology 3/e, Figure 7-20）"
+   ],
+   "pages": [
+    62,
+    63,
+    64,
+    66
+   ]
+  },
+  {
+   "id": "L5-P11",
+   "name": "tRNA前体加工",
+   "en": "tRNA precursor processing",
+   "overview": "tRNA由较长的初级转录本（primary transcript）经切割、剪接、末端添加与碱基修饰成为成熟tRNA。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "RNase P切割5'端",
+     "detail": "RNase P在tRNA 5'端切出成熟5'端。"
+    },
+    {
+     "n": 2,
+     "name": "RNase D切割3'端",
+     "detail": "RNase D切除3'端多余序列。"
+    },
+    {
+     "n": 3,
+     "name": "碱基修饰",
+     "detail": "base modification：tRNA加工还包括核苷酸修饰。"
+    },
+    {
+     "n": 4,
+     "name": "5'端切割与3'端切割",
+     "detail": "5' cleavage与3' cleavage。"
+    },
+    {
+     "n": 5,
+     "name": "3'端添加CCA",
+     "detail": "在tRNA核苷酸转移酶（tRNA nucleotidyltransferase）的催化下添加CCA。"
+    },
+    {
+     "n": 6,
+     "name": "剪接去除内含子",
+     "detail": "内含子的剪接由tRNA内切核酸酶（tRNA endonuclease）和RNA连接酶（RNA ligase）完成。"
+    }
+   ],
+   "key_points": [
+    "tRNA的切割和连接是独立的反应",
+    "初级转录本5'端序列为5' TGUUAUCAGUUAAUGG，3'端为OH",
+    "成熟tRNATyr的3'端为CCA、5'端为磷酸",
+    "图注：Figure 16-27, Molecular Biology: Principles and Practice, Second Edition, © 2015 Macmillan Education"
+   ],
+   "regulation": [
+    "tRNA加工与核内转录偶联"
+   ],
+   "figures": [
+    "tRNA由初级转录本经中间体加工为成熟tRNA的三阶段示意图"
+   ],
+   "pages": [
+    68
+   ]
+  },
+  {
+   "id": "L5-P12",
+   "name": "rRNA前体加工",
+   "en": "rRNA precursor processing",
+   "overview": "45S前体rRNA（45S precursor rRNA）经化学修饰与切割，释放出18S rRNA、5.8S rRNA和28S rRNA；5S rRNA由别处独立转录产生。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "45S前体rRNA转录产生",
+     "detail": "45S前体rRNA（13,000 nucleotides，5'端为ppp，3'端为OH）转录产生。"
+    },
+    {
+     "n": 2,
+     "name": "化学修饰",
+     "detail": "CHEMICAL MODIFICATION：图中以紫色三角和红色圆点标记修饰位点。"
+    },
+    {
+     "n": 3,
+     "name": "切割",
+     "detail": "CLEAVAGE：降解区域（degraded regions of nucleotide sequence）被去除。"
+    },
+    {
+     "n": 4,
+     "name": "释放18S、5.8S、28S rRNA",
+     "detail": "释放18S rRNA、5.8S rRNA、28S rRNA。"
+    },
+    {
+     "n": 5,
+     "name": "掺入核糖体亚基",
+     "detail": "18S rRNA掺入小亚基（small ribosomal subunit）；5.8S与28S rRNA掺入大亚基（large ribosomal subunit）。"
+    },
+    {
+     "n": 6,
+     "name": "5S rRNA独立产生并掺入大亚基",
+     "detail": "5S rRNA在别处产生（5S rRNA made elsewhere），也掺入大亚基。"
+    }
+   ],
+   "key_points": [
+    "大小rRNA都通过从共同的RNA前体切割下来而释放",
+    "5'端大多直接由切割产生，3'端大多由切割及其后的3'-5'修整反应产生",
+    "许多核酸酶参与rRNA加工，同时一组核仁小RNA（snoRNA）也参与该过程"
+   ],
+   "regulation": [
+    "化学修饰先于切割发生"
+   ],
+   "figures": [
+    "45S前体rRNA加工为18S、5.8S、28S rRNA的示意图"
+   ],
+   "pages": [
+    69
+   ]
+  },
+  {
+   "id": "L5-P13",
+   "name": "gRNA指导的U插入编辑",
+   "en": "guide RNA-directed uridine insertion editing",
+   "overview": "gRNA与被编辑区及周围序列有相当程度互补，但gRNA上存在未能配对的腺嘌呤，形成缺口，为插入尿嘧啶提供模板。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "锚定区先结合",
+     "detail": "mRNA 5'…GAGAUAACCU…3'与gRNA 3'-[poly-U] CUAAACAUAUGGA…5'配对，锚定区（anchor, region of homology）先结合。"
+    },
+    {
+     "n": 2,
+     "name": "编辑区配对形成缺口",
+     "detail": "gRNA编辑区（editing region）与mRNA配对后留下未配对的A，形成缺口。"
+    },
+    {
+     "n": 3,
+     "name": "核酸内切酶在错配处切割",
+     "detail": "核酸内切酶（endonuclease）在错配处切开mRNA（cuts at mismatch）。"
+    },
+    {
+     "n": 4,
+     "name": "加入UTP",
+     "detail": "在缺口处加入UTP，按编辑区碱基配对指导加入U（Us added, guided by base pairing with gRNA editing region）。"
+    },
+    {
+     "n": 5,
+     "name": "连接酶连接",
+     "detail": "连接酶（ligase）将5'与3'末端连接（joins 5' to 3' ends of message）。"
+    },
+    {
+     "n": 6,
+     "name": "gRNA解离",
+     "detail": "编辑完成，gRNA从mRNA上解离，mRNA作为翻译模板。"
+    }
+   ],
+   "key_points": [
+    "编辑是“切割—插入U—连接”的三步反应",
+    "gRNA既是定位模板又是U插入的模板",
+    "反应完成后，指导RNA从mRNA上解离下来，而mRNA则被用做翻译的模板"
+   ],
+   "regulation": [
+    "该编辑发生在转录后、翻译前"
+   ],
+   "figures": [
+    "gRNA指导的U插入编辑分步机制图"
+   ],
+   "pages": [
+    77,
+    80
+   ]
+  },
+  {
+   "id": "L5-P14",
+   "name": "mRNA出核转运",
+   "en": "mRNA nuclear export",
+   "overview": "mRNA从细胞核到细胞质是一个主动的、受到精细调控的过程，需要Exportin、Ran-GTP及核孔复合体参与。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "核内mRNA与Exportin结合",
+     "detail": "核内：mRNA与Exportin结合，Ran处于GTP结合状态（Ran-GTP）。"
+    },
+    {
+     "n": 2,
+     "name": "复合物经核孔进入细胞质",
+     "detail": "mRNA-Exportin-Ran-GTP复合物经核孔（nuclear pore）穿过核膜（nuclear envelope）进入细胞质。"
+    },
+    {
+     "n": 3,
+     "name": "Ran-GTP水解，mRNA释放",
+     "detail": "细胞质中Ran-GTP水解为Ran-GDP并释放Pi，复合物解离，mRNA释放。"
+    },
+    {
+     "n": 4,
+     "name": "转运因子循环",
+     "detail": "Exportin与Ran-GDP被重新输入核内，Ran-GDP经GEF（鸟苷酸交换因子）换成GTP，进入下一轮转运。"
+    }
+   ],
+   "key_points": [
+    "受损的、加工错误的mRNA以及被释放出来的内含子被滞留在细胞核内并被降解",
+    "进入细胞质后，部分蛋白被丢弃并重新输入核内用于下一轮mRNA转运；部分蛋白留在mRNA上促进翻译",
+    "Ran-GTP/GDP梯度驱动mRNA的定向出核与转运因子的循环使用"
+   ],
+   "regulation": [
+    "mRNA从细胞核到细胞质的转运具有高度的选择性"
+   ],
+   "figures": [
+    "mRNA经核孔出核的循环示意图（Figure 16-22 Molecular Biology: Principles and Practice, 2nd ed.）"
+   ],
+   "pages": [
+    83,
+    84
+   ]
+  },
+  {
+   "id": "L5-P15",
+   "name": "RNA世界的三阶段进化模型",
+   "en": "evolution from RNA-based to present-day cells",
+   "overview": "从RNA基础系统到现代细胞的进化顺序，箭头标注每一步的进化事件。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "RNA基础系统",
+     "detail": "第一阶段RNA-based systems：仅由RNA自我复制（环形箭头围绕RNA），系统只含RNA。"
+    },
+    {
+     "n": 2,
+     "name": "进化出能指导蛋白质合成的RNA",
+     "detail": "EVOLUTION OF RNAs THAT CAN DIRECT PROTEIN SYNTHESIS。"
+    },
+    {
+     "n": 3,
+     "name": "RNA与蛋白质基础系统",
+     "detail": "第二阶段RNA and protein-based systems：RNA自我复制并翻译产生protein（RNA→protein箭头）。"
+    },
+    {
+     "n": 4,
+     "name": "进化出合成DNA的新酶",
+     "detail": "EVOLUTION OF NEW ENZYMES THAT SYNTHESIZE DNA AND MAKE RNA COPIES FROM IT。"
+    },
+    {
+     "n": 5,
+     "name": "现代细胞",
+     "detail": "第三阶段present-day cells：DNA→RNA→protein，DNA自我复制（环形箭头围绕DNA）。"
+    }
+   ],
+   "key_points": [
+    "进化中RNA可能先于DNA和蛋白质",
+    "图注为Figure 7-46 Essential Cell Biology 3/e (© Garland Science 2010)"
+   ],
+   "regulation": [
+    "中心法则的进化次序：先有RNA自我复制，再有RNA指导的蛋白质合成，最后出现DNA及以DNA为模板的RNA合成"
+   ],
+   "figures": [
+    "三阶段进化流程图"
+   ],
+   "pages": [
+    99
+   ]
+  }
+ ],
+ "distinctions": [
+  {
+   "id": "L5-D01",
+   "title": "原核生物初始转录产物 vs 真核生物初始转录产物",
+   "a": "原核生物初始转录产物",
+   "b": "真核生物初始转录产物（pre-mRNA）",
+   "difference": [
+    "原核初始转录产物大多即为编码序列，与蛋白质氨基酸序列呈线性关系",
+    "真核初始转录产物很大、含内含子，成熟mRNA只占其中一小部分",
+    "原核初始转录产物不需要剪接加工就可行使翻译模板的功能",
+    "真核初始转录产物需要经过剪接、修饰等加工才能成为成熟的mRNA"
+   ],
+   "easy_mistake": "误以为原核mRNA也需剪接；实际上原核初始转录产物一般不含需剪接的序列。",
+   "pages": [
+    2
+   ]
+  },
+  {
+   "id": "L5-D02",
+   "title": "单顺反子mRNA vs 多顺反子mRNA",
+   "a": "单顺反子mRNA（monocistronic mRNA）",
+   "b": "多顺反子mRNA（polycistronic mRNA）",
+   "difference": [
+    "按一条mRNA所编码蛋白质的数目区分：一个 vs 多个",
+    "真核生物mRNA通常为单顺反子",
+    "原核生物mRNA常为多顺反子，一个转录本可翻译出多条多肽",
+    "多顺反子mRNA每个顺反子各有RBS和起始密码子，可独立起始翻译"
+   ],
+   "easy_mistake": "把“顺反子”等同于“基因”；顺反子即编码一条多肽的遗传功能单位。",
+   "pages": [
+    3,
+    6
+   ]
+  },
+  {
+   "id": "L5-D03",
+   "title": "原核mRNA的核糖体识别方式 vs 真核mRNA的核糖体识别方式",
+   "a": "原核mRNA",
+   "b": "真核mRNA",
+   "difference": [
+    "原核依靠SD序列（RBS）与16S rRNA 3'端互补配对定位起始密码子",
+    "真核mRNA 5'端有帽子结构，核糖体经帽子结合后扫描寻找起始AUG",
+    "原核mRNA 5'端为PPP，无帽子结构",
+    "真核mRNA 5'端有m7G帽子"
+   ],
+   "easy_mistake": "误以为真核也靠SD序列定位；真核靠帽子结合和扫描机制。",
+   "pages": [
+    7
+   ]
+  },
+  {
+   "id": "L5-D04",
+   "title": "原核生物起始密码子 vs 真核生物起始密码子",
+   "a": "原核生物起始密码子",
+   "b": "真核生物起始密码子",
+   "difference": [
+    "原核可用AUG，也可用GUG甚至UUG起始",
+    "真核几乎只用AUG起始",
+    "GUG/UUG在原核中作起始密码子时仍编码甲硫氨酸（补充背景）"
+   ],
+   "easy_mistake": "误以为GUG/UUG起始时编码缬氨酸/亮氨酸；实际仍编码甲硫氨酸。",
+   "pages": [
+    8
+   ]
+  },
+  {
+   "id": "L5-D05",
+   "title": "帽子结构 vs 多聚(A)尾巴",
+   "a": "5'帽子（5' cap）",
+   "b": "多聚(A)尾巴（poly(A) tail）",
+   "difference": [
+    "帽子位于5'端，多聚(A)位于3'端",
+    "帽子参与剪接、出核、抗5'外切酶降解与翻译起始识别",
+    "多聚(A)参与出核、稳定性与核糖体循环",
+    "二者通过PABP–帽相互作用使mRNA环化，功能协同而非重复"
+   ],
+   "easy_mistake": "误以为帽子只负责翻译、poly(A)只负责稳定性；实际上二者在出核和翻译起始中均有协同作用。",
+   "pages": [
+    17,
+    23
+   ]
+  },
+  {
+   "id": "L5-D06",
+   "title": "组蛋白mRNA vs 其他真核mRNA",
+   "a": "组蛋白mRNA",
+   "b": "其他真核mRNA",
+   "difference": [
+    "组蛋白基因的mRNA没有多聚(A)尾巴",
+    "其他绝大多数真核mRNA具有多聚(A)尾巴",
+    "组蛋白mRNA属于Poly(A)⁻ mRNA，约占Poly(A)⁻ mRNA的1/3"
+   ],
+   "easy_mistake": "误以为所有真核mRNA都有poly(A)尾；组蛋白mRNA是例外。",
+   "pages": [
+    19,
+    25
+   ]
+  },
+  {
+   "id": "L5-D07",
+   "title": "AAUAAA（上游信号） vs GU-rich（下游元件）",
+   "a": "AAUAAA",
+   "b": "GU-rich",
+   "difference": [
+    "AAUAAA位于切割位点上游10–35 nt，高度保守",
+    "GU-rich位于切割位点下游约50 nt",
+    "二者共同界定切割/加尾位点",
+    "AAUAAA序列对于初级转录产物的准确切割及加多聚(A)是必需的"
+   ],
+   "easy_mistake": "误以为GU-rich在上游；实际上GU-rich在切割位点下游。",
+   "pages": [
+    20
+   ]
+  },
+  {
+   "id": "L5-D08",
+   "title": "细菌基因 vs 真核基因",
+   "a": "细菌基因",
+   "b": "真核基因",
+   "difference": [
+    "细菌基因编码区连续，无内含子间隔",
+    "真核基因多为断裂基因，外显子被内含子间隔",
+    "真核基因内含子占比可极高，甚至超过99%",
+    "真核基因平均含8-10个内含子，前体分子一般比成熟mRNA大4-10倍"
+   ],
+   "easy_mistake": "误以为所有基因都有内含子；细菌基因一般无内含子。",
+   "pages": [
+    27,
+    28
+   ]
+  },
+  {
+   "id": "L5-D09",
+   "title": "GU-AG型内含子 vs AU-AC型内含子",
+   "a": "GU-AG型内含子",
+   "b": "AU-AC型内含子",
+   "difference": [
+    "两者均位于真核细胞核前体mRNA中",
+    "GU-AG型5'端为GU、3'端为AG",
+    "AU-AC型5'端为AU、3'端为AC"
+   ],
+   "easy_mistake": "误以为所有核内前体mRNA内含子都是GU-AG型；AU-AC型是另一类边界序列。",
+   "pages": [
+    33
+   ]
+  },
+  {
+   "id": "L5-D10",
+   "title": "剪接供体位点 vs 剪接受体位点",
+   "a": "剪接供体位点（splice donor site）",
+   "b": "剪接受体位点（splice acceptor site）",
+   "difference": [
+    "供体位点位于内含子5'端与外显子交界处，脊椎动物中保守序列为GU",
+    "受体位点位于内含子3'端与外显子交界处，脊椎动物中保守序列为AG",
+    "供体位点由U1 snRNA碱基互补识别",
+    "受体位点由U2AF识别富嘧啶区后向下游扫描选取第一个AG"
+   ],
+   "easy_mistake": "把供体和受体位置颠倒；供体在内含子5'端（左侧），受体在内含子3'端（右侧）。",
+   "pages": [
+    35,
+    47
+   ]
+  },
+  {
+   "id": "L5-D11",
+   "title": "snRNA vs snoRNA",
+   "a": "snRNA",
+   "b": "snoRNA",
+   "difference": [
+    "snRNA位于细胞核（核质）中，参与前体mRNA剪接并组成剪接体",
+    "snoRNA位于核仁中，参与rRNA的加工",
+    "snRNA与蛋白质形成snRNP",
+    "snoRNA参与rRNA前体的化学修饰与切割"
+   ],
+   "easy_mistake": "把snoRNA误认为剪接体组分；snoRNA作用于rRNA加工，不参与前体mRNA剪接。",
+   "pages": [
+    39,
+    69
+   ]
+  },
+  {
+   "id": "L5-D12",
+   "title": "外显子遗漏 vs 内含子保留",
+   "a": "外显子遗漏（exon skipping）",
+   "b": "内含子保留（intron retention）",
+   "difference": [
+    "外显子遗漏是某个外显子连同其两侧内含子一起被剪除，成熟mRNA中缺少该外显子",
+    "内含子保留是内含子未被剪除而留在成熟mRNA中",
+    "外显子遗漏产生1-3型mRNA",
+    "内含子保留产生1-内含子2-3型mRNA"
+   ],
+   "easy_mistake": "把外显子遗漏与内含子保留混为一谈；前者丢失外显子，后者保留内含子。",
+   "pages": [
+    53
+   ]
+  },
+  {
+   "id": "L5-D13",
+   "title": "I类内含子剪接 vs II类内含子剪接",
+   "a": "I类内含子剪接",
+   "b": "II类内含子剪接",
+   "difference": [
+    "I类内含子边界为5'U↓-G↓3'，特殊序列为内部引导顺序（IGS）",
+    "II类内含子边界为5'↓GU-AG↓3'，特殊序列为分支点序列",
+    "I类需自由鸟苷（free guanosine）作亲核体，中间体为环状L-19 IVS",
+    "II类仅需Mg2+，中间体为套索（lariat）",
+    "两者均不需ATP"
+   ],
+   "easy_mistake": "误以为I类也形成套索；I类内含子以线性形式释放，中间体为环状L-19 IVS。",
+   "pages": [
+    65,
+    66
+   ]
+  },
+  {
+   "id": "L5-D14",
+   "title": "II类内含子自我剪接 vs 核mRNA前体剪接",
+   "a": "II类内含子自我剪接",
+   "b": "核mRNA前体剪接",
+   "difference": [
+    "两者边界序列（5'↓GU-AG↓3'）与分支点序列相同、中间体均为套索",
+    "II类内含子只需Mg2+、不耗能，属自我剪接",
+    "核mRNA前体剪接需U1、U2、U4、U5、U6 snRNP等基因外成分，并消耗ATP",
+    "II类由内含子自身RNA结构催化，核mRNA前体由剪接体催化并提供结构支架"
+   ],
+   "easy_mistake": "误以为核mRNA前体剪接也自我催化；核mRNA前体剪接必须依赖剪接体。",
+   "pages": [
+    65,
+    66
+   ]
+  },
+  {
+   "id": "L5-D15",
+   "title": "RNA编辑 vs RNA剪接",
+   "a": "RNA编辑（RNA editing）",
+   "b": "RNA剪接（RNA splicing）",
+   "difference": [
+    "编辑改变序列中的核苷酸本身（碱基加入、丢失或转换），可构建/去除起始、终止密码子",
+    "剪接只是切除内含子并连接外显子，不改变外显子内部的碱基信息",
+    "编辑可发生在编码区，导致DNA所编码的遗传信息改变",
+    "剪接发生在细胞核内，成熟mRNA输出前完成"
+   ],
+   "easy_mistake": "把可变剪接也当作RNA编辑；可变剪接不改变碱基序列，不属于编辑。",
+   "pages": [
+    70,
+    81
+   ]
+  },
+  {
+   "id": "L5-D16",
+   "title": "剪切型核酶 vs 剪接型核酶",
+   "a": "剪切型核酶",
+   "b": "剪接型核酶",
+   "difference": [
+    "剪切型核酶只催化切割反应、不催化连接反应（只剪不接）",
+    "剪接型核酶既催化切割又催化连接反应（又剪又接）",
+    "剪切型核酶如RNaseP的RNA亚基、四膜虫rRNA前体的剪接产物L19",
+    "剪接型核酶如I、II类内含子、锤头型核酶、发夹型核酶"
+   ],
+   "easy_mistake": "误以为所有核酶都能连接；剪切型核酶只剪不接。",
+   "pages": [
+    95
+   ]
+  },
+  {
+   "id": "L5-D17",
+   "title": "RNA vs DNA",
+   "a": "RNA",
+   "b": "DNA",
+   "difference": [
+    "RNA为单链（single-stranded），可自身折叠形成复杂三维结构",
+    "DNA为双链",
+    "RNA含核糖（ribose）与尿嘧啶（uracil），核糖2'位有羟基（2'-OH）",
+    "DNA含脱氧核糖与胸腺嘧啶，2'位为氢",
+    "2'-OH使RNA具备催化潜力，但也使RNA更易被水解"
+   ],
+   "easy_mistake": "误以为RNA不能形成复杂结构；单链RNA可折叠成复杂三维结构并具有催化活性。",
+   "pages": [
+    90
+   ]
+  },
+  {
+   "id": "L5-D18",
+   "title": "核仁 vs 转录工厂",
+   "a": "核仁（nucleolus）",
+   "b": "转录工厂（transcription factory）",
+   "difference": [
+    "核仁专用于rRNA，产量占细胞总RNA的80%以上，是核内最显眼的无膜亚区",
+    "转录工厂是核仁外的2000–3000个固定点（直径50–100 nm），供mRNA、tRNA、snRNA共用",
+    "核仁是无膜亚区（membrane-less subcompartment）",
+    "转录工厂是mRNA、tRNA、snRNA等的共用微型车间"
+   ],
+   "easy_mistake": "把核仁与转录工厂混为同一结构；核仁专用于rRNA，转录工厂位于核仁外。",
+   "pages": [
+    82
+   ]
+  },
+  {
+   "id": "L5-D19",
+   "title": "RNA-based systems vs present-day cells",
+   "a": "RNA基础系统（RNA-based systems）",
+   "b": "现代细胞（present-day cells）",
+   "difference": [
+    "前者遗传信息载体与催化剂均为RNA，无DNA、无蛋白质",
+    "后者以DNA为遗传信息储存分子，RNA为中介，蛋白质为功能执行者",
+    "前者信息流为RNA自我复制",
+    "后者信息流为DNA→RNA→protein"
+   ],
+   "easy_mistake": "误以为RNA世界阶段已存在DNA；DNA是后来进化出的遗传信息储存分子。",
+   "pages": [
+    99
+   ]
+  }
+ ],
+ "facts": [
+  {
+   "id": "L5-F01",
+   "text": "原核生物与真核生物转录产物的四条比较维度：①RNA聚合酶种类：原核一种，真核三种以上；②初始转录产物与编码序列关系：原核大多即为编码序列、与蛋白质氨基酸序列呈线性关系，真核初始转录产物很大、含内含子，成熟mRNA只占一小部分；③是否需要剪接加工：原核不需剪接即可作翻译模板，真核必须经剪接、修饰加工；④空间时间关系：原核转录与翻译在同一细胞空间几乎同步（偶联），真核mRNA合成与功能表达发生在不同空间和时间范畴。",
+   "note": "本章总纲，简答/比较题高频；答题须四点齐全并点明“一种酶、无剪接、转录翻译偶联”vs“多种酶、需剪接加工、分室分期”。",
+   "pages": [
+    2
+   ]
+  },
+  {
+   "id": "L5-F02",
+   "text": "原核生物mRNA的四大特征：①半衰期短；②许多以多顺反子（polycistronic）形式存在；③5'端无帽子结构，3'端没有或只有较短的多聚(A)结构；④起始密码子可为AUG，有时GUG甚至UUG。",
+   "note": "必背条目，常以填空或简答“原核mRNA特点”出现；注意第④点与真核“几乎永远AUG”对照。",
+   "pages": [
+    4,
+    8
+   ]
+  },
+  {
+   "id": "L5-F03",
+   "text": "原核转录-翻译偶联与降解的时间进程：0 min开始转录（新生RNA 5'端为ppp）→0.5 min核糖体开始翻译→1.5 min 5'端开始降解→2.0 min RNA聚合酶在3'端开始终止→3.0 min降解继续、核糖体完成翻译；大多数细菌mRNA在转录开始1分钟后就开始降解，mRNA降解速度约为转录或翻译速度的一半。",
+   "note": "数字型考点，可出选择或填空；核心结论是“边转录、边翻译、边降解”，mRNA寿命极短。",
+   "pages": [
+    5
+   ]
+  },
+  {
+   "id": "L5-F04",
+   "text": "SD序列（Shine-Dalgarno sequence）：原核mRNA起始密码子AUG上游约5–9个碱基处的保守区，又称核糖体结合位点（RBS），与16S rRNA 3'端（3' U U C C U C C A C U A G 5'）反向互补配对，在核糖体-mRNA结合中起作用；多顺反子mRNA上每个顺反子各有独立的RBS、start与stop，可分别独立起始翻译。",
+   "note": "原核翻译起始的核心机制，常考“SD序列是什么、与谁配对、间隔多少碱基”；与真核帽子依赖的扫描机制对比出题。",
+   "pages": [
+    6,
+    7
+   ]
+  },
+  {
+   "id": "L5-F05",
+   "text": "真核生物mRNA特征：以单顺反子（monocistronic）形式存在，一条mRNA通常只编码一条多肽链；5'端有帽子结构（5' cap）；绝大多数具有多聚(A)尾巴（poly-A tail），约150–250个腺苷酸。",
+   "note": "与第4页原核四特征对照记忆；poly(A)长度150–250为常考数字。",
+   "pages": [
+    9
+   ]
+  },
+  {
+   "id": "L5-F06",
+   "text": "基因的分子生物学定义：产生一条功能性多肽或RNA分子所必需的全部核苷酸序列（The entire nucleic acid sequence that is necessary for the synthesis of a functional polypeptide or RNA molecule），不仅包括编码区，还包括调控转录和翻译所必需的序列。",
+   "note": "名词解释高频；强调“全部核苷酸序列”而非仅编码区。",
+   "pages": [
+    10
+   ]
+  },
+  {
+   "id": "L5-F07",
+   "text": "动物细胞mRNA表达与半衰期：转录起始、5'端修饰<1 min；mRNA 3'端切割释放6 min；3'端多聚腺苷酸化20 min；转运至细胞质25 min；核糖体翻译>4 hr；典型动物mRNA半衰期为4～24小时。",
+   "note": "与细菌mRNA约3 min半衰期形成强对比，可出计算或比较题。",
+   "pages": [
+    11,
+    85
+   ]
+  },
+  {
+   "id": "L5-F08",
+   "text": "RNA聚合酶II的C末端结构域（CTD）由七肽重复序列Y1S2P3T4S5P6S7组成，其磷酸化状态决定RNA加工因子的募集：起始前未磷酸化；启动子逃离时Ser5磷酸化，募集加帽因子；延伸时Ser2磷酸化，募集剪接因子与3'端加工（多聚腺苷酸化及切割）因子。细菌RNA聚合酶没有CTD。",
+   "note": "“CTD磷酸化密码”是常考机制题；须记住Ser5→加帽、Ser2→剪接/加尾的对应关系。",
+   "pages": [
+    12,
+    13,
+    14
+   ]
+  },
+  {
+   "id": "L5-F09",
+   "text": "CTD磷酸化循环：转录完成后RNA聚合酶II从DNA释放，可溶性磷酸酶去除CTD上的磷酸基团；只有完全去磷酸化的RNA聚合酶II才具备在启动子处起始RNA合成的能力。",
+   "note": "常考“为什么聚合酶能重新起始转录”；答案落在去磷酸化是起始的前提。",
+   "pages": [
+    14
+   ]
+  },
+  {
+   "id": "L5-F10",
+   "text": "5'加帽通过5'→5'磷酸二酯键在原初mRNA 5'端倒扣一个“G”，由三个连续酶促反应完成：RNA三磷酸酶去除γ-磷酸→鸟苷酸转移酶将GTP的GMP部分转移至5'端→甲基转移酶在鸟嘌呤N7位加甲基；加帽发生在RNA聚合酶合成了大约25个核苷酸后。",
+   "note": "三步酶名与“约25 nt”为填空/选择高频；注意帽子是GTP与原5'三磷酸缩合产物。",
+   "pages": [
+    15
+   ]
+  },
+  {
+   "id": "L5-F11",
+   "text": "帽子类型：cap0（零类帽子）为鸟嘌呤N7位一个甲基，存在于所有真核mRNA，单细胞真核生物主要为此型；cap1（1类帽子）在第二个核苷酸（原mRNA 5'第一位）2'-OH再加一甲基，由2'-O-甲基转移酶催化，真核生物以此类为主；cap2（2类帽子）在第三个核苷酸2'-OH再甲基化，只占10%–15%以下。",
+   "note": "三种帽子的甲基化位点与丰度易混，选择题常考“真核以哪类为主”（cap1）。",
+   "pages": [
+    16
+   ]
+  },
+  {
+   "id": "L5-F12",
+   "text": "帽子结构的四项功能：①有助于pre-mRNA剪接，帽子结合复合物（CBC）参与剪接体形成、促进第一个内含子剪接；②有助于mRNA越过核膜进入胞质；③保护5'端不被核酸酶降解；④翻译时供IFⅢ（起始因子）和核糖体识别，是翻译所必需的。",
+   "note": "简答高频；注意CBC（核内剪接）与eIF4E（翻译起始帽结合蛋白）的区分。",
+   "pages": [
+    17
+   ]
+  },
+  {
+   "id": "L5-F13",
+   "text": "蔗糖密度梯度离心实验（5%–20%蔗糖梯度，[3H]标记mRNA）：加帽mRNA出现两个峰——与核糖体结合的重组分峰（位于梯度较底部）和游离mRNA峰；未加帽mRNA只有游离mRNA峰。结论：5'端帽子是核糖体结合和翻译所必需的。",
+   "note": "经典实验结论题；须写出“加帽=两峰、未加帽=一峰”的判读依据。",
+   "pages": [
+    18
+   ]
+  },
+  {
+   "id": "L5-F14",
+   "text": "除组蛋白基因（histone gene）外，真核生物mRNA的3'末端都有多聚(A)序列，长度约40–200个腺苷酸，由多聚(A)聚合酶（PAP）转录后加上，并被多聚(A)结合蛋白（PABP）特异结合。",
+   "note": "“组蛋白mRNA无poly(A)”是最常考的例外；注意本页40–200与第9页150–250的表述差异（不同教材口径）。",
+   "pages": [
+    19
+   ]
+  },
+  {
+   "id": "L5-F15",
+   "text": "多聚腺苷酸化信号与位点：高等生物（酵母除外）poly(A)上游11–30 nt处有高度保守的AAUAAA（图中标注AAUAAA与切割位点相距10–35 nt），其下游约50 nt处为GU-rich元件；AAUAAA对初级转录产物的准确切割及加多聚(A)是必需的；加多聚(A)可发生在剪接之前或之后。",
+   "note": "数字与两个元件的位置关系常考；注意“酵母除外”这一限定。",
+   "pages": [
+    20
+   ]
+  },
+  {
+   "id": "L5-F16",
+   "text": "多聚腺苷化与终止的分子步骤：RNA聚合酶II转录产生含poly-A信号的RNA→CPSF（切割和聚腺苷酸环化特异性因子）与CstF（切割刺激因子）结合poly-A信号→RNA在poly-A位点被切割→PAP以ATP为底物在3'端加上约200个A→PABP结合A尾，更多PABP结合形成稳定的多聚(A)核糖核蛋白复合物。",
+   "note": "因子名CPSF/CstF/PAP/PABP为填空高频；切割后CstF解离是细节考点。",
+   "pages": [
+    21
+   ]
+  },
+  {
+   "id": "L5-F17",
+   "text": "多聚(A)的三项功能：①是mRNA由细胞核进入细胞质所必需的形式；②大大提高mRNA在细胞质中的稳定性（刚出核时A尾长，随逗留时间延长逐渐变短消失，mRNA进入降解）；③促进核糖体的有效循环（efficient recycling of ribosomes）。",
+   "note": "简答高频；第③点机制见第23页PABP与5'帽互作使mRNA环化。",
+   "pages": [
+    22,
+    23
+   ]
+  },
+  {
+   "id": "L5-F18",
+   "text": "3'端多聚(A)通过PABP与5'帽的相互作用使mRNA首尾环化，翻译终止后核糖体亚基可直接在环上重新起始，实现核糖体的高效循环。",
+   "note": "“帽子与poly(A)功能协同而非重复”的辨析题依据。",
+   "pages": [
+    23
+   ]
+  },
+  {
+   "id": "L5-F19",
+   "text": "长腺苷酸尾巴是Pol II转录产物特有的，可用Sepharose-oligo(dT)亲和层析分离mRNA：oligo(dT)与poly(A)碱基互补，poly(A)+ RNA黏附柱上，rRNA等无poly(A)的RNA流穿，从而富集纯化mRNA。",
+   "note": "方法题高频；须说明“总RNA中rRNA占绝大多数且无poly(A)”这一前提。",
+   "pages": [
+    24
+   ]
+  },
+  {
+   "id": "L5-F20",
+   "text": "细胞中仍有多达1/3的mRNA没有poly(A)尾巴，称Poly(A)⁻ mRNA；其中约1/3编码不同形式的组蛋白。",
+   "note": "与第19页“组蛋白基因例外”呼应，可出选择或填空。",
+   "pages": [
+    25
+   ]
+  },
+  {
+   "id": "L5-F21",
+   "text": "真核基因大多为断裂基因（interrupted/split gene）：外显子（exon，the coding sequences）被内含子（intron，the intervening sequences）间隔；内含子在真核基因中所占比例很高，甚至超过99%；真核基因平均含8–10个内含子，前体分子一般比成熟mRNA大4–10倍。",
+   "note": "名词解释与数字题；人β-珠蛋白基因约2000 bp含3个外显子，凝血因子VIII基因约200,000 bp含26个外显子。",
+   "pages": [
+    27,
+    28
+   ]
+  },
+  {
+   "id": "L5-F22",
+   "text": "部分人类基因内含子占比：胰岛素1.4 kb/2个内含子/67%；β-球蛋白1.4 kb/2个/69%；血清蛋白18 kb/13个/89%；胶原蛋白组分VII 31 kb/117个/71%；VIII因子186 kb/25个/95%；萎缩性肌强直因子2400 kb/78个/>99%。内含子数量与基因长度不成正比（胶原蛋白组分VII 31 kb含117个内含子，VIII因子186 kb仅25个）。",
+   "note": "表格数据可出计算/判断；结论是“内含子占比普遍很高且数量与长度不成正比”。",
+   "pages": [
+    29
+   ]
+  },
+  {
+   "id": "L5-F23",
+   "text": "GU-AG法则（Chambon法则）：Chambon等比较大量结构基因内含子切割位点发现，内含子两端并不存在同源或互补，但连接点具有很短的保守边界序列——100种内含子的5'端都是GU、3'端都是AG。该法则不适用于线粒体、叶绿体的内含子，也不适用于酵母的tRNA基因。",
+   "note": "名词解释+例外题高频；例外三条（线粒体、叶绿体、酵母tRNA基因）必须写全。",
+   "pages": [
+    34,
+    36
+   ]
+  },
+  {
+   "id": "L5-F24",
+   "text": "脊椎动物前体mRNA内含子的保守序列元件：5'剪接供体位点（donor site）保守为GU（共有序列A/C A G | G U Pu A G U）；分枝点（branch site）共有序列C U Pu A Py，位于内含子3'端上游18–50 nt（图中标注20–50 bases），其中A百分之百保守且具有2'-OH；3'剪接受体位点（acceptor site）保守为AG（N C A G | G），其上游为嘧啶富集区（Py rich）。",
+   "note": "供体/受体位点不可混用；分枝点A的2'-OH是套索形成的化学基础。",
+   "pages": [
+    35,
+    37,
+    42
+   ]
+  },
+  {
+   "id": "L5-F25",
+   "text": "核mRNA内含子5'端保守序列5'GUAAGUA3'与U1 snRNA 5'端保守序列3'CAUUUCAU5'互补，是U1 snRNP识别5'剪接位点的分子基础。",
+   "note": "常考“U1如何识别5'剪接点”，答案即碱基互补。",
+   "pages": [
+    37
+   ]
+  },
+  {
+   "id": "L5-F26",
+   "text": "剪接体（spliceosome）在细胞核内催化pre-mRNA剪接，约由150种蛋白质（70种剪接因子4.7 MDa占38%、snRNP中41种蛋白2.2 MDa占18%、30种其它蛋白2.1 MDa占17%）和5种snRNA（U1、U2、U4、U5、U6，3.3 MDa占27%）以及正在组装的前体mRNA组成；前体mRNA与蛋白形成snRNP后，内含子5'和3'两端复合物成对联结，产生60S颗粒即剪接体。",
+   "note": "数字与组分比例可出选择；snRNA占27%、蛋白占约73%是易考细节。",
+   "pages": [
+    38,
+    40
+   ]
+  },
+  {
+   "id": "L5-F27",
+   "text": "snRNP在剪接中的三大作用：识别5'剪接位点与分支点（recognizing）→把这两个位点聚集到一起（bringing together）→催化或协助催化RNA切割（catalyzing）；剪接过程中RNA-RNA、RNA-蛋白质和蛋白质-蛋白质三种相互作用都很重要。",
+   "note": "简答高频；可追问“催化活性中心由谁构成”（U6 snRNA等RNA组分，核酶性质）。",
+   "pages": [
+    41
+   ]
+  },
+  {
+   "id": "L5-F28",
+   "text": "pre-mRNA剪接经两步转酯反应：第一步在5'剪接点切割，内含子5'端G与分支点腺苷酸A的2'-OH形成5'-2'磷酸二酯键，产生套索（lariat），左侧外显子与右侧内含子-外显子分子分开；第二步在3'剪接点切割，以套索形式释放游离内含子，同时右侧外显子与左侧外显子连接。两步均为转酯反应，磷酸二酯键数目守恒，不消耗ATP。",
+   "note": "机制题核心；须写出“5'-2'键”“套索”“两次转酯、不耗能”。",
+   "pages": [
+    42,
+    43,
+    67
+   ]
+  },
+  {
+   "id": "L5-F29",
+   "text": "剪接体组装：U1 snRNA碱基互补识别5'剪接点形成E（早期）复合体→结合在3'剪接点上游富嘧啶区的U2AF（U2AF65/U2AF35）识别3'剪接点并引导U2 snRNP结合分支点，形成A复合体（剪接前体pre-spliceosome）→与U4/U5/U6三聚体（Tri-snRNP）结合形成B复合体→U4解离、U6与U2重排形成C复合体并产生活性位点，催化剪接。",
+   "note": "E→A→B→C组装顺序及“U4解离”是选择题高频；BBP为分支点结合蛋白。",
+   "pages": [
+    44,
+    45
+   ]
+  },
+  {
+   "id": "L5-F30",
+   "text": "剪接体结构：U5 snRNP作为中心支架，U6与U2 snRNA缠绕其上，在U5 snRNA的Loop I旁形成催化中心；镁离子由U6 snRNA中的保守核苷酸配位（结构数据引自Huang et al., 2015, Science 349: 1191-1198）。",
+   "note": "可出“催化中心位于何处”的选择题；答案是U5 Loop I附近。",
+   "pages": [
+    46
+   ]
+  },
+  {
+   "id": "L5-F31",
+   "text": "3'剪接位点的扫描选择：哺乳动物中snRNP从5'向下游“扫描”，选择分支点富嘧啶区3'下游的第一个AG作为3'受体位点；AG前一位核苷酸影响剪接效率，一般为CAG=UAG>AAG>GAG；若同时存在几个AG，可能发生剪接竞争。",
+   "note": "效率排序CAG=UAG>AAG>GAG为细节考点，易出选择。",
+   "pages": [
+    47
+   ]
+  },
+  {
+   "id": "L5-F32",
+   "text": "提高剪接位点选择准确性的两种机制：①与转录偶联的剪接体组装——RNA聚合酶II携带RNA加工蛋白，遇到5'剪接位点时这些蛋白从CTD转移到新合成RNA上，使5'与3'剪接位点的剪接体成分协同作用，极大减少外显子遗漏；②外显子剪接增强子（ESE）与SR蛋白——富含丝氨酸和精氨酸的SR蛋白结合外显子中的ESE，与剪接机器组分互作，把剪接机器引导到附近剪接位点，防止使用错误位点。",
+   "note": "简答高频；两个机制一为“转录偶联”，一为“顺式元件+反式因子”。",
+   "pages": [
+    48
+   ]
+  },
+  {
+   "id": "L5-F33",
+   "text": "可变剪接（alternative splicing）：在高等真核生物个体发育或细胞分化过程中，选择性地越过某些外显子或某个剪接点进行剪接，产生组织或发育阶段特异性mRNA；脊椎动物中约60%的基因能以可变剪接方式剪接；它保证同源蛋白既具有大致相同的结构或功能域又有特定性质差异，拓展了基因携带的遗传信息。",
+   "note": "名词解释+数字（60%）高频；注意与组成型剪接区分。",
+   "pages": [
+    49,
+    51
+   ]
+  },
+  {
+   "id": "L5-F34",
+   "text": "果蝇DSCAM基因的可变剪接：exon 4有12种、exon 6有48种、exon 9有33种、exon 17有2种可变方式，组合数12×48×33×2=38,016（幻灯片称38,000种），每组互斥可变外显子只保留一个拷贝。",
+   "note": "经典计算题素材；可考“组合数如何计算”及“互斥外显子”概念。",
+   "pages": [
+    51
+   ]
+  },
+  {
+   "id": "L5-F35",
+   "text": "α-原肌球蛋白基因经转录、剪接及3'切割/多聚腺苷酸化，在横纹肌、平滑肌、成纤维细胞（两种）、脑等组织中产生5种不同的成熟mRNA，是组织特异性可变剪接的经典例子。",
+   "note": "分析题素材；答题要点是“同一基因+不同外显子组合+不同3'末端加工位点→组织特异性mRNA”。",
+   "pages": [
+    52
+   ]
+  },
+  {
+   "id": "L5-F36",
+   "text": "RNA剪接的5种模式（以含外显子1、2、3与内含子1、2的原RNA为例）：正常剪接（1-2-3）、外显子遗漏（exon skipping，1-3）、外显子延伸（exon extension）、内含子保留（intron retention，1-内含子2-3）、可变剪接（1-2与1-3并存）。",
+   "note": "五种模式名称与产物为填空/选择高频；外显子遗漏与内含子保留最易混。",
+   "pages": [
+    53
+   ]
+  },
+  {
+   "id": "L5-F37",
+   "text": "可变剪接受激活因子（activator）和抑制因子（repressor）调控：抑制因子结合抑制因子位点后阻断剪接机器对邻近剪接位点的识别，导致未剪接；激活因子结合剪接增强子（splicing enhancer）并协同剪接机器，促进剪接位点被识别。",
+   "note": "调控逻辑题；答题须点明“作用于增强子/抑制子位点、影响剪接位点选择”。",
+   "pages": [
+    54
+   ]
+  },
+  {
+   "id": "L5-F38",
+   "text": "非典型帽子：真核mRNA 5'端除经典m7G-Cap外还可为NAD+-Cap，原核mRNA 5'端除ppp外也可带NAD+帽子；NAD+加帽可能存在转录起始加帽和转录后加帽两种模式；其他非典型加帽RNA包括dpCoA-RNA、FAD-RNA、NADH-RNA、ApnA-RNA、UDP-Glc-RNA和UDP-GlcNAc-RNA，在细菌、酵母、小鼠、人、植物中广泛存在。",
+   "note": "较新进展，易出“下列哪些属于非典型帽子”的多选；注意帽子分含腺苷核苷酸与含尿苷核苷酸两类。",
+   "pages": [
+    55
+   ]
+  },
+  {
+   "id": "L5-F39",
+   "text": "I类内含子（group I intron）：边界序列5'-U-G-3'；中部核心结构含鸟苷结合口袋（guanine-binding pocket）与内在指导序列（IGS）；常分布于低等真核生物细胞器（如四膜虫Tetrahymena、绒泡菌Physarum的rRNA）。自我剪接由游离鸟苷酸（pG）的3'-OH发动第一次攻击，第二步由上游外显子游离3'-OH攻击3'剪接点，两次转酯不耗ATP。",
+   "note": "与II类对比是必考；关键差异是“外源鸟苷 vs 内部分枝点A的2'-OH”“线性释放 vs 套索”。",
+   "pages": [
+    59,
+    60,
+    61
+   ]
+  },
+  {
+   "id": "L5-F40",
+   "text": "II类内含子（group II intron）：边界序列5'↓GU-AG↓3'，含分支点序列；分布于酵母mtRNA、细胞色素氧化酶α/β亚基、玉米线粒体RNA与tRNA、真核mRNA前体；剪接不需鸟苷但需Mg2+；第一步由分支点腺苷酸2'-OH攻击5'剪接点形成套索，第二步由上游外显子3'-OH攻击3'剪接点，不耗ATP。",
+   "note": "与核mRNA前体剪接“化学相同、催化者不同”是核心辨析点。",
+   "pages": [
+    62,
+    63,
+    64
+   ]
+  },
+  {
+   "id": "L5-F41",
+   "text": "四类内含子剪接比较：酵母tRNA——无保守边界，特殊顺序为C茎上-G（环上），茎环构象，需内切酶与连接酶，消耗ATP，中间体为半分子tRNA；I类内含子——5'U↓-G↓3'，内部引导顺序，核心结构，需自由鸟苷与Mg2+，不耗能，中间体为环状L-19 IVS；II类内含子——5'↓GU-AG↓3'，分支点序列，5、6功能区，仅需Mg2+，不耗能，中间体为套索；核mRNA前体——5'↓GU-AG↓3'，分支点序列，连接体，需U1、U2、U4、U5、U6，消耗ATP，中间体为套索。",
+   "note": "整表为简答/填表高频；最易错处是“核mRNA前体剪接消耗ATP，而II类自我剪接不耗能”。",
+   "pages": [
+    65
+   ]
+  },
+  {
+   "id": "L5-F42",
+   "text": "II类内含子剪接与核mRNA前体剪接体剪接的化学反应及产生的RNA中间体（套索）相同，区别仅在于前者由内含子自身RNA结构催化，后者由U1、U2、U4、U5、U6等snRNP组成的剪接体催化并提供结构支架；I类内含子则由游离鸟苷G的3'-OH发动第一次攻击，内含子以线性形式释放，不形成套索。",
+   "note": "“II类=剪接体的化石”这一观点常作分析题；须写出化学步骤相同、催化者不同。",
+   "pages": [
+    66,
+    67
+   ]
+  },
+  {
+   "id": "L5-F43",
+   "text": "tRNA前体加工：RNase P在5'端切割（切出成熟5'端）→RNase D切除3'端多余序列→碱基修饰→5'/3'端切割→在tRNA核苷酸转移酶催化下3'端添加CCA→由tRNA内切核酸酶（tRNA endonuclease）和RNA连接酶（RNA ligase）剪接去除内含子；切割与连接是独立反应。",
+   "note": "酶名与顺序为填空高频；RNase P是核酶（RNA亚基催化）这一事实常与第89页联动考。",
+   "pages": [
+    68,
+    89
+   ]
+  },
+  {
+   "id": "L5-F44",
+   "text": "rRNA前体加工：45S前体rRNA（13,000个核苷酸，5'端ppp、3'端OH）先经化学修饰再切割，降解间隔序列后释放18S、5.8S、28S rRNA；18S掺入小亚基，5.8S与28S掺入大亚基；5S rRNA在别处独立转录后掺入大亚基；5'端大多直接由切割产生，3'端大多由切割及其后的3'-5'修整反应产生；许多核酸酶与一组核仁小RNA（snoRNA）参与该过程。",
+   "note": "数字13,000与“5S不来自45S前体”为易考细节；snoRNA与snRNA功能区分常考。",
+   "pages": [
+    69
+   ]
+  },
+  {
+   "id": "L5-F45",
+   "text": "RNA编辑（RNA editing）：转录后的RNA在编码区发生碱基的加入、丢失或转换等现象，导致DNA所编码的遗传信息改变；两种机制为位点特异性脱氨基作用（酶促碱基修饰）与引导RNA（gRNA）指导的尿嘧啶插入或删除。",
+   "note": "名词解释高频；须强调“编码区”“转录后”“改变序列”。",
+   "pages": [
+    70,
+    71
+   ]
+  },
+  {
+   "id": "L5-F46",
+   "text": "RNA编辑主要类型：A-to-I编辑（腺苷→肌苷，被读成G，ADAR1/2/3催化，例GluA2 Q/R位点）；C-to-U编辑（胞苷→尿苷，APOBEC1催化，例ApoB mRNA肝vs肠）；插入/删除编辑（多种酶如RNA编辑复合体，例锥虫线粒体mRNA）；碱基修饰编辑（m6A、m5C、ψ等，METTL3、NSUN等催化，调控稳定性与翻译效率）。",
+   "note": "四类编辑的酶与例子为选择题高频；注意“碱基修饰编辑”不改变序列，与前三类并列列出。",
+   "pages": [
+    72
+   ]
+  },
+  {
+   "id": "L5-F47",
+   "text": "ApoB mRNA的组织特异性C→U编辑：肝中ApoB mRNA（5'…CAA…TAA 3'）直接翻译产生全长蛋白ApoB100（4563 aa），参与内源合成的胆固醇和甘油三酯转运；肠中先经C-to-U编辑使CAA变为UAA（终止密码子），在第2153位密码子终止，产生截短型ApoB48，参与运输饮食中的脂肪。",
+   "note": "经典范例，数字4563与2153可出填空；答题要点是“一个C→U把编码密码子变终止子”。",
+   "pages": [
+    74
+   ]
+  },
+  {
+   "id": "L5-F48",
+   "text": "A-to-I编辑由ADAR（Adenosine Deaminase Acting on RNA）酶家族催化，I在碱基配对时被识别为G，等价于A→G改变；其作用包括改变蛋白序列（GluA2 Q/R编辑降低钙通透性，未编辑的GluA2导致神经元毒性或疾病如ALS、癫痫）、调控剪接（外显子跳跃）、调控miRNA（pri-miR-142编辑导致降解）、免疫调控（ADAR1缺失导致干扰素病，防止内源dsRNA被识别为“非己”）、增强转录组多样性（果蝇para基因编辑影响神经兴奋性）。",
+   "note": "多层次作用为简答高频；ADAR1缺失→干扰素病是免疫调控的必记例证。",
+   "pages": [
+    75
+   ]
+  },
+  {
+   "id": "L5-F49",
+   "text": "哺乳动物RNA编辑实例：肝、肠载脂蛋白B C→U（谷氨酰胺密码子→终止子）；肌肉半乳糖苷酶U→A（苯丙氨酸→酪氨酸）；睾丸、肿瘤等Wilms肿瘤基因-1 U→C（亮氨酸→脯氨酸）；肿瘤神经纤维瘤基因-1 C→U（精氨酸→终止子）；脑谷氨酸受体蛋白A→I（多个谷氨酸密码子→精氨酸，利于大脑发育）。",
+   "note": "表格型记忆题；注意“组织—靶标—碱基改变—结果”四要素齐全。",
+   "pages": [
+    76
+   ]
+  },
+  {
+   "id": "L5-F50",
+   "text": "尿苷酸插入编辑：利什曼原虫属细胞色素b mRNA中许多独立于核基因的尿嘧啶残基被特异性插入，信息来自指导RNA（gRNA）；gRNA含三个区域——锚定区（anchor）、编辑区（editing region）、3'端poly-U尾；机制为gRNA与mRNA配对（含G-U非常规配对）→核酸内切酶在错配处切开mRNA→在编辑区指导下加入UTP→连接酶连接5'与3'末端→gRNA解离，mRNA用作翻译模板。1990年L. Simpson等在研究锥虫线粒体mRNA时发现gRNA。",
+   "note": "“切割—插入U—连接”三步为简答高频；gRNA三区结构为填空考点。",
+   "pages": [
+    77,
+    78,
+    79,
+    80
+   ]
+  },
+  {
+   "id": "L5-F51",
+   "text": "RNA编辑的三大生物学意义：①校正作用（修正DNA模板上错误的遗传信息）；②调控翻译（构建或去除起始密码子与终止密码子，开启或关闭翻译）；③扩充遗传信息（使同一基因编码的产物种类超出DNA序列本身所载信息）。",
+   "note": "简答高频；与剪接的辨析点在于“编辑改变核苷酸本身，剪接不改变外显子内部碱基信息”。",
+   "pages": [
+    81
+   ]
+  },
+  {
+   "id": "L5-F52",
+   "text": "核内RNA工厂：核仁（nucleolus）是rRNA的巨型专用工厂，为核内最显眼的无膜亚区，其RNA产量占细胞总RNA的80%以上；转录工厂（transcription factory）是mRNA、tRNA、snRNA等的共用微型车间，位于核仁外，有2000–3000个固定点，直径约50–100 nm。",
+   "note": "数字2000–3000、50–100 nm、80%为选择/填空高频；核仁与转录工厂的对比是辨析题。",
+   "pages": [
+    82
+   ]
+  },
+  {
+   "id": "L5-F53",
+   "text": "外显子连接复合体（EJC）：剪接完成后沉积在外显子-外显子连接处上游约20–24 nt处的蛋白复合体，组分包括MAGOH、Y14、eIF4AIII、MLN51，作为mRNA已成熟的标志；只有带帽、带poly(A)尾且带EJC的成熟mRNA才能被运出核，进入细胞质后发生蛋白交换，EJC与帽结合蛋白被替换为翻译起始因子。",
+   "note": "“20–24 nt”与四个组分为填空高频；mRNA出核具有高度选择性是结论性考点。",
+   "pages": [
+    83
+   ]
+  },
+  {
+   "id": "L5-F54",
+   "text": "mRNA出核转运机制：mRNA与Exportin结合，Ran处于GTP结合状态→mRNA-Exportin-Ran-GTP复合物经核孔穿过核膜进入细胞质→Ran-GTP水解为Ran-GDP并释放Pi，复合物解离、mRNA释放→Exportin与Ran-GDP重新输入核内，Ran-GDP经GEF（鸟苷酸交换因子）换成GTP进入下一轮；受损的、加工错误的mRNA及被释放的内含子被滞留在核内并降解。",
+   "note": "Ran-GTP/GDP梯度驱动定向转运为机制题核心；Importin介导入核，与Exportin区分。",
+   "pages": [
+    84
+   ]
+  },
+  {
+   "id": "L5-F55",
+   "text": "mRNA寿命：细菌内产生的大部分mRNA很快被降解，半衰期约3 min；真核mRNA存留较长时间（典型4～24 hr）；寿命取决于mRNA的核苷酸序列（3' UTR）及产生该mRNA的细胞类型；合成水平高的蛋白质由较长寿命mRNA翻译，低水平表达或随信号快速改变的蛋白质往往由短寿命mRNA合成。",
+   "note": "“3 min vs 4–24 hr”强对比，可出计算或比较题；3' UTR决定稳定性是常考点。",
+   "pages": [
+    85
+   ]
+  },
+  {
+   "id": "L5-F56",
+   "text": "真核mRNA加工成熟流程：DNA（含introns与exons）转录生成RNA转录本→5'加帽→RNA剪接→3'多聚腺苷酸化→成熟mRNA（带RNA cap与AAAA）经核孔出核→在细胞质中翻译为蛋白质；mRNA前体即核不均一RNA（hnRNA），成熟mRNA中形成从起始密码子到终止密码子的连续可译框（ORF）。",
+   "note": "流程排序题高频；hnRNA与ORF为名词解释备选。",
+   "pages": [
+    86
+   ]
+  },
+  {
+   "id": "L5-F57",
+   "text": "RNA加工过程及其推测的生理功能：加帽子反应——mRNA从细胞核向细胞质运转、翻译起始；加多聚A反应——转录终止、翻译起始和mRNA降解；RNA的剪接——从mRNA、tRNA和rRNA分子中切除内含子；RNA的切割——从前体RNA中释放成熟tRNA和rRNA分子。",
+   "note": "表中功能标注为“推测的”，答题时写出“推测”更严谨；剪接与切割的区分是易错点。",
+   "pages": [
+    87
+   ]
+  },
+  {
+   "id": "L5-F58",
+   "text": "核酶（ribozyme）：一类具有催化功能的RNA分子，通过催化靶位点RNA链中磷酸二酯键的断裂，特异性地剪切底物RNA，从而阻断基因表达；ribozyme为ribonucleic acid与enzyme的缩合词。",
+   "note": "名词解释高频；须写出“催化磷酸二酯键断裂”“特异性剪切”。",
+   "pages": [
+    88
+   ]
+  },
+  {
+   "id": "L5-F59",
+   "text": "1982年Tom Cech及其研究组宣布，来自四膜虫（Tetrahymena）的一个RNA分子在完全无蛋白质存在的条件下切断并重新连接了化学键，这是“生物反应总是由蛋白质催化”的第一个例外；RNase P中的RNA亚基催化tRNA前体的加工（Altman）。",
+   "note": "科学史考点；年份1982、物种四膜虫、人物Cech与Altman必须准确。",
+   "pages": [
+    89
+   ]
+  },
+  {
+   "id": "L5-F60",
+   "text": "RNA与DNA的结构差异帮助RNA行使催化功能：RNA为单链（single-stranded），可自身折叠形成复杂三维结构；含核糖（ribose）与尿嘧啶（uracil）而非脱氧核糖与胸腺嘧啶；核糖2'-OH是RNA区别于DNA的关键化学基团，可参与催化（作为亲核体或与金属离子配位），但也使RNA更易被水解。",
+   "note": "辨析题高频；2'-OH“既是催化基础也是不稳定原因”是得分点。",
+   "pages": [
+    90
+   ]
+  },
+  {
+   "id": "L5-F61",
+   "text": "锤头核酶（hammerhead ribozyme）：由三个茎环区（stem I、II、III）组成，其间有一个由11–13个保守核苷酸构成的催化中心；N代表该位置可为任意碱基；在类病毒（viroid）中茎III的顶部并没有被环连接起来；Mg2+与RNA的2'-OH共同参与切割反应中磷酸二酯键的水解。",
+   "note": "“11–13个保守核苷酸”“类病毒茎III无环”为细节考点；三级结构中CUGA尿苷转角与活性位点胞嘧啶（第17位）为结构要点（Scott et al. 1995, Cell 81: 991）。",
+   "pages": [
+    91,
+    92
+   ]
+  },
+  {
+   "id": "L5-F62",
+   "text": "锤头核酶自我切割：类病毒和拟病毒RNA折叠形成锤头状二级结构（含Stem 1、2、3与保守碱基GNCGAA、CNGA、GUC、A），催化位点识别切割位点并在保守GUC序列之后切断底物链；锤头结构也可由酶链与底物链两条互补RNA分子配对形成，当酶链被引入细胞时可与底物链配对并将其切割，为基因治疗提供新策略。",
+   "note": "“切割发生在GUC之后”与“两条互补RNA可形成锤头”为常考细节。",
+   "pages": [
+    93
+   ]
+  },
+  {
+   "id": "L5-F63",
+   "text": "核酶催化RNA定点切割的循环：核酶与底物RNA通过碱基配对结合→底物被切割→产物释放，核酶不被消耗、可循环使用，体现真正的催化特性。",
+   "note": "可出“为什么说核酶是真正的催化剂”简答；要点是反义配对识别、产物释放、自身循环。",
+   "pages": [
+    94
+   ]
+  },
+  {
+   "id": "L5-F64",
+   "text": "核酶分类：剪切型核酶只催化切割、不催化连接（如RNase P的RNA亚基、四膜虫rRNA前体的剪接产物L19）；剪接型核酶既催化切割又催化连接，具有序列特异的内切核酸酶、RNA连接酶等多种酶活性（如I、II类内含子、锤头型核酶、发夹型核酶）。",
+   "note": "“只剪不接 vs 又剪又接”为辨析题；例子归属易混，须记牢。",
+   "pages": [
+    95
+   ]
+  },
+  {
+   "id": "L5-F65",
+   "text": "发夹型核酶（hairpin ribozyme）：来源于烟草环斑病毒负链的卫星RNA，形成发夹状二级结构，是核酸酶与RNA连接酶的靶标；其自我剪接是可逆的，催化连接的能力高于催化切割的能力。",
+   "note": "“连接活性>切割活性”为易考细节；与锤头核酶对比出题。",
+   "pages": [
+    96
+   ]
+  },
+  {
+   "id": "L5-F66",
+   "text": "丁型肝炎病毒（HDV）核酶：HDV基因组RNA与反基因组RNA的转录本中均含自我剪接活性的核酶结构，可折叠成A、B、C、D四种二级结构（含P1、P1.1、P2、P3、P4配对区与J连接区）；HDV核酶被称为“最快的RNA催化剂”，其自我剪接能力是锤头状核酶的100倍。",
+   "note": "“100倍”为定量考点；HDV核酶存在于基因组与反基因组两条极性链是细节。",
+   "pages": [
+    97
+   ]
+  },
+  {
+   "id": "L5-F67",
+   "text": "核酶的生物学意义：核酶是继逆转录现象之后对中心法则的又一个重要修正，说明RNA既是遗传物质又是酶；为生命起源研究提供新思路——也许曾经存在以RNA为基础的原始生命（RNA世界），蛋白质世界也可能（仅仅是可能）起源于RNA世界。",
+   "note": "论述题高频；须注意幻灯片用“也许”“仅仅是可能”，答题时不宜写成定论。",
+   "pages": [
+    98
+   ]
+  },
+  {
+   "id": "L5-F68",
+   "text": "RNA世界的三阶段进化模型：第一阶段RNA-based systems（仅含RNA、RNA自我复制）→进化出能指导蛋白质合成的RNA→第二阶段RNA and protein-based systems（RNA自我复制并翻译产生蛋白质）→进化出合成DNA并以DNA为模板制造RNA拷贝的新酶→第三阶段present-day cells（DNA自我复制，信息流DNA→RNA→protein）。",
+   "note": "结论“RNA可能先于DNA和蛋白质”为论述题核心；三阶段与两次进化事件的顺序不可颠倒。",
+   "pages": [
+    99
+   ]
+  }
+ ],
+ "methods": [
+  {
+   "id": "L5-M01",
+   "cn": "蔗糖密度梯度离心",
+   "en": "sucrose density gradient centrifugation",
+   "principle": "在5%–20%蔗糖梯度中离心，按沉降系数分离不同质量的复合物；与核糖体结合的mRNA沉降更快，位于梯度较底部，游离mRNA位于管顶。",
+   "steps": "制备5%–20%蔗糖梯度→加样（[3H]标记的加帽或未加帽mRNA）→超速离心→按管中位置（bottom→top）分部收集并测放射性cpm。",
+   "applications": "检测mRNA是否与核糖体结合；本课用于证明5'端帽子是核糖体结合和翻译所必需的（加帽mRNA出现核糖体结合峰+游离峰，未加帽mRNA只有游离峰）。",
+   "limitations": "只能反映结合与否及相对沉降行为，不能给出分子细节；需放射性标记，梯度制备与分部收集操作要求高，结果判读依赖峰位。",
+   "pages": [
+    18
+   ]
+  },
+  {
+   "id": "L5-M02",
+   "cn": "寡聚(dT)亲和层析",
+   "en": "Sepharose-oligo(dT) affinity chromatography",
+   "principle": "oligo(dT)与mRNA 3'多聚(A)尾巴碱基互补配对，带poly(A)的mRNA被吸附，无poly(A)的rRNA等流穿。",
+   "steps": "RNA样品上Sepharose-oligo(dT)柱→poly(A)+ RNA通过A–T配对黏附于柱上→rRNA等无poly(A)的RNA流穿→洗脱回收mRNA。",
+   "applications": "从总RNA中分离纯化mRNA（poly(A)+ RNA）；长腺苷酸尾巴是Pol II转录产物特有的，故可据此富集mRNA。",
+   "limitations": "仅适用于带多聚(A)尾巴的RNA；约占1/3的Poly(A)⁻ mRNA（含部分组蛋白mRNA）无法用此法回收。",
+   "pages": [
+    24
+   ]
+  },
+  {
+   "id": "L5-M03",
+   "cn": "放射性脉冲-追踪实验",
+   "en": "pulse-chase experiment with radioactive cytosine",
+   "principle": "先用放射性前体短时标记新合成的RNA，再转入非放射性培养基追踪其位置变化，通过放射自显影定位放射性RNA。",
+   "steps": "在放射性标记的胞嘧啶中培养12 min→转移到非放射性标记的培养基中培养88 min→制片→放射自显影观察银粒分布。",
+   "applications": "证明RNA在细胞核内合成后转移到细胞质（Demonstration that RNA is synthesized in the nucleus and moves to the cytoplasm）。",
+   "limitations": "只能给出时空分布，不能鉴定具体RNA种类；需注意脉冲时间与追踪时间的设置，否则难以区分合成与转运。",
+   "pages": [
+    83
+   ]
+  }
+ ],
+ "exam_points": [
+  {
+   "id": "L5-X01",
+   "point": "原核与真核mRNA/转录产物的系统比较",
+   "detail": "简答或填表题。作答按四条维度展开：RNA聚合酶种类数目、初始转录产物与编码序列的关系、是否需要剪接加工、转录与翻译的空间时间关系；结论句写“原核一种酶、无剪接、转录翻译偶联；真核多种酶、需剪接加工、分室分期”。"
+  },
+  {
+   "id": "L5-X02",
+   "point": "原核mRNA的四大特征及SD序列机制",
+   "detail": "填空/简答。四特征：半衰期短、多顺反子、5'无帽3'无或短poly(A)、起始密码子可为AUG/GUG/UUG。SD序列位于AUG上游5–9个碱基，与16S rRNA 3'端反向互补，即RBS；多顺反子上每个顺反子各有RBS、start、stop，可独立翻译。"
+  },
+  {
+   "id": "L5-X03",
+   "point": "真核mRNA的加帽反应与帽子功能",
+   "detail": "简答/选择。三步酶：RNA三磷酸酶→鸟苷酸转移酶→甲基转移酶（N7位）；约合成25个核苷酸后加帽；cap0/cap1/cap2的甲基化位点与丰度；四项功能（剪接、出核、抗核酸酶、翻译起始识别）。易错：CBC（核内剪接）≠eIF4E（翻译起始）。"
+  },
+  {
+   "id": "L5-X04",
+   "point": "CTD磷酸化与RNA加工因子的募集",
+   "detail": "机制题。七肽重复Y1S2P3T4S5P6S7；Ser5磷酸化→募集加帽因子（启动子逃离）；Ser2磷酸化→募集剪接因子与3'端加工因子（延伸）；转录完成后磷酸酶去磷酸化，只有完全去磷酸化的Pol II才能重新起始。细菌RNA聚合酶无CTD。"
+  },
+  {
+   "id": "L5-X05",
+   "point": "多聚腺苷酸化信号、因子与poly(A)功能",
+   "detail": "填空/简答。AAUAAA位于切割位点上游10–35 nt（高等生物poly(A)上游11–30 nt，酵母除外），GU-rich在下游约50 nt；CPSF、CstF结合信号→切割→PAP以ATP为底物加约200个A→PABP结合；poly(A)三大功能：出核必需、提高稳定性、经PABP与5'帽互作使mRNA环化促进核糖体循环。"
+  },
+  {
+   "id": "L5-X06",
+   "point": "GU-AG法则（Chambon法则）及其例外",
+   "detail": "名词解释/选择。100种内含子5'端为GU、3'端为AG；内含子两端无同源或互补，仅连接点有短保守边界序列。例外：线粒体、叶绿体内含子，酵母tRNA基因。"
+  },
+  {
+   "id": "L5-X07",
+   "point": "剪接体组装与snRNP功能",
+   "detail": "简答/选择。E（U1识别5'剪接点）→A（U2AF识别3'剪接点富嘧啶区、引导U2结合分支点，即剪接前体）→B（加Tri-snRNP U4/U5/U6）→C（U4解离、U6与U2重排产生活性位点）。snRNP三大作用：识别位点、使位点靠近、催化切割；U5为中心支架，催化中心在U5 Loop I旁，Mg2+由U6保守核苷酸配位。"
+  },
+  {
+   "id": "L5-X08",
+   "point": "两步转酯反应与套索形成",
+   "detail": "机制题。第一步：分支点A的2'-OH攻击5'剪接点，形成5'-2'磷酸二酯键与套索；第二步：上游外显子3'-OH攻击3'剪接点，释放套索内含子并连接外显子。两次转酯磷酸二酯键数目守恒，不耗ATP。"
+  },
+  {
+   "id": "L5-X09",
+   "point": "四类内含子剪接的比较（tRNA、I类、II类、核mRNA前体）",
+   "detail": "填表/简答。按边界顺序、特殊顺序、二级结构、基因外成分、能量要求、中间体六项比较。关键差异：I类用自由鸟苷+Mg2+、中间体环状L-19 IVS、不耗能；II类用分支点A的2'-OH+Mg2+、中间体套索、不耗能；核mRNA前体需U1/U2/U4/U5/U6、中间体套索、消耗ATP；酵母tRNA需内切酶与连接酶、消耗ATP、中间体半分子tRNA。"
+  },
+  {
+   "id": "L5-X10",
+   "point": "可变剪接的概念、意义与五种模式",
+   "detail": "名词解释+简答。定义强调“选择性越过外显子或剪接点、产生组织/发育阶段特异性mRNA”；脊椎动物约60%基因可变剪接；意义：拓展编码潜能、提高外显子重排（exon shuffling）概率、加快新蛋白出现。五种模式：正常、外显子遗漏、外显子延伸、内含子保留、可变剪接。"
+  },
+  {
+   "id": "L5-X11",
+   "point": "可变剪接的调控与准确性机制",
+   "detail": "简答。激活因子结合剪接增强子、抑制因子结合抑制因子位点，影响剪接机器对位点的选择；提高准确性两机制：与转录偶联的剪接体组装（加工蛋白从CTD转移到RNA）、ESE与SR蛋白引导剪接机器。3'位点扫描选第一个AG，效率CAG=UAG>AAG>GAG。"
+  },
+  {
+   "id": "L5-X12",
+   "point": "RNA编辑的类型、机制与生物学意义",
+   "detail": "简答/选择。四类型：A-to-I（ADAR1/2/3，GluA2 Q/R）、C-to-U（APOBEC1，ApoB肝vs肠）、插入/删除（gRNA指导U插入，锥虫/利什曼原虫线粒体）、碱基修饰（m6A、m5C、ψ；METTL3、NSUN）。意义：校正、调控翻译（构建/去除起始与终止密码子）、扩充遗传信息。"
+  },
+  {
+   "id": "L5-X13",
+   "point": "核酶的发现、分类与催化机制",
+   "detail": "名词解释/论述。定义：具有催化功能、催化磷酸二酯键断裂特异剪切底物RNA的RNA分子；1982年Cech在四膜虫发现自我剪接RNA，Altman发现RNase P的RNA亚基。分类：剪切型（只剪不接，RNase P RNA亚基、L19）vs剪接型（又剪又接，I/II类内含子、锤头、发夹）。锤头核酶三茎环+11–13个保守核苷酸催化中心，Mg2+与2'-OH参与；HDV核酶是最快RNA催化剂，为锤头的100倍。"
+  },
+  {
+   "id": "L5-X14",
+   "point": "RNA世界的进化意义",
+   "detail": "论述题。核酶是对中心法则的又一修正（RNA既是遗传物质又是酶）；三阶段模型：RNA-based systems→RNA and protein-based systems→present-day cells（DNA→RNA→protein）；结论“RNA可能先于DNA和蛋白质”，注意措辞为假说。"
+  },
+  {
+   "id": "L5-X15",
+   "point": "mRNA出核转运与稳定性调控",
+   "detail": "简答。EJC沉积于外显子-外显子连接处上游20–24 nt（MAGOH、Y14、eIF4AIII、MLN51），是成熟标志；Exportin+Ran-GTP经核孔出核，胞质中GTP水解驱动解离，GEF再生Ran-GTP；受损/错误加工mRNA与释放的内含子滞留核内降解；mRNA寿命由3' UTR与细胞类型决定，细菌约3 min、真核4–24 hr。"
+  }
+ ],
+ "exercises": [
+  {
+   "id": "L5-E01",
+   "type": "单选题",
+   "stem": "下列关于原核生物mRNA特征的叙述，错误的是：",
+   "options": [
+    "A. 半衰期短，常与转录、翻译在时间上重叠",
+    "B. 许多原核mRNA以多顺反子形式存在",
+    "C. 5'端具有m7G帽子结构，3'端具有长poly(A)尾",
+    "D. 起始密码子可为AUG，有时也可为GUG甚至UUG"
+   ],
+   "answer": "C。原核mRNA 5'端无帽子结构（新生RNA 5'端为ppp），3'端没有或只有较短的多聚(A)结构；m7G帽子与长poly(A)尾是真核mRNA的特征。",
+   "analysis": "A、B、D均为第4页列出的原核mRNA特征；C把真核特征误置于原核，是典型混淆项。",
+   "pages": [
+    4,
+    7,
+    9
+   ]
+  },
+  {
+   "id": "L5-E02",
+   "type": "单选题",
+   "stem": "真核生物mRNA中含量最丰富的帽子结构类型是：",
+   "options": [
+    "A. cap0",
+    "B. cap1",
+    "C. cap2",
+    "D. NAD+-cap"
+   ],
+   "answer": "B。cap1在cap0基础上于第二个核苷酸（原mRNA 5'第一位）的2'-OH再加一个甲基，真核生物中以这类帽子结构为主；cap0主要见于单细胞真核生物，cap2只占10%–15%以下。",
+   "analysis": "cap0是“所有真核mRNA都有”的第一位甲基，但“以哪类为主”问的是丰度最高的类型，答案为cap1；NAD+-cap属非典型帽子。",
+   "pages": [
+    16,
+    55
+   ]
+  },
+  {
+   "id": "L5-E03",
+   "type": "单选题",
+   "stem": "关于RNA聚合酶II的C末端结构域（CTD）在RNA加工中的作用，正确的是：",
+   "options": [
+    "A. Ser5磷酸化募集剪接因子，Ser2磷酸化募集加帽因子",
+    "B. Ser5磷酸化募集加帽因子，Ser2磷酸化募集剪接因子与3'端加工因子",
+    "C. CTD磷酸化与去磷酸化对转录起始没有影响",
+    "D. 细菌RNA聚合酶具有同源的七肽重复CTD"
+   ],
+   "answer": "B。启动子逃离时Ser5磷酸化募集加帽因子，延伸时Ser2磷酸化募集剪接因子与3'端加工（多聚腺苷酸化及切割）因子；只有完全去磷酸化的Pol II才能重新起始转录；细菌RNA聚合酶没有CTD。",
+   "analysis": "A把Ser5/Ser2的对应关系颠倒；C与“去磷酸化才能重新起始”矛盾；D与“细菌无CTD”矛盾。",
+   "pages": [
+    12,
+    13,
+    14
+   ]
+  },
+  {
+   "id": "L5-E04",
+   "type": "单选题",
+   "stem": "下列哪一项不是5'帽子结构的功能？",
+   "options": [
+    "A. 参与剪接体形成，促进第一个内含子的剪接",
+    "B. 保护5'端不被核酸酶降解",
+    "C. 作为翻译起始时IFⅢ和核糖体识别的信号",
+    "D. 作为核糖体循环的结构基础，与PABP互作使mRNA环化"
+   ],
+   "answer": "D。与PABP互作使mRNA环化、促进核糖体有效循环是3'多聚(A)尾巴的功能（经PABP与5'帽相互作用实现），不是帽子本身被列出的功能。",
+   "analysis": "A、B、C为第17页帽子四项功能中的三项；D描述的是poly(A)的功能，虽涉及5'帽但功能主体是poly(A)。",
+   "pages": [
+    17,
+    22,
+    23
+   ]
+  },
+  {
+   "id": "L5-E05",
+   "type": "单选题",
+   "stem": "关于GU-AG法则（Chambon法则），下列叙述正确的是：",
+   "options": [
+    "A. 所有生物的所有内含子都符合5'端GU、3'端AG的规律",
+    "B. 内含子两端序列存在同源或互补关系，故可被剪接酶识别",
+    "C. 100种内含子的5'端为GU、3'端为AG，但线粒体、叶绿体内含子及酵母tRNA基因内含子不符合该法则",
+    "D. 该法则由Crick于1978年提出"
+   ],
+   "answer": "C。Chambon等比较大量结构基因内含子切割位点发现5'端GU、3'端AG，但该法则不适用于线粒体、叶绿体内含子及酵母tRNA基因。",
+   "analysis": "A忽略例外；B与“内含子两端不存在同源或互补”相反；D混淆人物，Crick 1978年提出的是关于剪接识别的一系列问题。",
+   "pages": [
+    32,
+    34,
+    36
+   ]
+  },
+  {
+   "id": "L5-E06",
+   "type": "单选题",
+   "stem": "剪接体组装过程中，U4 snRNP的解离与活性位点的形成发生在哪个阶段？",
+   "options": [
+    "A. E复合体",
+    "B. A复合体（剪接前体）",
+    "C. B复合体",
+    "D. C复合体"
+   ],
+   "answer": "D。B复合体之后U4解离，U6与U2重排形成C复合体并产生活性位点，随后完成两步切割与连接。",
+   "analysis": "E为U1识别5'剪接点；A为U2AF引导U2结合分支点；B为加入U4/U5/U6三聚体；C为催化活化阶段。",
+   "pages": [
+    44,
+    45
+   ]
+  },
+  {
+   "id": "L5-E07",
+   "type": "单选题",
+   "stem": "下列关于I类与II类内含子自我剪接的叙述，正确的是：",
+   "options": [
+    "A. I类内含子以分支点腺苷酸的2'-OH发动第一次攻击，形成套索",
+    "B. II类内含子需要外源游离鸟苷作为亲核基团，且需要ATP",
+    "C. I类内含子以游离鸟苷酸的3'-OH发动第一次攻击，内含子以线性形式释放，不消耗ATP",
+    "D. 两者均需要U1、U2、U4、U5、U6 snRNP参与"
+   ],
+   "answer": "C。I类内含子由外源游离鸟苷酸pG的3'-OH攻击5'剪接点，第二步由上游外显子3'-OH攻击3'剪接点，两次转酯不耗ATP，内含子线性释放（中间体为环状L-19 IVS）。",
+   "analysis": "A描述的是II类；B把I类的特征（游离鸟苷）与能量需求说反；D为核mRNA前体剪接体剪接的特征。",
+   "pages": [
+    60,
+    63,
+    64,
+    65
+   ]
+  },
+  {
+   "id": "L5-E08",
+   "type": "单选题",
+   "stem": "果蝇DSCAM基因的exon 4、6、9、17分别有12、48、33、2种可变方式，理论上可产生的mRNA种类数为：",
+   "options": [
+    "A. 95种",
+    "B. 38,016种",
+    "C. 4,752种",
+    "D. 1,584种"
+   ],
+   "answer": "B。12×48×33×2=38,016，幻灯片称约38,000种；每组互斥可变外显子在成熟mRNA中只保留一个拷贝。",
+   "analysis": "计算依据是各可变外显子组的组合相乘；A为简单相加，C、D为漏乘某一因子。",
+   "pages": [
+    51
+   ]
+  },
+  {
+   "id": "L5-E09",
+   "type": "多选题",
+   "stem": "下列属于RNA编辑类型的有：",
+   "options": [
+    "A. A-to-I编辑，由ADAR1/2/3催化",
+    "B. C-to-U编辑，由APOBEC1催化",
+    "C. gRNA指导的尿嘧啶插入或删除",
+    "D. m6A、m5C、ψ等碱基修饰，由METTL3、NSUN等催化"
+   ],
+   "answer": "ABCD。四类均为幻灯片列出的RNA编辑主要类型：A-to-I、C-to-U、插入/删除编辑、碱基修饰编辑。",
+   "analysis": "注意D虽不改变碱基序列本身，但幻灯片将其与前三类并列列于RNA编辑类型表中，答题时应按课件口径选入。",
+   "pages": [
+    72
+   ]
+  },
+  {
+   "id": "L5-E10",
+   "type": "多选题",
+   "stem": "关于真核生物mRNA多聚腺苷酸化，下列叙述正确的有：",
+   "options": [
+    "A. AAUAAA位于切割位点上游10–35 nt，对准确切割及加多聚(A)是必需的",
+    "B. CPSF与CstF结合poly-A信号，随后RNA在poly-A位点被切割",
+    "C. PAP以ATP为底物在3'端加上约200个A，PABP结合新合成的A尾",
+    "D. 加多聚(A)只能发生在剪接完成之后"
+   ],
+   "answer": "ABC。D错误：加多聚(A)可以发生在RNA剪接之前或之后。",
+   "analysis": "A、B、C分别对应信号位置、因子作用与加尾反应；D与第20页“可发生在剪接之前或之后”直接矛盾。",
+   "pages": [
+    20,
+    21
+   ]
+  },
+  {
+   "id": "L5-E11",
+   "type": "多选题",
+   "stem": "关于锤头核酶，下列叙述正确的有：",
+   "options": [
+    "A. 由三个茎环区（stem I、II、III）组成，催化中心由11–13个保守核苷酸构成",
+    "B. 在类病毒中茎III的顶部没有被环连接起来",
+    "C. 切割反应中Mg2+与RNA的2'-OH共同参与磷酸二酯键的水解",
+    "D. 其自我剪接能力是HDV核酶的100倍"
+   ],
+   "answer": "ABC。D错误：HDV核酶的自我剪接能力是锤头状核酶的100倍，而非相反。",
+   "analysis": "A、B、C为锤头核酶的结构与催化要点；D把比较关系颠倒，是常见陷阱。",
+   "pages": [
+    91,
+    97
+   ]
+  },
+  {
+   "id": "L5-E12",
+   "type": "填空题",
+   "stem": "原核mRNA起始密码子AUG上游约5–9个碱基处有一段保守序列，称为______序列，又称______，它与______的3'端反向互补配对，在核糖体-mRNA结合中起作用。",
+   "options": [],
+   "answer": "SD（Shine-Dalgarno）；核糖体结合位点（RBS）；16S rRNA",
+   "analysis": "三个空分别考名称、别名与配对对象；16S rRNA 3'端序列为3' U U C C U C C A C U A G 5'，与mRNA上GGAGG配对。",
+   "pages": [
+    7
+   ]
+  },
+  {
+   "id": "L5-E13",
+   "type": "填空题",
+   "stem": "5'加帽通过______键在原初mRNA 5'端倒扣一个“G”，依次由______、______和______三种酶催化，加帽发生在RNA聚合酶合成了大约______个核苷酸后。",
+   "options": [],
+   "answer": "5'→5'磷酸二酯；RNA三磷酸酶；鸟苷酸转移酶；甲基转移酶；25",
+   "analysis": "三个酶的顺序不可颠倒：先去γ-磷酸，再转移GMP，最后N7位甲基化；“约25个核苷酸”为常考数字。",
+   "pages": [
+    15
+   ]
+  },
+  {
+   "id": "L5-E14",
+   "type": "判断题",
+   "stem": "真核生物中所有mRNA的3'端都具有多聚(A)尾巴。",
+   "options": [],
+   "answer": "错误。除组蛋白基因外，真核mRNA 3'端都有多聚(A)序列；且细胞中仍有多达1/3的Poly(A)⁻ mRNA，其中约1/3编码组蛋白。",
+   "analysis": "该题考“绝大多数”与“全部”的差别，两个例外层次（组蛋白基因、Poly(A)⁻ mRNA群体）都应指出。",
+   "pages": [
+    19,
+    25
+   ]
+  },
+  {
+   "id": "L5-E15",
+   "type": "判断题",
+   "stem": "II类内含子的自我剪接与核mRNA前体剪接体催化的剪接，其化学反应及产生的RNA中间体（套索）相同，但前者由内含子自身RNA结构催化，后者需要U1、U2、U4、U5、U6等snRNP。",
+   "options": [],
+   "answer": "正确。两者边界序列均为5'↓GU-AG↓3'、均有分支点序列、中间体均为套索；区别在于催化者与能量需求（II类仅需Mg2+、不耗能；核mRNA前体剪接需snRNP并消耗ATP）。",
+   "analysis": "本题是“II类内含子=剪接体化石”观点的标准表述，答题时补上能量差异更完整。",
+   "pages": [
+    65,
+    66
+   ]
+  },
+  {
+   "id": "L5-E16",
+   "type": "名词解释",
+   "stem": "可变剪接（alternative splicing）",
+   "options": [],
+   "answer": "在高等真核生物个体发育或细胞分化过程中，选择性地越过某些外显子或某个剪接点进行剪接，产生组织或发育阶段特异性mRNA的过程；某些前体mRNA可以以不止一种方式剪接，产生不同的mRNA。脊椎动物约60%的基因可发生可变剪接，其意义在于拓展基因的编码潜能、提高外显子重排概率、加快新蛋白出现。",
+   "analysis": "答题须含“选择性使用外显子/剪接点”“组织或发育阶段特异性”“同一基因产生多种mRNA”三要素，并补60%这一数字。",
+   "pages": [
+    49,
+    51
+   ]
+  },
+  {
+   "id": "L5-E17",
+   "type": "简答题",
+   "stem": "简述真核生物pre-mRNA剪接体组装的主要阶段及各阶段的关键分子事件。",
+   "options": [],
+   "answer": "①E（早期）复合体：U1 snRNA以碱基互补方式识别pre-mRNA 5'剪接点（5'GUAAGUA3'与U1 snRNA 3'CAUUUCAU5'互补）。②A复合体（剪接前体pre-spliceosome）：结合在3'剪接点上游富嘧啶区的U2AF（U2AF65/U2AF35）识别3'剪接点，并引导U2 snRNP与分支点结合。③B复合体：剪接前体与U4/U5/U6三聚体（Tri-snRNP）结合，完成组装。④C复合体：U4 snRNP解离，U6与U2重排，产生活性位点，催化两步转酯反应完成剪接。结构上U5 snRNP为中心支架，U6与U2缠绕其上，在U5 Loop I旁形成催化中心，Mg2+由U6保守核苷酸配位。",
+   "analysis": "按E→A→B→C顺序作答，每阶段写出关键snRNP/因子与事件；补上U5支架与U6配位Mg2+可得高分。",
+   "pages": [
+    44,
+    45,
+    46
+   ]
+  },
+  {
+   "id": "L5-E18",
+   "type": "简答题",
+   "stem": "比较I类内含子、II类内含子与核mRNA前体剪接在边界序列、亲核基团、所需外部成分、能量需求与中间体上的异同。",
+   "options": [],
+   "answer": "①边界序列：I类为5'U↓-G↓3'；II类与核mRNA前体均为5'↓GU-AG↓3'。②特殊序列：I类为内部引导顺序（IGS）；II类与核mRNA前体为分支点序列。③亲核基团：I类第一次由外源游离鸟苷酸的3'-OH发动；II类与核mRNA前体由分支点腺苷酸A的2'-OH发动。④外部成分：I类需自由鸟苷与Mg2+；II类仅需Mg2+；核mRNA前体需U1、U2、U4、U5、U6 snRNP。⑤能量：I类与II类均不需ATP；核mRNA前体剪接消耗ATP。⑥中间体：I类为环状L-19 IVS（线性释放）；II类与核mRNA前体均为套索。三者均通过两次连续转酯反应完成，磷酸二酯键数目守恒。",
+   "analysis": "按六项逐条对比最清晰；最后一句“两次转酯、键数守恒”是共同点，不可漏。",
+   "pages": [
+    60,
+    64,
+    65,
+    66,
+    67
+   ]
+  },
+  {
+   "id": "L5-E19",
+   "type": "简答题",
+   "stem": "简述RNA编辑的主要类型及其生物学意义，并举出哺乳动物中的两个实例。",
+   "options": [],
+   "answer": "类型：①A-to-I编辑，由ADAR1/2/3催化，腺苷脱氨为肌苷，翻译时读成G；②C-to-U编辑，由APOBEC1催化，胞苷变尿苷；③插入/删除编辑，由多种酶（如RNA编辑复合体）完成，gRNA指导尿嘧啶插入或删除；④碱基修饰编辑，包括m6A、m5C、ψ等，由METTL3、NSUN等催化，调控稳定性与翻译效率。意义：①校正作用，修正DNA模板上错误的遗传信息；②调控翻译，构建或去除起始密码子与终止密码子；③扩充遗传信息，使同一基因编码的产物种类超出DNA序列本身所载信息。实例：肝、肠载脂蛋白B mRNA的C→U编辑（CAA→UAA，肝产生ApoB100、肠产生截短的ApoB48）；脑谷氨酸受体蛋白A→I编辑使多个谷氨酸密码子变为精氨酸，利于大脑发育。",
+   "analysis": "类型、意义、实例三部分齐全；实例须写出“组织—碱基改变—结果”，只写基因名不得满分。",
+   "pages": [
+    72,
+    74,
+    76,
+    81
+   ]
+  },
+  {
+   "id": "L5-E20",
+   "type": "计算题",
+   "stem": "某真核基因的pre-mRNA含5个外显子和4个内含子。若每个内含子均可独立选择“保留”或“去除”，且所有组合等概率发生，理论上最多可产生多少种不同的成熟mRNA异构体？若该基因是癌基因，这种剪接多样性对其功能可能意味着什么？",
+   "options": [],
+   "answer": "每个内含子有保留/去除两种状态，4个内含子独立组合，理论上最多2^4=16种成熟mRNA异构体。对癌基因的意义：不同异构体可产生功能增强、功能减弱或获得新功能的蛋白，影响蛋白结构域组合、亚细胞定位与稳定性，从而参与肿瘤发生发展，并可能造成靶向治疗耐药或提供异构体特异性治疗靶点。",
+   "analysis": "计算依据是“每个内含子二选一、独立组合”；若题目改为“外显子跳跃组合”需注意计数口径。功能分析须落到“蛋白异构体功能改变→肿瘤表型/治疗”。",
+   "pages": [
+    53,
+    100
+   ]
+  },
+  {
+   "id": "L5-E21",
+   "type": "实验设计题",
+   "stem": "请设计实验证明真核mRNA的5'端帽子结构是核糖体结合和翻译所必需的，并说明如何设置对照、如何判读结果。",
+   "options": [],
+   "answer": "①取同一批体外转录的mRNA，分为两组：一组进行加帽反应（加帽mRNA），一组不加帽（未加帽mRNA），两组均用[3H]标记。②分别与核糖体提取物孵育，使mRNA与核糖体结合。③在5%–20%蔗糖梯度中进行蔗糖密度梯度离心，按管中位置（bottom→top）分部收集并测放射性cpm。④结果判读：加帽mRNA出现两个峰——位于梯度较底部的核糖体结合mRNA峰和位于管顶的游离mRNA峰；未加帽mRNA只有管顶的游离mRNA峰。⑤结论：帽子是核糖体结合所必需的，结合是翻译起始的前提。对照设置：加帽/未加帽互为对照，两组mRNA序列、长度、标记比活度一致，仅帽子有无不同。",
+   "analysis": "关键得分点为“加帽与未加帽对照”“[3H]标记”“5%–20%蔗糖梯度离心”“两峰vs一峰”的判读；若只写“离心”而不写峰位判读则失分。",
+   "pages": [
+    18
+   ]
+  },
+  {
+   "id": "L5-E22",
+   "type": "分析题",
+   "stem": "某患者单核细胞中检出异常剪接物，测序发现CD3δ基因2号内含子的剪接受体位点发生突变；另有研究发现膀胱癌、乳腺癌等多种肿瘤中CD44基因内含子9异常表达。请分析这两个现象的分子机制差异，并说明剪接异常与疾病的关系。",
+   "options": [],
+   "answer": "①CD3δ基因2号内含子剪接受体位点突变：剪接位点序列被破坏，剪接体不能正确识别3'受体位点，导致异常剪接物释放，患者单核细胞中出现异常剪接产物，引起人类严重联合免疫缺陷症（SCID）。②CD44内含子9异常表达：剪接过程中发生错误，内含子9未被剪接掉（内含子滞留），含内含子9的异常转录本在膀胱癌、胃肠道肿瘤、乳腺癌、结肠癌、食管癌和卵巢癌中表达，与肿瘤发生密切相关。③共同规律：剪接位点突变或剪接错误均可产生异常mRNA，进而产生异常蛋白或改变表达调控，导致疾病；前者是顺式剪接位点突变，后者是剪接错误导致内含子保留。",
+   "analysis": "答题须区分“剪接受体位点突变→异常剪接物”与“剪接错误→内含子9未被剪除”两种机制，并写出对应疾病（SCID；多种肿瘤）。",
+   "pages": [
+    31
+   ]
+  }
+ ]
+}

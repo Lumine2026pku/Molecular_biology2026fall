@@ -1,0 +1,2540 @@
+{
+ "lecture": 4,
+ "title": "生物信息的传递（上）：从DNA到RNA——转录的基本概念、RNA结构、转录过程、RNA聚合酶与启动子",
+ "source_file": "2026_autumn-molecular_biology-04.pdf",
+ "pages": 107,
+ "overview": "本章解决的核心问题是：遗传信息如何从DNA被拷贝成RNA。逻辑主线为：先确立转录在中心法则中的位置（DNA→RNA→蛋白质），通过与复制的对比界定转录的化学与酶学特征（单链模板、不需引物、错误率10⁻⁴、产物不与模板配对）；再讲RNA的结构基础（2′-OH、U替代T、单链分子内配对形成茎环等二级结构与假结等三级结构、A型双螺旋沟特征、G:U配对、circRNA）；随后按模板识别—起始—延伸—终止四阶段展开转录基本过程（转录泡12–14 bp、RNA-DNA杂合8–9 bp、转录泡前后正负超螺旋、流产式起始2–9 nt、σ释放、内在终止子与ρ依赖终止）；进而系统比较RNA聚合酶（E. coli 核心酶α2ββ′ω与全酶、亚基基因rpoA/B/C、σ因子识别-10/-35、真核Pol I/II/III的定位产物与α-鹅膏蕈碱敏感性、线粒体与叶绿体酶、蟹钳结构与通道、PIC与介体、忠实性机制）；最后讲启动子特征（-10区Pribnow盒TATAAT、-35区Sextama盒TTGACA、16–19 bp间距、上升/下降突变、真核TATA/CAAT/GC框与增强子）。本章是基因表达调控的起点，为后续翻译与真核转录调控章节奠定术语与机制基础。",
+ "outline": [
+  {
+   "section": "1",
+   "title": "转录的基本概念",
+   "points": [
+    "转录是以DNA一条链为模板、按5′→3′合成RNA的过程，是基因表达的核心步骤",
+    "RNA序列与编码链（sense strand）相同，仅T→U；与模板链（antisense strand）反向互补",
+    "转录与复制化学/酶学相似，但模板、引物、产物配对、错误率不同",
+    "转录单元由启动子、转录区域与终止子界定，起点记为+1，无0位"
+   ]
+  },
+  {
+   "section": "2",
+   "title": "RNA的结构",
+   "points": [
+    "RNA为核糖核苷酸，2′-OH与U替代T是两大化学差异",
+    "RNA以单链存在，通过分子内碱基配对形成茎、发夹、凸环、内环、交叉、假结",
+    "RNA双螺旋近似A型DNA，大沟窄深、小沟宽浅，不利序列特异性蛋白识别",
+    "G:U非Watson-Crick配对（2个氢键）扩大自我互补能力",
+    "circRNA由反向剪接形成，无帽无poly(A)尾，可作miRNA海绵"
+   ]
+  },
+  {
+   "section": "3",
+   "title": "转录的基本过程",
+   "points": [
+    "四阶段：模板识别、起始、延伸、终止",
+    "起始分封闭复合物、开放复合物（-11～+3约14 bp解链）、三元复合物",
+    "起始可流产式释放2–9 nt短链；合成9 nt以上释放σ进入延伸",
+    "延伸速率E. coli 40–90 nt/s；转录泡前后分别产生正、负超螺旋",
+    "终止分内在终止子（反向重复+约8个A:T）与ρ依赖终止（穷追模型）"
+   ]
+  },
+  {
+   "section": "4",
+   "title": "RNA聚合酶",
+   "points": [
+    "E. coli 仅一种DNA指导RNA聚合酶，核心酶α2ββ′ω，全酶加σ",
+    "σ因子提高启动子亲和力10³倍、降低非专一位点10⁴倍",
+    "真核Pol I/II/III定位、产物与α-鹅膏蕈碱敏感性不同",
+    "Pol II需通用转录因子装配PIC，TFIIH解链并磷酸化CTD",
+    "忠实性由核苷酸选择（10³）与校对（焦磷酸解、内在剪切）共同保证，总错误率10⁻⁵"
+   ]
+  },
+  {
+   "section": "5",
+   "title": "启动子的特征",
+   "points": [
+    "原核-10区TATAAT（Pribnow盒）、-35区TTGACA（Sextama盒），间距16–19 bp",
+    "-10区功能：紧密结合、形成开放复合物、定向转录；-35区由σ识别并选择模板链",
+    "启动子突变分下降突变与上升突变",
+    "真核核心元件TATA盒（-25～-30）、Inr；上游元件CAAT盒（-70～-80）、GC盒（-80～-110）",
+    "增强子非启动子部分，远距离、无方向性、顺式调节、有组织特异性"
+   ]
+  }
+ ],
+ "concepts": [
+  {
+   "id": "L4-C01",
+   "cn": "转录",
+   "en": "transcription",
+   "abbr": "",
+   "definition": "以DNA两条链中的一条为模板、按5′→3′方向合成一条RNA单链的过程，产物序列与编码链相同（除T→U外），是基因表达的核心步骤。",
+   "detail": "化学与酶学上与DNA复制高度相似；由RNA聚合酶催化，不需引物，从头合成；错误率约10⁻⁴。",
+   "note": "“与DNA链序列完全相同”指与编码链相同，不是与模板链相同。",
+   "pages": [
+    4,
+    6,
+    19
+   ]
+  },
+  {
+   "id": "L4-C02",
+   "cn": "翻译",
+   "en": "translation",
+   "abbr": "",
+   "definition": "以新生mRNA为模板，把核苷酸三联体密码子翻译成氨基酸序列、合成多肽链的过程，是基因表达的最终目的。",
+   "detail": "在核糖体上进行；速度约15 aa/秒。",
+   "note": "与转录的模板、产物、酶均不同。",
+   "pages": [
+    4,
+    49
+   ]
+  },
+  {
+   "id": "L4-C03",
+   "cn": "复制",
+   "en": "replication",
+   "abbr": "",
+   "definition": "以两条亲代DNA链均为模板合成两条DNA链，实现一个DNA分子倍增为两个DNA分子的过程。",
+   "detail": "1 DNA molecule → 2 DNA molecules；半保留；需引物；错误率约10⁻⁹～10⁻¹⁰（补充）。",
+   "note": "与转录“只拷贝一条链、只产一条RNA”形成对照。",
+   "pages": [
+    6,
+    7
+   ]
+  },
+  {
+   "id": "L4-C04",
+   "cn": "编码链",
+   "en": "coding strand (sense strand)",
+   "abbr": "",
+   "definition": "与mRNA序列相同的那条DNA链，又称有意义链、正链、Crick链。",
+   "detail": "不被RNA聚合酶读取；其序列与mRNA一致，仅T被U取代。",
+   "note": "Crick strand指编码链、Watson strand指模板链，与直觉相反，易混。",
+   "pages": [
+    24,
+    25
+   ]
+  },
+  {
+   "id": "L4-C05",
+   "cn": "模板链",
+   "en": "template strand (antisense strand)",
+   "abbr": "",
+   "definition": "根据碱基互补原则指导mRNA合成的DNA链，又称反义链、负链、Watson链。",
+   "detail": "与mRNA反向互补平行；RNA聚合酶沿其3′→5′方向移动。",
+   "note": "同一基因模板链固定，但不同基因的模板链可位于DNA双链的不同链上。",
+   "pages": [
+    24,
+    25,
+    83
+   ]
+  },
+  {
+   "id": "L4-C06",
+   "cn": "转录单元",
+   "en": "transcription unit",
+   "abbr": "",
+   "definition": "从启动子到终止子之间被转录成一条RNA的DNA序列。",
+   "detail": "包含启动子、转录区域与终止子；由启动子与终止子界定。",
+   "note": "一个转录单元产出一条RNA，不等于一个基因（补充：可含多个基因，如操纵子）。",
+   "pages": [
+    26,
+    27
+   ]
+  },
+  {
+   "id": "L4-C07",
+   "cn": "转录起点",
+   "en": "transcription start site (startpoint)",
+   "abbr": "TSS",
+   "definition": "与新生RNA链第一个核苷酸相对应DNA链上的碱基，记为+1。",
+   "detail": "原核中90%为嘌呤（A或G）；两侧常为C和T（CGT或CAT）；其前一位为-1，不存在0位。",
+   "note": "真核起始密码子均为AUG；原核起始密码子有AUG、GUG、UUG，绝大多数为AUG。",
+   "pages": [
+    26,
+    80
+   ]
+  },
+  {
+   "id": "L4-C08",
+   "cn": "上游",
+   "en": "upstream",
+   "abbr": "",
+   "definition": "以起点所在链的5′方向为参照、与转录方向相反的序列区域。",
+   "detail": "起点5′末端方向为上游，3′末端方向为下游。",
+   "note": "上游/下游是相对起点而言，不是相对编码链的绝对方向。",
+   "pages": [
+    26,
+    27
+   ]
+  },
+  {
+   "id": "L4-C09",
+   "cn": "转录泡",
+   "en": "transcription bubble",
+   "abbr": "",
+   "definition": "转录过程中RNA聚合酶使DNA双链局部解开的区域，长度约12–14 bp。",
+   "detail": "其中RNA-DNA杂合双链长度约8–9 bp；开放复合物中解链范围约-11至+3（约14 bp）。",
+   "note": "转录泡随聚合酶移动，解链区随之移动。",
+   "pages": [
+    20,
+    32,
+    37,
+    41
+   ]
+  },
+  {
+   "id": "L4-C10",
+   "cn": "从头合成",
+   "en": "de novo synthesis",
+   "abbr": "",
+   "definition": "RNA聚合酶起始转录时不需要引物即可直接起始RNA链合成。",
+   "detail": "与DNA聚合酶需要引物形成对比。",
+   "note": "是转录与复制的重要区别之一。",
+   "pages": [
+    7,
+    50
+   ]
+  },
+  {
+   "id": "L4-C11",
+   "cn": "核糖核苷三磷酸",
+   "en": "ribonucleoside triphosphates",
+   "abbr": "rNTPs",
+   "definition": "RNA合成的底物，即ATP、GTP、CTP、UTP。",
+   "detail": "以4种NTP作为活性前体；需要Mg²⁺/Mn²⁺为辅助因子。",
+   "note": "RNA中用UTP而非dTTP，与DNA合成底物dNTPs区分。",
+   "pages": [
+    29,
+    50
+   ]
+  },
+  {
+   "id": "L4-C12",
+   "cn": "磷酸二酯键",
+   "en": "phosphodiester bond",
+   "abbr": "",
+   "definition": "一个核苷酸的3′-OH与下一个核苷酸的5′-磷酸之间形成的共价键，构成核酸骨架。",
+   "detail": "RNA与DNA合成中化学本质相同；图中标注O=P-O⁻即磷酸基团。",
+   "note": "RNA骨架中核糖2′-OH影响其化学稳定性与A型螺旋形成。",
+   "pages": [
+    9,
+    29
+   ]
+  },
+  {
+   "id": "L4-C13",
+   "cn": "分子内碱基配对",
+   "en": "intramolecular base pairing",
+   "abbr": "",
+   "definition": "同一条RNA分子内部不同区段之间的碱基互补配对，形成局部双螺旋。",
+   "detail": "区别于两条链之间的分子间配对（如DNA双链、RNA-RNA杂交）。",
+   "note": "是RNA形成二级结构的基础。",
+   "pages": [
+    10,
+    11
+   ]
+  },
+  {
+   "id": "L4-C14",
+   "cn": "发夹结构",
+   "en": "hairpin",
+   "abbr": "",
+   "definition": "RNA单链回折形成的茎-环结构，茎部为互补碱基配对的双螺旋区，顶端为未配对的环。",
+   "detail": "发夹环（hairpin loop）特指其顶端环区；是最基本的二级结构元件。",
+   "note": "与凸环、内环的区别在于环位于茎的末端。",
+   "pages": [
+    11,
+    12
+   ]
+  },
+  {
+   "id": "L4-C15",
+   "cn": "凸环",
+   "en": "bulge (bulge loop)",
+   "abbr": "",
+   "definition": "双螺旋区中一条链上出现未配对碱基（一个或数个）而形成的局部突起。",
+   "detail": "可由多个碱基组成，如三核苷酸凸环（three-nucleotide bulge）。",
+   "note": "只有一条链有未配对碱基；内环则两条链都有。",
+   "pages": [
+    11,
+    12
+   ]
+  },
+  {
+   "id": "L4-C16",
+   "cn": "内环",
+   "en": "internal loop (interior loop)",
+   "abbr": "",
+   "definition": "双螺旋区中两条链上均有未配对碱基、形成对称或不对称的环状突起。",
+   "detail": "位于双螺旋区内部。",
+   "note": "与凸环的区别在于两条链均有未配对碱基。",
+   "pages": [
+    11,
+    12
+   ]
+  },
+  {
+   "id": "L4-C17",
+   "cn": "茎",
+   "en": "stem",
+   "abbr": "",
+   "definition": "RNA二级结构中由互补碱基配对形成的局部双螺旋区。",
+   "detail": "稳定性取决于配对数目、配对类型（如G:U）与环的大小。",
+   "note": "是二级结构骨架。",
+   "pages": [
+    12
+   ]
+  },
+  {
+   "id": "L4-C18",
+   "cn": "交叉/多环",
+   "en": "junction (multiloop)",
+   "abbr": "",
+   "definition": "三条或更多条茎在同一节点汇聚形成的二级结构元件。",
+   "detail": "是RNA三级折叠的核心节点，常与蛋白质结合位点相关。",
+   "note": "四茎交叉（four-stem junction）为其一种。",
+   "pages": [
+    11,
+    12
+   ]
+  },
+  {
+   "id": "L4-C19",
+   "cn": "假结",
+   "en": "pseudoknot",
+   "abbr": "",
+   "definition": "由环区的碱基与环外区域的碱基配对形成、产生类似“打结”空间结构的RNA三级结构基序。",
+   "detail": "形成过程：先形成发夹，环区碱基与环外单链区互补配对，把环与外侧链拉拢形成贯穿螺旋；常见于核酶、rRNA与RNA病毒。",
+   "note": "属于三级结构而非简单二级结构，依赖不连续区段配对。",
+   "pages": [
+    11,
+    12,
+    15
+   ]
+  },
+  {
+   "id": "L4-C20",
+   "cn": "G:U碱基配对",
+   "en": "G:U base pair",
+   "abbr": "",
+   "definition": "鸟嘌呤与尿嘧啶之间通过两个氢键形成的非Watson-Crick碱基配对。",
+   "detail": "G的O6与U的N3-H、G的N1-H与U的O4之间形成两个氢键；比G:C（三个氢键）弱，但在RNA折叠中广泛存在，是“额外的规则配对”，增强RNA自我互补能力。",
+   "note": "不是错误配对，是RNA结构多样性的重要来源。",
+   "pages": [
+    16
+   ]
+  },
+  {
+   "id": "L4-C21",
+   "cn": "环状RNA",
+   "en": "circular RNA",
+   "abbr": "circRNA",
+   "definition": "由前体mRNA经反向剪接形成的共价闭合环状非编码RNA，无5′帽和3′poly(A)尾。",
+   "detail": "是多种细胞类型中数百个人类基因的主要转录本异构体（PLoS ONE 2012）；具调控潜能（Nature 2013）；可作高效microRNA海绵；外显子环化由互补序列介导（Cell 2014）；不同区域互补序列竞争性配对可选择产生线形或环形RNA。",
+   "note": "因无poly(A)尾，富集于poly A−组分，不能用oligo(dT)常规富集。",
+   "pages": [
+    17
+   ]
+  },
+  {
+   "id": "L4-C22",
+   "cn": "核内不均一RNA",
+   "en": "heterogeneous nuclear RNA",
+   "abbr": "hnRNA",
+   "definition": "真核细胞核内由RNA聚合酶II转录产生的初级转录本，即前mRNA，经加工后成为成熟mRNA。",
+   "detail": "仅真核生物特有；Pol II产物包括hnRNA、绝大多数microRNA、具帽子结构的snRNA和snoRNA前体。",
+   "note": "幻灯片脚注误写为heterogeneous muclearRNA，应为nuclear。",
+   "pages": [
+    18,
+    62
+   ]
+  },
+  {
+   "id": "L4-C23",
+   "cn": "小核RNA",
+   "en": "small nuclear RNA",
+   "abbr": "snRNA",
+   "definition": "真核细胞核内的小分子非编码RNA，参与剪接体组装与pre-mRNA剪接。",
+   "detail": "仅真核生物；U6 snRNA前体由Pol III转录。",
+   "note": "与snoRNA（核仁内、指导rRNA修饰）区分。",
+   "pages": [
+    18,
+    62
+   ]
+  },
+  {
+   "id": "L4-C24",
+   "cn": "小核仁RNA",
+   "en": "small nucleolar RNA",
+   "abbr": "snoRNA",
+   "definition": "真核细胞核仁内的小分子非编码RNA，指导rRNA的甲基化与假尿苷化修饰及加工。",
+   "detail": "仅真核生物；具帽子结构的前体由Pol II转录。",
+   "note": "与snRNA作用场所和底物不同。",
+   "pages": [
+    18,
+    62
+   ]
+  },
+  {
+   "id": "L4-C25",
+   "cn": "小胞质RNA",
+   "en": "small cytoplasmic RNA",
+   "abbr": "scRNA",
+   "definition": "真核细胞质中的小分子非编码RNA，如7SL RNA（信号识别颗粒组分）。",
+   "detail": "仅真核生物。",
+   "note": "与snRNA定位不同。",
+   "pages": [
+    18
+   ]
+  },
+  {
+   "id": "L4-C26",
+   "cn": "转移-信使RNA",
+   "en": "transfer-messenger RNA",
+   "abbr": "tmRNA",
+   "definition": "细菌中兼具tRNA与mRNA功能的RNA，参与反式翻译，解救停滞核糖体并标记降解异常蛋白。",
+   "detail": "仅细菌特有。",
+   "note": "不属于真核非编码RNA。",
+   "pages": [
+    18
+   ]
+  },
+  {
+   "id": "L4-C27",
+   "cn": "σ因子",
+   "en": "sigma factor",
+   "abbr": "σ",
+   "definition": "细菌RNA聚合酶的起始特异性亚基，负责启动子识别与模板链选择，起始后释放。",
+   "detail": "分子量32–90 KDa；使聚合酶对启动子亲和力提高10³倍、对非专一位点亲和力降低10⁴倍，酶-底物复合物半衰期<1 s；σ70含region 1–4，region 4识别-35元件、region 2识别-10元件、region 3识别extended -10；游离σ的N端区域遮蔽DNA结合结构域，与DNA形成复合物时DNA置换N端。",
+   "note": "核心酶不能识别-35序列，只有σ能。",
+   "pages": [
+    31,
+    53,
+    58,
+    59,
+    90,
+    92
+   ]
+  },
+  {
+   "id": "L4-C28",
+   "cn": "核心酶",
+   "en": "core enzyme",
+   "abbr": "",
+   "definition": "由α2ββ′ω组成的RNA聚合酶部分，具有催化RNA延伸的活性。",
+   "detail": "不能特异识别启动子；负责转录延伸。",
+   "note": "与全酶的区别在于是否含σ。",
+   "pages": [
+    53,
+    58,
+    90
+   ]
+  },
+  {
+   "id": "L4-C29",
+   "cn": "全酶",
+   "en": "holoenzyme",
+   "abbr": "",
+   "definition": "核心酶与σ亚基结合形成的完整RNA聚合酶（α2ββ′ωσ）。",
+   "detail": "相对分子量4.65×10⁵；才具有识别启动子并起始转录的能力。",
+   "note": "σ释放后全酶变核心酶进入延伸。",
+   "pages": [
+    53,
+    54,
+    58
+   ]
+  },
+  {
+   "id": "L4-C30",
+   "cn": "封闭复合物",
+   "en": "closed complex",
+   "abbr": "",
+   "definition": "RNA聚合酶初始结合到启动子上形成的复合物，DNA保持双链状态。",
+   "detail": "全酶结合在螺旋的一面；属启动子选择阶段。",
+   "note": "与开放复合物的区别是DNA未解链。",
+   "pages": [
+    35,
+    36
+   ]
+  },
+  {
+   "id": "L4-C31",
+   "cn": "开放复合物",
+   "en": "open complex",
+   "abbr": "",
+   "definition": "RNA聚合酶与启动子结合后，DNA双链在起始位点附近解开形成的复合物。",
+   "detail": "DNA在+1周围约14 bp（-11至+3）范围内解开，形成转录泡。",
+   "note": "解链能量在真核中来自TFIIH水解ATP。",
+   "pages": [
+    35,
+    37,
+    72
+   ]
+  },
+  {
+   "id": "L4-C32",
+   "cn": "三元复合物",
+   "en": "ternary complex",
+   "abbr": "",
+   "definition": "由DNA、RNA和酶组成的稳定复合物，标志转录起始向延伸阶段转变。",
+   "detail": "酶从启动子逃逸，进入延伸阶段。",
+   "note": "与开放复合物（无RNA）区分。",
+   "pages": [
+    35,
+    38,
+    39
+   ]
+  },
+  {
+   "id": "L4-C33",
+   "cn": "流产式起始",
+   "en": "abortive initiation",
+   "abbr": "",
+   "definition": "转录起始复合物合成并释放2–9个核苷酸短RNA转录物的过程。",
+   "detail": "起始阶段延续性与忠实性都低。",
+   "note": "合成9个以上核苷酸后才进入正常延伸。",
+   "pages": [
+    34,
+    60,
+    76
+   ]
+  },
+  {
+   "id": "L4-C34",
+   "cn": "转录延伸复合物",
+   "en": "transcription elongation complex",
+   "abbr": "",
+   "definition": "由核心酶、DNA和新生RNA组成的复合物。",
+   "detail": "在转录起始复合物通过上游启动子区后生成。",
+   "note": "σ亚基已释放。",
+   "pages": [
+    34
+   ]
+  },
+  {
+   "id": "L4-C35",
+   "cn": "内在终止子",
+   "en": "intrinsic terminator",
+   "abbr": "",
+   "definition": "不依赖于ρ因子的终止子，由一段约20个核苷酸的反向重复序列及其后约8个A:T碱基对组成。",
+   "detail": "转录出的RNA形成茎环（发夹）阻止聚合酶前进；茎中富含G-C使茎环不易解开；poly(U)与模板poly(A)配对最弱，便于RNA释放。",
+   "note": "又称Rho非依赖型终止子。",
+   "pages": [
+    43,
+    44,
+    45
+   ]
+  },
+  {
+   "id": "L4-C36",
+   "cn": "ρ因子",
+   "en": "rho factor",
+   "abbr": "ρ",
+   "definition": "大肠杆菌中参与转录终止的蛋白质因子，具有依赖RNA的ATPase活性，与ssRNA特定位点（C丰富、G缺乏）结合。",
+   "detail": "相对分子质量2.0×10⁵的六聚体；浓度为RNA pol的10%时体外活性最高；单体含N端RNA结合结构域与C端ATPase结构域；作为RNA/DNA解旋酶催化NTP水解，促使新生RNA从三元复合物解离。",
+   "note": "提纯的RNA聚合酶本身不能识别特异性终止信号，加ρ后才能准确终止。",
+   "pages": [
+    46,
+    47,
+    48
+   ]
+  },
+  {
+   "id": "L4-C37",
+   "cn": "α-鹅膏蕈碱",
+   "en": "α-amanitin",
+   "abbr": "",
+   "definition": "来自毒鹅膏的环肽毒素，可特异性抑制真核RNA聚合酶II。",
+   "detail": "Pol I不敏感、Pol II高度敏感、Pol III中度敏感且具物种特异性。",
+   "note": "是区分三类真核聚合酶的重要指标。",
+   "pages": [
+    61,
+    62,
+    64
+   ]
+  },
+  {
+   "id": "L4-C38",
+   "cn": "前起始复合物",
+   "en": "preinitiation complex",
+   "abbr": "PIC",
+   "definition": "由转录调控因子按特定顺序结合于启动子后、RNA聚合酶与之结合形成的复杂复合物，保证有效起始转录。",
+   "detail": "真核RNA聚合酶不能直接识别启动子，需通用转录因子协助；装配受介体、核小体修饰/重塑因子与激活因子协同调控。",
+   "note": "与开放复合物（PIC解链后的状态）区分。",
+   "pages": [
+    71,
+    72,
+    73
+   ]
+  },
+  {
+   "id": "L4-C39",
+   "cn": "TATA结合蛋白",
+   "en": "TATA-binding protein",
+   "abbr": "TBP",
+   "definition": "TFIID中识别并结合TATA盒的亚基。",
+   "detail": "也参与Pol I、Pol III的转录（补充）。",
+   "note": "TBP是TFIID组分，不是TFIIB。",
+   "pages": [
+    72,
+    95
+   ]
+  },
+  {
+   "id": "L4-C40",
+   "cn": "TFIIH",
+   "en": "transcription factor II H",
+   "abbr": "TFIIH",
+   "definition": "具有ATP依赖解旋酶活性、负责启动子解链，并具激酶活性磷酸化CTD的通用转录因子。",
+   "detail": "启动子解链能量来自其对ATP的水解；CTD磷酸化后发生启动子逃逸。",
+   "note": "兼具解旋与激酶双重功能。",
+   "pages": [
+    72
+   ]
+  },
+  {
+   "id": "L4-C41",
+   "cn": "C端结构域",
+   "en": "C-terminal domain",
+   "abbr": "CTD",
+   "definition": "Pol II最大亚基RPB1尾部的重复序列结构域，磷酸化后触发启动子逃逸。",
+   "detail": "图中以tail与P表示。",
+   "note": "为Pol II特有。",
+   "pages": [
+    66,
+    72
+   ]
+  },
+  {
+   "id": "L4-C42",
+   "cn": "介体复合物",
+   "en": "mediator complex",
+   "abbr": "",
+   "definition": "由多个亚基组成的大型共激活因子复合物，连接转录激活因子与RNA聚合酶II转录机器。",
+   "detail": "1994年由Björklund与Kim分离，20多个亚基、总质量超过1百万道尔顿，其中13个亚基为此前不同筛选鉴定的基因产物；部分亚基从酵母到人保守；只有Srb4是体内几乎所有Pol II基因转录所必需。",
+   "note": "Kornberg提出调控蛋白到转录机器的通讯需此额外粗提组分。",
+   "pages": [
+    73,
+    74,
+    75
+   ]
+  },
+  {
+   "id": "L4-C43",
+   "cn": "增强子",
+   "en": "enhancer",
+   "abbr": "",
+   "definition": "能增强或促进转录起始的序列，不属于启动子的一部分，又称强化子、远上游序列。",
+   "detail": "1981年由Benerji、Rusconi小组和Chambom等发现；SV40转录单元起点上游约200 bp处有两段72 bp重复序列；与启动子可相隔数kb；可能通过影响染色质DNA-蛋白质结构或改变超螺旋密度改变模板整体结构。",
+   "note": "不是启动子的一部分。",
+   "pages": [
+    101,
+    102
+   ]
+  },
+  {
+   "id": "L4-C44",
+   "cn": "Pribnow盒",
+   "en": "Pribnow box (-10 region)",
+   "abbr": "",
+   "definition": "原核启动子-10区由5个核苷酸组成的保守序列TATAAT，是聚合酶结合位点，中央约位于起点上游10 bp。",
+   "detail": "1975年Pribnow和Schaller用DNase I保护实验发现，得到41～44个核苷酸对的DNA片段；3′端T十分保守，A·T丰富易解链，与起点一般相距5 bp；功能：RNA pol紧密结合、形成开放启动复合体、使RNA pol定向转录。",
+   "note": "图中写作TATAATPu/ATATTAPy。",
+   "pages": [
+    85,
+    86,
+    94
+   ]
+  },
+  {
+   "id": "L4-C45",
+   "cn": "Sextama盒",
+   "en": "Sextama box (-35 region)",
+   "abbr": "",
+   "definition": "原核启动子-35区保守序列TTGACA，因含6个核苷酸得名。",
+   "detail": "从噬菌体PL、PR及SV40启动子-35 bp附近找到；与-10序列相隔16–19 bp；是RNA pol识别位点，由σ亚基识别并选择模板链。",
+   "note": "核心酶不能识别-35序列。",
+   "pages": [
+    89,
+    90
+   ]
+  },
+  {
+   "id": "L4-C46",
+   "cn": "共有序列",
+   "en": "consensus sequence",
+   "abbr": "",
+   "definition": "对多个同功能序列比对后各位置出现频率最高的碱基组成的序列。",
+   "detail": "100个E. coli启动子统计：-35区T85 T83 G81 A61 C69 A52；-10区T89 A89 T50 A65 A100。",
+   "note": "频率数字表示百分比，并非绝对不变。",
+   "pages": [
+    91
+   ]
+  },
+  {
+   "id": "L4-C47",
+   "cn": "下降突变",
+   "en": "down mutation",
+   "abbr": "",
+   "definition": "使启动子效率降低的突变。",
+   "detail": "如把Pribnow区从TATAAT变成AATAAT；图中-10至-5区TATGTT突变为AATT。",
+   "note": "与上升突变方向相反。",
+   "pages": [
+    87
+   ]
+  },
+  {
+   "id": "L4-C48",
+   "cn": "上升突变",
+   "en": "up mutation",
+   "abbr": "",
+   "definition": "增加Pribnow区与共有序列一致性、提高启动子效率的突变。",
+   "detail": "如乳糖操纵子启动子TATGTT→TATATT。",
+   "note": "向保守序列方向改变。",
+   "pages": [
+    87
+   ]
+  },
+  {
+   "id": "L4-C49",
+   "cn": "Hogness区",
+   "en": "Hogness box (TATA box)",
+   "abbr": "",
+   "definition": "真核启动子中位于起点上游-25～-30 bp的TATA区，保守序列TATAAA，功能类似原核Pribnow盒。",
+   "detail": "由Hogness等发现；是TFIID（TBP）结合位点。",
+   "note": "位置与序列均不同于原核-10区。",
+   "pages": [
+    96,
+    97,
+    105
+   ]
+  },
+  {
+   "id": "L4-C50",
+   "cn": "CAAT盒",
+   "en": "CAAT box",
+   "abbr": "",
+   "definition": "真核启动子中位于起点上游-70～-78（或-70～-80）区的共同序列CCAAT。",
+   "detail": "属上游启动子元件；可被CTF/NF1等转录因子识别。",
+   "note": "名称写作CAAT box，序列写作CCAAT；幻灯片文字曾误作CATT框。",
+   "pages": [
+    96,
+    97,
+    105
+   ]
+  },
+  {
+   "id": "L4-C51",
+   "cn": "GC盒",
+   "en": "GC box",
+   "abbr": "",
+   "definition": "真核启动子中位于-80～-110区、含GCCACACCC或GGGCGGG序列的上游启动子元件。",
+   "detail": "可被Sp1等转录因子识别。",
+   "note": "与CAAT盒同属上游启动子元件。",
+   "pages": [
+    97,
+    105
+   ]
+  },
+  {
+   "id": "L4-C52",
+   "cn": "上游启动子元件",
+   "en": "upstream promoter element",
+   "abbr": "UPE",
+   "definition": "位于TATA区上游的保守序列，包括CAAT box与GC box等，又称上游激活序列（UAS）。",
+   "detail": "主要控制转录起始频率，基本不参与起始位点确定。",
+   "note": "与增强子不同：UPE是启动子的一部分，增强子不是。",
+   "pages": [
+    97,
+    98,
+    99
+   ]
+  },
+  {
+   "id": "L4-C53",
+   "cn": "核心启动子",
+   "en": "core promoter",
+   "abbr": "",
+   "definition": "真核中足以指导RNA聚合酶II从正确位点起始转录的最小启动子区域，包含BRE、TATA、Inr、DPE等元件。",
+   "detail": "BRE位于-37至-32/-31，TATA位于-32/-31至-26，Inr位于-2至+4，DPE位于+28至+32；TFIID（含TBP）结合TATA，TFIIB结合BRE。",
+   "note": "与上游启动子元件区分。",
+   "pages": [
+    95
+   ]
+  },
+  {
+   "id": "L4-C54",
+   "cn": "启始子",
+   "en": "initiator",
+   "abbr": "Inr",
+   "definition": "位于转录起始位点附近的元件，参与确定转录起始位点。",
+   "detail": "属核心元件，与TATA box并列。",
+   "note": "幻灯片未给出具体序列。",
+   "pages": [
+    97
+   ]
+  },
+  {
+   "id": "L4-C55",
+   "cn": "转录忠实性",
+   "en": "transcriptional fidelity",
+   "abbr": "",
+   "definition": "RNA聚合酶选择正确核苷酸、避免错误掺入的准确程度，整体错误率约10⁻⁵。",
+   "detail": "核苷酸选择提高10³，校对功能使整体达10⁻⁵；起始阶段延续性与忠实性低，延伸阶段均提高。",
+   "note": "与复制错误率10⁻⁹～10⁻¹⁰相比低得多。",
+   "pages": [
+    76,
+    77,
+    78
+   ]
+  },
+  {
+   "id": "L4-C56",
+   "cn": "触发环",
+   "en": "trigger loop",
+   "abbr": "",
+   "definition": "RNA聚合酶活性位点附近的柔性环状结构，作为NTP选择器和“分子卡尺”，通过感知碱基对几何构象参与核苷酸选择。",
+   "detail": "只有几何构象正确的碱基对才能被接受。",
+   "note": "与诱导契合协同作用。",
+   "pages": [
+    77
+   ]
+  },
+  {
+   "id": "L4-C57",
+   "cn": "诱导契合",
+   "en": "induced fit",
+   "abbr": "",
+   "definition": "正确底物结合诱导酶构象由开放转为封闭，从而稳定底物并正确定位催化残基的机制。",
+   "detail": "无NTP时RNAP为开放构象；正确NTP结合后转为封闭构象，阻止NTP自发释放，使活性位点氨基酸残基正确定位。",
+   "note": "错误配对NTP无法正确诱导构象变化，金属离子定位异常。",
+   "pages": [
+    77
+   ]
+  },
+  {
+   "id": "L4-C58",
+   "cn": "动力学校对",
+   "en": "kinetic proofreading",
+   "abbr": "",
+   "definition": "通过聚合反应与逆反应（焦磷酸解）之间的动力学竞争，使错误掺入的核苷酸更易被移除、提高忠实性的机制。",
+   "detail": "本页特指焦磷酸解在转录忠实性中的作用。",
+   "note": "与内在RNA剪切活性是两种不同校对机制。",
+   "pages": [
+    78
+   ]
+  },
+  {
+   "id": "L4-C59",
+   "cn": "蟹钳形状",
+   "en": "crab claw shape",
+   "abbr": "",
+   "definition": "RNA聚合酶整体构象，两个大亚基形成钳状结构，中间夹出活性中心裂隙。",
+   "detail": "真核与原核高度同源：RPB1↔β′、RPB2↔β、RPB3↔α、RPB11↔α、RPB6↔ω。",
+   "note": "活性中心裂隙容纳模板DNA与rNTP。",
+   "pages": [
+    68
+   ]
+  },
+  {
+   "id": "L4-C60",
+   "cn": "RNA出口通道",
+   "en": "RNA exit channel",
+   "abbr": "",
+   "definition": "转录产物RNA离开RNA聚合酶的通道。",
+   "detail": "位于β flap附近；NTP摄取通道位于酶背面；DNA从DNA entering channel进入，模板链走T channel、非模板链走NT channel。",
+   "note": "多种通道允许DNA、RNA和rNTP进出活性中心裂隙。",
+   "pages": [
+    70
+   ]
+  },
+  {
+   "id": "L4-C61",
+   "cn": "Srb4",
+   "en": "Srb4",
+   "abbr": "",
+   "definition": "酵母介体复合物的一个亚基，是体内几乎所有RNA聚合酶II基因转录所必需的。",
+   "detail": "幻灯片强调“only subunit Srb4”。",
+   "note": "其他亚基并非全部基因转录绝对必需。",
+   "pages": [
+    74
+   ]
+  },
+  {
+   "id": "L4-C62",
+   "cn": "核小体",
+   "en": "nucleosome",
+   "abbr": "",
+   "definition": "真核染色体的基本单位，由DNA缠绕在8个组蛋白组成的核心上形成。",
+   "detail": "Lorch与Kornberg发现DNA缠绕阻止体外转录起始；Grunstein等证明核小体在体内干扰转录；核小体作为通用基因抑制因子，保证成千上万基因失活，只有特异性正调控机制才能启动转录。",
+   "note": "是转录的抑制性结构基础。",
+   "pages": [
+    75
+   ]
+  },
+  {
+   "id": "L4-C63",
+   "cn": "线粒体RNA聚合酶",
+   "en": "mitochondrial RNA polymerase",
+   "abbr": "",
+   "definition": "单亚基RNA聚合酶，相对分子量<7×10⁴，与T7噬菌体RNA聚合酶同源。",
+   "detail": "是已知最小的RNA聚合酶之一。",
+   "note": "与叶绿体多亚基酶形成对照。",
+   "pages": [
+    67
+   ]
+  },
+  {
+   "id": "L4-C64",
+   "cn": "叶绿体RNA聚合酶",
+   "en": "chloroplast RNA polymerase",
+   "abbr": "",
+   "definition": "多亚基RNA聚合酶，结构上与细菌RNA聚合酶相似，部分亚基由叶绿体基因编码。",
+   "detail": "比较大。",
+   "note": "属细菌型多亚基酶。",
+   "pages": [
+    67
+   ]
+  },
+  {
+   "id": "L4-C65",
+   "cn": "放射线素D",
+   "en": "actinomycin D",
+   "abbr": "",
+   "definition": "与DNA结合、阻止转录延伸的模板结合抑制剂。",
+   "detail": "即放线菌素D。",
+   "note": "属模板结合抑制剂，非聚合酶抑制剂。",
+   "pages": [
+    64
+   ]
+  }
+ ],
+ "processes": [
+  {
+   "id": "L4-P01",
+   "name": "基因表达的信息流",
+   "en": "information flow of gene expression",
+   "overview": "DNA经转录生成初级转录本，经RNA加工成为mRNA，转运至核糖体翻译为蛋白质。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "转录",
+     "detail": "在细胞核内以DNA为模板生成初级转录本（Primary Transcript）"
+    },
+    {
+     "n": 2,
+     "name": "RNA加工",
+     "detail": "初级转录本经RNA Processing生成mRNA"
+    },
+    {
+     "n": 3,
+     "name": "转运",
+     "detail": "mRNA经Transport出核"
+    },
+    {
+     "n": 4,
+     "name": "翻译与合成",
+     "detail": "在核糖体上经Translation, Synthesis生成蛋白质"
+    }
+   ],
+   "key_points": [
+    "DNA是遗传信息贮存者，通过自主复制永存，通过转录生成mRNA、翻译生成蛋白质控制生命现象"
+   ],
+   "regulation": [],
+   "figures": [
+    "中心法则流程图：Nucleus→DNA→Transcription→Primary Transcript→RNA Processing→mRNA→Transport→Ribosome→Translation, Synthesis→PROTEIN"
+   ],
+   "pages": [
+    3
+   ]
+  },
+  {
+   "id": "L4-P02",
+   "name": "转录的基本过程",
+   "en": "basic process of transcription",
+   "overview": "转录分为模板识别、起始、延伸、终止四个阶段。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "模板识别",
+     "detail": "RNA聚合酶与启动子DNA双链相互作用并结合，启动子附近DNA双链分开形成转录泡"
+    },
+    {
+     "n": 2,
+     "name": "转录起始",
+     "detail": "产生RNA链上第一个核苷酸键，位点为+1；经封闭复合物、开放复合物、三元复合物"
+    },
+    {
+     "n": 3,
+     "name": "转录延伸",
+     "detail": "共价地向生长RNA链3′端添加核糖核苷酸，RNA聚合酶沿反义链3′→5′移动"
+    },
+    {
+     "n": 4,
+     "name": "转录终止",
+     "detail": "RNA链延伸至终止位点，RNA聚合酶和RNA链从DNA模板上释放"
+    }
+   ],
+   "key_points": [
+    "RNA按5′→3′合成，序列与编码链相同",
+    "起始后直到形成9个核苷酸短链是通过启动子阶段",
+    "通过启动子的时间越短，启动子越强、起始频率越高"
+   ],
+   "regulation": [
+    "启动子结构影响与RNA聚合酶的亲和力，从而影响基因表达水平"
+   ],
+   "figures": [
+    "转录泡示意图：DNA duplex、Template/Nontemplate strand、RNA 5′→3′、Direction of transcription"
+   ],
+   "pages": [
+    30,
+    32,
+    33,
+    40,
+    42
+   ]
+  },
+  {
+   "id": "L4-P03",
+   "name": "细菌转录的起始—延伸—终止",
+   "en": "bacterial transcription initiation, elongation and termination",
+   "overview": "基因序列上的start site与stop site分别由启动子和终止子编码，指示RNA聚合酶何时开始与结束。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "起始",
+     "detail": "RNA聚合酶（含σ因子）结合启动子，RNA SYNTHESIS BEGINS"
+    },
+    {
+     "n": 2,
+     "name": "σ因子释放",
+     "detail": "σ因子释放，核心酶沿模板链延伸growing RNA strand"
+    },
+    {
+     "n": 3,
+     "name": "终止",
+     "detail": "到达终止子（stop site），TERMINATION AND RELEASE OF POLYMERASE AND COMPLETED RNA CHAIN"
+    },
+    {
+     "n": 4,
+     "name": "σ因子重新结合",
+     "detail": "sigma factor rebinds，形成新的全酶"
+    }
+   ],
+   "key_points": [
+    "σ因子只在起始阶段需要，延伸开始后被释放并可重复利用"
+   ],
+   "regulation": [],
+   "figures": [
+    "Figure 7-9：start site、stop site、gene、promoter、terminator、template strand、RNA polymerase、sigma factor"
+   ],
+   "pages": [
+    31
+   ]
+  },
+  {
+   "id": "L4-P04",
+   "name": "转录起始的三个步骤",
+   "en": "three steps of transcription initiation",
+   "overview": "转录起始涉及封闭复合物、开放复合物、三元复合物三个明确步骤。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "封闭复合物",
+     "detail": "聚合酶初始结合启动子，DNA保持双链，全酶结合在螺旋的一面；属启动子选择阶段"
+    },
+    {
+     "n": 2,
+     "name": "开放复合物",
+     "detail": "DNA在+1周围约14 bp（-11至+3）解开，转录泡形成"
+    },
+    {
+     "n": 3,
+     "name": "三元复合物",
+     "detail": "DNA+RNA+酶形成稳定复合物，酶从启动子逃逸，向延伸阶段转变"
+    }
+   ],
+   "key_points": [
+    "起始参数：聚合酶与DNA结合K_B=10⁶~10⁹；DNA开始解链k₂=10⁻³~10⁻¹ base/s；转录起始k₁=10⁻³ base/s；σ释放时聚合酶离开启动区时间>1~2 s"
+   ],
+   "regulation": [
+    "σ因子在开放复合物形成时发生构象变化：游离σ的N端区域遮蔽DNA结合结构域，与DNA结合后DNA置换N端区域"
+   ],
+   "figures": [
+    "封闭复合物→开放复合物（promoter melting）→起始转录（RNA）"
+   ],
+   "pages": [
+    35,
+    36,
+    37,
+    38,
+    39,
+    59
+   ]
+  },
+  {
+   "id": "L4-P05",
+   "name": "流产式起始与向延伸的转变",
+   "en": "abortive initiation and transition to elongation",
+   "overview": "起始复合物合成2–9个核苷酸短链并释放；一旦合成9个以上核苷酸，释放σ亚基并进入正常延伸。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "流产式起始",
+     "detail": "转录起始复合物合成并释放2–9个核苷酸的短RNA转录物"
+    },
+    {
+     "n": 2,
+     "name": "合成9个以上核苷酸",
+     "detail": "RNA聚合酶成功合成9个以上核苷酸"
+    },
+    {
+     "n": 3,
+     "name": "释放σ亚基",
+     "detail": "尽快释放σ亚基"
+    },
+    {
+     "n": 4,
+     "name": "离开启动子区",
+     "detail": "RNA聚合酶离开启动子区，形成由核心酶、DNA和新生RNA组成的转录延伸复合物"
+    }
+   ],
+   "key_points": [
+    "起始阶段延续性和忠实性都低，延伸阶段都提高"
+   ],
+   "regulation": [
+    "σ亚基释放是起始进入延伸的标志之一"
+   ],
+   "figures": [
+    "Initiation: Chains of 2-9 bases are synthesized and released"
+   ],
+   "pages": [
+    34,
+    60,
+    76
+   ]
+  },
+  {
+   "id": "L4-P06",
+   "name": "转录延伸",
+   "en": "transcription elongation",
+   "overview": "RNA聚合酶离开启动子，沿DNA链移动并使新生RNA链不断伸长。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "聚合酶沿模板移动",
+     "detail": "RNA聚合酶沿DNA模板移动，本身沿反义链3′→5′方向移动"
+    },
+    {
+     "n": 2,
+     "name": "DNA持续解开",
+     "detail": "DNA双螺旋持续解开，暴露新的单链DNA模板"
+    },
+    {
+     "n": 3,
+     "name": "3′端延伸",
+     "detail": "共价地向生长RNA链的3′端添加核糖核苷酸，RNA以5′→3′方向延长"
+    },
+    {
+     "n": 4,
+     "name": "形成RNA-DNA杂合物",
+     "detail": "在解链区形成RNA-DNA hybrid"
+    }
+   ],
+   "key_points": [
+    "E. coli RNA聚合酶活性一般为每秒50–90个核苷酸（另一页给出40 nt/秒，37℃）",
+    "转录泡12–14 bp，RNA-DNA杂合8–9 bp"
+   ],
+   "regulation": [
+    "转录泡前方形成正超螺旋（左手），后方形成负超螺旋（右手），需拓扑异构酶释放应力（补充）"
+   ],
+   "figures": [
+    "Unwound region moves with RNA polymerase；转录泡剖面图标注jaws、NTP tunnel、active site、RNA exit channel"
+   ],
+   "pages": [
+    20,
+    21,
+    40,
+    41
+   ]
+  },
+  {
+   "id": "L4-P07",
+   "name": "内在终止子的终止过程",
+   "en": "intrinsic termination",
+   "overview": "转录出的RNA形成发夹结构，随后poly(U)与模板poly(A)配对，因A:U配对最弱，RNA从模板解离。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "转录反向重复序列",
+     "detail": "RNA聚合酶转录出约20个核苷酸的反向重复序列，RNA折叠形成发夹结构"
+    },
+    {
+     "n": 2,
+     "name": "发夹阻止前进",
+     "detail": "发夹结构阻止RNA聚合酶前进；茎中G-C配对使茎环不易解开"
+    },
+    {
+     "n": 3,
+     "name": "转录poly(U)",
+     "detail": "转录出约8个A:T碱基对对应的poly(U)，与DNA模板poly(A)形成A:U配对"
+    },
+    {
+     "n": 4,
+     "name": "RNA解离",
+     "detail": "A:U配对最弱，RNA从DNA模板上解离，转录终止"
+    }
+   ],
+   "key_points": [
+    "Weakest base pairing: A:U make the dissociation easier",
+    "poly(U)区缺失（deletion）便于释放RNA"
+   ],
+   "regulation": [],
+   "figures": [
+    "DNA 5′-CCCAGCCCGCCCTAATGAGCGGGCTTTTTTTTGAACAAAA-3′；RNA 5′-CCCAGCCCGCCUAAUGAGCGGGCUUUUUUUUU-3′；transcript folded to form termination hairpin"
+   ],
+   "pages": [
+    44,
+    45
+   ]
+  },
+  {
+   "id": "L4-P08",
+   "name": "ρ因子依赖的转录终止（“穷追”模型）",
+   "en": "Rho-dependent termination (hot pursuit model)",
+   "overview": "ρ结合新生RNA并沿其向3′端移动，追上在终止位点暂停的RNA聚合酶，导致三元复合物解体。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "ρ结合",
+     "detail": "ρ结合到RNA链终止子上游的某一点（ρ recognition site）"
+    },
+    {
+     "n": 2,
+     "name": "沿RNA移动",
+     "detail": "ρ因子结合后沿RNA向3′端移动，跟踪聚合酶；以ATP水解为能量，作为RNA/DNA解旋酶"
+    },
+    {
+     "n": 3,
+     "name": "追上聚合酶",
+     "detail": "ρ追上在终止位点暂停的RNA聚合酶"
+    },
+    {
+     "n": 4,
+     "name": "终止",
+     "detail": "三元复合物解体，RNA释放"
+    }
+   ],
+   "key_points": [
+    "ρ为60 kD六聚体（另一页给出2.0×10⁵），ATP→ADP+Pi",
+    "依赖ρ的终止子只含自我互补区域，茎中G.C含量少、茎环易打开"
+   ],
+   "regulation": [
+    "提纯RNA聚合酶不能识别特异性终止信号，加ρ后才能准确终止"
+   ],
+   "figures": [
+    "ρ recognition site、ρ factor 60 kD forms a hexamer、ATP→ADP+Pi、ρ factor acts as a RNA/DNA helicase"
+   ],
+   "pages": [
+    46,
+    47,
+    48
+   ]
+  },
+  {
+   "id": "L4-P09",
+   "name": "细菌RNA聚合酶的转录循环",
+   "en": "transcription cycle of bacterial RNA polymerase",
+   "overview": "从σ因子与核心酶结合开始，经闭合复合物、开放复合物、起始、启动子清除、延伸、终止，最后释放σ因子并重新结合。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "闭合复合物",
+     "detail": "σ因子与RNA聚合酶结合，在启动子处形成closed complex"
+    },
+    {
+     "n": 2,
+     "name": "开放复合物",
+     "detail": "转变为open complex"
+    },
+    {
+     "n": 3,
+     "name": "流产式起始",
+     "detail": "abortive initiation，合成短RNA后释放"
+    },
+    {
+     "n": 4,
+     "name": "启动子清除",
+     "detail": "promoter clearance and σ factor release"
+    },
+    {
+     "n": 5,
+     "name": "延伸",
+     "detail": "elongation"
+    },
+    {
+     "n": 6,
+     "name": "终止发夹形成",
+     "detail": "termination hairpin formation"
+    },
+    {
+     "n": 7,
+     "name": "终止",
+     "detail": "termination，释放RNA与DNA"
+    },
+    {
+     "n": 8,
+     "name": "σ重新结合",
+     "detail": "reassociation with σ factor，进入下一轮循环"
+    }
+   ],
+   "key_points": [
+    "转录是循环过程，σ因子可重复利用"
+   ],
+   "regulation": [
+    "sliding（滑动）参与循环"
+   ],
+   "figures": [
+    "环形示意图：closed complex→open complex→abortive initiation→promoter clearance→elongation→termination hairpin→termination→reassociation"
+   ],
+   "pages": [
+    60
+   ]
+  },
+  {
+   "id": "L4-P10",
+   "name": "RNA聚合酶II转录起始复合物装配",
+   "en": "assembly of the RNA polymerase II transcription initiation complex",
+   "overview": "通用转录因子与RNA聚合酶II按顺序在启动子上装配，经启动子解链与CTD磷酸化后启动转录。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "TBP结合TATA",
+     "detail": "TFIID中的TBP结合TATA box"
+    },
+    {
+     "n": 2,
+     "name": "招募TFIIA和TFIIB",
+     "detail": "TFIIB结合BRE3"
+    },
+    {
+     "n": 3,
+     "name": "招募Pol II–TFIIF",
+     "detail": "RNA Pol II–TFIIF复合物被招募"
+    },
+    {
+     "n": 4,
+     "name": "TFIIE和TFIIH结合",
+     "detail": "结合到Pol II上游，形成前起始复合物（pre-initiation complex）"
+    },
+    {
+     "n": 5,
+     "name": "启动子解链",
+     "detail": "TFIIH利用ATP水解能量进行promoter melting"
+    },
+    {
+     "n": 6,
+     "name": "启动子逃逸",
+     "detail": "CTD尾部磷酸化后，promoter escapes，转录起始"
+    }
+   ],
+   "key_points": [
+    "启动子解链能量来自TFIIH对ATP的水解",
+    "启动子逃逸发生在CTD磷酸化之后"
+   ],
+   "regulation": [
+    "介体、核小体修饰酶与重塑酶、转录激活因子协同促进PIC组装；激活因子通过DNA成环与介体及Pol II接触"
+   ],
+   "figures": [
+    "TBP、TFIID、TATA box、TFIIA、TFIIB、TFIIF、TFIIE、TFIIH、BRE3、RNA polymerase II、tail、P、ON"
+   ],
+   "pages": [
+    72,
+    73
+   ]
+  },
+  {
+   "id": "L4-P11",
+   "name": "核苷酸选择（碱基配对）",
+   "en": "nucleotide selection via base pairing",
+   "overview": "利用“分子卡尺”结构（Trigger loop）识别新来NTP与模板碱基配对后的几何构象，筛选正确NTP。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "Trigger loop感知构象",
+     "detail": "触发环作为“分子卡尺”感知新进入NTP与模板碱基配对后的几何构象"
+    },
+    {
+     "n": 2,
+     "name": "接受正确配对",
+     "detail": "只有几何构象正确的碱基对才能被接受"
+    }
+   ],
+   "key_points": [
+    "核苷酸选择可将忠实性提高10³"
+   ],
+   "regulation": [
+    "与诱导契合协同：正确NTP诱导开放→封闭构象，Metal A、Metal B两个镁离子正确定位"
+   ],
+   "figures": [
+    "(a) Matched：Metal A、Metal B正确定位；(b) Mismatched：金属离子定位异常"
+   ],
+   "pages": [
+    77
+   ]
+  },
+  {
+   "id": "L4-P12",
+   "name": "转录校对",
+   "en": "proofreading during transcription",
+   "overview": "通过焦磷酸解与内在RNA剪切活性移除错误掺入的核苷酸，使转录忠实性整体达到10⁻⁵。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "焦磷酸解",
+     "detail": "错误掺入的NTP在活性位点被焦磷酸（PPi）攻击，发生聚合反应逆反应，将错误核苷酸从RNA链末端移除；属动力学校对"
+    },
+    {
+     "n": 2,
+     "name": "内在RNA剪切",
+     "detail": "错误掺入导致RNA末端与模板配对不良、聚合酶停滞；在2个Mg²⁺参与下，聚合酶内在剪切活性切除单个NTP或寡聚核苷酸片段"
+    },
+    {
+     "n": 3,
+     "name": "恢复延伸",
+     "detail": "恢复正确配对后继续延伸"
+    }
+   ],
+   "key_points": [
+    "剪切活性需要2个Mg²⁺",
+    "真核生物可利用该方式有效校对"
+   ],
+   "regulation": [],
+   "figures": [],
+   "pages": [
+    78
+   ]
+  },
+  {
+   "id": "L4-P13",
+   "name": "假结的形成",
+   "en": "pseudoknot formation",
+   "overview": "由不连续RNA区段之间的碱基配对形成复杂结构，环区碱基与环外区域碱基配对，产生类似“打结”的空间结构。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "形成发夹",
+     "detail": "RNA链先形成发夹（茎-环）二级结构"
+    },
+    {
+     "n": 2,
+     "name": "环区与环外配对",
+     "detail": "环区（loop）中的碱基与环外（发夹外侧）的单链区段发生互补配对"
+    },
+    {
+     "n": 3,
+     "name": "形成假结",
+     "detail": "配对区把环与外侧链拉拢，形成贯穿的螺旋，产生“打结”状的三级结构"
+    }
+   ],
+   "key_points": [
+    "假结属三级结构，依赖不连续区段配对"
+   ],
+   "regulation": [],
+   "figures": [
+    "三步示意图：5′、3′、红色虚线箭头表示环区碱基将与外侧区段配对"
+   ],
+   "pages": [
+    15
+   ]
+  }
+ ],
+ "distinctions": [
+  {
+   "id": "L4-D01",
+   "title": "转录与翻译",
+   "a": "转录 transcription",
+   "b": "翻译 translation",
+   "difference": [
+    "转录以DNA为模板合成RNA，是基因表达的核心步骤",
+    "翻译以新生mRNA为模板合成多肽链，是基因表达的最终目的",
+    "转录在核内（真核），翻译在核糖体上"
+   ],
+   "easy_mistake": "把转录产物说成蛋白质，或把翻译模板说成DNA。",
+   "pages": [
+    4
+   ]
+  },
+  {
+   "id": "L4-D02",
+   "title": "转录与复制",
+   "a": "转录 transcription",
+   "b": "复制 replication",
+   "difference": [
+    "复制以两条亲代链均为模板，1 DNA→2 DNA；转录只以一条链为模板，产1条RNA",
+    "RNA由核糖核苷酸构成，DNA由脱氧核糖核苷酸构成",
+    "RNA聚合酶不需引物（从头合成），DNA聚合酶需引物",
+    "RNA产物不与模板DNA保持碱基配对",
+    "转录错误率10⁻⁴，复制约10⁻⁹～10⁻¹⁰（补充）",
+    "转录速率约2500 nt/min（约42 nt/s），复制约800 bp/s（另一页给出900 bp/sec）"
+   ],
+   "easy_mistake": "误以为转录也需引物，或误以为转录产物留在DNA双链中。",
+   "pages": [
+    6,
+    7,
+    49,
+    79
+   ]
+  },
+  {
+   "id": "L4-D03",
+   "title": "RNA聚合酶与DNA聚合酶",
+   "a": "RNA聚合酶 RNA polymerase",
+   "b": "DNA聚合酶 DNA polymerase",
+   "difference": [
+    "模板均为dsDNA",
+    "RNA pol不需引物；DNA pol需要引物",
+    "RNA pol在启动子起始；DNA pol在复制起点（origin）起始",
+    "延伸速率：RNA pol 40 nt/sec；DNA pol 900 bp/sec",
+    "RNA pol无外切核酸酶活性；DNA pol有",
+    "终止信号：RNA pol为合成的RNA（terminator位于新合成RNA上）；DNA pol为模板DNA"
+   ],
+   "easy_mistake": "误以为RNA聚合酶有3′→5′外切酶校对活性。",
+   "pages": [
+    50,
+    79
+   ]
+  },
+  {
+   "id": "L4-D04",
+   "title": "编码链与模板链",
+   "a": "编码链 coding strand（sense/positive/Crick strand）",
+   "b": "模板链 template strand（antisense/negative/Watson strand）",
+   "difference": [
+    "编码链与mRNA序列相同（仅T→U），不被RNA聚合酶读取",
+    "模板链与mRNA反向互补，是RNA聚合酶实际读取的链",
+    "Crick strand指编码链、Watson strand指模板链"
+   ],
+   "easy_mistake": "把Crick strand误认为模板链；把“与DNA链序列相同”误认为与模板链相同。",
+   "pages": [
+    24,
+    25
+   ]
+  },
+  {
+   "id": "L4-D05",
+   "title": "核糖与脱氧核糖",
+   "a": "核糖 ribose（RNA）",
+   "b": "脱氧核糖 deoxyribose（DNA）",
+   "difference": [
+    "2′位：RNA为-OH，DNA为-H（脱氧）"
+   ],
+   "easy_mistake": "忽略2′-OH是RNA易碱水解、倾向单链折叠与A型螺旋的基础。",
+   "pages": [
+    8,
+    9
+   ]
+  },
+  {
+   "id": "L4-D06",
+   "title": "尿嘧啶与胸腺嘧啶",
+   "a": "尿嘧啶 uracil（RNA）",
+   "b": "胸腺嘧啶 thymine（DNA）",
+   "difference": [
+    "胸腺嘧啶5位带甲基（CH₃），尿嘧啶5位为H",
+    "DNA中的T对应RNA中的U"
+   ],
+   "easy_mistake": "以为U与T结构完全相同。",
+   "pages": [
+    8
+   ]
+  },
+  {
+   "id": "L4-D07",
+   "title": "凸环与内环",
+   "a": "凸环 bulge loop",
+   "b": "内环 interior loop",
+   "difference": [
+    "凸环只有一条链上有未配对碱基",
+    "内环两条链上都有未配对碱基",
+    "二者均位于双螺旋区内部，而发夹环位于茎的末端"
+   ],
+   "easy_mistake": "把发夹环与内环混为一谈。",
+   "pages": [
+    11,
+    12
+   ]
+  },
+  {
+   "id": "L4-D08",
+   "title": "A型DNA与B型DNA",
+   "a": "A型DNA",
+   "b": "B型DNA",
+   "difference": [
+    "A型粗短、右手、直径2.55 nm、每圈11个碱基、碱基倾角20°、大沟很窄很深、小沟很宽浅",
+    "B型适中、右手、直径2.37 nm、碱基直升0.34 nm、螺距3.4 nm、每圈10个碱基、碱基倾角0°、大沟很宽较深、小沟窄深",
+    "RNA双螺旋更接近A型"
+   ],
+   "easy_mistake": "误以为RNA双螺旋是B型；记错每圈碱基数。",
+   "pages": [
+    13,
+    14
+   ]
+  },
+  {
+   "id": "L4-D09",
+   "title": "B型DNA大沟与A型RNA大沟",
+   "a": "B型DNA大沟",
+   "b": "A型RNA大沟",
+   "difference": [
+    "B型DNA大沟很宽较深，便于蛋白氨基酸侧链进入并读取碱基序列",
+    "A型RNA大沟很窄很深，蛋白侧链不易接近，序列特异性识别能力弱",
+    "RNA小沟宽而浅，几乎不提供序列特异性信息"
+   ],
+   "easy_mistake": "以为RNA也能像B-DNA一样通过大沟被蛋白序列特异性识别。",
+   "pages": [
+    14
+   ]
+  },
+  {
+   "id": "L4-D10",
+   "title": "Watson-Crick配对与G:U配对",
+   "a": "Watson-Crick配对（A:U、G:C）",
+   "b": "G:U非Watson-Crick配对",
+   "difference": [
+    "G:C有三个氢键；G:U只有两个氢键，配对较弱",
+    "G:U是RNA中“额外的规则配对”，增强自我互补能力",
+    "G:U使RNA单链内部可形成更多样的折叠"
+   ],
+   "easy_mistake": "把G:U当作错误配对。",
+   "pages": [
+    16
+   ]
+  },
+  {
+   "id": "L4-D11",
+   "title": "转录泡前方与后方DNA",
+   "a": "转录泡前方DNA",
+   "b": "转录泡后方DNA",
+   "difference": [
+    "前方为过度缠绕（overwound），形成正超螺旋（positive supercoil），左手螺旋",
+    "后方为缠绕不足（underwound），形成负超螺旋（negative supercoil），右手螺旋"
+   ],
+   "easy_mistake": "把正/负超螺旋与左/右手螺旋的对应关系记反。",
+   "pages": [
+    21
+   ]
+  },
+  {
+   "id": "L4-D12",
+   "title": "内在终止子与ρ依赖终止",
+   "a": "内在终止子（Rho非依赖型）",
+   "b": "ρ依赖终止",
+   "difference": [
+    "内在终止子由约20 nt反向重复+约8个A:T组成，RNA形成发夹，poly(U)弱配对释放RNA",
+    "ρ依赖终止子只含自我互补区、茎中G.C少、茎环易打开，需ρ因子参与",
+    "ρ与ssRNA特定位点（C丰富、G缺乏）结合，催化NTP水解，以“穷追”模型终止"
+   ],
+   "easy_mistake": "以为所有终止子都需要ρ因子。",
+   "pages": [
+    43,
+    44,
+    46,
+    48
+   ]
+  },
+  {
+   "id": "L4-D13",
+   "title": "核心酶与全酶",
+   "a": "核心酶 core enzyme（α2ββ′ω）",
+   "b": "全酶 holoenzyme（α2ββ′ωσ）",
+   "difference": [
+    "核心酶能延伸RNA但不能特异识别启动子",
+    "σ加入形成全酶后获得启动子识别能力",
+    "σ只与转录起始有关，起始后释放"
+   ],
+   "easy_mistake": "以为核心酶也能识别-35序列。",
+   "pages": [
+    53,
+    58,
+    90
+   ]
+  },
+  {
+   "id": "L4-D14",
+   "title": "利福霉素与链霉素",
+   "a": "利福霉素 rifamycin",
+   "b": "链霉素 streptomycin",
+   "difference": [
+    "两者均与β亚基结合抑制起始",
+    "利福霉素靶点为细菌全酶",
+    "链霉素靶点为细菌核心酶"
+   ],
+   "easy_mistake": "把两者靶点对调。",
+   "pages": [
+    64
+   ]
+  },
+  {
+   "id": "L4-D15",
+   "title": "真核三类RNA聚合酶",
+   "a": "RNA聚合酶I",
+   "b": "RNA聚合酶III",
+   "difference": [
+    "Pol I在核仁，转录rRNA前体（除5S rRNA），相对活性50%-70%，对α-鹅膏蕈碱不敏感",
+    "Pol III在核质，转录tRNA、5S rRNA和U6 snRNA前体，相对活性约10%，中度敏感且具物种特异性",
+    "Pol II在核质，转录hnRNA、绝大多数microRNA、具帽子结构的snRNA和snoRNA前体，20%-40%，高度敏感"
+   ],
+   "easy_mistake": "误以为5S rRNA由Pol I转录；记错α-鹅膏蕈碱敏感性。",
+   "pages": [
+    62
+   ]
+  },
+  {
+   "id": "L4-D16",
+   "title": "线粒体与叶绿体RNA聚合酶",
+   "a": "线粒体RNA聚合酶",
+   "b": "叶绿体RNA聚合酶",
+   "difference": [
+    "线粒体酶为单条多肽链，相对分子量<7×10⁴，与T7噬菌体酶同源",
+    "叶绿体酶为多亚基、较大，与细菌酶相似，部分亚基由叶绿体基因编码"
+   ],
+   "easy_mistake": "以为线粒体酶也是多亚基细菌型。",
+   "pages": [
+    67
+   ]
+  },
+  {
+   "id": "L4-D17",
+   "title": "焦磷酸解与内在RNA剪切",
+   "a": "焦磷酸解 pyrophosphorolysis",
+   "b": "内在RNA剪切活性 intrinsic RNA cleavage",
+   "difference": [
+    "前者是聚合反应的逆反应，由焦磷酸进攻新掺入核苷酸，属动力学校对",
+    "后者是聚合酶内在核酸酶活性，在2个Mg²⁺参与下切除单个NTP或寡聚核苷酸片段",
+    "两者都属于转录校对机制"
+   ],
+   "easy_mistake": "把两者视为同一机制。",
+   "pages": [
+    78
+   ]
+  },
+  {
+   "id": "L4-D18",
+   "title": "TATA区与CAAT区/GC区",
+   "a": "TATA区",
+   "b": "CAAT区/GC区",
+   "difference": [
+    "TATA区使转录精确起始；除去或突变后转录产物下降相对值不如CAAT/GC突变明显，但RNA起始点不固定",
+    "CAAT区和GC区主要控制转录起始频率，基本不参与起始位点确定"
+   ],
+   "easy_mistake": "以为CAAT/GC区决定起始位点。",
+   "pages": [
+    99
+   ]
+  },
+  {
+   "id": "L4-D19",
+   "title": "启动子与增强子",
+   "a": "启动子 promoter",
+   "b": "增强子 enhancer",
+   "difference": [
+    "增强子不是启动子的一部分",
+    "增强子位于起点上游约200 bp（SV40中两段72 bp重复序列），与启动子可相隔数kb",
+    "增强子无方向性、有远距离效应、顺式调节、有组织特异性、有相位性",
+    "启动子元件中仅紧邻起点<50 bp的元件位置固定"
+   ],
+   "easy_mistake": "把增强子当作启动子的一部分；把“无方向性”与“顺式调节”混为一谈。",
+   "pages": [
+    101,
+    102,
+    103,
+    104
+   ]
+  },
+  {
+   "id": "L4-D20",
+   "title": "上游启动子元件与增强子",
+   "a": "上游启动子元件 UPE/UAS",
+   "b": "增强子 enhancer",
+   "difference": [
+    "UPE位于TATA区上游，是启动子的一部分",
+    "增强子位于更远端（约-200 bp起），不属于启动子，可远距离、无方向性作用"
+   ],
+   "easy_mistake": "把UAS与增强子等同。",
+   "pages": [
+    98,
+    101
+   ]
+  },
+  {
+   "id": "L4-D21",
+   "title": "顺式作用元件与转录因子",
+   "a": "顺式作用元件（TATA框、GC框、CAAT框等）",
+   "b": "转录激活因子/转录因子",
+   "difference": [
+    "前者是DNA上的序列元件，不直接与RNA聚合酶结合",
+    "后者是蛋白质，先识别结合元件，再招募RNA聚合酶",
+    "从而间接实现启动子对聚合酶的定位"
+   ],
+   "easy_mistake": "以为TATA框直接结合RNA聚合酶。",
+   "pages": [
+    105
+   ]
+  }
+ ],
+ "facts": [
+  {
+   "id": "L4-F01",
+   "text": "转录（transcription）定义为拷贝出一条与DNA链序列完全相同（除T→U外）的RNA单链的过程，是基因表达的核心步骤；产物序列与编码链（coding strand）相同，与模板链（template strand）互补。",
+   "note": "名词解释与判断题高频；常设陷阱为“与模板链相同”。",
+   "pages": [
+    4,
+    19
+   ]
+  },
+  {
+   "id": "L4-F02",
+   "text": "转录与复制的四点关键区别：①RNA由核糖核苷酸构成、DNA由脱氧核糖核苷酸构成；②RNA聚合酶不需要引物，从头合成（de novo synthesis）；③RNA产物不与模板DNA保持碱基配对；④转录错误率约10⁻⁴，准确性低于复制。",
+   "note": "简答题“转录与复制的区别”标准答案骨架。",
+   "pages": [
+    7
+   ]
+  },
+  {
+   "id": "L4-F03",
+   "text": "RNA与DNA的两处化学差异：戊糖2′位RNA为-OH、DNA为-H；嘧啶碱基RNA用尿嘧啶（uracil，5位为H）、DNA用胸腺嘧啶（thymine，5位为CH₃）。",
+   "note": "选择题常考2′-OH与5-甲基两个位点。",
+   "pages": [
+    8,
+    9
+   ]
+  },
+  {
+   "id": "L4-F04",
+   "text": "RNA在生物体内主要以单链形式存在，可通过分子内碱基配对形成局部双螺旋（茎，stem）与未配对环（loop），遵循“先二级结构、再三级结构”的层次性折叠。",
+   "note": "解释RNA为何能形成核酶、适配体等功能结构。",
+   "pages": [
+    9,
+    10,
+    11
+   ]
+  },
+  {
+   "id": "L4-F05",
+   "text": "RNA二级结构基本元件：发夹（hairpin，茎+顶端环）、凸环（bulge，仅一条链有未配对碱基）、内环（internal loop，两条链均有未配对碱基）、交叉/多环（junction/multiloop，三条以上茎汇聚）、假结（pseudoknot，环区与环外区配对形成的三级结构基序）。",
+   "note": "名词解释与识图题；凸环与内环的区分是易错点。",
+   "pages": [
+    11,
+    12,
+    15
+   ]
+  },
+  {
+   "id": "L4-F06",
+   "text": "G:U碱基配对（G:U base pair）为非Watson-Crick配对，通过两个氢键连接（G的O6与U的N3-H、G的N1-H与U的O4），比G:C三氢键配对弱，但作为RNA中的“规则”配对扩大了RNA自我互补能力。",
+   "note": "常考“G:U有几个氢键”“为何RNA折叠多样性高”。",
+   "pages": [
+    16
+   ]
+  },
+  {
+   "id": "L4-F07",
+   "text": "RNA双螺旋类似A型DNA：小沟宽而浅、几乎不提供序列特异性信息；大沟又窄又深，蛋白氨基酸侧链难以接近，故RNA不适合与蛋白质发生序列特异性相互作用，其识别更多依赖三级结构形状。",
+   "note": "与B型DNA大沟宽深、便于序列特异识别形成对比。",
+   "pages": [
+    13,
+    14
+   ]
+  },
+  {
+   "id": "L4-F08",
+   "text": "B型DNA螺距3.4 nm、碱基直升0.34 nm、每圈10个碱基、右手螺旋、碱基倾角0°；A型DNA直径2.55 nm、每圈11个碱基、碱基倾角20°、大沟很窄很深、小沟很宽浅；Z型DNA为左手螺旋、直径1.84 nm、每圈12个碱基、大沟平坦。",
+   "note": "填表/选择题高频定量数据。",
+   "pages": [
+    13
+   ]
+  },
+  {
+   "id": "L4-F09",
+   "text": "转录泡（transcription bubble）长度约12–14 bp，其中RNA-DNA杂合双链约8–9 bp；开放复合物中DNA在起始位点（+1）周围约14 bp（-11至+3）范围内解开。",
+   "note": "数字题常考12–14 bp与8–9 bp。",
+   "pages": [
+    20,
+    37
+   ]
+  },
+  {
+   "id": "L4-F10",
+   "text": "转录引起DNA超螺旋：转录泡前方DNA过度缠绕，形成正超螺旋（左手）；后方缠绕不足，形成负超螺旋（右手）。",
+   "note": "判断题常把前后方正负超螺旋对调设错。",
+   "pages": [
+    21
+   ]
+  },
+  {
+   "id": "L4-F11",
+   "text": "转录单元（transcription unit）是从启动子到终止子之间被转录成一条RNA的DNA序列；转录起点记为+1（通常为嘌呤），其前一位为-1，不存在0位；起点5′端方向为上游（upstream），3′端方向为下游（downstream）。",
+   "note": "名词解释与坐标判断题。",
+   "pages": [
+    26,
+    27,
+    80
+   ]
+  },
+  {
+   "id": "L4-F12",
+   "text": "DNA链命名：编码链（coding strand）=意义链（sense strand）=正链（positive strand）=Crick strand，序列与mRNA相同（T→U）；模板链（template strand）=反义链（antisense strand）=负链（negative strand）=Watson strand，与mRNA反向互补。",
+   "note": "Crick链指编码链、Watson链指模板链，与直觉相反，是经典易错点。",
+   "pages": [
+    24,
+    25
+   ]
+  },
+  {
+   "id": "L4-F13",
+   "text": "转录基本过程分四阶段：模板识别（template recognition）→转录起始（initiation）→转录延伸（elongation）→转录终止（termination）。",
+   "note": "简答题框架。",
+   "pages": [
+    30
+   ]
+  },
+  {
+   "id": "L4-F14",
+   "text": "转录起始涉及三个明确步骤：封闭复合物（closed complex，DNA保持双链、全酶结合于螺旋一面）→开放复合物（open complex，启动子解链形成转录泡）→三元复合物（ternary complex，DNA+RNA+酶，酶从启动子逃逸，进入延伸）。",
+   "note": "三步名称与特征是简答/填空高频。",
+   "pages": [
+    35,
+    36,
+    37,
+    38
+   ]
+  },
+  {
+   "id": "L4-F15",
+   "text": "转录起始阶段合成2–9个核苷酸的短RNA并释放，称流产式起始（abortive initiation）；一旦成功合成9个以上核苷酸，σ亚基释放、聚合酶离开启动子区，进入延伸并形成由核心酶、DNA和新生RNA组成的转录延伸复合物。",
+   "note": "“9个核苷酸”是分界阈值，常考。",
+   "pages": [
+    33,
+    34
+   ]
+  },
+  {
+   "id": "L4-F16",
+   "text": "转录延伸方向：RNA按5′→3′方向延长，RNA聚合酶沿模板链（反义链）以3′→5′方向移动，共价地向生长RNA链的3′端添加核糖核苷酸；解链区随聚合酶移动，形成RNA-DNA杂合物。",
+   "note": "方向题必考。",
+   "pages": [
+    40,
+    41
+   ]
+  },
+  {
+   "id": "L4-F17",
+   "text": "E. coli RNA聚合酶活性一般为每秒50–90个核苷酸（37℃下约40 nt/秒）；转录生成mRNA速度约2500 nt/min（约14个密码子/秒，≈42 nt/s），与翻译速度（15 aa/秒）基本相等，但比DNA复制（800 bp/秒）慢得多；基因开始表达到mRNA约2.5分钟，再过半分钟可测到蛋白。",
+   "note": "计算题与速率比较题素材。",
+   "pages": [
+    41,
+    49,
+    54,
+    79
+   ]
+  },
+  {
+   "id": "L4-F18",
+   "text": "内在终止子（intrinsic terminator，Rho非依赖型）由两段序列组成：约20个核苷酸的反向重复序列（转录后形成茎环/发夹，茎部富含G-C使茎环不易解开，阻止RNA聚合酶前进）；其后约8个A:T碱基对（转录出poly(U)与模板poly(A)配对，A:U配对最弱，便于RNA释放）。",
+   "note": "“20 nt反向重复+8个A:T”为定量考点。",
+   "pages": [
+    44,
+    45
+   ]
+  },
+  {
+   "id": "L4-F19",
+   "text": "ρ因子（ρ factor）为相对分子质量2.0×10⁵的六聚体蛋白，每单体含N端RNA结合结构域与C端ATPase结构域；与ssRNA特定位点（C丰富、G缺乏）结合，通过催化NTP水解（具RNA/DNA解旋酶活性）促使新生RNA从三元复合物解离；浓度为RNA pol的10%时体外活性最高。",
+   "note": "“穷追（hot pursuit）模型”四步为简答考点。",
+   "pages": [
+    46,
+    47,
+    48
+   ]
+  },
+  {
+   "id": "L4-F20",
+   "text": "E. coli只有一种DNA指导的RNA聚合酶，全酶由5种亚基组成：α₂ββ′ωσ；核心酶（core enzyme）为α₂ββ′ω，负责延伸；σ亚基（32–90 KDa）只与起始有关。全酶相对分子量4.65×10⁵，可结合约60 bp DNA，圆筒状通道可直接结合16 bp DNA。",
+   "note": "亚基组成与核心酶/全酶分工必考。",
+   "pages": [
+    53,
+    54
+   ]
+  },
+  {
+   "id": "L4-F21",
+   "text": "E. coli RNA聚合酶亚基基因：α由rpoA编码（核心酶组装、与调节因子互作）；β由rpoB、β′由rpoC编码，二者构成催化中心并与真核大亚基同源；β亚基结合模板DNA、新生RNA及核苷酸底物；rpoB/rpoC突变影响转录所有阶段。",
+   "note": "基因名与功能配对题。",
+   "pages": [
+    55,
+    56,
+    57
+   ]
+  },
+  {
+   "id": "L4-F22",
+   "text": "σ因子使聚合酶对启动子的亲和力提高10³倍、对非专一位点亲和力降低10⁴倍，使酶-底物复合物半衰期小于1 s；游离σ因子的N端区域遮蔽自身DNA结合结构域，与DNA形成复合物时DNA置换N端区域而激活结合活性。",
+   "note": "10³/10⁴数字与自抑制构象调控是考点。",
+   "pages": [
+    58,
+    59
+   ]
+  },
+  {
+   "id": "L4-F23",
+   "text": "真核三类RNA聚合酶：Pol I位于核仁，转录rRNA前体（除5S rRNA），相对活性50%–70%，对α-鹅膏蕈碱不敏感；Pol II位于核质，转录hnRNA、绝大多数microRNA及带帽snRNA/snoRNA前体，活性20%–40%，高度敏感；Pol III位于核质，转录tRNA、5S rRNA和U6 snRNA前体，活性约10%，中度敏感且具物种特异性。真核酶一般由8–14（8–16）个亚基组成，相对分子质量超过5×10⁵。",
+   "note": "三酶比较表为必背内容。",
+   "pages": [
+    61,
+    62,
+    66
+   ]
+  },
+  {
+   "id": "L4-F24",
+   "text": "真核与原核RNA聚合酶同源对应：RPB1↔β′、RPB2↔β、RPB3↔αI、RPB11↔αII、RPB6↔ω；两者均呈“蟹钳（crab claw）”形，两钳之间为活性中心裂隙（active center cleft）。",
+   "note": "识图与同源配对题。",
+   "pages": [
+    66,
+    68
+   ]
+  },
+  {
+   "id": "L4-F25",
+   "text": "线粒体RNA聚合酶为单条多肽链，相对分子量小于7×10⁴，与T7噬菌体RNA聚合酶同源；叶绿体RNA聚合酶较大、多亚基、与细菌聚合酶相似，部分亚基由叶绿体基因编码。",
+   "note": "线粒体（单亚基）vs叶绿体（多亚基）对比。",
+   "pages": [
+    67
+   ]
+  },
+  {
+   "id": "L4-F26",
+   "text": "转录抑制剂分两类：模板结合抑制剂（放射线素D/放线菌素D与DNA结合阻止延伸；烷化剂如氮芥、磺酸酯、氮丙啶使DNA双链交联；纺锤菌素结合富含AT区）与聚合酶抑制剂（利福霉素结合细菌全酶β亚基抑制起始；链霉素结合细菌核心酶β亚基抑制起始；α-鹅膏蕈碱结合真核Pol II）；碱基类似物（5-氟尿嘧啶等）干扰核苷酸合成。",
+   "note": "利福霉素（全酶）vs链霉素（核心酶）为易错辨析。",
+   "pages": [
+    64
+   ]
+  },
+  {
+   "id": "L4-F27",
+   "text": "RNA聚合酶忠实性：核苷酸选择（Trigger loop“分子卡尺”+诱导契合）将忠实性提高10³倍；校对功能（焦磷酸解即动力学校对、需2个Mg²⁺的内在RNA剪切活性）使整体忠实性达10⁻⁵；起始阶段延续性与忠实性均低，延伸阶段均提高。",
+   "note": "10³与10⁻⁵两个数字必记。",
+   "pages": [
+    76,
+    77,
+    78
+   ]
+  },
+  {
+   "id": "L4-F28",
+   "text": "RNA pol与DNA pol对比：均以dsDNA为模板；RNA pol不需引物、从启动子起始、延伸40 nt/s、无外切核酸酶活性、终止信号为合成的RNA；DNA pol需引物、从复制起点起始、延伸900 bp/s、有外切核酸酶活性、终止信号在模板DNA上。",
+   "note": "表格型选择题高频。",
+   "pages": [
+    79
+   ]
+  },
+  {
+   "id": "L4-F29",
+   "text": "原核启动子：-35区（Sextama盒）共有序列TTGACA，为σ亚基识别位点、决定模板链选择；-10区（Pribnow盒）共有序列TATAAT，中央约在起点上游10 bp，3′端T高度保守、富含A·T易解链，功能为紧密结合RNA pol、形成开放复合体、使RNA pol定向转录；两区最佳间距16–19 bp，-10区距起点5–9 bp；启动子全长40–80 bp，含识别（R）、结合（B）、起始（I）三位点。",
+   "note": "序列、间距、功能三组数据均为必背。",
+   "pages": [
+    85,
+    86,
+    89,
+    90,
+    91,
+    93,
+    94
+   ]
+  },
+  {
+   "id": "L4-F30",
+   "text": "启动子突变：下降突变（down mutation）如Pribnow区TATAAT→AATAAT；上升突变（up mutation）如乳糖操纵子启动子TATGTT→TATATT可提高启动子效率。",
+   "note": "判断突变方向的选择题。",
+   "pages": [
+    87
+   ]
+  },
+  {
+   "id": "L4-F31",
+   "text": "σ70因子由region 1–4组成：region 4识别-35元件，region 2识别-10元件，region 3识别延伸-10元件（extended -10），region 2.3–2.4对应DNA解链（melting）。",
+   "note": "结构域-元件对应关系识图题。",
+   "pages": [
+    92
+   ]
+  },
+  {
+   "id": "L4-F32",
+   "text": "真核Pol II核心启动子元件及位置（以+1计）：BRE（-37至-32/-31）、TATA盒（-32/-31至-26，Hogness区约-25～-30，序列TATAAA）、Inr（-2至+4，起始位点共有序列YYANTAYY）、DPE（+28至+32）；上游启动子元件UPE/UAS包括CAAT盒（-70～-80，序列CCAAT）与GC盒（-80～-110，序列GCCACACCC或GGGCGGG）。",
+   "note": "位置数字与元件名称配对是填空高频。",
+   "pages": [
+    95,
+    96,
+    97,
+    98
+   ]
+  },
+  {
+   "id": "L4-F33",
+   "text": "TATA区决定转录精确起始：去除或突变后RNA产物起始点不固定，但转录量下降不如CAAT区/GC区突变明显；CAAT区与GC区主要控制转录起始频率，基本不参与起始位点确定。",
+   "note": "“定点vs定量”辨析为简答考点。",
+   "pages": [
+    99
+   ]
+  },
+  {
+   "id": "L4-F34",
+   "text": "SV40启动子缺失实验：删除-47～-32活性仍为++++；删除-47～-29降为+；删除-47～-21（含TATAAAA）活性为0；删除-20～+20活性仍为+++。说明含TATAAAA的-47～-21区段为启动子活性所必需。",
+   "note": "实验分析题经典素材。",
+   "pages": [
+    100
+   ]
+  },
+  {
+   "id": "L4-F35",
+   "text": "增强子（enhancer，又称远上游序列）1981年由Benerji、Rusconi小组和Chambom等发现；SV40转录单元起点上游约200 bp处有两段72 bp重复序列，不属启动子但能增强转录起始。增强子特点：远距离效应（十几kb仍有效）、无方向性、顺式调节、无物种和基因特异性、有组织特异性、有相位性、部分可对外部信号（热休克、镉/锌、固醇类激素）反应。",
+   "note": "七条特点为简答高频；“无方向性”与“顺式调节”易混。",
+   "pages": [
+    101,
+    102,
+    103,
+    104
+   ]
+  },
+  {
+   "id": "L4-F36",
+   "text": "真核Pol II前起始复合物（PIC）装配顺序：TFIID的TBP结合TATA box→招募TFIIA和TFIIB（TFIIB结合BRE3）→招募Pol II–TFIIF→TFIIE和TFIIH结合→TFIIH水解ATP进行启动子解链→CTD磷酸化后启动子逃逸、转录起始。",
+   "note": "顺序题与“谁解链、谁磷酸化”考点。",
+   "pages": [
+    72
+   ]
+  },
+  {
+   "id": "L4-F37",
+   "text": "介体（Mediator）1994年由Stefan Björklund与Young-Joon Kim分离，由20多个亚基组成、总质量超过1百万道尔顿，其中13个亚基为此前不同筛选所鉴定的基因产物；只有Srb4亚基是体内几乎所有Pol II基因转录所必需。",
+   "note": "“Srb4唯一必需”为细节考点。",
+   "pages": [
+    74,
+    75
+   ]
+  },
+  {
+   "id": "L4-F38",
+   "text": "核小体（nucleosome）由DNA缠绕在8个组蛋白分子组成的核心上形成，是真核染色体基本单位；Lorch与Kornberg发现该缠绕在体外阻止转录起始，Grunstein等证明体内核小体干扰转录；核小体作为通用基因抑制因子，需特异性正调控机制才能启动转录。",
+   "note": "解释真核转录需染色质重塑与HAT的原因。",
+   "pages": [
+    73,
+    75
+   ]
+  },
+  {
+   "id": "L4-F39",
+   "text": "环状RNA（circRNA）由前体mRNA经反向剪接（back-splicing）形成共价闭合环状非编码RNA，无5′帽和3′poly(A)尾，富集于poly A−组分；是多种细胞类型中数百个人类基因的主要转录本异构体，可作为高效microRNA海绵；外显子环化由互补序列介导，不同区域互补序列的竞争性配对可选择产生线形或环形RNA。",
+   "note": "poly A−富集是实验设计题素材。",
+   "pages": [
+    17
+   ]
+  },
+  {
+   "id": "L4-F40",
+   "text": "细胞内RNA组成：编码RNA（mRNA）约占总RNA 2%，非编码RNA约占98%；前mRNA（hnRNA）、snRNA、snoRNA、scRNA为真核生物特有，tmRNA为细菌特有。",
+   "note": "2%/98%与物种分布为选择题考点。",
+   "pages": [
+    18
+   ]
+  },
+  {
+   "id": "L4-F41",
+   "text": "转录起始位点：原核中90%为嘌呤（A或G），两侧常为C和T（CGT或CAT）；真核起始密码子均为AUG，原核起始密码子有AUG、GUG、UUG三种，绝大多数为AUG。",
+   "note": "数字与密码子种类易混。",
+   "pages": [
+    80
+   ]
+  },
+  {
+   "id": "L4-F42",
+   "text": "启动子是非对称的，只能以一个方向结合聚合酶，RNA始终按5′→3′合成；不同基因的模板链可位于DNA双链的不同链上（如gene a、d、e与gene b、c、f、g方向相反）。",
+   "note": "纠正“模板链固定为某一条链”的误解。",
+   "pages": [
+    83
+   ]
+  },
+  {
+   "id": "L4-F43",
+   "text": "酵母RNA聚合酶II晶体结构由Roger Kornberg解析（PNAS 2007, vol.104, no.32, 12955–12961）；Kornberg提出从调控蛋白到启动子转录机器的通讯并非直接，酵母系统中还需一个粗提组分即Mediator参与。",
+   "note": "人名-事件配对题。",
+   "pages": [
+    69,
+    75
+   ]
+  }
+ ],
+ "methods": [
+  {
+   "id": "L4-M01",
+   "cn": "DNase I 足迹法（DNA酶保护实验）",
+   "en": "DNase I footprinting",
+   "principle": "RNA聚合酶全酶与模板DNA特定位点结合后，结合区被保护而不被DNase I降解；降解未被保护的DNA后分离被保护片段并测序，即可确定结合位点序列。",
+   "steps": "RNA聚合酶结合到DNA特定位点→加核酸酶（DNase I）降解DNA→提取DNA→确定被保护的DNA序列。1975年Pribnow和Schaller用该法得到41～44个核苷酸对的DNA片段，从中鉴定出-10区（Pribnow区）。",
+   "applications": "鉴定RNA聚合酶在启动子上的结合位点序列；发现-10区（Pribnow盒）。",
+   "limitations": "提纯的被保护片段不能使RNA聚合酶重新结合或选择正确起始点，说明保护区外还存在识别序列（如-35区），单靠足迹法不能完整定义启动子。",
+   "pages": [
+    85,
+    88
+   ]
+  }
+ ],
+ "exam_points": [
+  {
+   "id": "L4-X01",
+   "point": "转录与复制的区别",
+   "detail": "简答/多选：从模板使用（一条链vs两条链）、产物（1条RNA vs 2个DNA分子）、是否需引物（从头合成vs需引物）、是否与模板保持配对、错误率（10⁻⁴ vs 10⁻⁹~10⁻¹⁰）、酶（RNA pol无外切酶活性vs DNA pol有）作答。"
+  },
+  {
+   "id": "L4-X02",
+   "point": "转录的基本过程四阶段与起始三步骤",
+   "detail": "简答：模板识别→起始→延伸→终止；起始三步骤为封闭复合物→开放复合物（-11至+3约14 bp解链）→三元复合物（酶从启动子逃逸）；并说明流产式起始（2–9 nt）与9 nt后σ释放进入延伸。"
+  },
+  {
+   "id": "L4-X03",
+   "point": "RNA聚合酶的组成与功能",
+   "detail": "填空/选择：E. coli全酶α₂ββ′ωσ，核心酶负责延伸、σ只负责起始；rpoA/rpoB/rpoC分别编码α/β/β′；σ使启动子亲和力提高10³倍、非专一位点降低10⁴倍；真核Pol I/II/III的定位、产物与α-鹅膏蕈碱敏感性。"
+  },
+  {
+   "id": "L4-X04",
+   "point": "原核启动子结构与共有序列",
+   "detail": "填空：-35区TTGACA（Sextama盒，σ识别、选模板链）、-10区TATAAT（Pribnow盒，结合RNA pol、形成开放复合体、定向转录）；间距16–19 bp，-10距起点5–9 bp；启动子全长40–80 bp，含R、B、I三位点。常考上升/下降突变判断。"
+  },
+  {
+   "id": "L4-X05",
+   "point": "真核Pol II启动子元件与PIC装配",
+   "detail": "简答：核心元件TATA盒（-25～-30）、Inr（-2～+4）、BRE、DPE；上游元件CAAT盒（-70～-80）、GC盒（-80～-110）；PIC装配顺序TBP/TFIID→TFIIA/TFIIB→Pol II-TFIIF→TFIIE/TFIIH→TFIIH水解ATP解链→CTD磷酸化启动子逃逸。"
+  },
+  {
+   "id": "L4-X06",
+   "point": "TATA区与CAAT/GC区功能分工",
+   "detail": "辨析：TATA区决定起始位点精确性（突变后起始点不固定），CAAT/GC区决定转录起始频率（突变后转录量明显下降但起点不变）。"
+  },
+  {
+   "id": "L4-X07",
+   "point": "转录终止的两种机制",
+   "detail": "简答：内在终止子=约20 nt反向重复（形成G-C丰富茎环阻止聚合酶前进）+约8个A:T（poly(U)-poly(A)弱配对便于释放）；ρ依赖终止=ρ六聚体结合ssRNA富C少G位点，ATP水解驱动沿RNA向3′端移动（解旋酶），追上暂停聚合酶使三元复合物解体（“穷追”模型）。"
+  },
+  {
+   "id": "L4-X08",
+   "point": "RNA聚合酶的忠实性机制",
+   "detail": "简答：核苷酸选择（Trigger loop分子卡尺感知碱基对几何构象+诱导契合开放→封闭构象）提高10³倍；校对（焦磷酸解即动力学校对、2个Mg²⁺依赖的内在剪切活性）使整体达10⁻⁵；起始阶段忠实性与延续性低、延伸阶段高。"
+  },
+  {
+   "id": "L4-X09",
+   "point": "转录抑制剂及其靶点",
+   "detail": "选择/填空：利福霉素（细菌全酶β亚基，抑制起始）、链霉素（细菌核心酶β亚基）、α-鹅膏蕈碱（真核Pol II）、放射线素D（DNA模板，阻止延伸）、烷化剂（DNA双链交联）、纺锤菌素（富含AT区）、5-氟尿嘧啶（核苷酸类似物）。"
+  },
+  {
+   "id": "L4-X10",
+   "point": "增强子的特点",
+   "detail": "简答七条：远距离效应、无方向性、顺式调节、无物种和基因特异性、组织特异性、相位性、可对外部信号反应；并说明其与启动子的区别（不属启动子、可相隔数kb、SV40中为两段72 bp重复序列）。"
+  },
+  {
+   "id": "L4-X11",
+   "point": "RNA二级结构元件识别",
+   "detail": "名词解释/识图：茎、发夹（hairpin）、凸环（bulge，仅一条链未配对）、内环（internal loop，两条链均未配对）、交叉/多环、假结（pseudoknot，环区与环外区配对，属三级结构基序）、G:U配对（两个氢键）。"
+  },
+  {
+   "id": "L4-X12",
+   "point": "转录速率与相关计算",
+   "detail": "计算：2500 nt/min÷60≈41.7 nt/s；14密码子/秒×3=42 nt/s，与翻译15 aa/秒匹配；与复制800 bp/秒比较约慢20倍；E. coli RNA pol 40 nt/秒（37℃）或50–90 nt/秒。"
+  },
+  {
+   "id": "L4-X13",
+   "point": "模板链/编码链命名与序列推导",
+   "detail": "分析题：给出DNA双链序列，写出mRNA（与编码链相同、T→U）与多肽（按密码子表）；注意Crick strand=编码链、Watson strand=模板链；不同基因模板链可位于不同链。"
+  }
+ ],
+ "exercises": [
+  {
+   "id": "L4-E01",
+   "type": "单选题",
+   "stem": "关于转录与DNA复制的区别，下列叙述正确的是：",
+   "options": [
+    "A. RNA聚合酶需要引物才能起始RNA合成",
+    "B. 转录产物RNA始终与模板DNA链保持碱基配对",
+    "C. RNA聚合酶不需要引物，可从头合成RNA",
+    "D. 转录的错误率约为10⁻⁹，低于DNA复制"
+   ],
+   "answer": "C. RNA聚合酶不需要引物，可从头合成RNA",
+   "analysis": "RNA聚合酶不需要引物（从头合成，de novo synthesis），故C对、A错；RNA产物不与模板DNA保持碱基配对，B错；转录错误率约10⁻⁴，高于复制（约10⁻⁹~10⁻¹⁰），D错。",
+   "pages": [
+    7
+   ]
+  },
+  {
+   "id": "L4-E02",
+   "type": "单选题",
+   "stem": "E. coli RNA聚合酶中负责识别启动子-35区并选择模板链的亚基是：",
+   "options": [
+    "A. α亚基",
+    "B. β亚基",
+    "C. β′亚基",
+    "D. σ亚基"
+   ],
+   "answer": "D. σ亚基",
+   "analysis": "核心酶（α₂ββ′ω）只能结合模板并催化聚合，不能识别-35序列；只有σ亚基能识别-35序列并为转录选择模板链。β与β′构成催化中心，α参与组装与调节因子互作。",
+   "pages": [
+    53,
+    90
+   ]
+  },
+  {
+   "id": "L4-E03",
+   "type": "单选题",
+   "stem": "真核生物RNA聚合酶II的转录产物不包括：",
+   "options": [
+    "A. hnRNA",
+    "B. 绝大多数microRNA",
+    "C. 5S rRNA",
+    "D. 具有帽子结构的snRNA前体"
+   ],
+   "answer": "C. 5S rRNA",
+   "analysis": "5S rRNA由RNA聚合酶III转录（Pol III还转录tRNA和U6 snRNA前体）。Pol II转录hnRNA、绝大多数microRNA及带帽snRNA/snoRNA前体。Pol I转录rRNA前体（除5S rRNA）。",
+   "pages": [
+    62
+   ]
+  },
+  {
+   "id": "L4-E04",
+   "type": "单选题",
+   "stem": "关于内在终止子（Rho非依赖型终止子）的结构，正确的是：",
+   "options": [
+    "A. 约20个核苷酸的反向重复序列+其后约8个A:T碱基对",
+    "B. 约8个核苷酸的反向重复序列+其后约20个G:C碱基对",
+    "C. 仅含自我互补区域，且茎中G-C含量少、茎环易打开",
+    "D. 需要ρ因子结合ssRNA富C少G位点才能终止"
+   ],
+   "answer": "A. 约20个核苷酸的反向重复序列+其后约8个A:T碱基对",
+   "analysis": "内在终止子由约20 nt反向重复（转录后形成G-C丰富、不易解开的茎环）与其后约8个A:T（转录出poly(U)，A:U配对最弱便于释放）组成。C、D描述的是ρ依赖型终止子的特征。",
+   "pages": [
+    44,
+    45,
+    46
+   ]
+  },
+  {
+   "id": "L4-E05",
+   "type": "单选题",
+   "stem": "真核Pol II前起始复合物装配过程中，负责启动子解链（promoter melting）并磷酸化CTD的是：",
+   "options": [
+    "A. TFIID",
+    "B. TFIIB",
+    "C. TFIIF",
+    "D. TFIIH"
+   ],
+   "answer": "D. TFIIH",
+   "analysis": "TFIIH具ATP依赖解旋酶活性，利用ATP水解能量进行启动子解链，并具激酶活性磷酸化CTD，CTD磷酸化后发生启动子逃逸。TBP（TFIID组分）结合TATA box，TFIIB结合BRE3。",
+   "pages": [
+    72
+   ]
+  },
+  {
+   "id": "L4-E06",
+   "type": "多选题",
+   "stem": "下列属于增强子特点的有：",
+   "options": [
+    "A. 具有远距离效应，相距十几kb仍可发挥作用",
+    "B. 无方向性，可位于靶基因上游、下游或内部",
+    "C. 只调节同一染色体上的靶基因（顺式调节）",
+    "D. 具有严格的物种和基因特异性，不能接到异源基因上"
+   ],
+   "answer": "A、B、C",
+   "analysis": "增强子具远距离效应、无方向性、顺式调节、无物种和基因特异性（可接到异源基因上发挥作用）、有组织特异性、有相位性、部分可对外部信号反应。D与“无物种和基因特异性”相反。",
+   "pages": [
+    104
+   ]
+  },
+  {
+   "id": "L4-E07",
+   "type": "多选题",
+   "stem": "关于RNA聚合酶忠实性机制，下列叙述正确的有：",
+   "options": [
+    "A. 核苷酸选择可将忠实性提高10³倍",
+    "B. Trigger loop作为“分子卡尺”感知碱基对几何构象",
+    "C. 内在RNA剪切活性需要2个Mg²⁺参与",
+    "D. 焦磷酸解是聚合反应的逆反应，属动力学校对"
+   ],
+   "answer": "A、B、C、D",
+   "analysis": "四项均正确。核苷酸选择（Trigger loop+诱导契合）提高10³倍；校对功能（焦磷酸解即动力学校对、2个Mg²⁺依赖的内在剪切活性）使整体忠实性达10⁻⁵。",
+   "pages": [
+    76,
+    77,
+    78
+   ]
+  },
+  {
+   "id": "L4-E08",
+   "type": "填空题",
+   "stem": "原核启动子中，-35区共有序列为______，又称______盒，为______亚基识别位点；-10区共有序列为______，又称______盒；两区最佳间距约______bp。",
+   "options": [],
+   "answer": "TTGACA；Sextama；σ；TATAAT；Pribnow；16～19",
+   "analysis": "-35区（Sextama盒）TTGACA由σ亚基识别并选择模板链；-10区（Pribnow盒）TATAAT富含A·T易解链，功能为紧密结合RNA pol、形成开放复合体、定向转录；间距过大或过小均降低转录活性。",
+   "pages": [
+    86,
+    89,
+    90,
+    93
+   ]
+  },
+  {
+   "id": "L4-E09",
+   "type": "填空题",
+   "stem": "转录泡长度约______bp，其中RNA-DNA杂合双链约______bp；开放复合物中DNA在起始位点周围约______bp（______至______）范围内解开。",
+   "options": [],
+   "answer": "12–14；8–9；14；-11；+3",
+   "analysis": "转录泡约12–14 bp，RNA-DNA杂合约8–9 bp；开放复合物中DNA在+1周围约14 bp（-11至+3）解链。",
+   "pages": [
+    20,
+    37
+   ]
+  },
+  {
+   "id": "L4-E10",
+   "type": "判断题",
+   "stem": "转录泡前方DNA形成负超螺旋，后方形成正超螺旋。",
+   "options": [
+    "A. 正确",
+    "B. 错误"
+   ],
+   "answer": "B. 错误",
+   "analysis": "恰好相反：转录泡前方DNA过度缠绕，形成正超螺旋（左手）；后方缠绕不足，形成负超螺旋（右手）。该拓扑应力由DNA拓扑异构酶释放。",
+   "pages": [
+    21
+   ]
+  },
+  {
+   "id": "L4-E11",
+   "type": "判断题",
+   "stem": "编码链又称Crick strand，模板链又称Watson strand。",
+   "options": [
+    "A. 正确",
+    "B. 错误"
+   ],
+   "answer": "A. 正确",
+   "analysis": "编码链（coding strand）=意义链=正链=Crick strand，序列与mRNA相同（T→U）；模板链（template strand）=反义链=负链=Watson strand，与mRNA反向互补。该命名与直觉相反，是经典易错点。",
+   "pages": [
+    25
+   ]
+  },
+  {
+   "id": "L4-E12",
+   "type": "名词解释",
+   "stem": "转录单元（transcription unit）",
+   "options": [],
+   "answer": "从启动子到终止子之间被转录成一条RNA的DNA序列，包含启动子、转录区域与终止子。转录起点记为+1（通常为嘌呤），其前一位为-1，不存在0位；起点5′端方向为上游，3′端方向为下游。",
+   "analysis": "答题须包含“启动子到终止子”“转录成一条RNA”“+1与-1编号”三要素。",
+   "pages": [
+    26,
+    27
+   ]
+  },
+  {
+   "id": "L4-E13",
+   "type": "名词解释",
+   "stem": "假结（pseudoknot）",
+   "options": [],
+   "answer": "一种常见的RNA三级结构基序，由环区的碱基与环外区域的碱基互补配对形成，从而产生类似“打结”的空间结构；其形成依赖不连续区段之间的配对，常见于核酶、核糖体RNA与RNA病毒中。",
+   "analysis": "须点明“环区与环外区配对”“属三级结构基序”“不连续区段”三个要点，不能简单答成二级结构元件。",
+   "pages": [
+    15
+   ]
+  },
+  {
+   "id": "L4-E14",
+   "type": "简答题",
+   "stem": "简述大肠杆菌两种转录终止机制的区别。",
+   "options": [],
+   "answer": "（1）内在终止子（Rho非依赖型）：由约20个核苷酸的反向重复序列与其后约8个A:T碱基对组成；转录出的RNA形成G-C丰富、不易解开的茎环（发夹）结构，阻止RNA聚合酶前进；随后poly(U)与模板poly(A)配对，A:U配对最弱，RNA易从模板解离，无需ρ因子。（2）ρ依赖型终止：提纯的RNA聚合酶不能识别特异性终止信号，需ρ因子；ρ为2.0×10⁵的六聚体，每单体含N端RNA结合结构域与C端ATPase结构域，结合ssRNA富C少G位点，通过催化NTP水解（RNA/DNA解旋酶活性）沿RNA向3′端移动，追上在终止位点暂停的聚合酶，使三元复合物解体（“穷追”模型）。其终止子只含自我互补区、茎中G-C少、茎环易打开。",
+   "analysis": "按“结构特征—机制—是否需ρ”对比作答；须写出20 nt反向重复、8个A:T、ρ六聚体、富C少G、ATP水解、“穷追”模型等关键词。",
+   "pages": [
+    44,
+    45,
+    46,
+    47,
+    48
+   ]
+  },
+  {
+   "id": "L4-E15",
+   "type": "简答题",
+   "stem": "简述真核生物RNA聚合酶II前起始复合物（PIC）的装配过程及各因子功能。",
+   "options": [],
+   "answer": "①TFIID中的TBP结合TATA box；②招募TFIIA和TFIIB，TFIIB结合BRE3；③招募RNA Pol II–TFIIF复合物；④TFIIE和TFIIH结合到Pol II上游，形成前起始复合物（PIC）；⑤TFIIH利用ATP水解能量进行启动子解链（promoter melting）；⑥CTD尾部磷酸化后发生启动子逃逸（promoter escape），转录起始。此外，转录激活因子结合远端元件后通过DNA成环与介体（Mediator）接触，介体桥接激活因子与Pol II，并招募染色质重塑酶与组蛋白乙酰转移酶（HAT）改变核小体结构，共同促进PIC组装。",
+   "analysis": "顺序不能颠倒；须点明TFIIH兼具解旋与激酶双重功能、CTD磷酸化触发逃逸、Mediator的桥接作用。",
+   "pages": [
+    72,
+    73
+   ]
+  },
+  {
+   "id": "L4-E16",
+   "type": "简答题",
+   "stem": "比较TATA区与CAAT区/GC区在真核启动子中的功能差异，并说明SV40启动子缺失实验如何支持这一结论。",
+   "options": [],
+   "answer": "TATA区（Hogness区，-25～-30，序列TATAAA）决定转录精确起始：除去或突变后，转录产物下降的相对值不如CAAT区或GC区突变明显，但所得RNA产物的起始点不固定。CAAT区（-70～-80，CCAAT）与GC区（-80～-110）主要控制转录起始频率，基本不参与起始位点确定。SV40启动子缺失实验：删除-47～-32活性仍为++++；删除-47～-29降为+；删除-47～-21（含TATAAAA）活性为0；删除-20～+20活性仍为+++。说明含TATAAAA的-47～-21区段为启动子活性所必需，而上游激活区缺失对活性有根本性影响。",
+   "analysis": "答题须区分“定点（TATA）”与“定量（CAAT/GC）”，并引用缺失片段与相对活性数据。",
+   "pages": [
+    99,
+    100
+   ]
+  },
+  {
+   "id": "L4-E17",
+   "type": "计算题",
+   "stem": "已知某细胞转录生成mRNA的速度约为2500个核苷酸/分钟，翻译速度约为15个氨基酸/秒。（1）将转录速率换算为核苷酸/秒；（2）以“密码子/秒”表示转录速率；（3）若某蛋白含450个氨基酸，理论上翻译完成约需多少秒？该mRNA的编码区至少多少核苷酸？（不考虑终止密码子）",
+   "options": [],
+   "answer": "（1）2500÷60≈41.7 nt/s。（2）41.7÷3≈13.9≈14个密码子/秒。（3）450÷15=30秒；编码区至少450×3=1350个核苷酸。",
+   "analysis": "转录约42 nt/s与翻译15 aa/秒（约需45 nt/s的编码需求）在数量级上匹配，保证mRNA一合成即可被翻译；转录比DNA复制（800 bp/秒）慢约20倍。",
+   "pages": [
+    49
+   ]
+  },
+  {
+   "id": "L4-E18",
+   "type": "实验设计题",
+   "stem": "某研究者从真核细胞总RNA中分离环状RNA（circRNA），拟用常规oligo(dT)亲和层析富集含poly(A)尾的mRNA。请指出该策略为何不能富集circRNA，并设计一种可行的分离与鉴定方案。",
+   "options": [],
+   "answer": "（1）circRNA由前体mRNA经反向剪接形成共价闭合环状分子，无5′帽和3′poly(A)尾，不能与oligo(dT)结合，因而留在poly A−组分中，常规oligo(dT)法无法富集。（2）方案：提取总RNA→用oligo(dT)层析分离，收集poly A−组分（circRNA富集于此）→用RNase R（3′→5′外切酶）消化线性RNA，环状RNA因无游离3′端而抗消化→RT-qPCR或Northern blot检测；鉴定环化位点可用反向剪接接头的 divergent primers 扩增并测序；必要时用二维凝胶电泳或RNase H处理区分环状与线性异构体。",
+   "analysis": "关键得分点：circRNA无poly(A)尾、富集于poly A−、RNase R抗性、反向剪接接头（back-splicing junction）检测。",
+   "pages": [
+    17
+   ]
+  },
+  {
+   "id": "L4-E19",
+   "type": "分析题",
+   "stem": "已知某DNA片段编码链（5′→3′）为 TCA GAG GTG AAA TGC TAT GGT。请写出：（1）模板链序列（标明方向）；（2）mRNA序列；（3）翻译所得多肽的氨基酸序列（N→C）。",
+   "options": [],
+   "answer": "（1）模板链（3′→5′）：AGT CTC CAC TTT ACG ATA CCA；（2）mRNA（5′→3′）：UCA GAG GUG AAA UGC UAU GGU；（3）多肽（N→C）：Ser-Glu-Val-Lys-Cys-Tyr-Gly。",
+   "analysis": "mRNA序列与编码链相同（T→U），与模板链反向互补；密码子按mRNA 5′→3′依次读取：UCA=Ser、GAG=Glu、GUG=Val、AAA=Lys、UGC=Cys、UAU=Tyr、GGU=Gly。注意模板链书写方向为3′→5′。",
+   "pages": [
+    24
+   ]
+  },
+  {
+   "id": "L4-E20",
+   "type": "分析题",
+   "stem": "某细菌启动子的-10区由TATAAT突变为AATAAT，另一突变株中乳糖操纵子启动子的-10区由TATGTT变为TATATT。请判断两种突变的类型（上升/下降突变）并解释机制。",
+   "options": [],
+   "answer": "TATAAT→AATAAT为下降突变（down mutation）：偏离共有序列，降低启动子与RNA聚合酶（σ因子）的亲和力，启动子效率降低。TATGTT→TATATT为上升突变（up mutation）：增加与Pribnow区共有序列的一致性，提高启动子效率。机制：启动子结构影响其与RNA聚合酶的亲和力，从而影响转录起始频率与基因表达水平；-10区富含A·T便于解链，其3′端T高度保守。",
+   "analysis": "判断依据是突变后与共有序列TATAAT的一致性升高还是降低；须联系“启动子结构影响与聚合酶亲和力→影响表达水平”。",
+   "pages": [
+    82,
+    87
+   ]
+  }
+ ]
+}

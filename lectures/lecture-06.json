@@ -1,0 +1,2214 @@
+{
+ "lecture": 6,
+ "title": "从mRNA到蛋白质：遗传密码与翻译机器",
+ "source_file": "2026_autumn-molecular_biology-06翻译.pdf",
+ "pages": 101,
+ "overview": "本章解决的核心问题是：mRNA上的4种核苷酸序列如何被转换为蛋白质中的20种氨基酸序列，以及这一转换在细胞内由何种机器完成。逻辑主线为：先确立遗传密码的三联体、无重叠、连续、简并、普遍性与特殊性等性质，并回顾其破译的实验路径（无细胞体系、均聚物与重复共聚物模板、核糖体结合技术、移码实验）；再引入两类接头分子——氨酰-tRNA合成酶与tRNA，说明密码子与反密码子的反向平行配对及摆动规则；随后聚焦核糖体这一翻译机器，从组成、亚基结构、A/P/E位点、mRNA与多肽通道，到核糖体生物合成监控与核糖体异质性、核糖体蛋白的核糖体外功能；最后以翻译/核糖体循环总览收束。本章是“生物信息的传递”第四讲的下半部分，承接转录（DNA→RNA），完成中心法则DNA→RNA→蛋白质的最后一环，并为基因表达调控、突变与疾病（核糖体病、p53通路）提供分子基础。",
+ "outline": [
+  {
+   "section": "1",
+   "title": "翻译的定义与遗传密码的破译",
+   "points": [
+    "翻译是从起始密码子开始按三联体读取mRNA合成多肽链的过程",
+    "遗传密码破译的关键实验：无细胞体系、均聚物与重复共聚物模板、核糖体结合技术、移码实验",
+    "64个密码子中61个编码氨基酸，3个为终止密码子"
+   ]
+  },
+  {
+   "section": "2",
+   "title": "遗传密码的性质",
+   "points": [
+    "连续性（commaless）与非重叠（non-overlapping）",
+    "简并性与同义密码子、第三碱基简并性",
+    "普遍性与特殊性（线粒体、原生动物、支原体等的例外）",
+    "密码子与反密码子反向平行配对及摆动假说"
+   ]
+  },
+  {
+   "section": "3",
+   "title": "tRNA：结构、修饰与功能",
+   "points": [
+    "一级结构：60-95 nt，含恒定与半恒定残基及50种以上修饰碱基",
+    "二级结构：三叶草形，4条手臂3个环；三级结构：L形",
+    "功能：作为接头分子，反密码子识别密码子；分为起始tRNA、延伸tRNA、同工tRNA、校正tRNA"
+   ]
+  },
+  {
+   "section": "4",
+   "title": "氨酰-tRNA合成酶与氨基酸活化",
+   "points": [
+    "AA + tRNA + ATP → AA-tRNA + AMP + PPi",
+    "两步反应：氨基酸活化生成氨酰-腺苷酸，再转移至tRNA 3'端",
+    "合成酶对氨基酸与tRNA双重专一，并具校读功能，决定翻译保真度"
+   ]
+  },
+  {
+   "section": "5",
+   "title": "核糖体：组成、结构与位点",
+   "points": [
+    "原核70S = 50S + 30S；真核80S = 60S + 40S",
+    "A/P/E三个tRNA位点横跨大小亚基交界面",
+    "小亚基解码，大亚基催化肽键形成；mRNA通道在小亚基，多肽出口通道在大亚基"
+   ]
+  },
+  {
+   "section": "6",
+   "title": "核糖体生物合成、应激与异质性",
+   "points": [
+    "核糖体应激经游离核糖体蛋白抑制MDM2而稳定p53",
+    "核糖体病：Diamond-Blackfan贫血、5q-综合征、Shwachman-Diamond综合征等",
+    "核糖体异质性来自rRNA修饰、RP旁系同源替换与RAFs特异性结合"
+   ]
+  },
+  {
+   "section": "7",
+   "title": "翻译/核糖体循环总览",
+   "points": [
+    "氨基酸活化→起始→延伸→终止→蛋白质折叠",
+    "多聚核糖体提高mRNA利用率与翻译效率",
+    "tRNA按A→P→E方向移动，保证反应正向进行"
+   ]
+  }
+ ],
+ "concepts": [
+  {
+   "id": "L6-C01",
+   "cn": "翻译",
+   "en": "translation",
+   "abbr": "",
+   "definition": "将mRNA链上的核苷酸从一个特定的起始位点开始，按每3个核苷酸代表一个氨基酸的原则，依次合成一条多肽链的过程。",
+   "detail": "起始位点由起始密码子（initiation codon）决定；三联体（triplet）读取方式决定阅读框。场所为核糖体，模板为mRNA，需多种蛋白、酶与生物大分子参与，这些成分占细胞干重50%；翻译是需能反应，消耗细胞能量的80-90%。",
+   "note": "翻译是中心法则DNA→RNA→蛋白质的最后一环；蛋白质是生物信息通路的终产物，一个活细胞在任何发育阶段都需数千种不同蛋白质。",
+   "pages": [
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "L6-C02",
+   "cn": "遗传密码（三联子密码）",
+   "en": "genetic code (triplet code)",
+   "abbr": "",
+   "definition": "mRNA上每3个核苷酸翻译成多肽链上的一个氨基酸，这3个核苷酸称为一个密码子；遗传密码指DNA或RNA中的三联体与蛋白质中氨基酸之间的对应关系。",
+   "detail": "4种碱基若1个编码1个氨基酸只有4种可能，2个为4²=16种仍不够，3个为4³=64种足够。64个密码子中61个编码氨基酸，UAA、UGA、UAG为终止密码子。",
+   "note": "密码子（codon）是三联体本身；遗传密码是三联体与氨基酸之间的对应关系，二者不可混用。",
+   "pages": [
+    6,
+    7,
+    11,
+    22
+   ]
+  },
+  {
+   "id": "L6-C03",
+   "cn": "密码子",
+   "en": "codon",
+   "abbr": "",
+   "definition": "代表一个氨基酸或终止信号的三核苷酸。",
+   "detail": "mRNA上以5'→3'方向排列的三个相邻核苷酸决定一个氨基酸；密码子按5'→3'编号为第1、2、3位。",
+   "note": "终止密码子不编码任何氨基酸。",
+   "pages": [
+    7,
+    33
+   ]
+  },
+  {
+   "id": "L6-C04",
+   "cn": "起始密码子",
+   "en": "initiation codon (start codon)",
+   "abbr": "",
+   "definition": "用于起始蛋白质合成的特殊密码子，通常为AUG。",
+   "detail": "AUG编码甲硫氨酸（Met）并作为起始密码子；GUG编码缬氨酸（Val）并可作为起始密码子。原核生物中起始密码子也可为GUG、UUG。",
+   "note": "（补充）GUG作为起始密码子时仍插入甲硫氨酸/甲酰甲硫氨酸，只有作为内部密码子时才编码缬氨酸。",
+   "pages": [
+    7,
+    29
+   ]
+  },
+  {
+   "id": "L6-C05",
+   "cn": "终止密码子",
+   "en": "termination codon (stop codon)",
+   "abbr": "",
+   "definition": "UAG、UAA、UGA三者之一，使蛋白质合成终止，不编码任何氨基酸。",
+   "detail": "历史名称：UAA→Ochre（赭石）、UAG→Amber（琥珀）、UGA→Opal（欧泊）。",
+   "note": "UGA在特定上下文还可编码Trp或硒代半胱氨酸，见密码特殊性。",
+   "pages": [
+    7,
+    22,
+    29
+   ]
+  },
+  {
+   "id": "L6-C06",
+   "cn": "开放阅读框",
+   "en": "open reading frame",
+   "abbr": "ORF",
+   "definition": "推测很可能编码一个蛋白质的阅读框；每条mRNA的蛋白编码区由连续、不重叠的密码子串组成，以起始密码子开始、以终止密码子结束。",
+   "detail": "DNA中的ATG转录为mRNA中的AUG，翻译为甲硫氨酸（Met）。",
+   "note": "ORF是连续、不重叠的密码子串，不含提前终止密码子。",
+   "pages": [
+    7,
+    8
+   ]
+  },
+  {
+   "id": "L6-C07",
+   "cn": "阅读框",
+   "en": "reading frame",
+   "abbr": "",
+   "definition": "把核苷酸序列按三联体读取的三种可能方式之一；从起始密码子开始、以三个核苷酸为一组连续划分密码子。",
+   "detail": "同一RNA可有三种阅读框，只有一种编码实际信息。例：同一序列按阅读框1得Leu—Ser—Val—Thr，阅读框2得Ser—Ala—Leu—Pro，阅读框3得Gln—Arg—Tyr—His。",
+   "note": "阅读框由起点决定，不改变核苷酸序列本身；移码突变即阅读框改变。",
+   "pages": [
+    7,
+    9,
+    21
+   ]
+  },
+  {
+   "id": "L6-C08",
+   "cn": "密码的连续性",
+   "en": "commaless",
+   "abbr": "",
+   "definition": "密码子之间无分隔符号，三个核苷酸一组连续阅读。",
+   "detail": "三联子密码是非重叠（non-overlapping）和连续的（commaless）；缺失一个核苷酸会使缺失位点之后的阅读框整体移位，产生完全不同的氨基酸序列并可能提前遇到终止密码子。",
+   "note": "与重叠基因的阅读方式不同。",
+   "pages": [
+    20,
+    21
+   ]
+  },
+  {
+   "id": "L6-C09",
+   "cn": "非重叠",
+   "en": "non-overlapping",
+   "abbr": "",
+   "definition": "每个核苷酸只属于一个密码子，相邻密码子不共享核苷酸。",
+   "detail": "由Crick移码实验证明：一次插入三个碱基只增加一个氨基酸而不改变下游阅读框。",
+   "note": "Gamow的钻石密码模型主张重叠，已被否定。",
+   "pages": [
+    12,
+    21
+   ]
+  },
+  {
+   "id": "L6-C10",
+   "cn": "简并性",
+   "en": "degeneracy",
+   "abbr": "",
+   "definition": "由一种以上密码子编码同一个氨基酸的现象。",
+   "detail": "除色氨酸（UGG）只有一个密码子外，其他氨基酸都有一个以上密码子：9种氨基酸有2个密码子，1种有3个，5种有4个，3种有6个。",
+   "note": "简并性针对氨基酸而言；同义密码子是对应同一氨基酸的具体密码子。",
+   "pages": [
+    20,
+    22,
+    24
+   ]
+  },
+  {
+   "id": "L6-C11",
+   "cn": "同义密码子",
+   "en": "synonymous codon",
+   "abbr": "",
+   "definition": "对应于同一氨基酸的密码子。",
+   "detail": "同义密码子体现密码的简并性；色氨酸（UGG）无同义密码子。",
+   "note": "同工tRNA既要有不同反密码子识别同一氨基酸的各种同义密码子，又要有结构共同性被同一合成酶识别。",
+   "pages": [
+    24,
+    52
+   ]
+  },
+  {
+   "id": "L6-C12",
+   "cn": "第三碱基简并性",
+   "en": "third base degeneracy",
+   "abbr": "",
+   "definition": "密码子第三位核苷酸对密码子含义的影响较小，即第三位碱基改变常不改变或较少改变所编码的氨基酸。",
+   "detail": "61个有义密码子按第三位关系分类：第三位无关（U/C/A/G均可）32个；U或C相同14个；A或G相同10个；U/C/A相同3个；仅G有唯一含义2个（AUG Met、UGG Trp）。",
+   "note": "第三位被称为“简并位”；第三位改变多数无影响或仅变为化学性质相似的氨基酸。",
+   "pages": [
+    25
+   ]
+  },
+  {
+   "id": "L6-C13",
+   "cn": "转换",
+   "en": "transition",
+   "abbr": "",
+   "definition": "嘌呤替换嘌呤或嘧啶替换嘧啶的点突变。",
+   "detail": "发生在密码子第三位时一般无影响，例外为Met(AUG)⇔Ile(AUA/AUC/AUU)、Trp(UGG)⇔stop(UGA)；发生在第二位时导致所编码氨基酸变为化学类型相似的氨基酸。",
+   "note": "幻灯片拼写为pymidine，规范拼写为pyrimidine。",
+   "pages": [
+    26
+   ]
+  },
+  {
+   "id": "L6-C14",
+   "cn": "颠换",
+   "en": "transversion",
+   "abbr": "",
+   "definition": "嘌呤与嘧啶之间的互相替换的点突变。",
+   "detail": "发生在第三位时超过一半无影响，且结果为相似类型氨基酸，如Asp(GAU/GAC)⇔Glu(GAA/GAG)均为酸性氨基酸；发生在第二位时改变氨基酸类型。",
+   "note": "第一位无论转换还是颠换都指定相似类型氨基酸，少数甚至为同一种氨基酸，如Leu可由CUA或UUA编码。",
+   "pages": [
+    27,
+    28
+   ]
+  },
+  {
+   "id": "L6-C15",
+   "cn": "密码的普遍性",
+   "en": "universality of the genetic code",
+   "abbr": "",
+   "definition": "生物界（从病毒、细菌到真核生物）基本共用同一套遗传密码。",
+   "detail": "说明遗传密码在进化上高度保守。",
+   "note": "强调“基本”，线粒体、某些原生动物、支原体及部分原核生物存在例外。",
+   "pages": [
+    20,
+    31,
+    32
+   ]
+  },
+  {
+   "id": "L6-C16",
+   "cn": "硒代半胱氨酸",
+   "en": "selenocysteine",
+   "abbr": "",
+   "definition": "由UGA密码子编码的第21种蛋白质氨基酸，掺入依赖mRNA上下文（SECIS元件）等特殊因子。",
+   "detail": "UGA除作为终止密码子外，还可编码Trp（线粒体、支原体）或硒代半胱氨酸（E. coli）。",
+   "note": "脚注强调其依赖message的上下文及其他因子。",
+   "pages": [
+    32
+   ]
+  },
+  {
+   "id": "L6-C17",
+   "cn": "反密码子",
+   "en": "anticodon",
+   "abbr": "",
+   "definition": "tRNA反密码环上以3'→5'方向排列的三个核苷酸，与mRNA密码子反向互补配对。",
+   "detail": "tRNA的反密码子在核糖体内通过碱基的反向配对（antiparallel base pairing）与mRNA密码子相互作用；如反密码子3'-UAC-5'与密码子5'-AUG-3'配对。",
+   "note": "密码子位于mRNA按5'→3'阅读，反密码子位于tRNA按3'→5'配对，方向相反。",
+   "pages": [
+    33,
+    49,
+    50
+   ]
+  },
+  {
+   "id": "L6-C18",
+   "cn": "摆动假说",
+   "en": "wobble hypothesis",
+   "abbr": "",
+   "definition": "1966年Crick提出，认为反密码子5'端第一位碱基与密码子第三位碱基配对时具有较大自由度，可形成非标准碱基配对。",
+   "detail": "反密码子5'位碱基比其他两个碱基活动度更大，只要核糖单元间距离接近正常就能形成非标准配对；解释了稀有成分I（次黄嘌呤）的配对及许多氨基酸有2个以上密码子的问题。",
+   "note": "提出者Crick、年份1966须记牢；摆动位是允许非标准配对的唯一位置。",
+   "pages": [
+    34
+   ]
+  },
+  {
+   "id": "L6-C19",
+   "cn": "G-U摆动配对",
+   "en": "G-U wobble pairing",
+   "abbr": "",
+   "definition": "G与U之间形成两对氢键的非标准配对，只发生在密码子第三位（对应反密码子第一位）。",
+   "detail": "标准碱基配对（A-U、G-C）可发生在密码子所有位置；G-U摆动配对仅发生在密码子第三位。",
+   "note": "细菌中密码子第三位A可配U或I、G可配C或U；真核中A只能配U、G只能配C，真核摆动范围比细菌窄。",
+   "pages": [
+    35,
+    36
+   ]
+  },
+  {
+   "id": "L6-C20",
+   "cn": "tRNA",
+   "en": "transfer RNA",
+   "abbr": "tRNA",
+   "definition": "模板mRNA与氨基酸之间的接合体（adaptor），一端结合特定氨基酸，另一端以反密码子与mRNA密码子配对。",
+   "detail": "长度60-95 nt（常见76）；含15个恒定残基和8个半恒定残基；含修饰碱基，有时一个tRNA分子20%的碱基被修饰，已发现超过50种修饰碱基。原核约30-45种tRNA，真核约50种。又称第二遗传密码。",
+   "note": "tRNA种类数少于61个有义密码子，说明存在摆动识别。",
+   "pages": [
+    4,
+    37,
+    39,
+    40
+   ]
+  },
+  {
+   "id": "L6-C21",
+   "cn": "三叶草形结构",
+   "en": "cloverleaf structure",
+   "abbr": "",
+   "definition": "tRNA二级结构中由小片段碱基互补配对形成的特征性形态，包含4条手臂和3个环。",
+   "detail": "4条手臂：受体臂（氨基酸臂）、D臂、反密码子臂、TψC臂（另有可变臂/额外臂）；3个环：D环、反密码子环、T环。不同tRNA在结构上存在大量共性。",
+   "note": "受体臂3'端最后3个碱基永远是CCA，末端2'或3'-OH可被氨酰化。",
+   "pages": [
+    41,
+    42
+   ]
+  },
+  {
+   "id": "L6-C22",
+   "cn": "D臂",
+   "en": "D-arm",
+   "abbr": "",
+   "definition": "根据其含有二氢尿嘧啶（dihydrouracil）而命名的tRNA手臂。",
+   "detail": "D臂中存在多至3个可变核苷酸位点（17:1及20:1、20:2）；最常见的D臂缺失这3个核苷酸，最小的D臂中第17位核苷酸也缺失。",
+   "note": "D环含二氢尿嘧啶。",
+   "pages": [
+    43
+   ]
+  },
+  {
+   "id": "L6-C23",
+   "cn": "反密码子臂",
+   "en": "anticodon arm",
+   "abbr": "",
+   "definition": "根据位于套索中央的三联反密码子命名的tRNA手臂，由5 bp的臂和7个核苷的环组成。",
+   "detail": "反密码子环中有与密码子互补的由3个核苷组成的反密码子。",
+   "note": "反密码子臂套索状结构是L形三级结构的一个端点。",
+   "pages": [
+    44,
+    47
+   ]
+  },
+  {
+   "id": "L6-C24",
+   "cn": "TψC臂",
+   "en": "TψC arm",
+   "abbr": "",
+   "definition": "根据3个核苷酸命名的tRNA手臂，其中ψ表示拟尿嘧啶（pseudouridine），由5 bp臂和含有GTψC的环组成。",
+   "detail": "5S rRNA的CGAAC保守序列与tRNA的TψC环上GTψCG序列相互作用。",
+   "note": "TψC臂与5S rRNA的识别有关。",
+   "pages": [
+    45,
+    90
+   ]
+  },
+  {
+   "id": "L6-C25",
+   "cn": "可变臂（多余臂）",
+   "en": "variable arm (extra arm)",
+   "abbr": "",
+   "definition": "由3到21个核苷组成的tRNA手臂，可能会形成多达7 bp的臂。",
+   "detail": "又称额外臂，是tRNA中长度变化最大的手臂。",
+   "note": "不同tRNA可变臂长度差异大。",
+   "pages": [
+    45
+   ]
+  },
+  {
+   "id": "L6-C26",
+   "cn": "L形三级结构",
+   "en": "L-shaped tertiary structure",
+   "abbr": "",
+   "definition": "tRNA在二级结构基础上折叠形成的L形三维结构，受体臂顶端和反密码子臂套索状结构分别位于L的两个端点。",
+   "detail": "三级结构主要由二级结构中未配对碱基间形成的9个氢键引发，大部分恒定或半恒定核苷酸都参与氢键形成。该结构满足蛋白质合成对tRNA的要求，是tRNA的通式。",
+   "note": "L形使氨基酸靠近大亚基肽合成位点，反密码子与小亚基mRNA配对。",
+   "pages": [
+    47,
+    48
+   ]
+  },
+  {
+   "id": "L6-C27",
+   "cn": "起始tRNA",
+   "en": "initiator tRNA",
+   "abbr": "",
+   "definition": "能特异性识别mRNA模板上起始密码子的tRNA。",
+   "detail": "真核起始tRNA携带甲硫氨酸（Met）；原核起始tRNA携带甲酰甲硫氨酸（fMet），Met-tRNAfMet必须首先甲酰化生成fMet-tRNAfMet才能参与蛋白质合成。",
+   "note": "起始tRNA只识别起始密码子，不参与延伸；只有fMet-tRNAfMet能与第一个P位点结合。",
+   "pages": [
+    50,
+    51,
+    97
+   ]
+  },
+  {
+   "id": "L6-C28",
+   "cn": "延伸tRNA",
+   "en": "elongator tRNA",
+   "abbr": "",
+   "definition": "除起始tRNA以外的其他tRNA统称为延伸tRNA。",
+   "detail": "负责多肽链延伸过程中氨基酸的转运。",
+   "note": "与起始tRNA相对。",
+   "pages": [
+    50,
+    51
+   ]
+  },
+  {
+   "id": "L6-C29",
+   "cn": "同工tRNA",
+   "en": "isoacceptor tRNA",
+   "abbr": "",
+   "definition": "代表相同氨基酸的不同tRNA。",
+   "detail": "在一个同工tRNA组内，所有tRNA均专一于相同的氨酰-tRNA合成酶；既要有不同反密码子识别该氨基酸的各种同义密码子，又要有结构共同性被同一合成酶识别。",
+   "note": "同工tRNA对应同一氨基酸的不同同义密码子。",
+   "pages": [
+    52
+   ]
+  },
+  {
+   "id": "L6-C30",
+   "cn": "校正tRNA",
+   "en": "suppressor tRNA",
+   "abbr": "",
+   "definition": "通过改变反密码子区校正无义突变和错义突变的tRNA。",
+   "detail": "通过改变反密码子识别原本错误的密码子（终止密码子、错义密码子或移码位点），插入合适氨基酸，在翻译水平上部分纠正基因突变的影响。例：无义突变使UUG变为UAG，Tyr-tRNA以反密码子AUC识别UAG并插入酪氨酸，抑制无义突变。",
+   "note": "校正tRNA在翻译水平纠正，不改变DNA序列。",
+   "pages": [
+    53
+   ]
+  },
+  {
+   "id": "L6-C31",
+   "cn": "氨酰-tRNA合成酶",
+   "en": "aminoacyl-tRNA synthetase",
+   "abbr": "ARS",
+   "definition": "催化特定氨基酸与其对应tRNA共价偶联（装料）的酶，对氨基酸和tRNA两者均具有高度专一性。",
+   "detail": "总反应：AA + tRNA + ATP → AA-tRNA + AMP + PPi。利用校读功能（proofreading/editing）提高精确性；是决定蛋白质合成真实性（保真度）的关键因素。识别tRNA的关键元件包括鉴别碱基（discriminator base）与反密码子。",
+   "note": "命名规则：丝氨酸的同源tRNA为tRNAser，酶为seryl-tRNA synthetase，产物为seryl-tRNAser。",
+   "pages": [
+    54,
+    56,
+    57
+   ]
+  },
+  {
+   "id": "L6-C32",
+   "cn": "装料（氨基酰化）",
+   "en": "charging (aminoacylation)",
+   "abbr": "",
+   "definition": "氨酰-tRNA合成酶催化氨基酸的羧基与tRNA 3'端腺苷酸核糖的2'-或3'-羟基形成高能酯键的过程。",
+   "detail": "消耗ATP，生成AMP + 2Pi（ATP水解为AMP和焦磷酸，焦磷酸再水解为2个Pi）；产物为满载tRNA（charged tRNA），氨基酸与tRNA之间为高能酯键。",
+   "note": "两步反应：先活化生成氨酰-腺苷酸，再转移至tRNA。",
+   "pages": [
+    55,
+    58
+   ]
+  },
+  {
+   "id": "L6-C33",
+   "cn": "核糖体",
+   "en": "ribosome",
+   "abbr": "",
+   "definition": "由rRNA与多种蛋白质组成的核糖核蛋白复合物，是蛋白质合成的机器。",
+   "detail": "一个细菌细胞约有20,000个核糖体，真核细胞可达10^6个；可游离存在，也可与内质网结合形成微粒体。整体尺寸约200 Å × 220 Å，可容纳两个tRNA和约40 bp长的mRNA。",
+   "note": "核糖体是核酶（ribozyme），肽基转移酶活性由rRNA承担（补充背景）。",
+   "pages": [
+    59,
+    60,
+    84,
+    85
+   ]
+  },
+  {
+   "id": "L6-C34",
+   "cn": "核糖体RNA",
+   "en": "ribosomal RNA",
+   "abbr": "rRNA",
+   "definition": "构成核糖体催化与结构核心的RNA，与几十种蛋白质共同组成核糖体亚细胞颗粒。",
+   "detail": "原核：23S（2904 nt）、16S（1541-1542 nt）、5S（120 nt）；真核：28S（4700 nt）、18S（1900 nt）、5.8S（160 nt）、5S（120 nt）。rRNA决定核糖体的整体形状。",
+   "note": "5.8S rRNA为真核大亚基特有；5S rRNA在原核与真核中均存在。",
+   "pages": [
+    60,
+    89,
+    94
+   ]
+  },
+  {
+   "id": "L6-C35",
+   "cn": "斯维德伯格单位",
+   "en": "Svedberg unit",
+   "abbr": "S",
+   "definition": "用于衡量离心沉降速度的单位。",
+   "detail": "沉降速度由形状和大小共同决定，不是质量的度量；Theodor Svedberg为瑞典化学家，1926年获诺贝尔化学奖。",
+   "note": "70S ≠ 50S + 30S（80），S值不可简单相加。",
+   "pages": [
+    67
+   ]
+  },
+  {
+   "id": "L6-C36",
+   "cn": "A位点",
+   "en": "aminoacyl site",
+   "abbr": "A site",
+   "definition": "核糖体上新到来的氨酰-tRNA进入并结合的位点，位于大、小亚基交界面。",
+   "detail": "除起始fMet-tRNA外，所有tRNA都必须先经A位点进入；空载的A位点密码子因mRNA扭结处于适合与氨酰-tRNA相互作用的位置。",
+   "note": "A位位于mRNA 3'侧，与翻译方向一致。",
+   "pages": [
+    95,
+    96,
+    97,
+    99
+   ]
+  },
+  {
+   "id": "L6-C37",
+   "cn": "P位点",
+   "en": "peptidyl site",
+   "abbr": "P site",
+   "definition": "核糖体上肽酰-tRNA结合的位点，位于大、小亚基交界面。",
+   "detail": "只有fMet-tRNAfMet能直接与第一个P位点结合；肽键形成时肽链从P位tRNA转移至A位tRNA。",
+   "note": "P位持有肽基酰-tRNA。",
+   "pages": [
+    95,
+    96,
+    97
+   ]
+  },
+  {
+   "id": "L6-C38",
+   "cn": "E位点",
+   "en": "exit site",
+   "abbr": "E site",
+   "definition": "核糖体上卸载后的去氨酰-tRNA离开核糖体前所占据的位点。",
+   "detail": "tRNA由E位点离开核糖体；tRNA移动顺序为A→P→E，通过密码子与反密码子相互作用保证反应正向进行而不会倒转。",
+   "note": "E位位于mRNA 5'侧。",
+   "pages": [
+    95,
+    96,
+    97
+   ]
+  },
+  {
+   "id": "L6-C39",
+   "cn": "肽基转移酶中心",
+   "en": "peptidyl transferase center",
+   "abbr": "",
+   "definition": "位于大亚基上、催化肽键形成的活性中心，位于P位与A位之间。",
+   "detail": "大亚基负责携带氨基酸及tRNA的功能，肽键形成、AA-tRNA与肽基-tRNA的结合主要在大亚基上。",
+   "note": "（补充）该活性由rRNA（核酶）承担。",
+   "pages": [
+    95
+   ]
+  },
+  {
+   "id": "L6-C40",
+   "cn": "解码中心",
+   "en": "decoding center",
+   "abbr": "",
+   "definition": "位于小亚基上，负责对mRNA密码子进行序列特异性识别、检验tRNA反密码子配对的区域。",
+   "detail": "核糖体小亚基负责对模板mRNA进行序列特异性识别。",
+   "note": "解码在小亚基，催化在大亚基。",
+   "pages": [
+    95
+   ]
+  },
+  {
+   "id": "L6-C41",
+   "cn": "多聚核糖体",
+   "en": "polyribosome (polysome)",
+   "abbr": "",
+   "definition": "多个核糖体同时结合在同一条mRNA上形成的串珠状结构，可同时翻译产生多条多肽链。",
+   "detail": "大大加速蛋白质合成速度，提高mRNA利用率；既可在线性mRNA上形成，也可在通过5'帽—eIF4E/eIF4G—poly-A结合蛋白环化的mRNA上形成。",
+   "note": "原核中可与转录偶联形成。",
+   "pages": [
+    87,
+    88
+   ]
+  },
+  {
+   "id": "L6-C42",
+   "cn": "核糖体循环",
+   "en": "ribosome cycle",
+   "abbr": "",
+   "definition": "小亚基与大亚基结合到mRNA上翻译，每轮翻译结束后解离，如此反复的结合—解离序列。",
+   "detail": "包括氨基酸活化、起始、延伸、终止与蛋白质折叠五个阶段。",
+   "note": "核糖体循环是翻译的基本节律。",
+   "pages": [
+    86
+   ]
+  },
+  {
+   "id": "L6-C43",
+   "cn": "核糖体应激",
+   "en": "ribosomal stress (nucleolar stress)",
+   "abbr": "",
+   "definition": "由rRNA转录与核糖体蛋白表达异常，或pre-rRNA加工、核糖体组装受阻所引起的一类细胞应激。",
+   "detail": "诱因包括放线菌素D或5-氟尿嘧啶处理；应激时游离RPL/RPS在核质中积累，与Mdm2结合并使其失活，p53稳定积累。",
+   "note": "参与调控的核糖体蛋白包括L5、L11、L23、L26、S3、S7，其中L23、L26、S7后标“?”表示作用尚待确定。",
+   "pages": [
+    72,
+    74,
+    75
+   ]
+  },
+  {
+   "id": "L6-C44",
+   "cn": "MDM2",
+   "en": "Mouse Double Minute 2 homolog",
+   "abbr": "MDM2/HDM2",
+   "definition": "E3泛素连接酶，与p53结合并介导p53的泛素化及蛋白酶体降解，是p53的主要负调控因子。",
+   "detail": "人类同源物常写作HDM2；MDMX为其同源蛋白。核糖体功能异常时RPL11、RPL5、RPL23、RPS7等结合并抑制MDM2。",
+   "note": "MDM2对p53的抑制是p53通路的核心负反馈。",
+   "pages": [
+    73,
+    74
+   ]
+  },
+  {
+   "id": "L6-C45",
+   "cn": "p53蛋白",
+   "en": "tumor protein p53",
+   "abbr": "p53",
+   "definition": "细胞“守门人”转录因子，感受多种应激后激活靶基因转录，引发细胞周期阻滞、DNA修复、凋亡或衰老。",
+   "detail": "人体内最重要的抑癌蛋白；稳定性受MDM2泛素化降解控制；激活后还参与miRNA加工、干细胞更新、发育、代谢与生殖。",
+   "note": "p53处于细胞监控的顶端。",
+   "pages": [
+    72,
+    73,
+    76
+   ]
+  },
+  {
+   "id": "L6-C46",
+   "cn": "核糖体病",
+   "en": "ribosomopathy",
+   "abbr": "",
+   "definition": "核糖体生物合成或功能相关基因缺陷所导致的一类疾病，常表现为骨髓衰竭、先天畸形等。",
+   "detail": "例：Treacher Collins综合征（Treacle、Pol I转录、rRNA修饰）、先天性角化不良（Dyskerin）、软骨毛发发育不全（RNase MRP RNA）、Diamond-Blackfan贫血与5q-综合征（40S/60S组装）、Shwachman-Diamond综合征（SBDS，60S连接/运输）。",
+   "note": "临床可表现为急性髓系白血病与骨髓衰竭。",
+   "pages": [
+    77,
+    83
+   ]
+  },
+  {
+   "id": "L6-C47",
+   "cn": "核糖体异质性",
+   "en": "ribosome heterogeneity",
+   "abbr": "",
+   "definition": "细胞内不同核糖体在rRNA修饰、核糖体蛋白组成及相关因子结合上存在差异，从而具有不同的翻译选择性。",
+   "detail": "三个来源：①rRNA转录后修饰变异，改变三维结构与静电特性，影响与特定mRNA结合效率及翻译精准度；②RP组成差异，如RPL22L1与RPL22旁系同源替换；③核糖体相关因子（RAFs）特异性结合，招募不同起始/延伸因子或调节蛋白。",
+   "note": "异质化核糖体往往负责生成执行特定任务的蛋白质，可解释某些罕见疾病症状。",
+   "pages": [
+    79,
+    80
+   ]
+  },
+  {
+   "id": "L6-C48",
+   "cn": "核糖体外功能",
+   "en": "extraribosomal function",
+   "abbr": "",
+   "definition": "核糖体蛋白在核糖体翻译机器之外独立发挥的调控功能，如参与信号转导、转录调控、细胞周期与凋亡调控等。",
+   "detail": "激活p53的RP最多：L5、L6、L11、L23、L26、L37、S3、S7、S14、S15、S20、S25、S26、S27、S27A、S27L；L5、L11、S14同时激活TAp73并灭活c-Myc；癌症相关突变为L5、L10、L22。",
+   "note": "同一家族蛋白可因成员不同而功能相反（抑瘤vs致癌）。",
+   "pages": [
+    81,
+    82
+   ]
+  },
+  {
+   "id": "L6-C49",
+   "cn": "5'TOP mRNA",
+   "en": "5' terminal oligopyrimidine mRNA",
+   "abbr": "5'TOP mRNA",
+   "definition": "5'端带有寡嘧啶序列的一类mRNA，多编码核糖体蛋白与翻译因子，其翻译受p53等调控。",
+   "detail": "核糖体应激时p53抑制5'TOP mRNA（如L11等核糖体蛋白mRNA）的翻译，形成负反馈。",
+   "note": "图中标注为“5'TOP mRNA (L11, others?)”。",
+   "pages": [
+    75
+   ]
+  }
+ ],
+ "processes": [
+  {
+   "id": "L6-P01",
+   "name": "遗传密码破译历程",
+   "en": "history of cracking the genetic code",
+   "overview": "从DNA双螺旋结构到全部64个密码子破译完成的关键节点。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "DNA双螺旋",
+     "detail": "1953年DNA双螺旋结构发表。"
+    },
+    {
+     "n": 2,
+     "name": "三联体假说",
+     "detail": "1954年Gamow提出三联体假说，并成立RNA领带俱乐部（RNA Tie Club）。"
+    },
+    {
+     "n": 3,
+     "name": "移码实验",
+     "detail": "1954—1961年Crick移码实验证明三联体、无重叠。"
+    },
+    {
+     "n": 4,
+     "name": "第一个密码子",
+     "detail": "1961年Nirenberg & Matthaei破译UUU = 苯丙氨酸。"
+    },
+    {
+     "n": 5,
+     "name": "全部破译",
+     "detail": "1961—1966年全部64个密码子破译完成。"
+    }
+   ],
+   "key_points": [
+    "1968年诺贝尔生理学或医学奖授予Nirenberg、Khorana和Holley",
+    "Gamow提出假说，Crick证明三联体无重叠，Nirenberg & Matthaei破译第一个，Khorana系统破译，Ochoa提供合成RNA的酶"
+   ],
+   "regulation": [],
+   "figures": [
+    "关键科学家照片（幻灯片未逐一标注姓名）"
+   ],
+   "pages": [
+    10,
+    19
+   ]
+  },
+  {
+   "id": "L6-P02",
+   "name": "移码实验",
+   "en": "frameshift experiment",
+   "overview": "用核苷酸的插入或删除实验证明mRNA模板上每三个核苷酸组成一个密码子且不重叠。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "野生型",
+     "detail": "DNA ATGCTCCCGATAATCGTATGGCAGGAG → Protein Met Leu Pro Ile Phe Val Ser Asp Glu。"
+    },
+    {
+     "n": 2,
+     "name": "插入",
+     "detail": "插入一个G得ATGGCTCCCGATAATCGTATGGCAGGAG → Met Ala Pro Asp Asn Arg Met Ala Gly，插入点下游全部改变。"
+    },
+    {
+     "n": 3,
+     "name": "缺失",
+     "detail": "删除一个T得ATGCTCCCGATAATCGTAGGCAGGAG → Met Leu Pro Ile Phe Val Gly Arg。"
+    },
+    {
+     "n": 4,
+     "name": "插入加缺失",
+     "detail": "插入G并删除T得ATGGCTCCCGATAATCGTAGGCAGGAG → Met Ala Pro Asp Asn Arg Arg Asp Glu，阅读框恢复。"
+    },
+    {
+     "n": 5,
+     "name": "三碱基插入",
+     "detail": "插入三个G得ATGGGGCTCCCGATAATCGTATGGCAGGAG → Met Gly Leu Pro Ile Phe Val Ser Asp Glu，只增加一个氨基酸，下游阅读框不变。"
+    }
+   ],
+   "key_points": [
+    "单碱基插入或缺失导致移码，插入点下游氨基酸序列全部改变",
+    "插入与缺失各一个可相互抵消恢复阅读框",
+    "一次插入三个核苷酸只增加一个氨基酸，证明密码子以三个核苷酸为单位且不重叠"
+   ],
+   "regulation": [],
+   "figures": [
+    "Figure 17-13五组序列与翻译产物对比"
+   ],
+   "pages": [
+    12
+   ]
+  },
+  {
+   "id": "L6-P03",
+   "name": "无细胞蛋白合成体系",
+   "en": "cell-free protein synthesizing system",
+   "overview": "用DNase处理细胞裂解液阻止新转录，加入合成mRNA模板与标记氨基酸，在体外翻译并检测放射性掺入。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "处理裂解液",
+     "detail": "Cell lysate treated by DNase to prevent new transcription。"
+    },
+    {
+     "n": 2,
+     "name": "加模板与标记",
+     "detail": "Add homopolymeric synthetic mRNAs [poly(U)] + 19 cold (non-labeled) and one labeled amino acids。"
+    },
+    {
+     "n": 3,
+     "name": "体外翻译",
+     "detail": "In vitro translation。"
+    },
+    {
+     "n": 4,
+     "name": "分析产物",
+     "detail": "Analyze the translated polypeptides；酸沉淀收集蛋白并在液闪计数器计数。"
+    }
+   ],
+   "key_points": [
+    "只有加入poly(U)且标记苯丙氨酸时掺入量极高（约38,000 cpm），其余接近本底，说明UUU = 苯丙氨酸",
+    "第一个被破译的密码子为UUU = 苯丙氨酸",
+    "文献：Barondes & Nirenberg, Science 1962, 138(3542): 813-817"
+   ],
+   "regulation": [
+    "无细胞体系中Mg²⁺浓度很高，不需要起始密码子就能指导多肽合成"
+   ],
+   "figures": [
+    "Figure 17-14无细胞翻译流程与放射性计数柱状图"
+   ],
+   "pages": [
+    14
+   ]
+  },
+  {
+   "id": "L6-P04",
+   "name": "均聚物与重复共聚物模板翻译",
+   "en": "homopolymer and repeating copolymer template translation",
+   "overview": "以人工合成的均聚或重复序列RNA为模板，在无细胞体系中翻译，通过产物氨基酸组成推断密码子。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "均聚物模板",
+     "detail": "poly(U)→polyphenylalanine；poly(C)→polyproline；poly(A)→polylysine；poly(G)因复杂二级结构未成功。"
+    },
+    {
+     "n": 2,
+     "name": "重复二核苷酸",
+     "detail": "(AC)ₙ→(Thr-His)ₙ；(UC)ₙ→(Ser-Leu)ₙ。"
+    },
+    {
+     "n": 3,
+     "name": "重复三核苷酸",
+     "detail": "(UUC)ₙ可得Poly(Phe)/Poly(Ser)/Poly(Leu)；(AAG)ₙ可得Poly(Lys)/Poly(Arg)/Poly(Glu)；(UAG)ₙ得None/Poly(Ser)/Poly(Val)。"
+    },
+    {
+     "n": 4,
+     "name": "重复四核苷酸",
+     "detail": "(UAUC)ₙ→(Tyr-Leu-Ser-Ile)ₙ；(GUAA)ₙ出现终止密码子UAA，产物为Val-Ser-Lys-(stop)。"
+    }
+   ],
+   "key_points": [
+    "Khorana策略：准备重复二、三、四核苷酸序列的mRNA模板，通过产物氨基酸组成推断密码子",
+    "Poly(UG)→poly(Cys-Val)：5'……UGU GUG UGU GUG……3'，无论从U还是G开始读码都只有UGU(Cys)与GUG(Val)两种密码子",
+    "多核苷酸磷酸化酶可在没有模板的情况下将核苷酸连接起来合成均聚或共聚RNA"
+   ],
+   "regulation": [],
+   "figures": [
+    "Figure 7-26均聚物模板翻译示意",
+    "Khorana照片"
+   ],
+   "pages": [
+    15,
+    16
+   ]
+  },
+  {
+   "id": "L6-P05",
+   "name": "核糖体结合技术",
+   "en": "ribosome binding assay (nitrocellulose filter binding assay)",
+   "overview": "以人工合成三核苷酸为模板，使对应氨基酰-tRNA结合到核糖体上，经硝酸纤维素滤膜截留放射性复合物，确定密码子与氨基酸的对应关系。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "混合",
+     "detail": "核糖体与[14C]Phe-tRNAPhe及UUU密码子混合。"
+    },
+    {
+     "n": 2,
+     "name": "保温结合",
+     "detail": "保温使[14C]Phe-tRNAPhe-密码子复合物结合到核糖体上。"
+    },
+    {
+     "n": 3,
+     "name": "过滤",
+     "detail": "反应混合物通过硝酸纤维素滤膜。"
+    },
+    {
+     "n": 4,
+     "name": "截留检测",
+     "detail": "核糖体连同结合的[14C]Phe-tRNAPhe被截留，游离mRNA（UUU）穿过滤膜。"
+    }
+   ],
+   "key_points": [
+    "游离AA-tRNA相对分子质量小可穿过滤膜微孔，结合到核糖体上则被滞留",
+    "UUU只结合Phe-tRNAPhe（4.6），AAA只结合Lys-tRNALys（7.7），CCC只结合Pro-tRNAPro（3.1），其余为0",
+    "由Nirenberg与Leder建立；幻灯片照片标注Maxine Singer"
+   ],
+   "regulation": [],
+   "figures": [
+    "Figure 17-15a流程示意图",
+    "Figure 17-15b三组柱状图"
+   ],
+   "pages": [
+    17,
+    18
+   ]
+  },
+  {
+   "id": "L6-P06",
+   "name": "tRNA的腺苷酰化（氨基酸活化）",
+   "en": "aminoacylation of tRNA",
+   "overview": "氨酰-tRNA合成酶催化氨基酸活化并转移至tRNA 3'末端，生成氨酰-tRNA。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "氨基酸活化",
+     "detail": "AA + ATP + 酶（E）→ E-AA-AMP + PPi，生成氨酰-腺苷酸。"
+    },
+    {
+     "n": 2,
+     "name": "氨酰基转移",
+     "detail": "E-AA-AMP + tRNA → AA-tRNA + E + AMP，氨酰基转移到tRNA 3'末端腺苷残基的2'或3'-羟基上。"
+    }
+   ],
+   "key_points": [
+    "总反应：AA + tRNA + ATP → AA-tRNA + AMP + PPi",
+    "2'-与3'-氨酰-tRNA两种异构形式可相互转换",
+    "氨基酸与tRNA之间形成高能酯键"
+   ],
+   "regulation": [
+    "合成酶利用校读功能提高精确性，决定蛋白质合成真实性"
+   ],
+   "figures": [
+    "两步反应示意图"
+   ],
+   "pages": [
+    55,
+    58
+   ]
+  },
+  {
+   "id": "L6-P07",
+   "name": "遗传密码通过两个接头分子翻译",
+   "en": "translation via two adaptor molecules",
+   "overview": "遗传密码的翻译依赖两类接头分子先后作用：氨酰-tRNA合成酶完成装料，tRNA反密码子与mRNA密码子碱基配对。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "装料",
+     "detail": "氨酰-tRNA合成酶将特定氨基酸与其对应tRNA偶联（charging），ATP→AMP+2Pi。"
+    },
+    {
+     "n": 2,
+     "name": "碱基配对",
+     "detail": "tRNA的反密码子与mRNA上的相应密码子形成碱基配对。"
+    }
+   ],
+   "key_points": [
+    "图中mRNA密码子5'-UGG-3'编码色氨酸，tRNA反密码子3'-ACC-5'反向平行配对",
+    "净结果：氨基酸由其密码子选择"
+   ],
+   "regulation": [],
+   "figures": [
+    "色氨酸装载到tRNA^Trp并与UGG配对的三步示意图"
+   ],
+   "pages": [
+    58
+   ]
+  },
+  {
+   "id": "L6-P08",
+   "name": "翻译/核糖体循环",
+   "en": "translation / ribosome cycle",
+   "overview": "小亚基与大亚基结合到mRNA上翻译，每轮结束后解离，如此反复。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "氨基酸活化",
+     "detail": "tRNA被氨酰化，生成氨酰-tRNA。"
+    },
+    {
+     "n": 2,
+     "name": "起始",
+     "detail": "mRNA与氨酰-tRNA结合到小亚基，随后大亚基结合上来。"
+    },
+    {
+     "n": 3,
+     "name": "延伸",
+     "detail": "氨酰-tRNA结合与肽键形成的连续循环反复进行，直到到达终止密码子。"
+    },
+    {
+     "n": 4,
+     "name": "终止",
+     "detail": "遇到终止密码子时翻译停止，mRNA与蛋白质解离，核糖体亚基回收利用。"
+    },
+    {
+     "n": 5,
+     "name": "蛋白质折叠",
+     "detail": "新生多肽链折叠为功能蛋白质。"
+    }
+   ],
+   "key_points": [
+    "tRNA移动顺序为A→P→E，通过密码子与反密码子相互作用保证反应正向进行而不会倒转",
+    "只有fMet-tRNAfMet能与第一个P位点结合，其他tRNA都必须经A位点到达P位点再由E位点离开"
+   ],
+   "regulation": [
+    "多聚核糖体提高mRNA利用率与翻译效率"
+   ],
+   "figures": [
+    "Figure 18-4翻译与核糖体循环总览图"
+   ],
+   "pages": [
+    86,
+    95,
+    97
+   ]
+  },
+  {
+   "id": "L6-P09",
+   "name": "核糖体应激激活p53通路",
+   "en": "ribosomal stress–p53 pathway",
+   "overview": "核糖体组装障碍导致游离核糖体蛋白积累，通过抑制MDM2使p53稳定化。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "应激产生",
+     "detail": "放线菌素D或5-氟尿嘧啶处理，或pre-rRNA加工/组装受阻。"
+    },
+    {
+     "n": 2,
+     "name": "组装受阻",
+     "detail": "rRNA与RPs不能正常组装为60S/40S亚基。"
+    },
+    {
+     "n": 3,
+     "name": "游离RP积累",
+     "detail": "游离RPL/RPS在核质中积累。"
+    },
+    {
+     "n": 4,
+     "name": "抑制MDM2",
+     "detail": "游离RPs与Mdm2结合，抑制Mdm2对p53的降解作用。"
+    },
+    {
+     "n": 5,
+     "name": "p53稳定",
+     "detail": "p53蛋白水平升高，激活靶基因转录，引起细胞周期阻滞、DNA修复、凋亡、衰老。"
+    }
+   ],
+   "key_points": [
+    "参与调控的核糖体蛋白：L5、L11、L23、L26、S3、S7（L23、L26、S7后标“?”）",
+    "p53降解途径：MDM2介导多聚泛素化后经蛋白酶体降解",
+    "p53同时抑制5'TOP mRNA（含核糖体蛋白mRNA）翻译，形成负反馈"
+   ],
+   "regulation": [
+    "DNA损伤经ATM/ATR磷酸化修饰阻断MDM2对p53的降解；癌基因过表达诱导ARF抑制MDM2"
+   ],
+   "figures": [
+    "Caldarola 2009 FEBS Journal正常与应激对比图",
+    "p53-MDM2通路总览图",
+    "核仁内核糖体生物合成与应激信号图"
+   ],
+   "pages": [
+    72,
+    73,
+    74,
+    75
+   ]
+  },
+  {
+   "id": "L6-P10",
+   "name": "真核rRNA加工与核糖体亚基组装",
+   "en": "eukaryotic rRNA processing and subunit assembly",
+   "overview": "45S pre-rRNA经多步切割产生成熟rRNA，并分入40S与60S亚基。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "转录",
+     "detail": "Pol I转录rDNA生成45S pre-rRNA（含5'ETS、18S、ITS1、5.8S、ITS2、28S、3'ETS）。"
+    },
+    {
+     "n": 2,
+     "name": "加工",
+     "detail": "加工产生30S中间体，进一步产生21S与18S；5.8S与28S经32S中间体；5S rRNA独立转录。"
+    },
+    {
+     "n": 3,
+     "name": "组装",
+     "detail": "18S进入40S组装途径，5.8S/28S与5S进入60S组装途径，形成pre-40S与pre-60S。"
+    },
+    {
+     "n": 4,
+     "name": "成熟",
+     "detail": "40S与60S在SBDS等因子参与下连接/运输，形成成熟核糖体进行蛋白质合成。"
+    }
+   ],
+   "key_points": [
+    "40S亚基组装缺陷与Diamond-Blackfan贫血、5q-综合征关联，可致急性髓系白血病",
+    "60S连接/运输缺陷（SBDS）对应Shwachman-Diamond综合征，可致骨髓衰竭"
+   ],
+   "regulation": [],
+   "figures": [
+    "真核核糖体生物合成简化示意图（含核糖体病对应关系）"
+   ],
+   "pages": [
+    77
+   ]
+  },
+  {
+   "id": "L6-P11",
+   "name": "DNA双链断裂位点的蛋白招募级联",
+   "en": "DSB-induced protein recruitment cascade",
+   "overview": "RPL6位于该级联上游，其缺失使下游因子无法招募。",
+   "steps": [
+    {
+     "n": 1,
+     "name": "DSB发生",
+     "detail": "DNA双链断裂。"
+    },
+    {
+     "n": 2,
+     "name": "RPL6招募",
+     "detail": "RPL6以依赖PARP的方式被招募至损伤位点。"
+    },
+    {
+     "n": 3,
+     "name": "MDC1招募",
+     "detail": "MDC1被磷酸化并招募。"
+    },
+    {
+     "n": 4,
+     "name": "泛素化",
+     "detail": "RNF8、RNF168介导H2A/H2AX泛素化。"
+    },
+    {
+     "n": 5,
+     "name": "下游招募",
+     "detail": "53BP1、RAP80、BRCA1被招募至损伤位点。"
+    }
+   ],
+   "key_points": [
+    "RPL6敲低后MDC1、RNF8、RNF168、53BP1、RAP80、BRCA1均不能有效招募",
+    "RPL6是DNA损伤应答上游的关键因子"
+   ],
+   "regulation": [],
+   "figures": [
+    "正常条件与RPL6敲低条件下DSB位点蛋白招募对比图"
+   ],
+   "pages": [
+    78
+   ]
+  }
+ ],
+ "distinctions": [
+  {
+   "id": "L6-D01",
+   "title": "密码子与反密码子",
+   "a": "密码子（codon）",
+   "b": "反密码子（anticodon）",
+   "difference": [
+    "密码子位于mRNA，按5'→3'阅读",
+    "反密码子位于tRNA，按3'→5'与密码子配对",
+    "两者方向相反，反向平行互补配对"
+   ],
+   "easy_mistake": "学生常把反密码子也按5'→3'书写，忽略反向配对。",
+   "pages": [
+    33
+   ]
+  },
+  {
+   "id": "L6-D02",
+   "title": "简并性与同义密码子",
+   "a": "简并性（degeneracy）",
+   "b": "同义密码子（synonymous codon）",
+   "difference": [
+    "简并性是一种现象：一种以上密码子编码同一氨基酸",
+    "同义密码子指具体的、编码同一氨基酸的那组密码子",
+    "色氨酸（UGG）无同义密码子，但简并性仍适用于其他氨基酸"
+   ],
+   "easy_mistake": "把“简并性”当作某个具体密码子的属性。",
+   "pages": [
+    24
+   ]
+  },
+  {
+   "id": "L6-D03",
+   "title": "转换与颠换",
+   "a": "转换（transition）",
+   "b": "颠换（transversion）",
+   "difference": [
+    "转换是嘌呤↔嘌呤或嘧啶↔嘧啶",
+    "颠换是嘌呤↔嘧啶",
+    "第二位颠换改变氨基酸类型，第二位转换仅变为化学类型相似的氨基酸"
+   ],
+   "easy_mistake": "混淆二者定义，或误以为第三位颠换一定改变氨基酸。",
+   "pages": [
+    26,
+    27
+   ]
+  },
+  {
+   "id": "L6-D04",
+   "title": "移码突变与整码突变",
+   "a": "移码突变（frameshift mutation）",
+   "b": "整码突变（in-frame mutation）",
+   "difference": [
+    "插入/删除非3整数倍碱基导致阅读框改变",
+    "插入/删除3的整数倍碱基只增减氨基酸而不改变阅读框",
+    "移码使下游氨基酸序列全部改变，整码仅局部改变"
+   ],
+   "easy_mistake": "认为任何插入缺失都导致移码。",
+   "pages": [
+    12
+   ]
+  },
+  {
+   "id": "L6-D05",
+   "title": "密码的普遍性与特殊性",
+   "a": "普遍性（universality）",
+   "b": "特殊性（specificity/例外）",
+   "difference": [
+    "普遍性指绝大多数生物共用标准密码子表",
+    "特殊性指线粒体、原生动物、支原体及部分原核生物中个别密码子含义改变",
+    "例：UGA编码Trp或硒代半胱氨酸；AGA/AGG成为终止密码子或Ser；AUA在线粒体变为Met"
+   ],
+   "easy_mistake": "把“通用密码表”绝对化，忽略线粒体例外。",
+   "pages": [
+    31,
+    32
+   ]
+  },
+  {
+   "id": "L6-D06",
+   "title": "细菌与真核生物的摆动规则",
+   "a": "细菌（bacteria）",
+   "b": "真核生物（eukaryotes）",
+   "difference": [
+    "细菌：密码子第三位U配A/G/I，C配G/I，A配U或I，G配C或U",
+    "真核：U配A/G/I，C配G/I，A只能配U，G只能配C",
+    "真核的摆动范围比细菌窄"
+   ],
+   "easy_mistake": "把细菌的A配I、G配U规则套用到真核。",
+   "pages": [
+    36
+   ]
+  },
+  {
+   "id": "L6-D07",
+   "title": "起始tRNA与延伸tRNA",
+   "a": "起始tRNA（initiator tRNA）",
+   "b": "延伸tRNA（elongator tRNA）",
+   "difference": [
+    "起始tRNA特异性识别起始密码子，只参与起始",
+    "延伸tRNA负责延伸过程中氨基酸转运",
+    "真核起始tRNA携带Met；原核起始tRNA携带fMet，需先甲酰化"
+   ],
+   "easy_mistake": "误以为原核起始tRNA直接携带fMet，忽略Met-tRNAfMet必须先甲酰化。",
+   "pages": [
+    51
+   ]
+  },
+  {
+   "id": "L6-D08",
+   "title": "A位点与P位点",
+   "a": "A位点（aminoacyl site）",
+   "b": "P位点（peptidyl site）",
+   "difference": [
+    "A位结合新进入的氨酰-tRNA，未参与肽键形成",
+    "P位结合已带上肽链的肽酰-tRNA，是肽链转移的供体位置",
+    "除起始fMet-tRNA外所有tRNA都必须先经A位点；只有fMet-tRNAfMet能直接结合第一个P位点"
+   ],
+   "easy_mistake": "认为所有tRNA都可直接进入P位点。",
+   "pages": [
+    96,
+    97
+   ]
+  },
+  {
+   "id": "L6-D09",
+   "title": "原核核糖体与真核核糖体",
+   "a": "原核70S核糖体",
+   "b": "真核80S核糖体",
+   "difference": [
+    "原核：50S（23S 2904 nt + 5S 120 nt + ~34种蛋白）+ 30S（16S 1542 nt + 21种蛋白），MW 2,500,000",
+    "真核：60S（28S 4700 nt + 5.8S 160 nt + 5S 120 nt + 49种蛋白）+ 40S（18S 1900 nt + ~33种蛋白），MW 4,200,000",
+    "真核特有5.8S rRNA；5S rRNA两界都有"
+   ],
+   "easy_mistake": "把70S与80S的亚基沉降系数相加（50+30=80）当作质量关系。",
+   "pages": [
+    68,
+    69,
+    89
+   ]
+  },
+  {
+   "id": "L6-D10",
+   "title": "沉降系数与相对分子质量",
+   "a": "沉降系数S",
+   "b": "相对分子质量",
+   "difference": [
+    "S值取决于分子的大小与形状（及溶剂性质）",
+    "S值不能直接换算为质量",
+    "70S核糖体由50S与30S亚基组成，30+50=80≠70"
+   ],
+   "easy_mistake": "把S值当作质量单位直接相加。",
+   "pages": [
+    67,
+    70
+   ]
+  },
+  {
+   "id": "L6-D11",
+   "title": "核糖体蛋白种类数与亚基总数",
+   "a": "蛋白种类数（Number of Different Proteins）",
+   "b": "蛋白亚基总数（Total Number of Protein Subunits）",
+   "difference": [
+    "50S中二者分别为33与36，说明部分L蛋白以多拷贝存在",
+    "30S中二者均为21，每种蛋白仅一份"
+   ],
+   "easy_mistake": "把L1–L36理解为36种不同蛋白。",
+   "pages": [
+    71
+   ]
+  },
+  {
+   "id": "L6-D12",
+   "title": "正常细胞与核糖体应激细胞",
+   "a": "正常细胞（normal cells）",
+   "b": "核糖体应激细胞（ribosomally stressed cells）",
+   "difference": [
+    "正常细胞rRNA加工与组装偶联，核糖体蛋白被有效掺入40S/60S，MDM2抑制p53",
+    "应激细胞出现加工缺陷、辅助因子失调与核仁应激",
+    "应激细胞游离核糖体蛋白结合MDM2，p53被激活，导致细胞周期阻滞与凋亡"
+   ],
+   "easy_mistake": "认为核糖体应激直接激活p53，忽略MDM2这一中介。",
+   "pages": [
+    75
+   ]
+  },
+  {
+   "id": "L6-D13",
+   "title": "抑瘤作用与致癌作用",
+   "a": "抑瘤作用（tumor suppressive）",
+   "b": "致癌作用（oncogenic）",
+   "difference": [
+    "抑瘤：激活p53/TAp73、灭活c-Myc、抑制PICT1等",
+    "致癌：诱导ITGB4、cyclinD1/D3、CDK1，抑制p53与p27(kip1)，隔离RNF8/BRCA1",
+    "同一家族不同成员功能可相反"
+   ],
+   "easy_mistake": "认为核糖体蛋白只有抑瘤功能。",
+   "pages": [
+    81,
+    82
+   ]
+  },
+  {
+   "id": "L6-D14",
+   "title": "均聚物模板与重复序列共聚物模板",
+   "a": "均聚物模板",
+   "b": "重复序列共聚物模板",
+   "difference": [
+    "均聚物只能确定单一密码子（如poly(U)→UUU）",
+    "重复二/三/四核苷酸序列可因阅读框不同产生多种产物",
+    "重复序列用于确定更多密码子并验证阅读框"
+   ],
+   "easy_mistake": "忽略重复三核苷酸可因阅读框给出三种不同均聚物。",
+   "pages": [
+    16
+   ]
+  },
+  {
+   "id": "L6-D15",
+   "title": "5.8S rRNA与5S rRNA",
+   "a": "5.8S rRNA",
+   "b": "5S rRNA",
+   "difference": [
+    "5.8S为真核大亚基特有，长160 nt",
+    "5S在原核与真核中均存在，长120 nt（革兰氏阳性菌116 nt）",
+    "两者都含CGAAC保守序列，与tRNA识别有关"
+   ],
+   "easy_mistake": "认为5.8S也存在于原核核糖体。",
+   "pages": [
+    90,
+    93
+   ]
+  }
+ ],
+ "facts": [
+  {
+   "id": "L6-F01",
+   "text": "细菌细胞中蛋白质占细胞化学物质的15%，是含量最丰富的生物大分子；DNA仅占1%，RNA占6%，磷脂2%，多糖2%，小分子3%，无机离子1%。",
+   "note": "定量数据常考：说明少量DNA可指导大量蛋白质合成，蛋白质是信息通路终产物。",
+   "pages": [
+    2
+   ]
+  },
+  {
+   "id": "L6-F02",
+   "text": "蛋白质合成所需成分（多种蛋白质、酶及其他生物大分子）占细胞干重的50%；蛋白质合成消耗细胞能量的80-90%。",
+   "note": "说明翻译是细胞最耗能的过程之一，可出选择题或简答题。",
+   "pages": [
+    4
+   ]
+  },
+  {
+   "id": "L6-F03",
+   "text": "基因组中编码蛋白序列占比：E. coli 85%、酵母70%、线虫28%、果蝇17%、人1.5%、肺鱼0.5%；非编码序列占比相应为13%、28%、71%、82%、98%、99.5%。",
+   "note": "常考数据：物种越复杂编码蛋白比例越低，大多数转录产物是非编码RNA。",
+   "pages": [
+    5
+   ]
+  },
+  {
+   "id": "L6-F04",
+   "text": "遗传密码破译关键年份：1953年DNA双螺旋结构发表；1954年Gamow提出三联体假说并成立RNA领带俱乐部；1954—1961年Crick移码实验证明三联体、无重叠；1961年Nirenberg & Matthaei破译UUU=苯丙氨酸；1961—1966年全部64个密码子破译完成。",
+   "note": "时间线是经典考点，注意人物与贡献对应。",
+   "pages": [
+    10
+   ]
+  },
+  {
+   "id": "L6-F05",
+   "text": "4种碱基若1个编码1个氨基酸只有4种可能，2个为4²=16种仍不够，3个为4³=64种足够覆盖20种氨基酸。",
+   "note": "常以计算/推理题出现，说明三联体的必然性。",
+   "pages": [
+    11
+   ]
+  },
+  {
+   "id": "L6-F06",
+   "text": "移码实验：单碱基插入或缺失使插入点下游阅读框全部改变；插入与缺失各一个可恢复阅读框；一次插入三个核苷酸只增加一个氨基酸，下游阅读框不变。",
+   "note": "证明密码子以3个核苷酸为单位且不重叠，是必考经典实验。",
+   "pages": [
+    12
+   ]
+  },
+  {
+   "id": "L6-F07",
+   "text": "第一个被破译的密码子为UUU=苯丙氨酸，由Nirenberg & Matthaei用E. coli无细胞体系获得；文献为Barondes & Nirenberg, Science 1962, 138(3542):813-817。",
+   "note": "常考人物—实验—结论对应。",
+   "pages": [
+    14
+   ]
+  },
+  {
+   "id": "L6-F08",
+   "text": "均聚物模板结果：poly(U)→多聚苯丙氨酸；poly(C)→多聚脯氨酸；poly(A)→多聚赖氨酸；poly(G)因复杂二级结构未能成功。",
+   "note": "均聚物模板是破译密码子的第一步，注意poly(G)失败原因。",
+   "pages": [
+    15
+   ]
+  },
+  {
+   "id": "L6-F09",
+   "text": "无细胞体系中Mg²⁺浓度很高，不需要起始密码子就能指导多肽合成。",
+   "note": "易错点：体外体系与体内起始要求不同。",
+   "pages": [
+    15
+   ]
+  },
+  {
+   "id": "L6-F10",
+   "text": "Khorana用重复序列共聚物破译密码子：(AC)ₙ→(Thr-His)ₙ；(UC)ₙ→(Ser-Leu)ₙ；(UUC)ₙ可得Poly(Phe)/Poly(Ser)/Poly(Leu)；(AAG)ₙ可得Poly(Lys)/Poly(Arg)/Poly(Glu)；(UAG)ₙ得None/Poly(Ser)/Poly(Val)；(UAUC)ₙ得(Tyr-Leu-Ser-Ile)ₙ重复共聚物。",
+   "note": "重复三核苷酸因阅读框不同给出三种产物，是理解阅读框的经典例证。",
+   "pages": [
+    16
+   ]
+  },
+  {
+   "id": "L6-F11",
+   "text": "核糖体结合技术（硝酸纤维素滤膜法）由Nirenberg与Leder建立：UUU只结合Phe-tRNAPhe（4.6），AAA只结合Lys-tRNALys（7.7），CCC只结合Pro-tRNAPro（3.1），其余组合为0。",
+   "note": "表格数字为结合效率，柱状图为绝对量（pmol），不可混用。",
+   "pages": [
+    17,
+    18
+   ]
+  },
+  {
+   "id": "L6-F12",
+   "text": "1968年诺贝尔生理学或医学奖授予Nirenberg、Khorana和Holley，表彰其在遗传密码破译中的贡献。",
+   "note": "人物—奖项对应常考。",
+   "pages": [
+    19
+   ]
+  },
+  {
+   "id": "L6-F13",
+   "text": "64个密码子中61个编码氨基酸，3个（UAA、UGA、UAG）为终止密码子，不编码氨基酸。",
+   "note": "基础数据，常以填空或选择出现。",
+   "pages": [
+    22
+   ]
+  },
+  {
+   "id": "L6-F14",
+   "text": "除色氨酸（UGG）只有一个密码子外，其他氨基酸都有一个以上密码子：9种氨基酸有2个密码子，1种有3个，5种有4个，3种有6个。",
+   "note": "简并性定量数据，注意UGG唯一、Met与Trp各仅1个密码子。",
+   "pages": [
+    24
+   ]
+  },
+  {
+   "id": "L6-F15",
+   "text": "第三位碱基简并性统计：第三位碱基完全无关（U/C/A/G均可）的密码子32个；U或C相同者14个；A或G相同者10个；U/C/A相同者3个；仅G有唯一含义者2个（AUG、UGG）；合计61个有义密码子。",
+   "note": "常考数字与“第三位简并位”概念。",
+   "pages": [
+    25
+   ]
+  },
+  {
+   "id": "L6-F16",
+   "text": "转换发生在密码子第三位一般无影响，例外为Met(AUG)⇔Ile(AUA/AUC/AUU)、Trp(UGG)⇔Stop(UGA)；第二位转换导致氨基酸变为化学类型相似者。",
+   "note": "突变影响分析的常考例外。",
+   "pages": [
+    26
+   ]
+  },
+  {
+   "id": "L6-F17",
+   "text": "颠换发生在第三位时超过一半无影响，如Asp(GAU/GAC)⇔Glu(GAA/GAG)均为酸性氨基酸；第二位颠换改变氨基酸类型。",
+   "note": "与转换对比记忆。",
+   "pages": [
+    27
+   ]
+  },
+  {
+   "id": "L6-F18",
+   "text": "密码子第一位改变无论转换还是颠换都指定相似类型氨基酸，少数为同一氨基酸，如Leu可由CUA或UUA编码（C↔U为转换）。",
+   "note": "第一位、第二位、第三位突变后果的层级比较是常考点。",
+   "pages": [
+    28
+   ]
+  },
+  {
+   "id": "L6-F19",
+   "text": "终止密码子历史名称：UAA=Ochre（赭石）、UAG=Amber（琥珀）、UGA=Opal（欧泊）；AUG编码Met并作起始密码子，GUG可作起始密码子。",
+   "note": "名称对应常以填空出现。",
+   "pages": [
+    29
+   ]
+  },
+  {
+   "id": "L6-F20",
+   "text": "除Arg外，编码某一氨基酸的密码子个数与该氨基酸在蛋白质中的出现频率相吻合；Trp、Met仅1个密码子，频率最低；Leu、Ser、Arg有6个密码子。",
+   "note": "图4-3结论，注意Arg为例外。",
+   "pages": [
+    30
+   ]
+  },
+  {
+   "id": "L6-F21",
+   "text": "密码特殊性例外：AGA/AGG在部分动物线粒体、某些原生动物中变为Stop或Ser；AUA在线粒体中Ile→Met；CGG在植物线粒体中Arg→Trp；CUU/CUC/CUA/CUG在酵母线粒体中Leu→Thr；UAA/UAG在某些原生动物中Stop→Glu；UGA可编码Trp（线粒体、支原体）或硒代半胱氨酸（E. coli）。",
+   "note": "普遍性与特殊性的辨析题高频。",
+   "pages": [
+    32
+   ]
+  },
+  {
+   "id": "L6-F22",
+   "text": "摆动假说由Crick于1966年提出：反密码子5'端第一位碱基活动度大，可与密码子第三位形成非标准配对；G-U摆动配对只发生在密码子第三位。",
+   "note": "提出者与年份必记；G-U配对位置是易错点。",
+   "pages": [
+    34,
+    35
+   ]
+  },
+  {
+   "id": "L6-F23",
+   "text": "摆动规则：细菌中密码子第三位U可配A/G/I，C配G/I，A配U或I，G配C或U；真核中U配A/G/I，C配G/I，A只配U，G只配C。",
+   "note": "细菌与真核摆动范围差异是常考细节。",
+   "pages": [
+    36
+   ]
+  },
+  {
+   "id": "L6-F24",
+   "text": "原核生物约有30-45种tRNA，真核细胞可能存在50种tRNA，均少于61个有义密码子，说明存在摆动识别。",
+   "note": "数字与摆动假说的联系。",
+   "pages": [
+    37
+   ]
+  },
+  {
+   "id": "L6-F25",
+   "text": "tRNA长度60-95 nt（常见76 nt）；含15个恒定残基和8个半恒定残基；一个tRNA分子中可达20%的碱基被修饰，已发现超过50种修饰碱基（稀有碱基约70余种）。",
+   "note": "tRNA结构部分的定量数据。",
+   "pages": [
+    39,
+    46
+   ]
+  },
+  {
+   "id": "L6-F26",
+   "text": "tRNA二级结构为三叶草形，由4条手臂（受体臂、D臂、反密码子臂、TψC臂，另有可变臂）和3个环（D环、反密码子环、T环）组成；受体臂3'端最后3个碱基永远是CCA。",
+   "note": "结构要点常以填空或识图题出现。",
+   "pages": [
+    41,
+    42
+   ]
+  },
+  {
+   "id": "L6-F27",
+   "text": "tRNA三级结构为L形，由二级结构中未配对碱基间形成的9个氢键引发；受体臂顶端与反密码子臂套索分别位于L的两个端点。",
+   "note": "L形结构与核糖体上功能适配的关系常考。",
+   "pages": [
+    47,
+    48
+   ]
+  },
+  {
+   "id": "L6-F28",
+   "text": "真核起始tRNA携带Met；原核起始tRNA携带fMet，Met-tRNAfMet必须先甲酰化生成fMet-tRNAfMet才能参与蛋白质合成。",
+   "note": "原核与真核起始氨基酸差异是必考点。",
+   "pages": [
+    51
+   ]
+  },
+  {
+   "id": "L6-F29",
+   "text": "氨酰-tRNA合成酶催化总反应：AA + tRNA + ATP → AA-tRNA + AMP + PPi；分两步：AA+ATP+E→E-AA-AMP+PPi；E-AA-AMP+tRNA→AA-tRNA+E+AMP。",
+   "note": "反应式与两步机制常考，注意产物是AMP而非ADP。",
+   "pages": [
+    54,
+    55
+   ]
+  },
+  {
+   "id": "L6-F30",
+   "text": "蛋白质合成的真实性主要决定于AA-tRNA合成酶能否使氨基酸与对应tRNA结合；该酶对氨基酸和tRNA均高度专一，并利用校读功能提高精确性。",
+   "note": "保真度决定因素的简答题高频。",
+   "pages": [
+    57
+   ]
+  },
+  {
+   "id": "L6-F31",
+   "text": "一个细菌细胞约有20,000个核糖体，真核细胞可达10⁶个；核糖体可游离存在，也可与内质网结合形成微粒体。",
+   "note": "定量数据与分布方式。",
+   "pages": [
+    60
+   ]
+  },
+  {
+   "id": "L6-F32",
+   "text": "大肠杆菌细胞内rRNA占细胞总量21%、数量8×10⁵；核糖体蛋白占9%、2×10⁴；可溶性蛋白占40%、10⁶；tRNA占3%、1.6×10⁵；mRNA占2%、3.5×10³。",
+   "note": "表格数据常考rRNA为含量最高RNA。",
+   "pages": [
+    61
+   ]
+  },
+  {
+   "id": "L6-F33",
+   "text": "细菌70S核糖体：50S（23S rRNA 2904 bases + 5S rRNA 120 bases + 31种蛋白）+ 30S（16S rRNA 1542 bases + 21种蛋白）；质量2.5 MDa，含RNA 66%。哺乳动物80S：60S（28S 4718 + 5.8S 160 + 5S 120 bases + 49种蛋白）+ 40S（18S 1874 bases + 33种蛋白）；质量4.2 MDa，含RNA 60%。",
+   "note": "原核与真核核糖体组成对照是必考表格。",
+   "pages": [
+    68,
+    69
+   ]
+  },
+  {
+   "id": "L6-F34",
+   "text": "大肠杆菌核糖体：70S总相对分子质量2.52×10⁶，RNA 1.66×10⁶（66%）、蛋白质8.57×10⁵（34%）；30S含16S rRNA（1541碱基）与21种蛋白，RNA占60%；50S含23S（2904）与5S（120）rRNA及36种蛋白，RNA占70%。",
+   "note": "注意S值不可加和：9.30×10⁵+1.59×10⁶≠2.52×10⁶的S关系。",
+   "pages": [
+    70
+   ]
+  },
+  {
+   "id": "L6-F35",
+   "text": "大肠杆菌核糖体蛋白：50S含33种不同蛋白、共36个亚基（L1–L36）；30S含21种、共21个亚基（S1–S21）。真核大亚基49种、小亚基33种蛋白，相对分子质量8×10³～4.0×10⁴。",
+   "note": "蛋白种类数与亚基数不等说明多拷贝，易考辨析。",
+   "pages": [
+    71
+   ]
+  },
+  {
+   "id": "L6-F36",
+   "text": "2009年诺贝尔化学奖授予Venkatraman Ramakrishnan、Thomas A. Steitz、Ada E. Yonath，理由为对核糖体结构与功能的研究，各获1/3奖金。",
+   "note": "人物—奖项—理由对应。",
+   "pages": [
+    64
+   ]
+  },
+  {
+   "id": "L6-F37",
+   "text": "核糖体整体尺寸约200 Å × 220 Å；tRNA约60 Å × 60 Å；核糖体可容纳两个tRNA和约40 bp长的mRNA。",
+   "note": "尺寸数据与容纳能力常考。",
+   "pages": [
+    84,
+    85
+   ]
+  },
+  {
+   "id": "L6-F38",
+   "text": "mRNA在P位点与A位点两个密码子之间有一个明显扭结，跨度14 Å，使空载A位点密码子处于适合与氨酰-tRNA相互作用的位置；mRNA进出通道位于小亚基。",
+   "note": "结构细节题高频。",
+   "pages": [
+    99
+   ]
+  },
+  {
+   "id": "L6-F39",
+   "text": "多肽链出口通道位于大亚基（50S），通道尺寸只允许新生肽链形成α螺旋，β折叠和三级结构须在肽链离开大亚基后形成。",
+   "note": "通道限制折叠是常考结论。",
+   "pages": [
+    100
+   ]
+  },
+  {
+   "id": "L6-F40",
+   "text": "只有fMet-tRNAfMet能与第一个P位点结合，其他所有tRNA都必须经A位点到达P位点，再由E位点离开；每个tRNA结合位点都横跨大小亚基交界面。",
+   "note": "A/P/E位点使用规则的必考细节。",
+   "pages": [
+    97
+   ]
+  },
+  {
+   "id": "L6-F41",
+   "text": "核糖体应激来源：放线菌素D或5-氟尿嘧啶处理影响rRNA转录与核糖体蛋白表达；pre-rRNA加工与核糖体组装受阻。游离核糖体蛋白（L5、L11、L23、L26、S3、S7等）结合并抑制Mdm2，稳定p53。",
+   "note": "核糖体应激—p53通路的分子机制是本章拓展重点。",
+   "pages": [
+    72,
+    73,
+    74,
+    75
+   ]
+  },
+  {
+   "id": "L6-F42",
+   "text": "核糖体异质性三来源：rRNA转录后修饰变异；核糖体蛋白旁系同源基因替换（如RPL22L1 vs RPL22）；核糖体相关因子（RAFs）特异性结合。",
+   "note": "核糖体异质性的三层机制常以简答出现。",
+   "pages": [
+    80
+   ]
+  },
+  {
+   "id": "L6-F43",
+   "text": "核糖体蛋白核糖体外功能：激活p53的RP有L5、L6、L11、L23、L26、L37、S3、S7、S14、S15、S20、S25、S26、S27、S27A、S27L；L5、L11、S14同时激活TAp73并灭活c-Myc；癌症相关突变涉及L5、L10、L22。",
+   "note": "核糖体病与核糖体外功能是近年热点考点。",
+   "pages": [
+    81
+   ]
+  },
+  {
+   "id": "L6-F44",
+   "text": "核糖体病对应：Diamond-Blackfan贫血涉及S7、S10、S15、S17、S19、S24、S26、S27A、L5、L11、L15、L35A、L36；5q-综合征—S14；先天性无脾（ICA）—SA；自闭症—L10；帕金森病—S15。",
+   "note": "疾病—核糖体蛋白对应关系常考。",
+   "pages": [
+    83
+   ]
+  }
+ ],
+ "methods": [
+  {
+   "id": "L6-M01",
+   "cn": "无细胞蛋白合成体系",
+   "en": "cell-free protein synthesizing system",
+   "principle": "用DNase处理E. coli细胞裂解液以阻止新的转录，加入外源合成mRNA模板与标记氨基酸，在体外翻译并检测放射性掺入。",
+   "steps": "1. 细胞裂解液用DNase处理防止新转录；2. 加入均聚物/共聚物合成mRNA（如poly(U)）及19种冷氨基酸+1种标记氨基酸；3. 体外翻译；4. 分析翻译产物（酸沉淀后液体闪烁计数）。",
+   "applications": "破译遗传密码（UUU=苯丙氨酸即由此获得）；研究翻译过程。",
+   "limitations": "Mg²⁺浓度高，不需要起始密码子即可起始；poly(G)因复杂二级结构不能成功翻译。",
+   "pages": [
+    13,
+    14,
+    15
+   ]
+  },
+  {
+   "id": "L6-M02",
+   "cn": "核糖体结合技术（硝酸纤维素滤膜法）",
+   "en": "ribosome binding assay / nitrocellulose filter binding assay",
+   "principle": "三核苷酸模板与核糖体、对应氨酰-tRNA形成三元复合物；游离AA-tRNA分子小可穿过滤膜，结合到核糖体上的AA-tRNA因体积大被截留。",
+   "steps": "1. 核糖体与[14C]Phe-tRNAPhe及UUU密码子混合；2. 保温使复合物结合到核糖体；3. 反应液通过硝酸纤维素滤膜；4. 核糖体连同结合的[14C]Phe-tRNAPhe被截留，游离mRNA穿过滤膜；5. 计数。",
+   "applications": "确定特定三核苷酸密码子与特定氨基酰-tRNA的对应关系。",
+   "limitations": "截留原理是体积/孔径排阻而非特异性亲和；只能测三核苷酸与AA-tRNA的对应，不能直接给出完整ORF信息。",
+   "pages": [
+    13,
+    17,
+    18
+   ]
+  },
+  {
+   "id": "L6-M03",
+   "cn": "蔗糖密度梯度离心",
+   "en": "sucrose density gradient centrifugation",
+   "principle": "不同沉降系数的颗粒在蔗糖梯度中沉降速度不同而分离。",
+   "steps": "制备蔗糖密度梯度（light→heavy），离心后按密度收集组分，测定各组分RNA含量。",
+   "applications": "分离并定量30S、50S、70S及含2~7个核糖体的多聚核糖体。",
+   "limitations": "S值取决于大小与形状，不能简单相加（70S≠50S+30S）。",
+   "pages": [
+    88
+   ]
+  },
+  {
+   "id": "L6-M04",
+   "cn": "核糖体图谱技术",
+   "en": "ribosome profiling (Ribo-seq)",
+   "principle": "检测与核糖体结合的mRNA片段，确定正在翻译的mRNA及其蛋白产物。",
+   "steps": "分离核糖体保护片段并进行测序/质谱分析。",
+   "applications": "揭示异质化核糖体所翻译的特定mRNA群体。",
+   "limitations": "需结合其他手段验证蛋白产物。",
+   "pages": [
+    79
+   ]
+  },
+  {
+   "id": "L6-M05",
+   "cn": "电子显微镜观察",
+   "en": "electron microscopy",
+   "principle": "利用电子束成像观察纳米尺度生物大分子复合物。",
+   "steps": "制样后在电镜下观察并拍照（如多聚核糖体，比例尺100 nm）。",
+   "applications": "直观显示多聚核糖体串珠状形态与分布。",
+   "limitations": "难以分辨单个分子的分子细节。",
+   "pages": [
+    87
+   ]
+  }
+ ],
+ "exam_points": [
+  {
+   "id": "L6-X01",
+   "point": "遗传密码破译的历史与人物贡献",
+   "detail": "常以选择/填空考年份与人物对应：Gamow三联体假说（1954）、Crick移码实验、Nirenberg & Matthaei破译UUU、Khorana重复序列共聚物、Ochoa合成RNA酶；1968年诺奖三人。"
+  },
+  {
+   "id": "L6-X02",
+   "point": "三联体密码的证明逻辑",
+   "detail": "简答题：从4³=64的数学必然性、移码实验（插入/缺失非3倍数改变阅读框、插入3个碱基只加一个氨基酸）、无细胞体系与核糖体结合技术三方面论证。"
+  },
+  {
+   "id": "L6-X03",
+   "point": "阅读框与开放阅读框（ORF）",
+   "detail": "名词解释与识图：ORF从起始密码子到终止密码子、连续不重叠；同一RNA三种阅读框只有一种编码实际蛋白；移码突变与整码突变的区别。"
+  },
+  {
+   "id": "L6-X04",
+   "point": "遗传密码的性质",
+   "detail": "简答：连续性（commaless）、简并性、普遍性、特殊性、密码子与反密码子相互作用；每条须举例（如UGA编码硒代半胱氨酸体现特殊性）。"
+  },
+  {
+   "id": "L6-X05",
+   "point": "简并性与第三位碱基简并",
+   "detail": "计算/选择：61个有义密码子、3个终止；UGG唯一、Met与Trp各1个；第三位碱基完全无关者32个；同义密码子与简并性的概念区分。"
+  },
+  {
+   "id": "L6-X06",
+   "point": "突变对密码子含义的影响",
+   "detail": "分析题：转换vs颠换；第一、二、三位突变后果不同；第三位转换例外Met↔Ile、Trp↔Stop；第二位颠换改变氨基酸类型。"
+  },
+  {
+   "id": "L6-X07",
+   "point": "摆动假说与摆动规则",
+   "detail": "简答/选择：Crick 1966；反密码子5'第一位与密码子第三位配对；G-U只发生在第三位；细菌与真核摆动范围差异（真核A只配U、G只配C）。"
+  },
+  {
+   "id": "L6-X08",
+   "point": "tRNA的结构与功能",
+   "detail": "识图/填空：三叶草二级结构（4臂3环）、CCA末端、D环含二氢尿嘧啶、TψC环、反密码子环；L形三级结构由9个氢键稳定；tRNA为第二遗传密码。"
+  },
+  {
+   "id": "L6-X09",
+   "point": "起始tRNA与延伸tRNA、同工tRNA、校正tRNA",
+   "detail": "名词解释与辨析：原核fMet vs 真核Met；同工tRNA反密码子不同但被同一合成酶识别；校正tRNA通过改变反密码子抑制无义/错义突变。"
+  },
+  {
+   "id": "L6-X10",
+   "point": "氨酰-tRNA合成酶与氨基酸活化",
+   "detail": "简答/计算：总反应AA+tRNA+ATP→AA-tRNA+AMP+PPi；两步机制；决定翻译真实性；校读功能；鉴别碱基与反密码子为识别位点。"
+  },
+  {
+   "id": "L6-X11",
+   "point": "核糖体的组成与原核真核比较",
+   "detail": "填表题：70S=50S+30S、80S=60S+40S；rRNA种类与碱基数；RNA/蛋白比例；S值不可加和的原因。"
+  },
+  {
+   "id": "L6-X12",
+   "point": "核糖体上A/P/E位点与肽基转移酶中心、解码中心",
+   "detail": "识图/简答：A位结合氨酰-tRNA、P位结合肽酰-tRNA、E位释放去氨酰-tRNA；小亚基解码、大亚基催化；只有fMet-tRNAfMet直接进P位；位点横跨大小亚基交界面。"
+  },
+  {
+   "id": "L6-X13",
+   "point": "mRNA与多肽链通道的结构特征",
+   "detail": "选择/简答：mRNA通道在小亚基、P-A密码子间14 Å扭结；多肽出口通道在大亚基，仅允许α螺旋形成。"
+  },
+  {
+   "id": "L6-X14",
+   "point": "多聚核糖体与翻译效率",
+   "detail": "名词解释与简答：多聚核糖体提高mRNA利用率与合成速度；原核转录-翻译偶联；mRNA环化（eIF4E/eIF4G/poly-A结合蛋白）利于核糖体循环。"
+  },
+  {
+   "id": "L6-X15",
+   "point": "核糖体应激与p53通路、核糖体异质性与核糖体病",
+   "detail": "拓展简答：游离核糖体蛋白（L5、L11、L23、S7等）抑制Mdm2稳定p53；核糖体异质性三来源；DBA、5q-综合征、Shwachman-Diamond综合征对应的核糖体缺陷。"
+  }
+ ],
+ "exercises": [
+  {
+   "id": "L6-E01",
+   "type": "单选题",
+   "stem": "第一个被破译的遗传密码子是：",
+   "options": [
+    "A. AAA=赖氨酸",
+    "B. UUU=苯丙氨酸",
+    "C. CCC=脯氨酸",
+    "D. GGG=甘氨酸"
+   ],
+   "answer": "B. UUU=苯丙氨酸",
+   "analysis": "Nirenberg & Matthaei用E. coli无细胞体系加poly(U)模板，发现只掺入放射性Phe，证明UUU编码苯丙氨酸。poly(G)因二级结构未能成功，故GGG不是最早破译的。",
+   "pages": [
+    14,
+    15
+   ]
+  },
+  {
+   "id": "L6-E02",
+   "type": "单选题",
+   "stem": "关于移码实验的结论，下列哪项正确？",
+   "options": [
+    "A. 插入一个碱基只改变一个氨基酸",
+    "B. 插入三个碱基会改变下游全部阅读框",
+    "C. 插入与缺失各一个碱基可恢复阅读框",
+    "D. 密码子是重叠的"
+   ],
+   "answer": "C. 插入与缺失各一个碱基可恢复阅读框",
+   "analysis": "单碱基插入使下游阅读框全部改变（A错）；插入3个碱基只增加一个氨基酸、下游不变（B错）；插入+缺失各一个可相互抵消恢复阅读框（C对）；该实验证明密码子不重叠（D错）。",
+   "pages": [
+    12
+   ]
+  },
+  {
+   "id": "L6-E03",
+   "type": "单选题",
+   "stem": "摆动假说中，G-U摆动配对发生在：",
+   "options": [
+    "A. 密码子第一位与反密码子第三位",
+    "B. 密码子第二位与反密码子第二位",
+    "C. 密码子第三位与反密码子第一位",
+    "D. 密码子任何位置"
+   ],
+   "answer": "C. 密码子第三位与反密码子第一位",
+   "analysis": "标准配对可发生在所有位置，但G-U非标准配对只发生在密码子第三位（对应反密码子5'端第一位），这是摆动位。",
+   "pages": [
+    34,
+    35
+   ]
+  },
+  {
+   "id": "L6-E04",
+   "type": "单选题",
+   "stem": "大肠杆菌70S核糖体由哪些亚基组成？",
+   "options": [
+    "A. 60S+40S",
+    "B. 50S+30S",
+    "C. 50S+40S",
+    "D. 60S+30S"
+   ],
+   "answer": "B. 50S+30S",
+   "analysis": "原核70S=50S大亚基+30S小亚基；真核80S=60S+40S。注意S值不可加和，50+30≠70。",
+   "pages": [
+    62,
+    68,
+    70
+   ]
+  },
+  {
+   "id": "L6-E05",
+   "type": "单选题",
+   "stem": "氨酰-tRNA合成酶催化氨基酸活化时，ATP的产物是：",
+   "options": [
+    "A. ADP + Pi",
+    "B. AMP + PPi",
+    "C. ADP + PPi",
+    "D. AMP + Pi"
+   ],
+   "answer": "B. AMP + PPi",
+   "analysis": "总反应AA+tRNA+ATP→AA-tRNA+AMP+PPi；第一步生成氨酰-腺苷酸释放PPi，第二步转移氨酰基释放AMP。",
+   "pages": [
+    54,
+    55
+   ]
+  },
+  {
+   "id": "L6-E06",
+   "type": "单选题",
+   "stem": "下列哪个密码子在线粒体中可编码色氨酸？",
+   "options": [
+    "A. UAA",
+    "B. UAG",
+    "C. UGA",
+    "D. AGA"
+   ],
+   "answer": "C. UGA",
+   "analysis": "UGA通常为终止密码子，但在线粒体、支原体中编码Trp，在E. coli中可编码硒代半胱氨酸，体现密码的特殊性。",
+   "pages": [
+    32
+   ]
+  },
+  {
+   "id": "L6-E07",
+   "type": "多选题",
+   "stem": "关于tRNA结构的叙述，正确的有：",
+   "options": [
+    "A. 二级结构为三叶草形，含4条手臂和3个环",
+    "B. 3'端最后3个碱基永远是CCA",
+    "C. 三级结构为L形，由9个氢键引发形成",
+    "D. D环因含二氢尿嘧啶而得名",
+    "E. 反密码子环由5 bp臂和7个核苷环组成"
+   ],
+   "answer": "A、B、C、D、E全部正确",
+   "analysis": "五项均为tRNA结构要点：三叶草4臂3环、CCA末端、L形由9个氢键稳定、D环含二氢尿嘧啶、反密码子臂5 bp+7 nt环。",
+   "pages": [
+    41,
+    42,
+    43,
+    44,
+    47,
+    48
+   ]
+  },
+  {
+   "id": "L6-E08",
+   "type": "多选题",
+   "stem": "下列属于遗传密码性质的有：",
+   "options": [
+    "A. 连续性（commaless）",
+    "B. 简并性",
+    "C. 普遍性",
+    "D. 特殊性",
+    "E. 重叠性"
+   ],
+   "answer": "A、B、C、D",
+   "analysis": "遗传密码五条性质为连续性、简并性、普遍性、特殊性、密码子与反密码子相互作用；密码子是非重叠的，E错误。",
+   "pages": [
+    20,
+    21
+   ]
+  },
+  {
+   "id": "L6-E09",
+   "type": "填空题",
+   "stem": "终止密码子UAA又称______，UAG又称______，UGA又称______。",
+   "options": [],
+   "answer": "Ochre（赭石）；Amber（琥珀）；Opal（欧泊）",
+   "analysis": "三个终止密码子以宝石/矿物命名，是经典记忆点。",
+   "pages": [
+    29
+   ]
+  },
+  {
+   "id": "L6-E10",
+   "type": "填空题",
+   "stem": "tRNA二级结构由______条手臂和______个环组成；其3'端最后3个碱基序列永远是______。",
+   "options": [],
+   "answer": "4；3；CCA",
+   "analysis": "三叶草结构要点；CCA末端是氨基酸酯化位点。",
+   "pages": [
+    41,
+    42
+   ]
+  },
+  {
+   "id": "L6-E11",
+   "type": "判断题",
+   "stem": "70S核糖体的沉降系数等于50S与30S之和，即80S。",
+   "options": [],
+   "answer": "错误",
+   "analysis": "S为沉降系数，取决于大小与形状，不能简单相加；70S≠50S+30S。",
+   "pages": [
+    62,
+    67
+   ]
+  },
+  {
+   "id": "L6-E12",
+   "type": "判断题",
+   "stem": "真核生物起始tRNA携带甲酰甲硫氨酸（fMet）。",
+   "options": [],
+   "answer": "错误",
+   "analysis": "真核起始tRNA携带Met；原核起始tRNA携带fMet，且Met-tRNAfMet需先甲酰化。",
+   "pages": [
+    51
+   ]
+  },
+  {
+   "id": "L6-E13",
+   "type": "名词解释",
+   "stem": "摆动假说（wobble hypothesis）",
+   "options": [],
+   "answer": "1966年Crick提出：反密码子5'端第一位碱基与密码子第三位碱基配对时活动度较大，可形成非标准碱基配对（如G-U、I与U/C/A），只要核糖单元间距离接近正常即可；这解释了稀有碱基I的配对及一种tRNA可识别多个密码子的现象。",
+   "analysis": "须写出提出者、年份、配对位置与意义。",
+   "pages": [
+    34,
+    35,
+    36
+   ]
+  },
+  {
+   "id": "L6-E14",
+   "type": "名词解释",
+   "stem": "校正tRNA（suppressor tRNA）",
+   "options": [],
+   "answer": "通过改变反密码子区，识别原本错误的密码子（无义突变产生的终止密码子、错义密码子或移码位点）并插入合适氨基酸，从而在翻译水平上部分纠正基因突变影响的tRNA。",
+   "analysis": "强调翻译水平纠正、改变反密码子、针对无义/错义突变。",
+   "pages": [
+    53
+   ]
+  },
+  {
+   "id": "L6-E15",
+   "type": "简答题",
+   "stem": "简述Crick移码实验的设计与结论。",
+   "options": [],
+   "answer": "要点：①以T4噬菌体溶菌酶基因为材料，比较野生型、单碱基插入、单碱基缺失、插入+缺失、插入三个碱基五组序列的翻译产物；②单碱基插入或缺失使插入点下游阅读框全部改变，产生完全不同的氨基酸序列；③插入与缺失各一个可相互抵消恢复阅读框；④一次插入三个碱基只增加一个氨基酸，下游阅读框不变；⑤结论：密码子以3个核苷酸为单位连续阅读，且不重叠。",
+   "analysis": "按“设计—各组结果—结论”作答，须点出“3的整数倍”与“不重叠”。",
+   "pages": [
+    12
+   ]
+  },
+  {
+   "id": "L6-E16",
+   "type": "简答题",
+   "stem": "简述核糖体上A、P、E三个位点的功能及tRNA的移动顺序。",
+   "options": [],
+   "answer": "要点：①A位（aminoacyl site）结合新进入的氨酰-tRNA；②P位（peptidyl site）结合肽酰-tRNA，肽键形成时肽链转移至A位tRNA；③E位（exit site）释放去氨酰-tRNA；④tRNA移动顺序为A→P→E，由密码子-反密码子相互作用保证方向性；⑤三个位点均横跨大小亚基交界面；⑥只有fMet-tRNAfMet能直接结合第一个P位点，其余tRNA均须经A位进入。",
+   "analysis": "须写出位点全称、功能、移动顺序及fMet例外。",
+   "pages": [
+    95,
+    96,
+    97
+   ]
+  },
+  {
+   "id": "L6-E17",
+   "type": "简答题",
+   "stem": "简述核糖体应激通过核糖体蛋白-Mdm2-p53通路稳定p53的机制。",
+   "options": [],
+   "answer": "要点：①放线菌素D、5-氟尿嘧啶处理或pre-rRNA加工/组装受阻引起核糖体应激；②rRNA与核糖体蛋白不能正常组装为40S/60S，游离核糖体蛋白（L5、L11、L23、L26、S3、S7等）在核质中积累；③游离核糖体蛋白结合Mdm2，抑制Mdm2对p53的泛素化降解；④p53蛋白稳定累积，作为转录因子激活靶基因，引起细胞周期阻滞、凋亡、DNA修复或衰老；⑤p53还抑制5'TOP mRNA（含核糖体蛋白mRNA）翻译，形成负反馈。",
+   "analysis": "按“应激源—游离RP—抑制Mdm2—p53稳定—下游效应”链条作答。",
+   "pages": [
+    72,
+    73,
+    74,
+    75
+   ]
+  },
+  {
+   "id": "L6-E18",
+   "type": "计算题",
+   "stem": "某mRNA编码区长度为1200个核苷酸（含起始与终止密码子），问：(1) 该ORF最多编码多少个氨基酸？(2) 若在编码区第100位后插入一个核苷酸，翻译产物最可能发生什么变化？(3) 若插入三个核苷酸呢？",
+   "options": [],
+   "answer": "(1) 1200/3=400个密码子，扣除1个终止密码子，最多编码399个氨基酸。(2) 插入1个核苷酸造成移码突变，第100位之后的阅读框全部改变，产生完全不同的氨基酸序列，并常提前遇到终止密码子而得到截短蛋白。(3) 插入3个核苷酸为整码突变，只增加1个氨基酸，下游阅读框不变。",
+   "analysis": "考查ORF三联体读取与移码/整码突变概念；注意扣除终止密码子。",
+   "pages": [
+    8,
+    12
+   ]
+  },
+  {
+   "id": "L6-E19",
+   "type": "实验设计题",
+   "stem": "请设计实验证明poly(U)编码多聚苯丙氨酸，并说明如何排除其他19种氨基酸的干扰。",
+   "options": [],
+   "answer": "要点：①制备E. coli细胞裂解液，用DNase处理以阻止新的转录；②将体系分为若干组，每组加入poly(U)模板、19种未标记氨基酸和1种14C标记氨基酸（分别标记Phe、Gly、Ala、Ser、Asp、Glu、Leu、Ile、Thr、Met、Arg、His、Lys、Tyr、Trp、Pro、Cys等）；③另设不加poly(U)的对照组；④体外翻译后酸沉淀蛋白，液体闪烁计数测定放射性掺入；⑤预期只有加poly(U)且标记Phe的组掺入量极高（约38,000 cpm），其余组接近本底；⑥结论：poly(U)编码多聚苯丙氨酸，即UUU=Phe。",
+   "analysis": "须写出DNase处理、19冷+1热标记、对照设计与预期结果；该实验即Nirenberg & Matthaei 1961年工作。",
+   "pages": [
+    14,
+    15
+   ]
+  },
+  {
+   "id": "L6-E20",
+   "type": "分析题",
+   "stem": "某基因发生点突变，使mRNA密码子由AUG变为AUA。请分析：(1) 该突变属于转换还是颠换？(2) 若AUG位于起始位点，后果如何？(3) 若AUG位于编码区内部，后果如何？",
+   "options": [],
+   "answer": "(1) AUG→AUA为G→A，是嘌呤替换嘌呤，属转换。(2) 若为起始密码子，AUA通常不能起始翻译（原核中起始密码子主要为AUG，也可GUG、UUG），将导致翻译不能起始或起始位点改变。(3) 若在编码区内部，AUG(Met)→AUA在线粒体中编码Met（无影响），在标准密码表中AUA编码Ile，属错义突变，且这是第三位转换的著名例外（Met⇔Ile）。",
+   "analysis": "综合考查转换/颠换、起始密码子与第三位转换例外，注意区分标准密码表与线粒体密码表。",
+   "pages": [
+    26,
+    29,
+    32
+   ]
+  }
+ ]
+}
